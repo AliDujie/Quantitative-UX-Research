@@ -250,12 +250,16 @@ class ABTestAnalyzer:
 
 
 def _z_score(p: float) -> float:
-    """近似计算标准正态分布的z分数（Abramowitz & Stegun近似）。"""
+    """近似计算标准正态分布的分位数（Abramowitz & Stegun近似）。
+
+    p=0.975 → 约1.96, p=0.025 → 约-1.96
+    """
     if p <= 0 or p >= 1:
         return 0.0
-    if p > 0.5:
+    if p < 0.5:
         return -_z_score(1 - p)
-    t = math.sqrt(-2 * math.log(p))
+    # 对 p > 0.5 的情况，用 1-p 计算正值
+    t = math.sqrt(-2 * math.log(1 - p))
     c0, c1, c2 = 2.515517, 0.802853, 0.010328
     d1, d2, d3 = 1.432788, 0.189269, 0.001308
     return t - (c0 + c1 * t + c2 * t * t) / (1 + d1 * t + d2 * t * t + d3 * t * t * t)
