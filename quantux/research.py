@@ -209,11 +209,11 @@ class ResearchPlanner:
 
     用法示例::
 
-        planner = ResearchPlanner("飞猪旅行")
+        planner = ResearchPlanner("旅行平台")
         planner.set_stakeholder("产品VP")
         planner.add_question(
             original="用户满意吗？",
-            refined="飞猪用户的整体满意度(7点量表)是否高于行业基准5.2？",
+            refined="平台用户的整体满意度(7点量表)是否高于行业基准5.2？",
             decision="是否需要启动体验优化专项",
             method="csat",
         )

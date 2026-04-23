@@ -6,7 +6,7 @@
 快速开始::
 
     from quantux import QuantUXSkill
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
 
     # 能力1: HEART框架
     heart = skill.build_heart_framework()

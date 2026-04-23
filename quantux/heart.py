@@ -8,7 +8,7 @@
 
 用法示例::
 
-    builder = HEARTBuilder("飞猪旅行")
+    builder = HEARTBuilder("旅行平台")
     goal = builder.add_goal("happiness", "提升用户对搜索结果的满意度")
     signal = builder.add_signal(goal.description, "用户在满意度调查中给出高分", "success")
     builder.add_metric(signal.description, "搜索满意度Top-2-Box", "Top2Box(ratings)", "survey", True)
@@ -121,7 +121,7 @@ class HEARTFramework:
     Example::
 
         framework = HEARTFramework(
-            product_name="飞猪旅行",
+            product_name="旅行平台",
             goals=[GoalItem("happiness", "提升满意度")],
             signals=[SignalItem("提升满意度", "调查高分", "success")],
             metrics=[MetricItem("调查高分", "T2B", "Top2Box()", "survey", True)],
@@ -159,7 +159,7 @@ class HEARTBuilder:
 
     用法示例::
 
-        builder = HEARTBuilder("飞猪旅行")
+        builder = HEARTBuilder("旅行平台")
 
         # 定义目标
         g1 = builder.add_goal("happiness", "提升用户对搜索结果的满意度")

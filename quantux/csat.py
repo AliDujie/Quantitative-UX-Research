@@ -59,8 +59,8 @@ class CSatSurveyBuilder:
     用法示例::
 
         builder = CSatSurveyBuilder("2024Q1满意度调查", "email")
-        builder.set_product("飞猪旅行")
-        builder.set_target("过去30天内使用过飞猪的用户")
+        builder.set_product("旅行平台")
+        builder.set_target("过去30天内使用过平台的用户")
         builder.add_satisfaction_rating()
         builder.add_open_ended()
         survey = builder.build()
@@ -159,7 +159,7 @@ class CSatAnalyzer:
 
     用法示例::
 
-        analyzer = CSatAnalyzer("飞猪旅行")
+        analyzer = CSatAnalyzer("旅行平台")
         analyzer.add_data_point("2024Q1", 500, {1: 10, 2: 20, 3: 50, 4: 180, 5: 240})
         analyzer.add_data_point("2024Q2", 480, {1: 8, 2: 18, 3: 45, 4: 190, 5: 219})
         print(analyzer.generate_report())

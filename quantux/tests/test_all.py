@@ -30,7 +30,7 @@ from quantux.research import ResearchPlanner, ReportBuilder
 # ──────────────────────────────────────────────
 def test_build_heart_framework():
     """测试 HEART 框架构建：添加 Goal → Signal → Metric → 生成报告"""
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
 
     # 添加目标
     goal = skill.heart_builder.add_goal("happiness", "提升用户对预订流程的满意度")
@@ -63,7 +63,7 @@ def test_build_heart_framework():
     md = skill.build_heart_framework()
     assert isinstance(md, str)
     assert len(md) > 100
-    assert "飞猪旅行" in md or "HEART" in md
+    assert "旅行平台" in md or "HEART" in md
 
     # 工作坊指南
     guide = skill.get_workshop_guide()
@@ -78,7 +78,7 @@ def test_build_heart_framework():
 # ──────────────────────────────────────────────
 def test_design_csat_survey():
     """测试 CSat 问卷设计 + 数据分析 + 报告生成"""
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
 
     # --- 问卷设计 ---
     survey_md = skill.design_csat_survey(
@@ -90,7 +90,7 @@ def test_design_csat_survey():
 
     # 使用 Builder 直接构建
     builder = CSatSurveyBuilder("自定义调查", "in_product")
-    builder.set_product("飞猪旅行")
+    builder.set_product("旅行平台")
     builder.set_target("全量用户")
     builder.add_satisfaction_rating(scale=7)
     builder.add_open_ended("你最希望改进什么？")
@@ -100,7 +100,7 @@ def test_design_csat_survey():
     assert survey.mechanism == "in_product"
 
     # --- 数据分析 ---
-    analyzer = CSatAnalyzer("飞猪旅行")
+    analyzer = CSatAnalyzer("旅行平台")
     dp1 = analyzer.add_data_point("2024Q1", 500, {1: 10, 2: 20, 3: 50, 4: 180, 5: 240})
     assert isinstance(dp1, CSatDataPoint)
     assert 0 < dp1.top2box < 1
@@ -161,7 +161,7 @@ def test_design_maxdiff():
     assert len(design_md) > 100
 
     # 通过 QuantUXSkill 快捷方式
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
     quick_md = skill.design_maxdiff("快速测试", items, items_per_screen=5)
     assert isinstance(quick_md, str)
     assert len(quick_md) > 50
@@ -189,7 +189,7 @@ def test_design_maxdiff():
 # ──────────────────────────────────────────────
 def test_calculate_ab_sample_size():
     """测试 A/B 测试样本量计算 + 结果分析 + 业务解读"""
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
 
     # --- 样本量计算 ---
     n = skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)
@@ -249,7 +249,7 @@ def test_calculate_ab_sample_size():
 # ──────────────────────────────────────────────
 def test_logs_analyzer():
     """测试日志分析：事件加载 → 会话化 → 序列频率 → Markov → 报告"""
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
     la = skill.logs_analyzer
 
     # 用户1：完整预订流程
@@ -322,7 +322,7 @@ def test_logs_analyzer():
 # ──────────────────────────────────────────────
 def test_diagnose_request():
     """测试利益相关者请求诊断 + 方法推荐 + 研究计划"""
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
 
     # --- 请求诊断 ---
     diagnosis_md = skill.diagnose_request("验证我们的新设计方向是否正确")
@@ -331,7 +331,7 @@ def test_diagnose_request():
     assert len(diagnosis_md) > 50
 
     # 直接使用 Planner
-    planner = ResearchPlanner("飞猪旅行")
+    planner = ResearchPlanner("旅行平台")
     planner.set_stakeholder("产品经理张三")
 
     diag = planner.diagnose_request("用户为什么不用新功能？")
@@ -357,7 +357,7 @@ def test_diagnose_request():
     )
     plan = planner.build()
     assert len(plan.questions) >= 1
-    assert plan.product == "飞猪旅行"
+    assert plan.product == "旅行平台"
 
     plan_md = ResearchPlanner.render_markdown(plan)
     assert isinstance(plan_md, str)
@@ -371,14 +371,14 @@ def test_diagnose_request():
 # ──────────────────────────────────────────────
 def test_build_report():
     """测试研究报告构建：逐步添加内容 → 生成完整 Markdown 报告"""
-    builder = ReportBuilder("飞猪旅行2024Q1用户满意度研究")
+    builder = ReportBuilder("旅行平台2024Q1用户满意度研究")
 
     builder.set_executive_summary(
         "本研究通过CSat调查收集了500名用户反馈，发现整体满意度Top-2-Box为84%，"
         "较上季度提升2个百分点。预订流程和客服响应是用户最关注的两个维度。"
     )
 
-    builder.add_question("用户对飞猪旅行的整体满意度如何？")
+    builder.add_question("用户对旅行平台的整体满意度如何？")
     builder.add_question("哪些因素对满意度影响最大？")
 
     builder.set_methods(
@@ -397,7 +397,7 @@ def test_build_report():
     builder.add_limitation("邮件调查存在非响应偏差，响应者可能更积极或更不满")
 
     report = builder.build()
-    assert report.title == "飞猪旅行2024Q1用户满意度研究"
+    assert report.title == "旅行平台2024Q1用户满意度研究"
     assert len(report.questions) == 2
     assert len(report.findings) == 3
     assert len(report.recommendations) == 2
@@ -413,7 +413,7 @@ def test_build_report():
     assert len(report_md) > 500
 
     # 通过 QuantUXSkill 快捷方式
-    skill = QuantUXSkill("飞猪旅行")
+    skill = QuantUXSkill("旅行平台")
     quick_md = skill.build_report("快速测试报告")
     assert isinstance(quick_md, str)
     assert len(quick_md) > 50

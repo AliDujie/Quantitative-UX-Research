@@ -1,1 +1,0 @@
-# No external dependencies required - pure Python stdlib only
