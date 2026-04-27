@@ -72,9 +72,9 @@ report = skill.generate_report("用户体验研究报告", include_ceo_analysis=
 | 2 | **CSat 调查** | `csat.py` | 满意度调查设计、分析、报告生成 |
 | 3 | **日志分析** | `logs.py` | 会话序列分析、频率统计、转移矩阵 |
 | 4 | **MaxDiff** | `maxdiff.py` | 优先级排序设计、分析、结果可视化 |
-| 5 | **A/B 测试** | `ab_test.py` | 样本量计算、功效分析、结果解读 |
-| 6 | **研究规划** | `research_plan.py` | 研究需求诊断、方法推荐、时间线规划 |
-| 7 | **报告生成** | `report.py` | 标准化研究报告、CEO 视角业务影响分析 |
+| 5 | **A/B 测试** | `abtest.py` | 样本量计算、功效分析、结果解读 |
+| 6 | **研究规划** | `research.py` | 研究需求诊断、方法推荐、时间线规划 |
+| 7 | **报告生成** | `research.py` | 标准化研究报告、CEO 视角业务影响分析 |
 
 ### 🔧 实用示例
 
@@ -176,10 +176,10 @@ Quantitative-UX-Research/
 │   ├── csat.py           # CSat 调查设计与分析
 │   ├── logs.py           # 日志序列分析
 │   ├── maxdiff.py        # MaxDiff 优先级排序
-│   ├── ab_test.py        # A/B 测试设计与分析
-│   ├── research_plan.py  # 研究规划器
-│   └── report.py         # 报告生成器
-└── references/           # 知识库文档
+│   ├── abtest.py         # A/B 测试设计与分析
+│   ├── research.py       # 研究规划与报告生成
+├── references/           # 知识库文档（待补充）
+├── quantux/tests/        # 测试套件
 ```
 
 ### 🔗 相关技能
@@ -382,6 +382,15 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - Cross-platform: macOS / Linux / Windows
 
 ---
+
+## 运行测试
+
+```bash
+cd /path/to/Quantitative-UX-Research
+python3 quantux/tests/test_all.py
+# 或使用 pytest
+python3 -m pytest quantux/tests/test_all.py -v
+```
 
 ## 📜 许可 (License)
 
