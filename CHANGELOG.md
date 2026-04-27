@@ -47,3 +47,14 @@ All notable changes to this project will be documented in this file.
 - A/B test sample size calculation (power analysis)
 - Research needs diagnosis
 - Research report generation
+
+## [Unreleased] — 2026-04-28
+
+### Fixed
+- Standardized Python version requirement to 3.8+ across all skills
+- Removed trailing whitespace from README
+- Aligned project structure documentation with actual files
+
+### Added
+- Test instructions section (jtbd-knowledge-skill)
+- Version field in SKILL.md frontmatter (Quantitative-UX-Research)
