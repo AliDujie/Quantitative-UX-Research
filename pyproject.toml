@@ -7,7 +7,7 @@ name = "quantux"
 version = "2.1.0"
 description = "Quantitative User Experience Research Toolkit"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [{name = "AliDujie"}]
 
