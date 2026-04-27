@@ -1,6 +1,6 @@
 # Quantitative UX Research Skill
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
@@ -305,7 +305,7 @@ sample = skill.calculate_ab_sample_size(baseline_rate=0.15, mde=0.03)
 
 ### 📦 依赖
 
-- Python >= 3.9
+- Python >= 3.8
 - **无外部依赖**（纯标准库实现）
 - 兼容 macOS / Linux / Windows
 
@@ -381,7 +381,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 ### 📦 Dependencies
 
-- Python >= 3.9
+- Python >= 3.8
 - **No external dependencies** (pure standard library)
 - Cross-platform: macOS / Linux / Windows
 
