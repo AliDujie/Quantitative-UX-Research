@@ -211,7 +211,7 @@ Quantitative-UX-Research/
 - **QuantUX + VPD** — 用 QuantUX 数据验证价值主张假设
 - **QuantUX + Persona** — 用 QuantUX 数据量化人物角色行为特征
 
-👉 **探索完整生态系统**: [通用设计方法](../universal-design-methods/) | [JTBD](../jtbd-knowledge-skill/) | [数据叙事](../storytelling-with-data/) | [价值主张设计](../value-proposition-design/) | [人物角色](../web-persona-skill/)
+👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [数据叙事](https://github.com/AliDujie/storytelling-with-data) | [价值主张设计](https://github.com/AliDujie/value-proposition-design) | [人物角色](https://github.com/AliDujie/web-persona-skill)
 
 ### 🛠️ 故障排查 (Troubleshooting)
 
@@ -356,11 +356,11 @@ report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
 
 This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 
-- **[Universal-Design-Methods](../universal-design-methods/)** — 100 design research methods
-- **[JTBD-Knowledge-Skill](../jtbd-knowledge-skill/)** — Jobs-to-be-Done theory
-- **[Storytelling-with-Data](../storytelling-with-data/)** — Data storytelling and visualization
-- **[Value-Proposition-Design](../value-proposition-design/)** — Value proposition canvas
-- **[Web-Persona-Skill](../web-persona-skill/)** — Persona creation
+- **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
+- **[JTBD-Knowledge-Skill](https://github.com/AliDujie/jtbd-knowledge-skill)** — Jobs-to-be-Done theory
+- **[Storytelling-with-Data](https://github.com/AliDujie/storytelling-with-data)** — Data storytelling and visualization
+- **[Value-Proposition-Design](https://github.com/AliDujie/value-proposition-design)** — Value proposition canvas
+- **[Web-Persona-Skill](https://github.com/AliDujie/web-persona-skill)** — Persona creation
 
 ### 🌟 Why Choose AliDujie Skill Ecosystem?
 
@@ -373,7 +373,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
 
-👉 **Explore More Skills**: [Universal Design Methods](../universal-design-methods/) | [JTBD](../jtbd-knowledge-skill/) | [Storytelling with Data](../storytelling-with-data/) | [Value Proposition Design](../value-proposition-design/) | [Web Persona](../web-persona-skill/)
+👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill)
 
 ### 📦 Dependencies
 
@@ -408,3 +408,44 @@ python3 -m pytest quantux/tests/test_all.py -v
 ---
 
 **版本 / Version**: v2.1.0
+
+---
+
+## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
+
+本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层。以下是与其他技能配合使用的典型工作流：
+
+### 工作流 1: 定性 → 定量三角验证
+
+```
+UDM (定性研究) → QuantUX (定量验证) → SWD (结果呈现)
+```
+
+**场景**: 研究结论验证
+1. 用 UDM 进行用户访谈，发现假设
+2. 用 QuantUX 设计定量验证（A/B 测试 + 样本量计算）
+3. 用 SWD 将验证结果可视化
+
+### 工作流 2: 指标体系 → 业务决策
+
+```
+QuantUX (HEART 框架) → VPD (价值验证) → CEO 审查
+```
+
+**场景**: 产品方向决策
+1. 用 QuantUX 构建 HEART 指标体系
+2. 用 VPD 验证价值主张假设
+3. 用 CEO 审查框架评估业务影响
+
+### 工作流 3: 用户细分 → 精准测试
+
+```
+Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
+```
+
+**场景**: 个性化产品优化
+1. 用 Persona 创建用户细分
+2. 用 QuantUX 为每个细分设计 A/B 测试
+3. 用 JTBD 计算各细分的机会分数
+
+> 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
