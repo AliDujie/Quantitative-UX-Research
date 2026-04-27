@@ -1,5 +1,9 @@
 # Quantitative UX Research Skill
 
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
 
 基于《Quantitative User Experience Research》(Chapman & Rodden, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
