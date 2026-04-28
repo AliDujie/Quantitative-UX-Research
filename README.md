@@ -4,6 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
+> 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
+> 👉 [查看完整生态系统](#相关技能)
+
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
 
 基于《Quantitative User Experience Research》(Chapman & Rodden, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
@@ -13,6 +16,16 @@
 ---
 
 ## 中文说明
+
+### 📚 快速参考 (Quick Reference)
+
+| 文档 | 说明 |
+|------|------|
+| [references/heart-framework.md](references/heart-framework.md) | HEART 框架完整指南（Goals-Signals-Metrics） |
+| [references/csat-methods.md](references/csat-methods.md) | CSat 调查设计与分析方法论 |
+| [references/ab-testing.md](references/ab-testing.md) | A/B 测试设计原则与最佳实践 |
+| [references/maxdiff-guide.md](references/maxdiff-guide.md) | MaxDiff 优先级排序方法指南 |
+| [references/log-analysis.md](references/log-analysis.md) | 日志序列分析方法论 |
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
 
@@ -401,6 +414,20 @@ python3 quantux/tests/test_all.py
 # 或使用 pytest
 python3 -m pytest quantux/tests/test_all.py -v
 ```
+
+## 🤝 参与贡献 (Contributing)
+
+欢迎贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
+
+- 🐛 **报告 Bug**: 提交 [Issue](https://github.com/AliDujie/Quantitative-UX-Research/issues)
+- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AliDujie/Quantitative-UX-Research/issues/new?template=feature_request.md)
+- 📝 **改进文档**: PR 欢迎，特别是参考文档和代码示例
+
+## 🆘 获取帮助 (Getting Help)
+
+- 📖 查看 [故障排查](#故障排查-troubleshooting) 部分
+- 📚 阅读 [references/](references/) 目录下的方法论文档
+- 💬 在 [Issues](https://github.com/AliDujie/Quantitative-UX-Research/issues) 中提问
 
 ## 📜 许可 (License)
 
