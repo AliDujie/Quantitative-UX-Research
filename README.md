@@ -15,6 +15,35 @@
 
 ---
 
+## 📑 目录 / Table of Contents
+
+- [中文说明](#中文说明)
+  - [📚 快速参考](#-快速参考-quick-reference)
+  - [🌟 为什么使用这个技能？](#-为什么使用这个技能why-use-this-skill)
+  - [⚡ 5 分钟快速开始](#-5-分钟快速开始-quick-start)
+  - [💡 7 大核心能力](#-7-大核心能力)
+  - [🔧 实用示例](#-实用示例)
+  - [📁 项目结构](#-项目结构)
+  - [🔗 相关技能](#-相关技能)
+  - [🛠️ 故障排查](#-故障排查-troubleshooting)
+  - [🤝 最佳实践](#-最佳实践)
+  - [🌟 用户评价](#-用户评价)
+  - [📖 扩展阅读](#-扩展阅读)
+  - [📦 依赖](#-依赖)
+- [English](#english)
+  - [🌟 Why Use This Skill?](#-why-use-this-skill)
+  - [🚀 Quick Start](#-quick-start)
+  - [🔗 Related Skills](#-related-skills)
+  - [📦 Dependencies](#-dependencies)
+- [Run Tests / 运行测试](#run-tests--运行测试)
+- [🤝 参与贡献](#-参与贡献-contributing)
+- [🆘 获取帮助](#-获取帮助-getting-help)
+- [📜 许可](#-许可-license)
+- [👨‍💻 作者](#-作者-credits)
+- [🔗 技能生态工作流](#-技能生态工作流-skill-ecosystem-workflow)
+
+---
+
 ## 中文说明
 
 ### 📚 快速参考 (Quick Reference)
@@ -28,6 +57,23 @@
 | [references/log-analysis.md](references/log-analysis.md) | 日志序列分析方法论 |
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
+
+### 👥 适合谁？(Who Is This For?)
+
+| 角色 | 使用场景 |
+|------|----------|
+| **UX 研究员** | 构建 HEART 指标体系、设计 A/B 测试、分析用户行为日志 |
+| **数据科学家** | 样本量计算、功效分析、MaxDiff 优先级排序 |
+| **产品经理** | 研究需求诊断、方法推荐、CEO 视角报告生成 |
+| **实验科学家** | A/B 测试设计、统计显著性检验、结果解读 |
+| **AI Agent** | 作为工具调用，自动化定量研究流程 |
+
+### 🏷️ GitHub Topics（推荐）
+
+```
+quantitative-research heart-framework ab-testing maxdiff
+user-experience metrics python-toolkit openclaw-skill alicloud
+```
 
 - **完整覆盖** — HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划
 - **CEO 决策支持** — 内置业务影响评估、验证时间线、资源估算
