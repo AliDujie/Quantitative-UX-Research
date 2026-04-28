@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] — 2026-04-28
+
+### Added
+- 5 reference documents (heart-framework, csat-methods, ab-testing, maxdiff-guide, log-analysis)
+
+### Changed
+- Align pyproject.toml version to README (2.1.0 → 2.2.0)
+- Add keywords, classifiers, and project URLs to pyproject.toml for PyPI readiness
+- Fix ruff target-version from py39 to py38 (consistent with requires-python)
+
 ## [2.1.0] — 2026-04-27
 
 ### Added
@@ -18,43 +28,3 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - README restructured with consistent ecosystem format
-- Enhanced code examples with more realistic scenarios
-
----
-
-## [2.0.0] — 2026-04-22
-
-### Changed
-- Universal optimization for Agent/LLM compatibility
-- Added YAML frontmatter with CEO description
-
----
-
-## [1.5] — 2026-04-23
-
-### Changed
-- Minor polish and documentation updates
-
----
-
-## [1.0] — Initial Release
-
-### Added
-- HEART framework construction (Happiness, Engagement, Adoption, Retention, Task Success)
-- CSat survey design (5-point Likert, open-ended)
-- Log sequence analysis (session extraction, pattern detection)
-- MaxDiff priority ranking (counting analysis, utility scores)
-- A/B test sample size calculation (power analysis)
-- Research needs diagnosis
-- Research report generation
-
-## [2.2.0] — 2026-04-28
-
-### Added
-- 5 reference documents (heart-framework.md, csat-methods.md, ab-testing.md, maxdiff-guide.md, log-analysis.md)
-- Updated README project structure to reflect actual reference files
-
-### Fixed
-- Standardized Python version requirement to 3.8+ across all skills
-- Removed trailing whitespace from README
-- Aligned project structure documentation with actual files

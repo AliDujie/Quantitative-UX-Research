@@ -4,12 +4,31 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quantux"
-version = "2.1.0"
-description = "Quantitative User Experience Research Toolkit"
+version = "2.2.0"
+description = "Quantitative User Experience Research Toolkit — HEART framework, CSat surveys, A/B testing, MaxDiff, log analysis"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [{name = "AliDujie"}]
+keywords = ["ux-research", "quantitative-research", "heart-framework", "ab-testing", "csat", "maxdiff", "log-analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/AliDujie/Quantitative-UX-Research"
+Repository = "https://github.com/AliDujie/Quantitative-UX-Research"
+Issues = "https://github.com/AliDujie/Quantitative-UX-Research/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0", "ruff>=0.1.0"]
@@ -19,7 +38,7 @@ include = ["quantux*"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py38"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I"]
