@@ -82,13 +82,6 @@ quantitative-research heart-framework ab-testing maxdiff
 user-experience metrics python-toolkit openclaw-skill alicloud
 ```
 
-- **完整覆盖** — HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划
-- **CEO 决策支持** — 内置业务影响评估、验证时间线、资源估算
-- **零依赖** — 纯 Python 标准库实现，无外部依赖，5 分钟上手
-- **智能诊断** — 研究需求自动诊断，推荐最佳研究方法组合
-- **双语支持** — 完整中英文文档，适合国际化团队
-- **零学习成本** — API 设计直观，代码示例丰富，即插即用
-
 ### ⚡ 5 分钟快速开始 (Quick Start)
 
 #### 步骤 1: 安装技能
