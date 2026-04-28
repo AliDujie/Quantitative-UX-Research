@@ -220,7 +220,7 @@ choices = [
     [1, 5],  # 任务 2: 最佳=实时协作, 最差=移动端优化
     # ... 更多选择数据
 ]
-analysis = skill.analyze_maxdiff(design, features, choices)
+analysis = skill.design_maxdiff(design, features, choices)
 ```
 
 ### 📁 项目结构
