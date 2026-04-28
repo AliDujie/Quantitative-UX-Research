@@ -182,7 +182,13 @@ Quantitative-UX-Research/
 │   ├── maxdiff.py        # MaxDiff 优先级排序
 │   ├── abtest.py         # A/B 测试设计与分析
 │   ├── research.py       # 研究规划与报告生成
-├── references/           # 知识库文档（待补充）
+├── references/           # 知识库文档（5 篇方法论文档）
+│   ├── README.md
+│   ├── heart-framework.md    # HEART 框架完整指南
+│   ├── csat-methods.md       # CSat 调查设计与分析方法论
+│   ├── ab-testing.md         # A/B 测试设计原则与最佳实践
+│   ├── maxdiff-guide.md      # MaxDiff 优先级排序方法指南
+│   └── log-analysis.md       # 日志序列分析方法论
 ├── quantux/tests/        # 测试套件
 ```
 
