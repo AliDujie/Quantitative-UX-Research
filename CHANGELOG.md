@@ -1,6 +1,12 @@
 # Changelog — Quantitative UX Research
 
 
+
+## [2.2.4] — 2026-04-29
+
+### Fixed
+- Removed duplicate '为什么使用这个技能？' bullet points that appeared after GitHub Topics section (content was repeated twice)
+
 ## [2.2.3] — 2026-04-28
 
 ### Fixed
