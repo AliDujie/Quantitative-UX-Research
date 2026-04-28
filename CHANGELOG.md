@@ -1,5 +1,13 @@
 # Changelog — Quantitative UX Research
 
+## [2.2.2] — 2026-04-28
+
+### Added
+- Structured-Thinking-Model cross-references across all ecosystem links
+- Structured-Thinking-Model collaboration scenarios in 配合使用场景
+- Structured-Thinking-Model in English Related Skills bullet list
+- Git version tags (v2.2.2) for release tracking
+
 All notable changes to this project will be documented in this file.
 
 ## [2.2.1] — 2026-04-28
