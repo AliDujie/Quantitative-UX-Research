@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.1] — 2026-04-28
+
+### Added
+- AliDujie Skills Ecosystem banner at README top
+- Quick Reference section linking to 5 reference documents
+- Contributing section with issue/PR links
+- Getting Help section with troubleshooting & community links
+
 ## [2.2.0] — 2026-04-28
 
 ### Added
