@@ -233,8 +233,9 @@ Quantitative-UX-Research/
 - **QuantUX + JTBD** — 用 QuantUX 数据验证 JTBD 机会分数
 - **QuantUX + VPD** — 用 QuantUX 数据验证价值主张假设
 - **QuantUX + Persona** — 用 QuantUX 数据量化人物角色行为特征
+- **QuantUX + Structured-Thinking** — 用结构化思维框架设计研究假设和指标体系
 
-👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [数据叙事](https://github.com/AliDujie/storytelling-with-data) | [价值主张设计](https://github.com/AliDujie/value-proposition-design) | [人物角色](https://github.com/AliDujie/web-persona-skill)
+👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [数据叙事](https://github.com/AliDujie/storytelling-with-data) | [价值主张设计](https://github.com/AliDujie/value-proposition-design) | [人物角色](https://github.com/AliDujie/web-persona-skill) | [结构化思维](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ### 🛠️ 故障排查 (Troubleshooting)
 
@@ -384,6 +385,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 - **[Storytelling-with-Data](https://github.com/AliDujie/storytelling-with-data)** — Data storytelling and visualization
 - **[Value-Proposition-Design](https://github.com/AliDujie/value-proposition-design)** — Value proposition canvas
 - **[Web-Persona-Skill](https://github.com/AliDujie/web-persona-skill)** — Persona creation
+- **[Structured-Thinking-Model](https://github.com/AliDujie/Structured-Thinking-Model)** — 70+ business analysis frameworks
 
 ### 🌟 Why Choose AliDujie Skill Ecosystem?
 
@@ -396,7 +398,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
 
-👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill)
+👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ### 📦 Dependencies
 
