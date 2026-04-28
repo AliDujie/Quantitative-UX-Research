@@ -1,5 +1,13 @@
 # Changelog — Quantitative UX Research
 
+
+## [2.2.3] — 2026-04-28
+
+### Fixed
+- SKILL.md version corrected to 2.2.3 to match pyproject.toml
+- English section "Run Tests" heading made bilingual (Run Tests / 运行测试)
+- Updated pyproject.toml version to 2.2.3
+
 ## [2.2.2] — 2026-04-28
 
 ### Added
@@ -44,3 +52,4 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - README restructured with consistent ecosystem format
+

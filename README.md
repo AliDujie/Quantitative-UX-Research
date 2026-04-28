@@ -408,7 +408,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 ---
 
-## 运行测试
+## Run Tests / 运行测试
 
 ```bash
 cd /path/to/Quantitative-UX-Research
