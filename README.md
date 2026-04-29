@@ -118,7 +118,7 @@ skill.logs_analyzer.add_event("u1", "2024-01-01 10:05", "搜索")
 design = skill.design_maxdiff("功能优先级", ["快速搜索", "价格对比", "评价可信"])
 
 # ===== 场景 5: A/B 测试样本量计算 =====
-sample = skill.calculate_ab_sample_size(baseline_rate=0.15, mde=0.02)
+sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
 
 # ===== 场景 6: 研究需求诊断 =====
 diagnosis = skill.diagnose_request("验证我们的新设计方向")
@@ -163,10 +163,8 @@ survey_md = skill.design_csat_survey(
 
 # 步骤 4: 计算 A/B 测试样本量
 sample = skill.calculate_ab_sample_size(
-    baseline_rate=0.15,   # 基准转化率 15%
-    mde=0.02,             # 最小可检测效应 2%
-    power=0.80,           # 统计功效 80%
-    alpha=0.05            # 显著性水平 5%
+    baseline=0.15,   # 基准转化率 15%
+    mde=0.02,        # 最小可检测效应 2%
 )
 print(f"每组需要 {sample} 个样本")
 ```
@@ -209,18 +207,9 @@ skill = QuantUXSkill("SaaS 协作平台")
 design = skill.design_maxdiff(
     title="Q2 功能优先级排序",
     items=["智能推荐", "实时协作", "版本历史", "权限管理", "API 集成", "移动端优化"],
-    alternatives_per_task=4,
-    tasks=12
+    items_per_screen=4,
 )
-
-# 分析结果
-features = ["智能推荐", "实时协作", "版本历史", "权限管理", "API 集成", "移动端优化"]
-choices = [
-    [0, 3],  # 任务 1: 最佳=智能推荐, 最差=权限管理
-    [1, 5],  # 任务 2: 最佳=实时协作, 最差=移动端优化
-    # ... 更多选择数据
-]
-analysis = skill.design_maxdiff(design, features, choices)
+print(design)
 ```
 
 ### 📁 项目结构
@@ -294,11 +283,11 @@ Quantitative-UX-Research/
 **解决**:
 ```python
 # 样本量过大 (MDE 太小)
-sample = skill.calculate_ab_sample_size(baseline_rate=0.15, mde=0.005)
+sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.005)
 # → 每组需要 ~50,000 样本
 
 # 合理样本量 (MDE 适中)
-sample = skill.calculate_ab_sample_size(baseline_rate=0.15, mde=0.03)
+sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 # → 每组需要 ~3,500 样本
 ```
 
@@ -416,7 +405,7 @@ heart = skill.build_heart_framework()
 survey = skill.design_csat_survey("2024Q1 Satisfaction")
 
 # A/B test sample size
-sample = skill.calculate_ab_sample_size(baseline_rate=0.15, mde=0.02)
+sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
 
 # Research report with CEO analysis
 report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
@@ -492,7 +481,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.2.4
+**版本 / Version**: v2.2.5
 
 ---
 

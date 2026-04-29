@@ -2,6 +2,13 @@
 
 
 
+## [2.2.5] — 2026-04-29
+
+### Fixed
+- README code examples for `calculate_ab_sample_size`: corrected parameter name `baseline_rate` → `baseline` (actual API signature), removed unsupported `power`/`alpha` parameters
+- README code examples for `design_maxdiff`: corrected parameter name `alternatives_per_task` → `items_per_screen`, removed invalid second call with wrong arguments
+- All README code examples now verified against actual Python API
+
 ## [2.2.4] — 2026-04-29
 
 ### Fixed
