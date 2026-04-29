@@ -245,20 +245,23 @@ Quantitative-UX-Research/
 本技能是 **AliDujie UX 研究技能生态系统** 的量化研究层：
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│           AliDujie 技能生态系统 (Skill Ecosystem)            │
-├─────────────────────────────────────────────────────────────┤
-│   📊 Quantitative UX Research ←───→ 📖 Universal Design     │
-│         (量化研究)   三角测量            Methods (通用设计)  │
-│              ↑                          ↓                   │
-│              │                    🎯 JTBD Knowledge          │
-│              │                      (需求洞察)               │
-│   📈 Storytelling with Data ←───→ 💎 Value Proposition      │
-│         (数据叙事)   呈现              Design (价值设计)      │
-│              ↑                          ↑                   │
-│              │                    👤 Web Persona             │
-│              └────────────────────  (人物角色)               │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│            AliDujie 技能生态系统 (Skill Ecosystem)                  │
+├─────────────────────────────────────────────────────────────────────┤
+│   📊 Quantitative UX Research ←───→ 📖 Universal Design Methods     │
+│         (量化研究)   三角测量              (通用设计)                │
+│              ↑                          ↓                         │
+│              │                    🎯 JTBD Knowledge                 │
+│              │                      (需求洞察)                      │
+│   📈 Storytelling with Data ←───→ 💎 Value Proposition Design       │
+│         (数据叙事)   呈现                  (价值设计)                │
+│              ↑                          ↑                         │
+│              │                    👤 Web Persona                    │
+│              └────────────────────  (人物角色)                       │
+│                           ↕                                         │
+│              🧠 Structured-Thinking-Model (结构化思维)               │
+│                  70+ 商业分析框架 · PESTEL · SWOT · 五力模型         │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
 **配合使用场景:**
