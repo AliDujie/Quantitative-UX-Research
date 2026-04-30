@@ -2,7 +2,10 @@
 
 
 
-## [2.2.5] — 2026-04-29
+## [2.2.5]
+
+### Added
+- English documentation: Core Capabilities tables, Practical Examples, Who Is This For, Troubleshooting, Best Practices, User Reviews, Extended Reading, and About sections — 2026-04-29
 
 ### Fixed
 - README code examples for `calculate_ab_sample_size`: corrected parameter name `baseline_rate` → `baseline` (actual API signature), removed unsupported `power`/`alpha` parameters
