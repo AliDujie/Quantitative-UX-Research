@@ -9,6 +9,11 @@
 
 
 
+## [2.2.9] — 2026-04-30
+
+### Added
+- Routine maintenance: verified ecosystem cross-references, updated timestamps
+
 ## [2.2.8] — 2026-04-30
 
 ### Changed
