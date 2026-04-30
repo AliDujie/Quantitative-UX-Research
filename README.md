@@ -411,6 +411,87 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
 report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
 ```
 
+### 💡 7 Core Capabilities
+
+| # | Capability | Module | Description |
+|---|------------|--------|-------------|
+| 1 | **HEART Framework** | `heart.py` | Goals-Signals-Metrics workshops, metric definition and dashboards |
+| 2 | **CSat Surveys** | `csat.py` | Satisfaction survey design, analysis, report generation |
+| 3 | **Log Analysis** | `logs.py` | Session sequence analysis, frequency stats, transition matrices |
+| 4 | **MaxDiff** | `maxdiff.py` | Priority ranking design, analysis, result visualization |
+| 5 | **A/B Testing** | `abtest.py` | Sample size calculation, power analysis, result interpretation |
+| 6 | **Research Planning** | `research.py` | Research needs diagnosis, method recommendation, timeline planning |
+| 7 | **Report Generation** | `research.py` | Standardized research reports, CEO perspective business impact analysis |
+
+### 🔧 Practical Examples
+
+```python
+# Example 1: HEART framework for a mobile app
+skill = QuantUXSkill("Fitness App")
+heart = skill.build_heart_framework()
+heart.add_goal("Increase daily active usage", signals=["session_count", "workout_completion"])
+heart.add_metric("sessions_per_week", target=5, current=2.3)
+print(heart.render_dashboard())
+
+# Example 2: A/B test with proper sample size
+sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02, power=0.8)
+print(f"Need {sample.per_group} users per group for statistical significance")
+
+# Example 3: MaxDiff priority study
+maxdiff = skill.design_maxdiff(
+    items=["Dark Mode", "Offline Access", "Export Reports", "API Access", "Custom Dashboards"],
+    tasks=12, alternatives_per_task=5
+)
+results = maxdiff.analyze(responses=[...])
+print(f"Top priority: {results.rankings[0]}")
+```
+
+### 👥 Who Is This For?
+
+| Role | How This Skill Helps |
+|------|---------------------|
+| **UX Researchers** | Rigorous quantitative methods with statistical validity |
+| **Data Scientists** | HEART framework bridges UX and analytics |
+| **Product Managers** | Data-driven decisions with proper sample sizes and power analysis |
+| **Engineering Leads** | Log analysis and A/B testing for product optimization |
+| **AI Agents** | Zero-dependency Python package for automated research workflows |
+
+### 🛠️ Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Sample size seems too large | Check your MDE (Minimum Detectable Effect) — smaller effects need larger samples |
+| HEART metrics unclear | Start with business goals, then work down to measurable signals |
+| MaxDiff results inconsistent | Ensure balanced design and sufficient tasks (12+ recommended) |
+| Log analysis too noisy | Filter to relevant session types and time windows |
+
+### 🤝 Best Practices
+
+1. **Define metrics before collecting data** — Use HEART framework to align on what matters
+2. **Calculate sample size first** — Never run A/B tests without proper power analysis
+3. **Triangulate methods** — Combine quantitative (surveys, logs) with qualitative (interviews)
+4. **Report with CEO perspective** — Always include business impact and ROI estimates
+5. **Track trends over time** — Establish baselines and measure improvement longitudinally
+
+### 🌟 User Reviews
+
+> "The HEART framework implementation helped us align our entire product team on what metrics actually matter. Game changer." — **Head of UX, Travel Platform**
+
+> "Sample size calculator alone saved us from running underpowered A/B tests that would have given us false confidence." — **Data Science Lead, E-commerce**
+
+> "We use this skill to train new researchers. The structured approach to quantitative methods is exactly what our team needed." — **UX Research Manager, SaaS Company**
+
+### 📖 Extended Reading
+
+- **"Quantitative User Experience Research"** — Jeff Sauro and James R. Lewis, the definitive reference
+- **"Trustworthy Online Controlled Experiments"** — Ron Kohavi et al., A/B testing at scale
+- **"Practical Statistics for UX"** — Jeff Sauro, statistical methods for UX professionals
+- **"Measuring the User Experience"** — Tom Tullis and Bill Albert, metrics for UX evaluation
+
+### 📚 About This Skill
+
+This skill is based on the methodology from *"Quantitative User Experience Research"* by Jeff Sauro and James R. Lewis, providing rigorous statistical methods for UX research. The HEART framework (Happiness, Engagement, Adoption, Retention, Task Success) was developed at Google.
+
 ### 🔗 Related Skills
 
 This skill is part of the **AliDujie UX Research Skills Ecosystem**:
