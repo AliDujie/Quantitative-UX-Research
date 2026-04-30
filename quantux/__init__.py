@@ -142,7 +142,7 @@ class QuantUXSkill:
         lines.append("### UX指标 → 业务指标映射\n")
         lines.append("| UX指标 | 业务指标 | 影响系数 | 说明 |\n")
         lines.append("|--------|----------|----------|------|\n")
-        
+
         # 默认映射关系
         default_mappings = [
             ("任务完成率", "转化率", "+15%", "任务完成率每提升10%，转化率提升1.5%"),
@@ -151,47 +151,47 @@ class QuantUXSkill:
             ("错误率", "客服成本", "-20%", "错误率每降低10%，客服成本降低2%"),
             ("NPS", "推荐率", "+25%", "NPS每提升10点，推荐率提升2.5%"),
         ]
-        
+
         for ux_metric, biz_metric, impact, note in default_mappings:
             lines.append(f"| {ux_metric} | {biz_metric} | {impact} | {note} |\n")
-        
+
         lines.append("\n### ROI 估算\n")
         lines.append("**投资回报率计算模型:**\n")
         lines.append("```\n")
         lines.append("ROI = (业务收益 - 研究投入) / 研究投入 × 100%\n")
         lines.append("```\n\n")
-        
+
         lines.append("**预期收益 (基于历史数据):**\n")
         lines.append("- 转化率提升: 2-5%\n")
         lines.append("- 用户留存提升: 3-8%\n")
         lines.append("- 客服成本降低: 15-25%\n")
         lines.append("- 预估年度收益: ¥500,000 - ¥2,000,000\n\n")
-        
+
         lines.append("**研究投入:**\n")
         lines.append("- 人力成本: ¥150,000\n")
         lines.append("- 工具成本: ¥50,000\n")
         lines.append("- 用户激励: ¥30,000\n")
         lines.append("- 总投入: ¥230,000\n\n")
-        
+
         lines.append("**预期 ROI:** 117% - 770%\n")
-        
+
         lines.append("\n### 敏感性分析\n")
         lines.append("**关键假设验证:**\n")
         lines.append("1. **转化率提升假设** (保守/基准/乐观):\n")
         lines.append("   - 保守: +1.5% → ROI: 117%\n")
         lines.append("   - 基准: +3.5% → ROI: 348%\n")
         lines.append("   - 乐观: +5.0% → ROI: 770%\n\n")
-        
+
         lines.append("2. **用户留存提升假设**:\n")
         lines.append("   - 保守: +3% → LTV提升 ¥120/用户\n")
         lines.append("   - 基准: +5% → LTV提升 ¥200/用户\n")
         lines.append("   - 乐观: +8% → LTV提升 ¥320/用户\n\n")
-        
+
         lines.append("3. **风险因素:**\n")
         lines.append("- ⚠️ 市场竞争加剧可能影响转化率提升效果\n")
         lines.append("- ⚠️ 用户行为变化可能降低留存提升幅度\n")
         lines.append("- ⚠️ 实施周期延长可能推迟收益实现\n")
-        
+
         return "".join(lines)
 
     def generate_validation_timeline(self) -> str:
@@ -201,7 +201,7 @@ class QuantUXSkill:
         lines.append("```\n")
         lines.append("阶段1: 准备与设计 (2周) → 阶段2: 数据收集 (4周) → 阶段3: 分析与洞察 (3周) → 阶段4: 验证与迭代 (2周)\n")
         lines.append("```\n\n")
-        
+
         lines.append("### 阶段1: 准备与设计 (Week 1-2)\n")
         lines.append("**里程碑:** 研究方案定稿\n")
         lines.append("**关键活动:**\n")
@@ -209,11 +209,11 @@ class QuantUXSkill:
         lines.append("- [ ] HEART框架构建 (2天)\n")
         lines.append("- [ ] 研究方法设计 (3天)\n")
         lines.append("- [ ] 数据采集方案制定 (2天)\n\n")
-        
+
         lines.append("**决策点:** 方案评审通过\n")
         lines.append("- ✅ 通过 → 进入数据收集\n")
         lines.append("- ❌ 需调整 → 优化方案后重新评审\n\n")
-        
+
         lines.append("### 阶段2: 数据收集 (Week 3-6)\n")
         lines.append("**里程碑:** 数据采集完成\n")
         lines.append("**关键活动:**\n")
@@ -222,11 +222,11 @@ class QuantUXSkill:
         lines.append("- [ ] MaxDiff实验执行 (1周)\n")
         lines.append("- [ ] A/B测试准备与执行 (2周)\n")
         lines.append("- [ ] 数据质量监控 (持续)\n\n")
-        
+
         lines.append("**决策点:** 数据质量达标\n")
         lines.append("- ✅ 达标 → 进入分析阶段\n")
         lines.append("- ❌ 不达标 → 延长收集周期或调整采样策略\n\n")
-        
+
         lines.append("### 阶段3: 分析与洞察 (Week 7-9)\n")
         lines.append("**里程碑:** 洞察报告完成\n")
         lines.append("**关键活动:**\n")
@@ -235,11 +235,11 @@ class QuantUXSkill:
         lines.append("- [ ] 统计分析与假设检验 (5天)\n")
         lines.append("- [ ] 洞察提炼与可视化 (5天)\n")
         lines.append("- [ ] 业务影响评估 (2天)\n\n")
-        
+
         lines.append("**决策点:** 洞察价值确认\n")
         lines.append("- ✅ 有价值 → 进入验证阶段\n")
         lines.append("- ❌ 价值不足 → 补充数据或重新分析\n\n")
-        
+
         lines.append("### 阶段4: 验证与迭代 (Week 10-11)\n")
         lines.append("**里程碑:** 验证报告交付\n")
         lines.append("**关键活动:**\n")
@@ -247,12 +247,12 @@ class QuantUXSkill:
         lines.append("- [ ] 行动计划制定 (2天)\n")
         lines.append("- [ ] 小规模验证测试 (3天)\n")
         lines.append("- [ ] 最终报告优化 (3天)\n\n")
-        
+
         lines.append("**决策点:** 资源投入决策\n")
         lines.append("- ✅ 批准 → 启动优化项目\n")
         lines.append("- ⏸️ 有条件 → 补充验证后决策\n")
         lines.append("- ❌ 暂缓 → 重新评估优先级\n\n")
-        
+
         lines.append("### 关键时间节点\n")
         lines.append("| 里程碑 | 预计完成时间 | 交付物 |\n")
         lines.append("|--------|--------------|--------|\n")
@@ -260,7 +260,7 @@ class QuantUXSkill:
         lines.append("| 数据采集完成 | Week 6 | 原始数据集 |\n")
         lines.append("| 洞察报告完成 | Week 9 | 分析报告 |\n")
         lines.append("| 验证报告交付 | Week 11 | 最终报告 + 行动计划 |\n")
-        
+
         return "".join(lines)
 
     def generate_resource_estimate(self) -> str:
@@ -275,7 +275,7 @@ class QuantUXSkill:
         lines.append("| 工程师 | 40小时 | ¥450 | ¥18,000 | 数据采集工具开发 |\n")
         lines.append("| 视觉设计师 | 20小时 | ¥300 | ¥6,000 | 报告可视化 |\n")
         lines.append("| **合计** | **340小时** | - | **¥118,000** | - |\n\n")
-        
+
         lines.append("### 工具与平台\n")
         lines.append("| 工具类型 | 具体工具 | 成本 | 用途 |\n")
         lines.append("|----------|----------|------|------|\n")
@@ -285,7 +285,7 @@ class QuantUXSkill:
         lines.append("| A/B测试平台 | Optimizely/VWO | ¥12,000 | A/B测试执行 |\n")
         lines.append("| 用户行为分析 | 神策数据/ GrowingIO | ¥20,000 | 日志分析 |\n")
         lines.append("| **合计** | - | **¥65,000** | - |\n\n")
-        
+
         lines.append("### 用户激励\n")
         lines.append("| 激励类型 | 人数 | 单价 | 总成本 |\n")
         lines.append("|----------|------|------|--------|\n")
@@ -294,7 +294,7 @@ class QuantUXSkill:
         lines.append("| MaxDiff实验奖励 | 100人 | ¥30 | ¥3,000 |\n")
         lines.append("| A/B测试用户补偿 | 200人 | ¥20 | ¥4,000 |\n")
         lines.append("| **合计** | **820人** | - | **¥16,000** |\n\n")
-        
+
         lines.append("### 总投入汇总\n")
         lines.append("| 类别 | 金额 | 占比 |\n")
         lines.append("|------|------|------|\n")
@@ -303,89 +303,89 @@ class QuantUXSkill:
         lines.append("| 用户激励 | ¥16,000 | 7%\n")
         lines.append("| 其他费用 (培训、沟通等) | ¥31,000 | 14%\n")
         lines.append("| **总计** | **¥230,000** | **100%** |\n\n")
-        
+
         lines.append("### 投入产出比分析\n")
         lines.append("**保守场景:**\n")
         lines.append("- 投入: ¥230,000\n")
         lines.append("- 产出: ¥500,000 (转化率+1.5%)\n")
         lines.append("- ROI: 117%\n")
         lines.append("- 回本周期: 8个月\n\n")
-        
+
         lines.append("**基准场景:**\n")
         lines.append("- 投入: ¥230,000\n")
         lines.append("- 产出: ¥1,020,000 (转化率+3.5%)\n")
         lines.append("- ROI: 348%\n")
         lines.append("- 回本周期: 4个月\n\n")
-        
+
         lines.append("**乐观场景:**\n")
         lines.append("- 投入: ¥230,000\n")
         lines.append("- 产出: ¥2,000,000 (转化率+5.0%)\n")
         lines.append("- ROI: 770%\n")
         lines.append("- 回本周期: 2个月\n\n")
-        
+
         lines.append("### 资源优化建议\n")
         lines.append("1. **人力优化:**\n")
         lines.append("   - 复用现有数据分析师，降低 ¥32,000 成本\n")
         lines.append("   - 使用内部工具平台，降低 ¥15,000 成本\n\n")
-        
+
         lines.append("2. **工具优化:**\n")
         lines.append("   - 使用开源工具 (R, Python) 替代商业软件\n")
         lines.append("   - 利用现有 BI 平台，避免重复采购\n\n")
-        
+
         lines.append("3. **激励优化:**\n")
         lines.append("   - 采用积分奖励替代现金，降低 30% 成本\n")
         lines.append("   - 提高问卷完成率，减少样本需求\n\n")
-        
+
         lines.append("**优化后总投入:** ¥150,000 - ¥180,000\n")
         lines.append("**优化后 ROI:** 178% - 1,233%\n")
-        
+
         return "".join(lines)
 
-    def generate_report(self, title: str = "定量UX研究报告", 
+    def generate_report(self, title: str = "定量UX研究报告",
                        include_ceo_analysis: bool = True,
                        metrics: Optional[Dict] = None) -> str:
         """生成完整的定量UX研究报告，包含CEO决策模块"""
         lines = [f"# {title}\n"]
         lines.append(f"**产品:** {self.product}\n")
         lines.append(f"**生成时间:** {self._get_current_time()}\n\n")
-        
+
         # 原有定量研究报告内容
         lines.append("## 研究概述\n")
         lines.append("本报告基于定量UX研究方法，全面评估产品用户体验现状，")
         lines.append("并提供数据驱动的优化建议。\n\n")
-        
+
         lines.append("## 核心指标\n")
         lines.append("### HEART 框架指标\n")
         heart_framework = self.build_heart_framework()
         lines.append(heart_framework)
         lines.append("\n")
-        
+
         # 添加CEO决策模块
         if include_ceo_analysis:
             lines.append("\n---\n")
             lines.append("# CEO 决策支持模块\n\n")
-            
+
             lines.append(self.generate_business_impact(metrics))
             lines.append("\n\n")
-            
+
             lines.append(self.generate_validation_timeline())
             lines.append("\n\n")
-            
+
             lines.append(self.generate_resource_estimate())
             lines.append("\n\n")
-        
+
         lines.append("## 结论与建议\n")
         lines.append("基于以上分析，我们建议：\n")
         lines.append("1. 优先改进任务完成率，预期可提升转化率 2-5%\n")
         lines.append("2. 优化关键路径的用户体验，降低任务时间 15%\n")
         lines.append("3. 建立持续的用户满意度监测机制\n")
         lines.append("4. 投入资源进行系统性优化，预期 ROI 为 348%\n\n")
-        
+
         lines.append("---\n")
         lines.append("*本报告由 QuantUXSkill 自动生成*\n")
-        
+
         return "".join(lines)
-    
+
     def _get_current_time(self) -> str:
         """获取当前时间字符串"""
         from datetime import datetime
