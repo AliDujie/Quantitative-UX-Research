@@ -9,6 +9,16 @@
 
 
 
+## [2.2.10] — 2026-05-01
+
+### Added
+- "When to Use This Skill" decision guide section for quick skill selection
+- Version badge in README header
+
+### Fixed
+- Corrected book author attribution: Chapman & Rodden → Jeff Sauro & James R. Lewis (actual authors of "Quantitative User Experience Research", 2023)
+- Minor formatting improvements for consistency
+
 ## [2.2.9] — 2026-04-30
 
 ### Added

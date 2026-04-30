@@ -3,15 +3,33 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Version](https://img.shields.io/badge/version-2.2.10-green.svg)](CHANGELOG.md)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
 
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
 
-基于《Quantitative User Experience Research》(Chapman & Rodden, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
+基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
 [English](#english) | [中文](#中文说明)
+
+---
+
+### 🤔 什么时候使用这个技能？(When to Use This Skill?)
+
+| 你的场景 | 推荐技能 |
+|----------|----------|
+| 需要定量验证假设、设计 A/B 测试、计算样本量 | ✅ **Quantitative UX Research** (本技能) |
+| 需要选择研究方法、设计访谈、执行可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 需要理解用户"工作"、机会评分、竞争分析 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 需要创建人物角色、用户细分、设计指导 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| 需要价值主张画布、实验验证、优先级排序 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 需要商业分析框架、结构化思维、战略决策 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
+
+> 💡 **提示**: QuantUX 与 UDM 配合使用，实现定性定量三角验证，提升研究信度。
+
 
 ---
 
@@ -348,7 +366,7 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 
 ### 📖 扩展阅读
 
-- **《Quantitative User Experience Research》** - Chapman & Rodden (2023)
+- **《Quantitative User Experience Research》** - Jeff Sauro & James R. Lewis (2023)
 - **《Trustworthy Online Controlled Experiments》** - Kohavi, Tang & Xu (A/B 测试经典)
 - **《Practical Statistics for UX》** - Jeff Sauro (UX 统计入门)
 - **《Bayesian Methods for Hackers》** - Cameron Davidson-Pilon (贝叶斯方法)
@@ -356,7 +374,7 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 ### 📚 关于《Quantitative User Experience Research》
 
 - **书名**: Quantitative User Experience Research
-- **作者**: Nigel Chapman & Garreth Rodden
+- **作者**: Jeff Sauro & James R. Lewis
 - **出版**: 2023
 - **内容**: HEART 框架、实验设计、统计分析、调查方法
 - **适用**: UX 研究员、数据分析师、产品经理、实验科学家
@@ -552,12 +570,12 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ## 📜 许可 (License)
 
-基于《Quantitative User Experience Research》by Chapman & Rodden (2023)。
+基于《Quantitative User Experience Research》by Jeff Sauro & James R. Lewis (2023)。
 本技能仅供内部学习和研究使用。
 
 ## 👨💻 作者 (Credits)
 
-- 基于《Quantitative User Experience Research》by Chapman & Rodden
+- 基于《Quantitative User Experience Research》by Jeff Sauro & James R. Lewis
 - 技能开发：AliDujie 团队
 - **GitHub**: [@AliDujie](https://github.com/AliDujie)
 - **Emp ID**: 27768

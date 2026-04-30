@@ -1,12 +1,12 @@
 ---
 name: quantitative-ux-research
-description: 量化用户体验研究执行技能。基于 Chapman & Rodden 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
-version: "2.2.6"
+description: 量化用户体验研究执行技能。基于 Jeff Sauro & James R. Lewis 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
+version: "2.2.10"
 ---
 
 # Quantitative UX Research Skill
 
-基于《Quantitative User Experience Research》(Chapman & Rodden, 2023) 的量化用户体验研究执行技能。
+基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的量化用户体验研究执行技能。
 
 ## 一、核心理论
 
@@ -262,7 +262,7 @@ python -m pytest quantux/tests/test_all.py -v  # pytest
 
 | 书名 | 作者 | 关键贡献 |
 |------|------|---------|
-| **Quantitative User Experience Research** | Chapman & Rodden (2023) | 本 Skill 理论基础 |
+| **Quantitative User Experience Research** | Jeff Sauro & James R. Lewis (2023) | 本 Skill 理论基础 |
 | R/Python for Marketing Research and Analytics | Chapman & Feit | 统计分析实践 |
 | Trustworthy Online Controlled Experiments | Kohavi, Tang & Xu | A/B 测试方法论 |
 | Quantifying the User Experience | Sauro & Lewis | UX 量化方法 |
