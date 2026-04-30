@@ -583,7 +583,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.2.9
+**版本 / Version**: v2.2.10
 
 ---
 
