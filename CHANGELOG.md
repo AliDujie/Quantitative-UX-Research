@@ -2,6 +2,12 @@
 
 
 
+## [2.2.8] — 2026-04-30
+
+### Changed
+- Updated README version to v2.2.8
+- Routine maintenance update
+
 ## [2.2.5]
 
 ### Added
