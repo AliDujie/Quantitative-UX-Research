@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.2.11-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.0-green.svg)](CHANGELOG.md)
 
 > 📅 **Last Updated:** 2026-05-01
 
@@ -656,53 +656,6 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 > 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
 
-### 🏷️ GitHub Topics（推荐）
-
-```
-quantitative-ux-research heart-framework ab-testing maxdiff
-ux-metrics data-driven python-toolkit openclaw-skill alicloud
-```
-
----
-
-### 🌟 Why Choose AliDujie Skill Ecosystem?
-
-This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the complete ecosystem provides:
-
-- ✅ **Complete Coverage** — From user research to product design to data presentation, full-process tool support
-- ✅ **Seamless Integration** — All skills use consistent API design and data formats
-- ✅ **Best Practices** — Based on classic theories and practical experience, avoid common pitfalls
-- ✅ **Active Maintenance** — Regularly updated with new features and improvements
-- ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
-- ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
-
-👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
-
-## 🤝 参与贡献 (Contributing)
-
-欢迎贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
-
-- 🐛 **报告 Bug**: 提交 [Issue](https://github.com/AliDujie/Quantitative-UX-Research/issues)
-- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AliDujie/Quantitative-UX-Research/issues/new?template=feature_request.md)
-- 📝 **改进文档**: PR 欢迎，特别是参考文档和代码示例
-
-## 🆘 获取帮助 (Getting Help)
-
-- 📖 查看 [故障排查](#故障排查-troubleshooting) 部分
-- 📚 阅读 [references/](references/) 目录下的方法论文档
-- 💬 在 [Issues](https://github.com/AliDujie/Quantitative-UX-Research/issues) 中提问
-
-## 📜 许可 (License)
-
-本技能仅供内部学习和研究使用。详见 [LICENSE](LICENSE) 文件。
-
-## 👨‍💻 作者 (Credits)
-
-- 基于《Quantitative User Experience Research》by Jeff Sauro & James R. Lewis (2023)
-- 技能开发：AliDujie 团队
-- **GitHub**: [@AliDujie](https://github.com/AliDujie)
-- **Emp ID**: 27768
-- **Nickname**: 渡劫
 
 ## 📋 版本历史 (Changelog)
 
@@ -716,4 +669,4 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 ---
 
-*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.2.11*
+*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.3.0*

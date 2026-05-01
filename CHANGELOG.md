@@ -1,5 +1,11 @@
 # Changelog — Quantitative UX Research
 
+## [R24] - 2026-05-02
+
+### Changed
+- Version bump to v2.3.0
+- Routine README maintenance: verified completeness and cross-references
+
 ## [R23] - 2026-05-01
 
 ### Maintenance
