@@ -1,5 +1,11 @@
 # Changelog — Quantitative UX Research
 
+## [R23] - 2026-05-01
+
+### Maintenance
+- Routine README maintenance: verified code examples, cross-references, and bilingual consistency
+- Confirmed "When to Use This Skill?" decision guide already present (added in earlier release)
+
 ## [R22] - 2026-05-01
 
 ### Maintenance
