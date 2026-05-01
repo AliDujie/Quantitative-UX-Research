@@ -9,7 +9,7 @@
 
 
 
-## [2.2.10] — 2026-05-01
+## [2.2.11] — 2026-05-01
 
 ### Added
 - "When to Use This Skill" decision guide section for quick skill selection
