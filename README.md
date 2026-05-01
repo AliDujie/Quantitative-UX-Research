@@ -604,6 +604,60 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
+## 🔗 Skill Ecosystem Workflow
+
+QuantUX is the quantitative research layer of the **AliDujie UX Research Skills Ecosystem**. Here are typical workflows combining it with other skills:
+
+### 🧭 Quick Decision Guide
+
+Not sure which skill to use? Follow these steps:
+
+| Your Question | Recommended Skill |
+|---------------|------------------|
+| "I need to validate a hypothesis" | → **Quantitative UX Research** (this skill) — A/B testing, sample size, HEART framework |
+| "I don't know what research to do" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — Method recommendation |
+| "I want to understand why users do this" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — Uncover the underlying "jobs" |
+| "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
+| "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
+| "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+
+### Workflow 1: Research → Quantitative Validation → Story
+
+```
+UDM/JTBD (qualitative insights) → QuantUX (quantitative validation) → SWD (storytelling)
+```
+
+**Scenario**: Validating user research findings
+1. Use UDM or JTBD to collect qualitative user insights
+2. Use QuantUX to design surveys, A/B tests, and calculate statistical significance
+3. Use SWD to transform validated results into compelling data narratives
+
+### Workflow 2: HEART Metrics → Business Decisions
+
+```
+QuantUX (HEART framework) → VPD (value validation) → CEO review
+```
+
+**Scenario**: Product direction decisions
+1. Use QuantUX to build HEART metrics system (Happiness, Engagement, Adoption, Retention, Task success)
+2. Use VPD to validate value proposition hypotheses
+3. Use CEO review framework to assess business impact
+
+### Workflow 3: User Segments → Targeted Testing
+
+```
+Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportunity scoring)
+```
+
+**Scenario**: Personalized product optimization
+1. Use Persona to create user segments
+2. Use QuantUX to design stratified A/B tests for each segment
+3. Use JTBD to calculate opportunity scores per segment
+
+> 💡 **Tip**: QuantUX's CEO-perspective reporting is especially powerful for presenting research results to executive stakeholders.
+
+---
+
 ## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
 
 本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层。以下是与其他技能配合使用的典型工作流：
