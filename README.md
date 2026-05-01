@@ -4,8 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.3.0-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
-> 📅 **Last Updated:** 2026-05-01
+> 📅 **Last Updated:** 2026-05-02
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
@@ -404,7 +405,7 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 
 ### 🌟 Why Use This Skill?
 
-- **Complete Coverage** — HEART framework, CSat surveys, log analysis, MaxDiff, A/B testing, research planning
+- **Complete Coverage** — HEART framework, CSat surveys, log analysis, MaxDiff, A/B testing, research planning, CEO decision support
 - **CEO Decision Support** — Built-in business impact assessment, validation timeline, resource estimation
 - **Zero Dependencies** — Pure Python standard library, ready to use out of the box
 - **Smart Diagnosis** — Auto-diagnose research needs and recommend best method combinations
@@ -445,7 +446,7 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
 report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
 ```
 
-### 💡 7 Core Capabilities
+### 💡 10 Core Capabilities
 
 | # | Capability | Module | Description |
 |---|------------|--------|-------------|
@@ -456,6 +457,9 @@ report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
 | 5 | **A/B Testing** | `abtest.py` | Sample size calculation, power analysis, result interpretation |
 | 6 | **Research Planning** | `research.py` | Research needs diagnosis, method recommendation, timeline planning |
 | 7 | **Report Generation** | `research.py` | Standardized research reports, CEO perspective business impact analysis |
+| 8 | **CEO: Business Impact** | `research.py` | UX-to-business metric mapping, ROI estimation |
+| 9 | **CEO: Validation Timeline** | `research.py` | 4-phase timeline with milestones and decision points |
+| 10 | **CEO: Resource Estimation** | `research.py` | Headcount, tools, incentive cost estimation |
 
 ### 🔧 Practical Examples
 
@@ -661,7 +665,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.2.11 | 2026-05-01 | 添加 "When to Use This Skill?" 决策指南，更新维护 |
+| v2.3.1 | 2026-05-02 | 修复 Python 版本不一致 (3.9+→3.8+)，添加 Last Updated badge，补充 CEO 能力到英文能力表 |
 | v2.2.10 | 2026-05-01 | 统一交叉引用为 GitHub 绝对链接，更新 Last Updated 日期 |
 | v2.2.9 | 2026-04-28 | 添加 Badges、技能生态系统图、双语支持 |
 | v2.2.0 | 2026-04-23 | 添加版本历史、快速参考、CEO 视角扩展 |
@@ -669,4 +673,4 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.3.0*
+*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.3.1*

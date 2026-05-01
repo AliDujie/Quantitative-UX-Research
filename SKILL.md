@@ -77,7 +77,7 @@ Quantitative-UX-Research/
 
 ### 5.1 安装与依赖
 
-纯 Python 实现，无外部依赖，仅需 Python 3.9+。
+纯 Python 实现，无外部依赖，仅需 Python 3.8+。
 
 ```bash
 import sys; sys.path.insert(0, "/path/to/Quantitative-UX-Research")
