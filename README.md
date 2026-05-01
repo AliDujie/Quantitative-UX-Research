@@ -5,6 +5,8 @@
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.2.11-green.svg)](CHANGELOG.md)
 
+> 📅 **Last Updated:** 2026-05-01
+
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
 
@@ -82,6 +84,17 @@
 - **智能诊断** — 自动诊断研究需求，推荐最佳方法组合
 - **双语支持** — 完整中英文文档，适合国际化团队
 - **零学习成本** — API 设计直观，代码示例丰富，即插即用
+
+### 🎯 Features at a Glance / 功能一览
+
+| 功能 | 说明 |
+|------|------|
+| 7 大执行能力 | HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、报告生成 |
+| HEART 框架 | Google 出品的指标体系构建方法论 |
+| A/B 测试设计 | 样本量计算、功效分析、统计显著性检验 |
+| MaxDiff 优先级 | 科学的优先级排序方法 |
+| 日志序列分析 | 用户行为路径分析和转移矩阵 |
+| CEO 视角报告 | 业务影响评估和 ROI 估算 |
 
 ### 👥 适合谁？(Who Is This For?)
 
@@ -590,6 +603,23 @@ python3 -m pytest quantux/tests/test_all.py -v
 ## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
 
 本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层。以下是与其他技能配合使用的典型工作流：
+
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+不确定该用哪个技能？按以下步骤选择：
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "我不知道该研究什么" | → **Universal Design Methods** — 方法推荐帮你找到方向 |
+| "我需要验证一个假设" | → **Quantitative UX Research** — A/B 测试和样本量计算 |
+| "我想理解用户为什么这样做" | → **JTBD Knowledge** — 挖掘用户背后的"工作" |
+| "我需要知道用户是谁" | → **Web Persona** — 创建具体的人物角色 |
+| "我的产品价值够不够？" | → **Value Proposition Design** — 契合度诊断 |
+| "我怎么把研究结果讲清楚？" | → **Storytelling with Data** — 数据叙事和图表改造 |
+| "我需要一个完整的流程" | → **组合使用** — 见下方工作流 |
+
+> 💡 **提示**: 这些技能设计为可组合使用。从 UDM 或 JTBD 开始，用 QuantUX 验证，用 SWD 呈现。
 
 ### 工作流 1: 定性 → 定量三角验证
 
