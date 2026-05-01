@@ -655,3 +655,65 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 3. 用 JTBD 计算各细分的机会分数
 
 > 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
+
+### 🏷️ GitHub Topics（推荐）
+
+```
+quantitative-ux-research heart-framework ab-testing maxdiff
+ux-metrics data-driven python-toolkit openclaw-skill alicloud
+```
+
+---
+
+### 🌟 Why Choose AliDujie Skill Ecosystem?
+
+This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the complete ecosystem provides:
+
+- ✅ **Complete Coverage** — From user research to product design to data presentation, full-process tool support
+- ✅ **Seamless Integration** — All skills use consistent API design and data formats
+- ✅ **Best Practices** — Based on classic theories and practical experience, avoid common pitfalls
+- ✅ **Active Maintenance** — Regularly updated with new features and improvements
+- ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
+- ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
+
+👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+
+## 🤝 参与贡献 (Contributing)
+
+欢迎贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
+
+- 🐛 **报告 Bug**: 提交 [Issue](https://github.com/AliDujie/Quantitative-UX-Research/issues)
+- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AliDujie/Quantitative-UX-Research/issues/new?template=feature_request.md)
+- 📝 **改进文档**: PR 欢迎，特别是参考文档和代码示例
+
+## 🆘 获取帮助 (Getting Help)
+
+- 📖 查看 [故障排查](#故障排查-troubleshooting) 部分
+- 📚 阅读 [references/](references/) 目录下的方法论文档
+- 💬 在 [Issues](https://github.com/AliDujie/Quantitative-UX-Research/issues) 中提问
+
+## 📜 许可 (License)
+
+本技能仅供内部学习和研究使用。详见 [LICENSE](LICENSE) 文件。
+
+## 👨‍💻 作者 (Credits)
+
+- 基于《Quantitative User Experience Research》by Jeff Sauro & James R. Lewis (2023)
+- 技能开发：AliDujie 团队
+- **GitHub**: [@AliDujie](https://github.com/AliDujie)
+- **Emp ID**: 27768
+- **Nickname**: 渡劫
+
+## 📋 版本历史 (Changelog)
+
+| 版本 | 日期 | 变更 |
+|------|------|------|
+| v2.2.11 | 2026-05-01 | 添加 "When to Use This Skill?" 决策指南，更新维护 |
+| v2.2.10 | 2026-05-01 | 统一交叉引用为 GitHub 绝对链接，更新 Last Updated 日期 |
+| v2.2.9 | 2026-04-28 | 添加 Badges、技能生态系统图、双语支持 |
+| v2.2.0 | 2026-04-23 | 添加版本历史、快速参考、CEO 视角扩展 |
+| v1.0 | 2026-04-22 | 初始版本 |
+
+---
+
+*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.2.11*

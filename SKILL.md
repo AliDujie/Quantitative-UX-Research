@@ -1,7 +1,7 @@
 ---
 name: quantitative-ux-research
 description: 量化用户体验研究执行技能。基于 Jeff Sauro & James R. Lewis 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
-version: "2.2.10"
+version: "2.2.11"
 ---
 
 # Quantitative UX Research Skill
@@ -230,9 +230,24 @@ python -m pytest quantux/tests/test_all.py -v  # pytest
 
 | 协作场景 | 协作 Skill | 工作流 |
 |---------|-----------|--------|
-| 研究报告可视化 | Storytelling-with-Data | Quant UXR 数据 -> SWD 图表 -> SWD 故事 |
-| 价值主张验证 | Value-Proposition-Design | VPD 假设 -> Quant UXR 验证 -> SWD 汇报 |
-| JTBD 研究量化 | JTBD-Knowledge | JTBD 定性发现 -> Quant UXR 量化验证 |
+| 研究报告可视化 | Storytelling with Data | Quant UXR 数据 -> SWD 图表 -> SWD 故事 |
+| 价值主张验证 | Value Proposition Design | VPD 假设 -> Quant UXR 验证 -> SWD 汇报 |
+| JTBD 研究量化 | JTBD Knowledge | JTBD 定性发现 -> Quant UXR 量化验证 -> JTBD 机会评分 |
+| 研究方法论选择 | Universal Design Methods | UDM 方法推荐 -> Quant UXR 定量执行 -> UDM 综合报告 |
+| 用户细分验证 | Web Persona | Persona 角色定义 -> Quant UXR 分层 A/B 测试 -> Persona 精化 |
+| 结构化分析补充 | Structured Thinking Model | STM 分析框架 -> Quant UXR 数据验证 -> STM 决策建议 |
+
+**协作示例（QuantUX + SWD）**：
+```python
+# Step 1: QuantUX 产出 HEART 指标
+quant = QuantUXSkill("电商平台")
+heart = quant.build_heart_framework()
+# Step 2: SWD 将指标可视化
+from swd import SWDSkill
+swd = SWDSkill("HEART 指标汇报")
+chart = swd.recommend_chart(data_type="categorical", category_count=5)
+story = swd.build_story(protagonist="产品团队", imbalance="用户留存率低于目标")
+```
 
 ---
 
