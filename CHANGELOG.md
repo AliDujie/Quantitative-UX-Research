@@ -1,5 +1,11 @@
 # Changelog — Quantitative UX Research
 
+## [R22] - 2026-05-01
+
+### Maintenance
+- Routine README maintenance: verified code examples, cross-references, and bilingual consistency
+- Confirmed all files present (INSTALL.md, CODE_OF_CONDUCT.md, etc.)
+
 ## [R20] - 2026-05-01
 
 ### Maintenance
