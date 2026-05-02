@@ -1,7 +1,7 @@
 ---
 name: quantitative-ux-research
 description: 量化用户体验研究执行技能。基于 Jeff Sauro & James R. Lewis 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
-version: "2.3.3"
+version: "2.3.4"
 ---
 
 # Quantitative UX Research Skill

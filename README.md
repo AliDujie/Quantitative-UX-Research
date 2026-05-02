@@ -3,8 +3,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.3-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.4-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-02
 
@@ -426,6 +426,7 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 
 ### 🌟 Why Use This Skill?
 
+- **Industry-Standard Methods** — Based on Jeff Sauro & James R. Lewis's "Quantitative User Experience Research", the definitive reference for quantitative UX
 - **Complete Coverage** — HEART framework, CSat surveys, log analysis, MaxDiff, A/B testing, research planning, CEO decision support
 - **CEO Decision Support** — Built-in business impact assessment, validation timeline, resource estimation
 - **Zero Dependencies** — Pure Python standard library, ready to use out of the box
@@ -600,22 +601,46 @@ This skill is based on the methodology from *"Quantitative User Experience Resea
 
 ### 🔗 Related Skills
 
-This skill is part of the **AliDujie UX Research Skills Ecosystem**:
+This skill is the quantitative research layer of the **AliDujie UX Research Skills Ecosystem**:
 
-- **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
-- **[JTBD-Knowledge-Skill](https://github.com/AliDujie/jtbd-knowledge-skill)** — Jobs-to-be-Done theory
-- **[Storytelling-with-Data](https://github.com/AliDujie/storytelling-with-data)** — Data storytelling and visualization
-- **[Value-Proposition-Design](https://github.com/AliDujie/value-proposition-design)** — Value proposition canvas
-- **[Web-Persona-Skill](https://github.com/AliDujie/web-persona-skill)** — Persona creation
-- **[Structured-Thinking-Model](https://github.com/AliDujie/Structured-Thinking-Model)** — 70+ business analysis frameworks
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│            AliDujie 技能生态系统 (Skill Ecosystem)                  │
+├─────────────────────────────────────────────────────────────────────┤
+│   📊 Quantitative UX Research ←───→ 📖 Universal Design Methods     │
+│         (量化研究)   三角测量              (通用设计)                │
+│              ↑                          ↓                         │
+│              │                    🎯 JTBD Knowledge                 │
+│              │                      (需求洞察)                      │
+│   📈 Storytelling with Data ←───→ 💎 Value Proposition Design       │
+│         (数据叙事)   呈现                  (价值设计)                │
+│              ↑                          ↑                         │
+│              │                    👤 Web Persona                    │
+│              └────────────────────  (人物角色)                       │
+│                           ↕                                         │
+│              🧠 Structured-Thinking-Model (结构化思维)               │
+│                  70+ 商业分析框架 · PESTEL · SWOT · 五力模型         │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Integration patterns:**
+
+- **QuantUX + UDM** — Qualitative-quantitative triangulation for research validity
+- **QuantUX + SWD** — Present HEART metrics and A/B test results with compelling narratives
+- **QuantUX + JTBD** — Validate JTBD opportunity scores with quantitative data
+- **QuantUX + VPD** — Validate value proposition hypotheses with experiments
+- **QuantUX + Persona** — Quantify persona behavior patterns with log analysis
+- **QuantUX + Structured Thinking** — Design research hypotheses with structured frameworks
+
+👉 **Explore the full ecosystem**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ### 🌟 Why Choose AliDujie Skill Ecosystem?
 
 This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the complete ecosystem provides:
 
-- ✅ **Complete Coverage** — From user research to product design to data presentation
+- ✅ **Complete Coverage** — From user research to product design to data presentation, full-process tool support
 - ✅ **Seamless Integration** — All skills use consistent API design and data formats
-- ✅ **Best Practices** — Based on classic theories and practical experience
+- ✅ **Best Practices** — Based on classic theories and practical experience, avoid common pitfalls
 - ✅ **Active Maintenance** — Regularly updated with new features and improvements
 - ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
@@ -633,7 +658,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
+| v2.3.4 | 2026-05-03 | Repo maintenance: added ecosystem ASCII diagram and integration patterns to English Related Skills section, enhanced Why Choose section with ecosystem benefits |
 | v2.3.2 | 2026-05-02 | Repo maintenance: added English "Who Is This For?" section, GitHub Topics, and changelog to English section |
 | v2.3.1 | 2026-05-02 | Fixed Python version mismatch, added Last Updated badge |
 | v2.2.10 | 2026-05-01 | Unified cross-references to GitHub absolute links |
@@ -678,7 +703,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.3
+**版本 / Version**: v2.3.4
 
 ---
 
@@ -797,6 +822,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
 | v2.3.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
 | v2.3.2 | 2026-05-02 | 仓库维护：优化英文示例代码格式，增强工作流 3 描述，统一交叉引用格式，补充 CEO 能力英文版表格 |
 | v2.3.1 | 2026-05-02 | 修复 Python 版本不一致 (3.9+→3.8+)，添加 Last Updated badge，补充 CEO 能力到英文能力表 |
@@ -807,4 +833,4 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.3.3*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.4*
