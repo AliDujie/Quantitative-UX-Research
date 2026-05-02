@@ -155,8 +155,9 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
 # ===== 场景 6: 研究需求诊断 =====
 diagnosis = skill.diagnose_request("验证我们的新设计方向")
 
-# ===== 场景 7: 研究报告生成 =====
+# ===== 场景 7: 研究报告生成（自动附加 CEO 视角）=====
 report = skill.generate_report("用户体验研究报告", include_ceo_analysis=True)
+# 自动附加：业务影响评估 + 验证时间线 + 资源估算
 ```
 
 ### 💡 10 大核心能力
@@ -176,7 +177,7 @@ report = skill.generate_report("用户体验研究报告", include_ceo_analysis=
 
 ### 🔧 实用示例
 
-#### 示例 1: 完整 HEART 框架工作流
+#### 示例 1: 完整 HEART 框架 + A/B 测试工作流
 
 ```python
 from quantux import QuantUXSkill
@@ -196,12 +197,27 @@ survey_md = skill.design_csat_survey(
     target="过去 30 天活跃用户"
 )
 
-# 步骤 4: 计算 A/B 测试样本量
+# 步骤 4: CSat 分析 — 分析满意度评分分布
+csat_result = skill.analyze_csat(
+    period="2024Q1",
+    sample_size=500,
+    ratings={1: 20, 2: 30, 3: 80, 4: 200, 5: 170}  # 1-5 评分分布
+)
+print(csat_result)  # T2B 评分 + 趋势分析
+
+# 步骤 5: A/B 测试 — 样本量计算 + 结果分析
 sample = skill.calculate_ab_sample_size(
     baseline=0.15,   # 基准转化率 15%
     mde=0.02,        # 最小可检测效应 2%
 )
 print(f"每组需要 {sample} 个样本")
+
+# 步骤 6: A/B 测试结果分析
+ab_result = skill.analyze_ab_test(
+    name_a="原版", n_a=5000, conv_a=1750,   # 原版 35% 转化
+    name_b="新版", n_b=5000, conv_b=1900,   # 新版 38% 转化
+)
+print(ab_result)  # 效应量 + 置信区间 + 决策建议
 ```
 
 #### 示例 2: 日志序列分析
@@ -470,21 +486,33 @@ report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
 # Example 1: HEART framework for a mobile app
 skill = QuantUXSkill("Fitness App")
 heart = skill.build_heart_framework()
-heart.add_goal("Increase daily active usage", signals=["session_count", "workout_completion"])
-heart.add_metric("sessions_per_week", target=5, current=2.3)
-print(heart.render_dashboard())
+print(heart)  # Goals → Signals → Metrics for each dimension
+workshop = skill.get_workshop_guide()  # Facilitate a GSM workshop
 
-# Example 2: A/B test with proper sample size
-sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02, power=0.8)
-print(f"Need {sample.per_group} users per group for statistical significance")
+# Example 2: CSat survey design + analysis
+survey = skill.design_csat_survey("Q4 Satisfaction", mechanism="in_app", target="Active users")
+csat = skill.analyze_csat("2024Q4", 500, {1: 15, 2: 25, 3: 70, 4: 190, 5: 200})
+print(f"Top-2-Box: {csat['t2b']}")  # Percentage of 4-5 ratings
 
-# Example 3: MaxDiff priority study
-maxdiff = skill.design_maxdiff(
-    items=["Dark Mode", "Offline Access", "Export Reports", "API Access", "Custom Dashboards"],
-    tasks=12, alternatives_per_task=5
+# Example 3: A/B test — design and analyze
+sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
+print(f"Need {sample} users per group")
+
+result = skill.analyze_ab_test(
+    name_a="Control", n_a=5000, conv_a=1750,  # 35%
+    name_b="Variant", n_b=5000, conv_b=1900,  # 38%
 )
-results = maxdiff.analyze(responses=[...])
-print(f"Top priority: {results.rankings[0]}")
+print(result)  # Effect size, confidence interval, recommendation
+
+# Example 4: MaxDiff priority study
+maxdiff = skill.design_maxdiff(
+    title="Feature Priorities",
+    items=["Dark Mode", "Offline Access", "Export Reports", "API Access"],
+    items_per_screen=4,
+)
+
+# Example 5: CEO-perspective report (business impact + timeline + resource)
+report = skill.generate_report("Q4 UX Research Report", include_ceo_analysis=True)
 ```
 
 ### 👥 Who Is This For?
