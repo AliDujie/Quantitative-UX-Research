@@ -519,11 +519,11 @@ report = skill.generate_report("Q4 UX Research Report", include_ceo_analysis=Tru
 
 | Role | How This Skill Helps |
 |------|---------------------|
-| **UX Researchers** | Rigorous quantitative methods with statistical validity |
-| **Data Scientists** | HEART framework bridges UX and analytics |
-| **Product Managers** | Data-driven decisions with proper sample sizes and power analysis |
-| **Engineering Leads** | Log analysis and A/B testing for product optimization |
-| **AI Agents** | Zero-dependency Python package for automated research workflows |
+| **UX Researchers** | Build HEART metrics, design A/B tests, analyze behavioral logs |
+| **Data Scientists** | Sample size calculation, power analysis, MaxDiff prioritization |
+| **Product Managers** | Research needs diagnosis, method recommendation, CEO-perspective reports |
+| **Experiment Scientists** | A/B test design, statistical significance testing, result interpretation |
+| **AI Agents** | Zero-dependency Python package for automated quantitative research |
 
 ### 🛠️ Troubleshooting
 
@@ -585,11 +585,20 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
-### 📦 Dependencies
+### 🏷️ GitHub Topics (Recommended)
 
-- Python >= 3.8
-- **No external dependencies** (pure standard library)
-- Cross-platform: macOS / Linux / Windows
+```
+quantitative-research heart-framework ab-testing maxdiff
+user-experience metrics python-toolkit openclaw-skill alicloud
+```
+
+### 📋 Changelog
+
+| Version | Date | Changes |
+|---------|------|--------|
+| v2.3.2 | 2026-05-02 | Repo maintenance: added English "Who Is This For?" section, GitHub Topics, and changelog to English section |
+| v2.3.1 | 2026-05-02 | Fixed Python version mismatch, added Last Updated badge |
+| v2.2.10 | 2026-05-01 | Unified cross-references to GitHub absolute links |
 
 ---
 
