@@ -431,6 +431,17 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 - **Bilingual Support** — Complete CN/EN documentation for international teams
 - **Zero Learning Curve** — Intuitive API, rich code examples, plug-and-play
 
+### 🎯 Features at a Glance
+
+| Feature | Description |
+|---------|-------------|
+| HEART Framework | Google's Goals-Signals-Metrics methodology for UX measurement |
+| A/B Testing | Sample size calculation, power analysis, statistical significance testing |
+| MaxDiff Priority | Scientific priority ranking using maximum difference scaling |
+| CSat Surveys | Customer satisfaction survey design and analysis |
+| Log Analysis | User behavior path analysis and transition matrices |
+| CEO Perspective | Business impact mapping, ROI estimation, resource planning |
+
 ### 🧭 Quick Decision Guide
 
 | Your Question | Recommended Skill |
