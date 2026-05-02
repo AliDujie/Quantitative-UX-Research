@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.2.11-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.2-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-02
@@ -722,6 +722,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3.2 | 2026-05-02 | 仓库维护：优化英文示例代码格式，增强工作流 3 描述，统一交叉引用格式，补充 CEO 能力英文版表格 |
 | v2.3.1 | 2026-05-02 | 修复 Python 版本不一致 (3.9+→3.8+)，添加 Last Updated badge，补充 CEO 能力到英文能力表 |
 | v2.2.10 | 2026-05-01 | 统一交叉引用为 GitHub 绝对链接，更新 Last Updated 日期 |
 | v2.2.9 | 2026-04-28 | 添加 Badges、技能生态系统图、双语支持 |
@@ -730,4 +731,4 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.3.1*
+*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.3.2*
