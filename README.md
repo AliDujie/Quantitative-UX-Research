@@ -123,6 +123,8 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 cp -r Quantitative-UX-Research /your/agent/skills/
 ```
 
+> 📖 详细安装指南请查看 [INSTALL.md](INSTALL.md)
+
 #### 步骤 2: 作为 Python 包使用
 
 ```python
@@ -460,6 +462,8 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 ```bash
 cp -r Quantitative-UX-Research /your/agent/skills/
 ```
+
+> 📖 See [INSTALL.md](INSTALL.md) for detailed installation guide
 
 #### Step 2: Use as Python Package
 
