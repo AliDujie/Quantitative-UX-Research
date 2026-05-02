@@ -539,6 +539,17 @@ maxdiff = skill.design_maxdiff(
 
 # Example 5: CEO-perspective report (business impact + timeline + resource)
 report = skill.generate_report("Q4 UX Research Report", include_ceo_analysis=True)
+
+# Example 6: Log analysis for user behavior patterns
+skill = QuantUXSkill("SaaS Platform")
+log_result = skill.analyze_logs(
+    sessions=[
+        {"user": "U1", "events": ["login", "dashboard", "settings", "logout"]},
+        {"user": "U2", "events": ["login", "dashboard", "reports", "export", "logout"]},
+        {"user": "U3", "events": ["login", "dashboard", "settings", "help", "logout"]},
+    ]
+)
+print(log_result)  # Transition matrix, frequent paths, drop-off points
 ```
 
 ### 👥 Who Is This For?
@@ -667,7 +678,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.2.11
+**版本 / Version**: v2.3.3
 
 ---
 
