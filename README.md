@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.0-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.11-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-02
@@ -42,7 +42,7 @@
   - [📚 快速参考](#-快速参考-quick-reference)
   - [🌟 为什么使用这个技能？](#-为什么使用这个技能why-use-this-skill)
   - [⚡ 5 分钟快速开始](#-5-分钟快速开始-quick-start)
-  - [💡 7 大核心能力](#-7-大核心能力)
+  - [💡 10 大核心能力](#-10-大核心能力)
   - [🔧 实用示例](#-实用示例)
   - [📁 项目结构](#-项目结构)
   - [🔗 相关技能](#-相关技能)
@@ -90,7 +90,7 @@
 
 | 功能 | 说明 |
 |------|------|
-| 7 大执行能力 | HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、报告生成 |
+| 10 大执行能力 | HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、报告生成、CEO 业务影响评估 |
 | HEART 框架 | Google 出品的指标体系构建方法论 |
 | A/B 测试设计 | 样本量计算、功效分析、统计显著性检验 |
 | MaxDiff 优先级 | 科学的优先级排序方法 |
@@ -159,7 +159,7 @@ diagnosis = skill.diagnose_request("验证我们的新设计方向")
 report = skill.generate_report("用户体验研究报告", include_ceo_analysis=True)
 ```
 
-### 💡 7 大核心能力
+### 💡 10 大核心能力
 
 | # | 能力 | 模块 | 功能 |
 |---|------|------|------|
@@ -170,6 +170,9 @@ report = skill.generate_report("用户体验研究报告", include_ceo_analysis=
 | 5 | **A/B 测试** | `abtest.py` | 样本量计算、功效分析、结果解读 |
 | 6 | **研究规划** | `research.py` | 研究需求诊断、方法推荐、时间线规划 |
 | 7 | **报告生成** | `research.py` | 标准化研究报告、CEO 视角业务影响分析 |
+| 8 | **CEO: 业务影响评估** | `research.py` | UX 到业务指标映射、ROI 估算 |
+| 9 | **CEO: 验证时间线** | `research.py` | 4 阶段时间线、里程碑与决策点 |
+| 10 | **CEO: 资源估算** | `research.py` | 人力、工具、激励成本估算 |
 
 ### 🔧 实用示例
 
@@ -590,7 +593,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 基于《Quantitative User Experience Research》by Jeff Sauro & James R. Lewis (2023)。
 本技能仅供内部学习和研究使用。
 
-## 👨💻 作者 (Credits)
+## 👨‍💻 作者 (Credits)
 
 - 基于《Quantitative User Experience Research》by Jeff Sauro & James R. Lewis
 - 技能开发：AliDujie 团队

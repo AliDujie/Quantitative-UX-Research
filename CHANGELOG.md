@@ -1,5 +1,15 @@
 # Changelog — Quantitative UX Research
 
+## [R25] - 2026-05-02
+
+### Changed
+- Fixed version badge mismatch (v2.3.0 → v2.2.11 to match SKILL.md)
+- Updated CN capability count from 7 to 10, adding CEO capabilities to Chinese table
+- Updated CN features table and TOC to reflect 10 capabilities
+
+### Maintenance
+- Aligned CN/EN capability counts for consistency
+
 ## [R24] - 2026-05-02
 
 ### Changed
