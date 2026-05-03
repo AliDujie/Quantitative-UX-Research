@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.9-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.10-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-03
@@ -765,10 +765,21 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 > 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
 
 
+### 💡 Pro Tips / 专业提示
+
+- **先定义指标再收集数据** — 用 HEART 框架对齐团队对"什么重要"的共识
+- **A/B 测试先算样本量** — 永远不做功效不足的 A/B 测试
+- **三角测量方法** — 结合定量（调查、日志）和定性（访谈）交叉验证
+- **关注效应大小而非仅 p 值** — 统计显著 ≠ 业务显著
+- **建立基线追踪趋势** — 设定基线指标并纵向追踪改进
+- **QuantUX + UDM 是黄金组合** — UDM 发现假设，QuantUX 定量验证
+
+
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
 | v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本
+| v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
 | v2.3.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式，SKILL.md 版本对齐，新增英文版技能生态工作流章节 |
 | v2.3.7 | 2026-05-03 | 仓库维护：精简重复的英文 Quick Decision Guide 区块，添加英文版本历史表，统一 SKILL.md 与 README.md 版本引用 |
 | v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
@@ -824,10 +835,21 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 > 💡 **Tip**: QuantUX pairs naturally with UDM — use UDM for qualitative discovery, then QuantUX for quantitative validation. The CEO-perspective report feature is especially useful for executive-level research presentations.
 
 
+### 💡 Pro Tips
+
+- **Define Metrics Before Collecting Data** — Use HEART framework to align on what matters
+- **Calculate Sample Size First** — Never run underpowered A/B tests
+- **Triangulate Methods** — Combine quantitative (surveys, logs) with qualitative (interviews)
+- **Focus on Effect Size, Not Just p-Value** — Statistical significance ≠ business significance
+- **Establish Baselines** — Set baseline metrics and track improvement longitudinally
+- **QuantUX + UDM is the golden combo** — UDM discovers hypotheses, QuantUX validates quantitatively
+
+
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 | v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version
+| v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
 | v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section |
 | v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
@@ -842,4 +864,4 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.9*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.10*
