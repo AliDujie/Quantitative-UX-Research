@@ -814,10 +814,11 @@ Phase 4: 呈现
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
 | v2.3.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从指标到决策的 6 技能协作流程） |
-| v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本
 | v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
 | v2.3.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式，SKILL.md 版本对齐，新增英文版技能生态工作流章节 |
+| v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本 |
 | v2.3.7 | 2026-05-03 | 仓库维护：精简重复的英文 Quick Decision Guide 区块，添加英文版本历史表，统一 SKILL.md 与 README.md 版本引用 |
 | v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
 | v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
@@ -885,10 +886,11 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header
 | v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision
-| v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version
-| v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
-| v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section |
+| v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance
+| v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section
+| v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version |
 | v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 | v2.3.4 | 2026-05-03 | Added ecosystem ASCII diagram and integration patterns to English Related Skills, enhanced Why Choose section |
@@ -902,4 +904,4 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.11*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.12*
