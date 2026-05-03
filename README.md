@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.4-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.5-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-03
@@ -657,8 +657,10 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+| v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 |---------|------|--------|
 | v2.3.4 | 2026-05-03 | Repo maintenance: added ecosystem ASCII diagram and integration patterns to English Related Skills section, enhanced Why Choose section with ecosystem benefits |
+| v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
 | v2.3.2 | 2026-05-02 | Repo maintenance: added English "Who Is This For?" section, GitHub Topics, and changelog to English section |
 | v2.3.1 | 2026-05-02 | Fixed Python version mismatch, added Last Updated badge |
 | v2.2.10 | 2026-05-01 | Unified cross-references to GitHub absolute links |
@@ -703,7 +705,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.4
+**版本 / Version**: v2.3.5
 
 ---
 
@@ -821,6 +823,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
 |------|------|------|
 | v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
 | v2.3.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
@@ -833,4 +836,4 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.4*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.5*
