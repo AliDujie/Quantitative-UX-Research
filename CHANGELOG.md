@@ -1,5 +1,10 @@
 # Changelog — Quantitative UX Research
 
+## [R26] - 2026-05-03
+
+### Fixed
+- Fixed SKILL.md version mismatch (v2.3.4 → v2.3.6), aligned with README and pyproject.toml
+
 ## [R25] - 2026-05-02
 
 ### Changed
