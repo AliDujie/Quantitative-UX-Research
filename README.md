@@ -31,7 +31,6 @@
 
 > 💡 **提示**: QuantUX 与 UDM 配合使用，实现定性定量三角验证，提升研究信度。
 
-
 ---
 
 ## 📑 目录 / Table of Contents
@@ -715,7 +714,6 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层。以下是与其他技能配合使用的典型工作流：
 
-
 ### 🧭 快速决策指南 (Quick Decision Guide)
 
 不确定该用哪个技能？按以下步骤选择：
@@ -767,7 +765,6 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 > 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
 
-
 ### 🚀 完整端到端工作流：从指标到决策 (End-to-End Workflow)
 
 以下是一个真实场景中，6 个技能如何协作完成从研究到决策的完整工作流：
@@ -800,7 +797,6 @@ Phase 4: 呈现
 
 ---
 
-
 ### 💡 Pro Tips / 专业提示
 
 - **先定义指标再收集数据** — 用 HEART 框架对齐团队对"什么重要"的共识
@@ -809,7 +805,6 @@ Phase 4: 呈现
 - **关注效应大小而非仅 p 值** — 统计显著 ≠ 业务显著
 - **建立基线追踪趋势** — 设定基线指标并纵向追踪改进
 - **QuantUX + UDM 是黄金组合** — UDM 发现假设，QuantUX 定量验证
-
 
 ## 📋 版本历史 (Changelog)
 
@@ -832,7 +827,6 @@ Phase 4: 呈现
 | v1.0 | 2026-04-22 | 初始版本 |
 
 ---
-
 
 ## 🔗 Skill Ecosystem Workflow
 
@@ -873,7 +867,6 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 > 💡 **Tip**: QuantUX pairs naturally with UDM — use UDM for qualitative discovery, then QuantUX for quantitative validation. The CEO-perspective report feature is especially useful for executive-level research presentations.
 
-
 ### 💡 Pro Tips
 
 - **Define Metrics Before Collecting Data** — Use HEART framework to align on what matters
@@ -882,7 +875,6 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 - **Focus on Effect Size, Not Just p-Value** — Statistical significance ≠ business significance
 - **Establish Baselines** — Set baseline metrics and track improvement longitudinally
 - **QuantUX + UDM is the golden combo** — UDM discovers hypotheses, QuantUX validates quantitatively
-
 
 ## 📋 Version History (English)
 
@@ -902,6 +894,14 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 | v2.2.9 | 2026-04-28 | Added badges, skill ecosystem diagram, bilingual support |
 | v2.2.0 | 2026-04-23 | Added version history, quick reference, CEO perspective extension |
 | v1.0 | 2026-04-22 | Initial release |
+
+---
+
+### 👨‍💻 Credits
+
+Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023), covering HEART framework, experimental design, statistical analysis, and survey methods.
+
+**Applicable to:** UX Researchers, Data Analysts, Product Managers, Experiment Scientists
 
 ---
 

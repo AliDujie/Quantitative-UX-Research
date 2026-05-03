@@ -1,5 +1,12 @@
 # Changelog — Quantitative UX Research
 
+## [R28] - 2026-05-04
+
+### Fixed
+- Aligned pyproject.toml version with README/SKILL.md (v2.3.13)
+- Cleaned up double blank lines in README formatting
+- Updated README last_updated badge and Last Updated timestamp
+
 ## [R27] - 2026-05-03
 
 ### Changed
