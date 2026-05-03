@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.8-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.9-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-03
@@ -658,7 +658,6 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
-|---------|------|--------|
 | v2.3.4 | 2026-05-03 | Repo maintenance: added ecosystem ASCII diagram and integration patterns to English Related Skills section, enhanced Why Choose section with ecosystem benefits |
 | v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
 | v2.3.2 | 2026-05-02 | Repo maintenance: added English "Who Is This For?" section, GitHub Topics, and changelog to English section |
@@ -770,6 +769,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 | 版本 | 日期 | 变更 |
 | v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本
+| v2.3.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式，SKILL.md 版本对齐，新增英文版技能生态工作流章节 |
 | v2.3.7 | 2026-05-03 | 仓库维护：精简重复的英文 Quick Decision Guide 区块，添加英文版本历史表，统一 SKILL.md 与 README.md 版本引用 |
 | v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
 | v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
@@ -783,11 +783,52 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
+
+## 🔗 Skill Ecosystem Workflow
+
+QuantUX is the quantitative research layer of the **AliDujie UX Research Skills Ecosystem**. Here are typical workflows combining it with other skills:
+
+### Workflow 1: Qualitative → Quantitative Triangulation
+
+```
+UDM/JTBD (qualitative insights) → QuantUX (quantitative validation) → SWD (storytelling)
+```
+
+**Scenario**: Validating user research findings
+1. Use UDM or JTBD to collect qualitative user insights
+2. Use QuantUX to design surveys, A/B tests, and calculate statistical significance
+3. Use SWD to transform validated results into compelling data narratives
+
+### Workflow 2: HEART Metrics → Business Decision
+
+```
+QuantUX (HEART framework) → VPD (value validation) → CEO review
+```
+
+**Scenario**: Product direction decision
+1. Use QuantUX to build HEART metrics system
+2. Use VPD to validate value proposition hypotheses
+3. Use CEO review framework to evaluate business impact
+
+### Workflow 3: Persona → Segmented Testing → Opportunity
+
+```
+Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportunity scoring)
+```
+
+**Scenario**: Personalized product optimization
+1. Use Persona to define user segments based on behavior patterns
+2. Use QuantUX to design stratified A/B tests for each segment
+3. Use JTBD to calculate opportunity scores per segment
+
+> 💡 **Tip**: QuantUX pairs naturally with UDM — use UDM for qualitative discovery, then QuantUX for quantitative validation. The CEO-perspective report feature is especially useful for executive-level research presentations.
+
+
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 | v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version
-|---------|------|--------|
+| v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section |
 | v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 | v2.3.4 | 2026-05-03 | Added ecosystem ASCII diagram and integration patterns to English Related Skills, enhanced Why Choose section |
@@ -801,4 +842,4 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.8*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.9*
