@@ -1,5 +1,12 @@
 # Changelog — Quantitative UX Research
 
+## [R27] - 2026-05-03
+
+### Changed
+- Consolidated duplicate English Quick Decision Guide section at file end
+- Added missing English version history section (was the only repo without it)
+- Aligned SKILL.md version with README.md (v2.3.7)
+
 ## [R26] - 2026-05-03
 
 ### Fixed
