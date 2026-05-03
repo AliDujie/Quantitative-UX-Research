@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.6-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.7-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-03
@@ -709,60 +709,6 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-## 🔗 Skill Ecosystem Workflow
-
-QuantUX is the quantitative research layer of the **AliDujie UX Research Skills Ecosystem**. Here are typical workflows combining it with other skills:
-
-### 🧭 Quick Decision Guide
-
-Not sure which skill to use? Follow these steps:
-
-| Your Question | Recommended Skill |
-|---------------|------------------|
-| "I need to validate a hypothesis" | → **Quantitative UX Research** (this skill) — A/B testing, sample size, HEART framework |
-| "I don't know what research to do" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — Method recommendation |
-| "I want to understand why users do this" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — Uncover the underlying "jobs" |
-| "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
-| "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
-| "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
-
-### Workflow 1: Research → Quantitative Validation → Story
-
-```
-UDM/JTBD (qualitative insights) → QuantUX (quantitative validation) → SWD (storytelling)
-```
-
-**Scenario**: Validating user research findings
-1. Use UDM or JTBD to collect qualitative user insights
-2. Use QuantUX to design surveys, A/B tests, and calculate statistical significance
-3. Use SWD to transform validated results into compelling data narratives
-
-### Workflow 2: HEART Metrics → Business Decisions
-
-```
-QuantUX (HEART framework) → VPD (value validation) → CEO review
-```
-
-**Scenario**: Product direction decisions
-1. Use QuantUX to build HEART metrics system (Happiness, Engagement, Adoption, Retention, Task success)
-2. Use VPD to validate value proposition hypotheses
-3. Use CEO review framework to assess business impact
-
-### Workflow 3: User Segments → Targeted Testing
-
-```
-Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportunity scoring)
-```
-
-**Scenario**: Personalized product optimization
-1. Use Persona to create user segments
-2. Use QuantUX to design stratified A/B tests for each segment
-3. Use JTBD to calculate opportunity scores per segment
-
-> 💡 **Tip**: QuantUX's CEO-perspective reporting is especially powerful for presenting research results to executive stakeholders.
-
----
-
 ## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
 
 本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层。以下是与其他技能配合使用的典型工作流：
@@ -823,6 +769,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.7 | 2026-05-03 | 仓库维护：精简重复的英文 Quick Decision Guide 区块，添加英文版本历史表，统一 SKILL.md 与 README.md 版本引用 |
 | v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
 |------|------|------|
 | v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
@@ -836,4 +783,21 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.6*
+## 📋 Version History (English)
+
+| Version | Date | Changes |
+|---------|------|--------|
+| v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
+| v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
+| v2.3.4 | 2026-05-03 | Added ecosystem ASCII diagram and integration patterns to English Related Skills, enhanced Why Choose section |
+| v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
+| v2.3.2 | 2026-05-02 | Added English "Who Is This For?" section, GitHub Topics, and changelog to English section |
+| v2.3.1 | 2026-05-02 | Fixed Python version mismatch, added Last Updated badge |
+| v2.2.10 | 2026-05-01 | Unified cross-references to GitHub absolute links |
+| v2.2.9 | 2026-04-28 | Added badges, skill ecosystem diagram, bilingual support |
+| v2.2.0 | 2026-04-23 | Added version history, quick reference, CEO perspective extension |
+| v1.0 | 2026-04-22 | Initial release |
+
+---
+
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.7*
