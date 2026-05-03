@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.7-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.8-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-03
@@ -705,7 +705,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.5
+**版本 / Version**: v2.3.8
 
 ---
 
@@ -769,9 +769,9 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本
 | v2.3.7 | 2026-05-03 | 仓库维护：精简重复的英文 Quick Decision Guide 区块，添加英文版本历史表，统一 SKILL.md 与 README.md 版本引用 |
 | v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
-|------|------|------|
 | v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
 | v2.3.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
 | v2.3.2 | 2026-05-02 | 仓库维护：优化英文示例代码格式，增强工作流 3 描述，统一交叉引用格式，补充 CEO 能力英文版表格 |
@@ -786,6 +786,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version
 |---------|------|--------|
 | v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
@@ -800,4 +801,4 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.7*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.8*
