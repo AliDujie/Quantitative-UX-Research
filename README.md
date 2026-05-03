@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.12-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.13-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -707,7 +707,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.8
+**版本 / Version**: v2.3.13
 
 ---
 
@@ -814,6 +814,7 @@ Phase 4: 呈现
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.13 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
 | v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
 | v2.3.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从指标到决策的 6 技能协作流程） |
 | v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
@@ -904,4 +905,4 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.12*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.13*
