@@ -3,8 +3,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.10-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.11-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 📅 **Last Updated:** 2026-05-03
 
@@ -765,6 +765,39 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 > 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
 
 
+### 🚀 完整端到端工作流：从指标到决策 (End-to-End Workflow)
+
+以下是一个真实场景中，6 个技能如何协作完成从研究到决策的完整工作流：
+
+**场景**: 产品需要验证新功能的用户价值和业务影响
+
+```
+Phase 1: 定性发现
+  UDM: 可用性测试 (8 用户) → 发现功能使用障碍
+  JTBD: 四力分析 → 用户想完成的核心"工作"是快速协作
+
+Phase 2: 量化验证 (QuantUX — 本技能)
+  → build_heart: 设定 HEART 指标 (Engagement: DAU, Adoption: 功能使用率)
+  → calculate_sample_size: A/B 测试需要 n=3200 每组 (α=0.05, power=0.8)
+  → run_ab_test: 实验组 vs 对照组，2 周数据收集
+  → analyze_maxdiff: 12 个需求优先级排序，识别 Top 3
+  → generate_heart_report: HEART 指标基线 + 改进追踪
+
+Phase 3: 细分与设计
+  Persona: 发现重度用户 vs 轻度用户行为差异
+  VPD: 验证"一键协作"价值主张契合度 0.85
+
+Phase 4: 呈现
+  SWD: 将 HEART 数据转化为高管级叙事
+```
+
+> 💡 **QuantUX 是工作流的量化核心**: UDM 发现假设 → QuantUX 验证 → SWD 呈现
+
+👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [Persona](https://github.com/AliDujie/web-persona-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
+
 ### 💡 Pro Tips / 专业提示
 
 - **先定义指标再收集数据** — 用 HEART 框架对齐团队对"什么重要"的共识
@@ -778,6 +811,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从指标到决策的 6 技能协作流程） |
 | v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本
 | v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
 | v2.3.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式，SKILL.md 版本对齐，新增英文版技能生态工作流章节 |
@@ -848,6 +882,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision
 | v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version
 | v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
 | v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section |
@@ -864,4 +899,4 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.3.10*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.11*
