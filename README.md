@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/badge/version-2.3.4-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
-> 📅 **Last Updated:** 2026-05-02
+> 📅 **Last Updated:** 2026-05-03
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
