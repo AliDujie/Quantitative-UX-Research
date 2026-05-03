@@ -3,10 +3,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.11-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.12-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
-
-> 📅 **Last Updated:** 2026-05-03
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
@@ -479,17 +477,22 @@ skill = QuantUXSkill("Travel Platform")
 #### Step 3: Start Using
 
 ```python
-# HEART framework
+# ===== Scenario 1: HEART Framework — Build UX Metrics System =====
 heart = skill.build_heart_framework()
+print(heart)  # Goals → Signals → Metrics for each dimension
 
-# CSat survey
-survey = skill.design_csat_survey("2024Q1 Satisfaction")
+# ===== Scenario 2: CSat Survey Design & Analysis =====
+survey = skill.design_csat_survey("2024Q1 Satisfaction", mechanism="in_app")
+csat = skill.analyze_csat("2024Q1", 500, {1: 15, 2: 25, 3: 70, 4: 190, 5: 200})
+print(f"Top-2-Box: {csat['t2b']}")  # Percentage of 4-5 ratings
 
-# A/B test sample size
+# ===== Scenario 3: A/B Test — Sample Size & Power Analysis =====
 sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
+print(f"Need {sample} users per group (α=0.05, power=0.80)")
 
-# Research report with CEO analysis
+# ===== Scenario 4: Research Report with CEO Analysis =====
 report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
+print(report)  # HEART baseline + Business impact + ROI + Resource estimation
 ```
 
 ### 💡 10 Core Capabilities
