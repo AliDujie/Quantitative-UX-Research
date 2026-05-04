@@ -1,5 +1,15 @@
 # Changelog — Quantitative UX Research
 
+## [v2.2.12] - 2026-05-04
+
+### Added
+- End-to-end workflow section showing 6-skill collaboration
+- Pro Tips section with expert usage guidance (CN/EN)
+
+### Fixed
+- SKILL.md version mismatch (2.2.10→2.2.12)
+- Aligned README version badge with pyproject.toml
+
 ## [R22] - 2026-05-01
 
 ### Maintenance

@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.2.11-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.12-green.svg)](CHANGELOG.md)
 
 > 📅 **Last Updated:** 2026-05-01
 
@@ -655,3 +655,44 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 3. 用 JTBD 计算各细分的机会分数
 
 > 💡 **提示**: QuantUX 的 CEO 视角报告功能特别适合向高管层汇报研究结果。
+
+---
+
+### 🚀 完整端到端工作流：从指标到决策 (End-to-End Workflow)
+
+以下是一个真实场景中，6 个技能如何协作完成从用户体验指标体系建设到高管决策的完整工作流：
+
+**场景**: 电商 App 需要建立用户体验指标体系并向 CEO 汇报 Q3 改进成果
+
+```
+Phase 1: 指标体系构建 (本技能)
+  QuantUX: HEART 框架 → NPS 32→58, DAU/MAU 0.35→0.48, 30日留存 28%→41%
+  QuantUX: A/B 测试 → 新结账流程转化率 +18% (n=10,000, p<0.01)
+
+Phase 2: 定性发现验证
+  UDM: 可用性测试发现结账流程 3 个断点
+  JTBD: 用户核心"工作"=快速完成购买
+
+Phase 3: 角色与价值
+  Persona: "效率型买家" vs "探索型买家" 行为差异
+  VPD: 价值主张画布 → Fit Score 0.82
+
+Phase 4: 量化分析与呈现
+  QuantUX: MaxDiff 功能优先级调研 (n=500)
+  SWD: 三幕叙事构建 CEO 汇报
+```
+
+> 💡 **QuantUX 是工作流的量化引擎**: UDM 发现 → QuantUX 验证 → SWD 呈现
+
+👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [Persona](https://github.com/AliDujie/web-persona-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
+### 💡 Pro Tips / 专业提示
+
+- **从业务目标定义指标** — 每个 HEART 指标都应连接到明确的业务目标
+- **避免虚荣指标** — 关注可行动的指标（如任务完成率），而非单纯的增长数字
+- **定性先行，定量验证** — 用 UDM 访谈发现问题，用 QuantUX A/B 测试验证规模
+- **MDE 设 3-5% 最合理** — 太小需要巨大样本，太大可能错过真实效应
+- **MaxDiff > 直接打分** — 功能优先级用 MaxDiff 而非 Likert 量表，结果更可靠
+- **日志分析关注漏斗** — 先识别主要流失路径，再针对性优化
