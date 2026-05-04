@@ -13,6 +13,17 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
+### ✅ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
+- [ ] **导入** — `from quantux import QuantUXSkill`
+- [ ] **初始化** — `skill = QuantUXSkill("你的项目")`
+- [ ] **HEART 框架** — `skill.build_heart_framework()`
+- [ ] **CSat 调查** — `skill.design_csat_survey("满意度调查")`
+- [ ] **A/B 测试** — `skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)`
+- [ ] **MaxDiff** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])`
+- [ ] **研究报告** — `skill.generate_report("研究报告", include_ceo_analysis=True)`
+
 [English](#english) | [中文](#中文说明)
 
 ---
@@ -434,6 +445,23 @@ A: 取决于当前转化率、期望检测的最小提升幅度、和统计功�
 ---
 
 ## English
+
+### 📑 Table of Contents
+
+- [Why Use This Skill?](#-why-use-this-skill)
+- [Features at a Glance](#-features-at-a-glance)
+- [Quick Decision Guide](#-quick-decision-guide)
+- [Quick Start](#-quick-start)
+- [10 Core Capabilities](#-10-core-capabilities)
+- [Practical Examples](#-practical-examples)
+- [Who Is This For?](#-who-is-this-for)
+- [Troubleshooting](#-troubleshooting)
+- [Best Practices](#-best-practices)
+- [FAQ](#-faq)
+- [User Reviews](#-user-reviews)
+- [Extended Reading](#-extended-reading)
+- [Related Skills](#-related-skills-1)
+- [Version History](#-version-history-english)
 
 ### 🌟 Why Use This Skill?
 
