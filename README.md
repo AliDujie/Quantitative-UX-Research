@@ -879,11 +879,13 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header
-| v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision
-| v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance
-| v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section
+| v2.3.13 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section |
+| v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
+| v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision |
+| v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
+| v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section |
 | v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version |
+| v2.3.7 | 2026-05-03 | Repo maintenance: streamlined duplicate English Quick Decision Guide, added English version history table, aligned SKILL.md version |
 | v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 | v2.3.4 | 2026-05-03 | Added ecosystem ASCII diagram and integration patterns to English Related Skills, enhanced Why Choose section |
