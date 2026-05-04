@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.15-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.16-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -461,6 +461,7 @@ A: 取决于当前转化率、期望检测的最小提升幅度、和统计功�
 - [User Reviews](#-user-reviews)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
+- [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
 ### 🌟 Why Use This Skill?
@@ -865,7 +866,8 @@ Phase 4: 呈现
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单 | | 仓库维护：修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
+| v2.3.16 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
+| v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
 | v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
 | v2.3.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从指标到决策的 6 技能协作流程） |
 | v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
@@ -935,7 +937,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单 | | Repo maintenance: fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section |
+| v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
+| v2.3.15 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section
 | v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
 | v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision |
 | v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
@@ -963,4 +966,4 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.15*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.16*

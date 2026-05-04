@@ -1,5 +1,17 @@
 # Changelog — Quantitative UX Research
 
+## v2.3.16 - 2026-05-04
+
+- Fixed changelog table `| |` formatting bug in README.md (both CN and EN sections)
+- Added end-to-end workflow entry to English Table of Contents
+- Aligned all version references across README.md, SKILL.md, and pyproject.toml
+
+## v2.3.15 - 2026-05-04
+
+- Added English TOC and 5-min Quick Start Checklist
+- Fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale version badge
+- Added Credits section
+
 ## v2.3.14 - 2026-05-04
 
 - Added FAQ sections (CN/EN) to README for improved discoverability
