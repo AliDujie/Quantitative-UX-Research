@@ -734,7 +734,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.13
+**版本 / Version**: v2.3.14
 
 ---
 
