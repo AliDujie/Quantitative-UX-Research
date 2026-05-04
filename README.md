@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.13-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.14-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -385,6 +385,20 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 3. **序列粒度** — 根据研究问题选择合适的页面/事件粒度
 4. **样本代表性** — 确保分析样本覆盖不同用户群体
 
+### ❓ 常见问题 (FAQ)
+
+**Q: QuantUX 和 Google Analytics 等分析工具有什么区别？**
+A: Google Analytics 是数据采集和展示工具，QuantUX 是研究设计和分析框架。QuantUX 帮你"设计正确的研究"（如 HEART 指标体系、A/B 测试设计、样本量计算），而非仅仅"展示数据"。两者互补使用。
+
+**Q: HEART 框架的五个维度都要用吗？**
+A: 不强制。根据你的研究目标选择最相关的维度。例如：增长团队关注 Acquisition + Engagement，体验团队关注 Happiness + Task Success。Google 也建议根据目标裁剪。
+
+**Q: MaxDiff 和普通的优先级排序有什么区别？**
+A: MaxDiff 通过强制选择（最佳 vs 最差）获得更精确的偏好数据，避免"全部都重要"的常见偏差。适合 10+ 选项的优先级排序场景。
+
+**Q: A/B 测试需要多少样本量？**
+A: 取决于当前转化率、期望检测的最小提升幅度、和统计功效（通常 80%）。用 `calculate_sample_size()` 方法自动计算，避免手动查表。
+
 ### 🌟 用户评价
 
 > "QuantUX 技能的 HEART 框架帮我们建立了第一个量化指标体系，高管终于能用数据看产品了！"
@@ -581,6 +595,20 @@ print(log_result)  # Transition matrix, frequent paths, drop-off points
 3. **Triangulate methods** — Combine quantitative (surveys, logs) with qualitative (interviews)
 4. **Report with CEO perspective** — Always include business impact and ROI estimates
 5. **Track trends over time** — Establish baselines and measure improvement longitudinally
+
+### ❓ FAQ
+
+**Q: How is QuantUX different from Google Analytics?**
+A: Google Analytics collects and displays data; QuantUX is a research design and analysis framework. QuantUX helps you "design the right research" (HEART metrics, A/B test design, sample size calculation), not just "show data." Use them together.
+
+**Q: Do I need to use all 5 HEART dimensions?**
+A: No. Select dimensions most relevant to your research goals. Growth teams focus on Acquisition + Engagement; experience teams focus on Happiness + Task Success. Google also recommends tailoring.
+
+**Q: What's the difference between MaxDiff and regular prioritization?**
+A: MaxDiff forces choices (best vs worst) for more precise preference data, avoiding the common "everything is important" bias. Best for prioritizing 10+ options.
+
+**Q: How much sample size do I need for A/B tests?**
+A: It depends on current conversion rate, minimum detectable effect, and statistical power (typically 80%). Use `calculate_sample_size()` to compute automatically instead of looking up tables manually.
 
 ### 🌟 User Reviews
 
@@ -809,7 +837,7 @@ Phase 4: 呈现
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.3.13 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
+| v2.3.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
 | v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
 | v2.3.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从指标到决策的 6 技能协作流程） |
 | v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
@@ -879,7 +907,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.3.13 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section |
+| v2.3.14 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section |
 | v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
 | v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision |
 | v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
@@ -907,4 +935,4 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.13*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.3.14*

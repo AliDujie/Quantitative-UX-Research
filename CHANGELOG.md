@@ -1,5 +1,13 @@
 # Changelog — Quantitative UX Research
 
+## v2.3.14 - 2026-05-04
+
+- Added FAQ sections (CN/EN) to README for improved discoverability
+- Added CODE_OF_CONDUCT.md to all skill repositories
+- Added .github/ISSUE_TEMPLATE/ with bug report and feature request templates
+- Maintained cross-repo consistency and version alignment
+
+
 ## [R28] - 2026-05-04
 
 ### Fixed
