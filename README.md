@@ -771,6 +771,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+|---------|------|--------|
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 | v2.3.4 | 2026-05-03 | Repo maintenance: added ecosystem ASCII diagram and integration patterns to English Related Skills section, enhanced Why Choose section with ecosystem benefits |
 | v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
@@ -992,6 +993,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+|---------|------|--------|
 | v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
 | v2.3.15 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section
 | v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
