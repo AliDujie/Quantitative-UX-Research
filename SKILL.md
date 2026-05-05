@@ -228,11 +228,48 @@ python -m pytest quantux/tests/test_all.py -v  # pytest
 
 ### 5.8 与其他 Skill 协作
 
+QuantUX 是 AliDujie UX 研究技能生态系统的定量研究核心，与其他技能组合形成完整的用户洞察到数据决策工作流：
+
 | 协作场景 | 协作 Skill | 工作流 |
 |---------|-----------|--------|
-| 研究报告可视化 | Storytelling-with-Data | Quant UXR 数据 -> SWD 图表 -> SWD 故事 |
-| 价值主张验证 | Value-Proposition-Design | VPD 假设 -> Quant UXR 验证 -> SWD 汇报 |
-| JTBD 研究量化 | JTBD-Knowledge | JTBD 定性发现 -> Quant UXR 量化验证 |
+| 研究报告可视化 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Quant UXR 数据 → SWD 图表选择 → SWD 数据故事构建 |
+| 价值主张验证 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 假设 → Quant UXR A/B 验证 → SWD 高管汇报 |
+| JTBD 研究量化 | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 定性发现 → Quant UXR 量化验证机会分数 |
+| 用户研究方法三角测量 | [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 定性发现 → Quant UXR 定量验证 → 综合报告 |
+| 角色数据验证 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 角色假设 → Quant UXR 行为验证 → 角色迭代 |
+
+**协作示例（UDM → QuantUX → SWD 端到端）**：
+```python
+# Step 1: UDM 定性研究收集用户洞察
+from udm import UDMSkill
+udm = UDMSkill("旅行预订")
+interview = udm.generate_interview("商务用户访谈", "contextual")
+
+# Step 2: QuantUX 定量验证假设
+from quantux import QuantUXSkill
+quantux = QuantUXSkill("旅行预订平台")
+n = quantux.calculate_ab_sample_size(0.35, 0.03)  # 计算样本量
+ab_result = quantux.analyze_ab_test("原版", 5000, 1750, "新版", 5000, 1900)
+
+# Step 3: SWD 构建数据故事汇报
+from swd import SWDSkill
+swd = SWDSkill("Q1 用户体验研究报告")
+ctx = swd.build_context(audience="产品VP", cta="批准体验优化预算")
+story = swd.build_story(protagonist="产品委员会", imbalance="新设计提升转化15%")
+```
+
+**协作示例（JTBD → QuantUX）**：
+```python
+# Step 1: JTBD 发现高机会 Job
+from jtbd import JTBDSkill
+jtbd = JTBDSkill("旅行预订")
+opportunity = jtbd.score_opportunity("快速找住处", struggle=4, alternative=3, market=4, budget=4)
+
+# Step 2: QuantUX 设计 MaxDiff 验证功能优先级
+from quantux import QuantUXSkill
+quantux = QuantUXSkill("旅行预订")
+maxdiff = quantux.design_maxdiff("功能优先级", ["快速搜索", "智能推荐", "价格日历"])
+```
 
 ---
 
