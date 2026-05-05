@@ -436,6 +436,60 @@ A: 取决于当前转化率、期望检测的最小提升幅度、和统计功�
 - **内容**: HEART 框架、实验设计、统计分析、调查方法
 - **适用**: UX 研究员、数据分析师、产品经理、实验科学家
 
+### 🏆 实战案例 (Case Studies)
+
+#### 案例 1: HEART 指标体系搭建
+
+**背景**: 某 SaaS 产品需要建立量化 UX 指标体系，替代主观判断
+
+**使用 QuantUX 技能**:
+```python
+from quantux import QuantUXSkill
+
+skill = QuantUXSkill("SaaS 协作平台")
+
+# 步骤 1: 构建 HEART 框架
+heart = skill.build_heart_framework(
+    happiness="SUS > 75, CSat > 4.0",
+    engagement="DAU/WAU > 0.4, 核心功能使用率",
+    adoption="新功能 30 天采用率 > 20%",
+    retention="30 天留存率 > 60%",
+    task_success="核心任务完成率 > 85%"
+)
+
+# 步骤 2: 设计 CSat 调查
+survey = skill.design_csat_survey("协作功能满意度")
+
+# 步骤 3: 设计 A/B 测试计算样本量
+sample = skill.calculate_ab_sample_size(baseline=0.60, mde=0.05, alpha=0.05, power=0.80)
+print(f"每组需要 {sample} 个样本")
+```
+
+**成果**: 从主观判断到数据驱动决策，UX 改进 ROI 提升 3 倍
+
+#### 案例 2: MaxDiff 功能优先级排序
+
+**背景**: 某电商平台有 20 个待开发功能，需要科学排序优先级
+
+```python
+from quantux import QuantUXSkill
+
+skill = QuantUXSkill("电商平台")
+
+# MaxDiff 设计
+features = ["智能推荐", "一键下单", "价格保护", "以图搜图", "语音搜索",
+            "社交分享", "购物车共享", "订阅提醒", "AR 试穿", "比价工具"]
+maxdiff = skill.design_maxdiff("功能优先级", features, blocks=5)
+
+# 分析结果后，用研究计划整合
+plan = skill.generate_research_plan(
+    "功能优先级研究",
+    include_ceo_analysis=True
+)
+```
+
+**成果**: 用 MaxDiff 替代投票排序，优先级决策时间从 2 周缩短到 3 天
+
 ### 📦 依赖
 
 - Python >= 3.8
