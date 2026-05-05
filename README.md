@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.16-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--05-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.17-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
@@ -921,6 +921,7 @@ Phase 4: 呈现
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.17 | 2026-05-06 | Repo maintenance: fixed pyproject.toml + SKILL.md version mismatch (2.2.12→2.3.16), updated Last Updated timestamp, verified cross-skill ecosystem links
 | v2.3.16 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
 | v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
 | v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
@@ -992,6 +993,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.3.17 | 2026-05-06 | Repo maintenance: fixed pyproject.toml + SKILL.md version mismatch (2.2.12→2.3.16), updated Last Updated timestamp, verified cross-skill ecosystem links
 | v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
 | v2.3.15 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section
 | v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
@@ -1021,4 +1023,4 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 ---
 
-*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.3.16*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.16*
