@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.17-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--05-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.18-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
@@ -907,6 +907,30 @@ Phase 4: 呈现
 > 💡 **QuantUX 是工作流的量化核心**: UDM 发现假设 → QuantUX 验证 → SWD 呈现
 
 👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [Persona](https://github.com/AliDujie/web-persona-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
+### 🌟 为什么选择 AliDujie 技能生态系统？
+
+本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层，与其他技能无缝协作：
+
+| 技能 | 角色 | 协作方式 |
+|------|------|----------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法核心 | UDM 定性发现 → QuantUX 定量三角验证 |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | JTBD 机会分数 → QuantUX A/B 测试验证 |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | VPD 假设 → QuantUX 实验验证 |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户角色 | Persona 角色 → QuantUX 分层 A/B 测试 |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | QuantUX HEART/A/B 数据 → SWD 高管级呈现 |
+
+**使用完整生态系统的优势：**
+
+- ✅ **全流程覆盖** — 从发现需求 → 角色创建 → 定性定量三角验证 → 数据呈现
+- ✅ **一致 API 设计** — 所有技能使用统一的 Skill("产品名") 入口
+- ✅ **零外部依赖** — 纯 Python 标准库实现，开箱即用
+- ✅ **双语支持** — 完整中英文文档，适合国际化团队
+- ✅ **积极维护** — 定期更新新功能和改进文档
+
+👉 **探索完整生态系统**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
 
 ---
 
