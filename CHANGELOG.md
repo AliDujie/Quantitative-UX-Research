@@ -1,65 +1,14 @@
 # Changelog — Quantitative UX Research
 
-## v2.3.16 - 2026-05-04
+## [v2.2.12] - 2026-05-04
 
-- Fixed changelog table `| |` formatting bug in README.md (both CN and EN sections)
-- Added end-to-end workflow entry to English Table of Contents
-- Aligned all version references across README.md, SKILL.md, and pyproject.toml
-
-## v2.3.15 - 2026-05-04
-
-- Added English TOC and 5-min Quick Start Checklist
-- Fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale version badge
-- Added Credits section
-
-## v2.3.14 - 2026-05-04
-
-- Added FAQ sections (CN/EN) to README for improved discoverability
-- Added CODE_OF_CONDUCT.md to all skill repositories
-- Added .github/ISSUE_TEMPLATE/ with bug report and feature request templates
-- Maintained cross-repo consistency and version alignment
-
-
-## [R28] - 2026-05-04
+### Added
+- End-to-end workflow section showing 6-skill collaboration
+- Pro Tips section with expert usage guidance (CN/EN)
 
 ### Fixed
-- Aligned pyproject.toml version with README/SKILL.md (v2.3.13)
-- Cleaned up double blank lines in README formatting
-- Updated README last_updated badge and Last Updated timestamp
-
-## [R27] - 2026-05-03
-
-### Changed
-- Consolidated duplicate English Quick Decision Guide section at file end
-- Added missing English version history section (was the only repo without it)
-- Aligned SKILL.md version with README.md (v2.3.7)
-
-## [R26] - 2026-05-03
-
-### Fixed
-- Fixed SKILL.md version mismatch (v2.3.4 → v2.3.6), aligned with README and pyproject.toml
-
-## [R25] - 2026-05-02
-
-### Changed
-- Fixed version badge mismatch (v2.3.0 → v2.2.11 to match SKILL.md)
-- Updated CN capability count from 7 to 10, adding CEO capabilities to Chinese table
-- Updated CN features table and TOC to reflect 10 capabilities
-
-### Maintenance
-- Aligned CN/EN capability counts for consistency
-
-## [R24] - 2026-05-02
-
-### Changed
-- Version bump to v2.3.0
-- Routine README maintenance: verified completeness and cross-references
-
-## [R23] - 2026-05-01
-
-### Maintenance
-- Routine README maintenance: verified code examples, cross-references, and bilingual consistency
-- Confirmed "When to Use This Skill?" decision guide already present (added in earlier release)
+- SKILL.md version mismatch (2.2.10→2.2.12)
+- Aligned README version badge with pyproject.toml
 
 ## [R22] - 2026-05-01
 
