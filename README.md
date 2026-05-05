@@ -1018,6 +1018,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
+| v2.3.17 | 2026-05-05 | Repo maintenance: added Quantitative UX Research collaboration reference to ecosystem workflow |
 | v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
 | v2.3.15 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section
 | v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
@@ -1047,4 +1049,4 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 ---
 
-*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.3.17*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.18*

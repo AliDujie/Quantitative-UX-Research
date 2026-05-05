@@ -306,3 +306,18 @@ maxdiff = quantux.design_maxdiff("功能优先级", ["快速搜索", "智能推�
 | Surveys That Work | Jarrett | 调查设计方法论 |
 
 **术语速查**：Quant UXR = 量化用户体验研究 | HEART = Happiness/Engagement/Adoption/Retention/Task Success | GSM = Goals-Signals-Metrics | CSat = Customer Satisfaction | MaxDiff = Maximum Difference Scaling | HB = Hierarchical Bayes | MNL = Multinomial Logit | EDA = Exploratory Data Analysis | T2B = Top-2-Box | MDE = Minimum Detectable Effect
+
+---
+
+## 八、与其他 Skill 协作
+
+QuantUX 是 AliDujie UX 研究技能生态系统的定量研究层，与其他技能配合实现定性定量三角验证：
+
+| 协作场景 | 协作 Skill | 工作流 |
+|---------|-----------|--------|
+| 定量验证定性假设 | [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 定性发现 → QuantUX 定量验证 → SWD 数据故事 |
+| 数据可视化呈现 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | QuantUX 分析结果 → SWD 图表选择 → SWD 叙事构建 |
+| JTBD 机会分数验证 | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 机会评分 → QuantUX A/B 测试验证 → 决策支持 |
+| 角色定量验证 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 细分 → QuantUX 行为分析 → Persona 精化 |
+| 价值主张实验验证 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 价值假设 → QuantUX 实验设计 → VPD 验证结果 |
+| 结构化决策支持 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | QuantUX 数据洞察 → STM 战略分析 → STM 决策建议 |
