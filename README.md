@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.22-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.23-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -768,6 +768,12 @@ quantitative-research heart-framework ab-testing maxdiff
 user-experience metrics python-toolkit openclaw-skill alicloud
 ```
 
+### 📦 Dependencies
+
+- Python >= 3.8
+- **No external dependencies** (pure standard library)
+- Cross-platform: macOS / Linux / Windows
+
 ### 📋 Changelog
 
 | Version | Date | Changes |
@@ -950,6 +956,7 @@ Phase 4: 呈现
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.21 | 2026-05-06 | 仓库维护：英文版脚注添加 Contributing 链接，增强跨技能协作示例（QuantUX→SWD 数据流工作流），对齐所有版本引用 |
 | v2.3.20 | 2026-05-06 | 仓库维护：更新版本至 2.3.20，验证生态交叉引用和双语一致性 |
@@ -1027,6 +1034,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
 | v2.3.17 | 2026-05-05 | Repo maintenance: added Quantitative UX Research collaboration reference to ecosystem workflow |
