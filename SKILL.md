@@ -8,6 +8,24 @@ version: "2.3.23"
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的量化用户体验研究执行技能。
 
+## 🌐 AliDujie 技能生态系统
+
+QuantUX 是 **定量研究核心**，负责用数据验证其他技能产生的定性假设：
+
+```
+UDM (定性发现) ──┐
+                 ▼
+JTBD (机会评分) ──► ┌────────────────┐
+                    │  QuantUX 本技能  │ 📊 定量验证 — HEART/A-B测试/MaxDiff
+VPD (价值假设) ────►│  · HEART 框架   │──────► SWD (数据故事汇报)
+Persona (角色假设)─►│  · A-B 测试     │──────► CEO 决策(业务影响评估)
+                    │  · 日志分析     │
+                    │  · MaxDiff      │
+                    └────────────────┘
+```
+
+**QuantUX 的典型协作**：UDM 定性假设 → QuantUX A/B 验证 → SWD 数据汇报；JTBD 机会评分 → QuantUX MaxDiff 优先级
+
 ## 一、核心理论
 
 **量化用户体验研究 (Quant UXR)**：运用实证研究方法，在规模化场景下为以用户为中心的产品设计提供信息支持。
