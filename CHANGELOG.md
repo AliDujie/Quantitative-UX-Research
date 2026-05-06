@@ -1,5 +1,9 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.22] - 2026-05-07
+
+- Repo maintenance: added statistical power Pro Tip (CN+EN), enhanced SWD-QuantUX visualization integration
+
 ## [v2.3.21] - 2026-05-06
 
 - Repo maintenance: added Contributing link to English section footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references

@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.21-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.22-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
@@ -944,11 +944,13 @@ Phase 4: 呈现
 - **关注效应大小而非仅 p 值** — 统计显著 ≠ 业务显著
 - **建立基线追踪趋势** — 设定基线指标并纵向追踪改进
 - **QuantUX + UDM 是黄金组合** — UDM 发现假设，QuantUX 定量验证
+- **统计功效 ≥ 0.8 是底线** — 样本量不足时用序贯检验或贝叶斯方法替代传统 A/B 测试
 
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.21 | 2026-05-06 | 仓库维护：英文版脚注添加 Contributing 链接，增强跨技能协作示例（QuantUX→SWD 数据流工作流），对齐所有版本引用 |
 | v2.3.20 | 2026-05-06 | 仓库维护：更新版本至 2.3.20，验证生态交叉引用和双语一致性 |
 | v2.3.19 | 2026-05-06 | 仓库维护：对齐所有版本引用（README 徽章、SKILL.md、pyproject.toml、CHANGELOG），验证生态交叉引用和双语一致性 |
@@ -1019,12 +1021,13 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 - **Focus on Effect Size, Not Just p-Value** — Statistical significance ≠ business significance
 - **Establish Baselines** — Set baseline metrics and track improvement longitudinally
 - **QuantUX + UDM is the golden combo** — UDM discovers hypotheses, QuantUX validates quantitatively
+- **Statistical Power ≥ 0.8 is the floor** — When sample size is limited, use sequential testing or Bayesian methods instead of traditional A/B tests
 
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.3.21 | 2026-05-06 | Repo maintenance: added Contributing link to English footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references
+| v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
 | v2.3.17 | 2026-05-05 | Repo maintenance: added Quantitative UX Research collaboration reference to ecosystem workflow |
 | v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
@@ -1060,4 +1063,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.21*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.22*
