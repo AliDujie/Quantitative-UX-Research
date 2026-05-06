@@ -1,5 +1,9 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.21] - 2026-05-06
+
+- Repo maintenance: added Contributing link to English section footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references
+
 ## [v2.3.19] - 2026-05-06
 
 ### Fixed

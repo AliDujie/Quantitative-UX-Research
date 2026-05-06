@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.20-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.21-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -949,8 +949,9 @@ Phase 4: 呈现
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.3.19 | 2026-05-06 | 仓库维护：对齐所有版本引用（README 徽章、SKILL.md、pyproject.toml、CHANGELOG），验证生态交叉引用和双语一致性 |
+| v2.3.21 | 2026-05-06 | 仓库维护：英文版脚注添加 Contributing 链接，增强跨技能协作示例（QuantUX→SWD 数据流工作流），对齐所有版本引用 |
 | v2.3.20 | 2026-05-06 | 仓库维护：更新版本至 2.3.20，验证生态交叉引用和双语一致性 |
+| v2.3.19 | 2026-05-06 | 仓库维护：对齐所有版本引用（README 徽章、SKILL.md、pyproject.toml、CHANGELOG），验证生态交叉引用和双语一致性 |
 | v2.3.16 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
 | v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
 | v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
@@ -1023,6 +1024,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.21 | 2026-05-06 | Repo maintenance: added Contributing link to English footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references
 | v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
 | v2.3.17 | 2026-05-05 | Repo maintenance: added Quantitative UX Research collaboration reference to ecosystem workflow |
 | v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
@@ -1052,6 +1054,10 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 **Applicable to:** UX Researchers, Data Analysts, Product Managers, Experiment Scientists
 
+### 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.20*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.21*
