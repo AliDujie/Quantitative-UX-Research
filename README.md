@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.17-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.18-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -550,6 +550,7 @@ plan = skill.generate_research_plan(
 | "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
 | "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+| "I need to analyze a business problem systematically" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — Frameworks & strategic analysis |
 
 ### 🚀 Quick Start
 

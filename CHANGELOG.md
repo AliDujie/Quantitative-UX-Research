@@ -1,5 +1,16 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.18] - 2026-05-06
+
+### Maintenance
+- Verified ecosystem cross-reference consistency with all 6 AliDujie skill repos
+- Confirmed version alignment across pyproject.toml, README badge, and SKILL.md (v2.3.17)
+
+## [v2.3.17] - 2026-05-06
+
+### Maintenance
+- Version bump, Last Updated timestamp, pyproject+SKILL alignment
+
 ## [v2.2.12] - 2026-05-04
 
 ### Added
