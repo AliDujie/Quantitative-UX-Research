@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.23-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.24-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -1029,11 +1029,13 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 - **Establish Baselines** — Set baseline metrics and track improvement longitudinally
 - **QuantUX + UDM is the golden combo** — UDM discovers hypotheses, QuantUX validates quantitatively
 - **Statistical Power ≥ 0.8 is the floor** — When sample size is limited, use sequential testing or Bayesian methods instead of traditional A/B tests
+- **Full Ecosystem Workflow** — QuantUX is the validation engine of the AliDujie ecosystem. UDM discovers qualitative hypotheses, JTBD quantifies opportunity scores, Persona provides segments for stratified testing, VPD designs experiments to validate, and SWD visualizes the results.
 
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
 | v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
@@ -1071,4 +1073,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.22*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.24*
