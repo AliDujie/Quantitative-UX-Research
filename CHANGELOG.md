@@ -1,5 +1,11 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.19] - 2026-05-06
+
+### Fixed
+- Version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG)
+- Verified ecosystem cross-references and bilingual consistency
+
 ## [v2.2.12] - 2026-05-04
 
 ### Added

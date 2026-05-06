@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.18-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.19-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -772,6 +772,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.19 | 2026-05-06 | Repo maintenance: version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG), verified ecosystem cross-references and bilingual consistency |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 | v2.3.4 | 2026-05-03 | Repo maintenance: added ecosystem ASCII diagram and integration patterns to English Related Skills section, enhanced Why Choose section with ecosystem benefits |
 | v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
@@ -946,6 +947,8 @@ Phase 4: 呈现
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+|------|------|------|
+| v2.3.19 | 2026-05-06 | 仓库维护：对齐所有版本引用（README 徽章、SKILL.md、pyproject.toml、CHANGELOG），验证生态交叉引用和双语一致性 |
 | v2.3.16 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
 | v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13)
 | v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
@@ -1049,4 +1052,4 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.18*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.3.19*
