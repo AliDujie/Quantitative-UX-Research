@@ -1,5 +1,17 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.25] - 2026-05-07
+
+- Repo maintenance: aligned footer version badge with SKILL.md (v2.3.24→v2.3.25), added end-to-end ecosystem integration workflow example
+
+## [v2.3.24] - 2026-05-07
+
+- Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
+
+## [v2.3.23] - 2026-05-07
+
+- Repo maintenance: added English Dependencies section, verified ecosystem cross-references
+
 ## [v2.3.22] - 2026-05-07
 
 - Repo maintenance: added statistical power Pro Tip (CN+EN), enhanced SWD-QuantUX visualization integration

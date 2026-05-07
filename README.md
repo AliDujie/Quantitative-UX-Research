@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/badge/version-2.3.25-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
-> 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
+> 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 > 👉 [查看完整生态系统](#相关技能)
 
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
@@ -950,6 +950,54 @@ Phase 4: 呈现
 
 ---
 
+### 💻 实用集成示例 (Practical Integration Examples)
+
+#### 示例 1: QuantUX + SWD — 从 HEART 指标到高管叙事
+
+```python
+# QuantUX 构建 HEART 框架 → SWD 转化为数据故事
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+quantux = QuantUXSkill("电商平台")
+heart = quantux.build_heart_framework()
+
+swd = SWDSkill("电商平台")
+ctx = swd.build_context(audience="CEO", cta="增加 UX 研究预算")
+story = swd.build_story(protagonist="用户", imbalance="体验指标下降")
+```
+
+#### 示例 2: QuantUX + UDM — 定性定量三角验证
+
+```python
+# UDM 定性发现 → QuantUX 量化验证
+from udm import UDMSkill
+from quantux import QuantUXSkill
+
+udm = UDMSkill("电商平台")
+usability = udm.generate_usability_test("结账流程", "summative")
+
+quantux = QuantUXSkill("电商平台")
+sample_size = quantux.calculate_ab_sample_size(baseline=0.15, mde=0.02)
+print(f"A/B 测试需要 {sample_size} 样本量 per variant")
+```
+
+#### 示例 3: QuantUX + JTBD — 机会分数的统计验证
+
+```python
+# JTBD 机会评分 → QuantUX 设计 CSat 调查验证
+from jtbd import JTBDSkill
+from quantux import QuantUXSkill
+
+jtbd = JTBDSkill("电商平台")
+opportunity = jtbd.score_opportunity("快速完成购买", struggle=4, importance=5)
+
+quantux = QuantUXSkill("电商平台")
+csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
+```
+
+> 💡 **QuantUX 是验证引擎** — 将 UDM 的定性假设和 JTBD 的机会评分转化为可量化的统计证据。
+
 ### 🌟 为什么选择 AliDujie 技能生态系统？
 
 本技能是 **AliDujie UX 研究技能生态系统** 的定量研究层，与其他技能无缝协作：
@@ -1105,4 +1153,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.24*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.25*
