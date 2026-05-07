@@ -1,7 +1,7 @@
 ---
 name: quantitative-ux-research
 description: 量化用户体验研究执行技能。基于 Jeff Sauro & James R. Lewis 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
-version: "2.3.26"
+version: "2.3.27"
 ---
 
 # Quantitative UX Research Skill
@@ -339,3 +339,16 @@ QuantUX 是 AliDujie UX 研究技能生态系统的定量研究层，与其他�
 | 角色定量验证 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 细分 → QuantUX 行为分析 → Persona 精化 |
 | 价值主张实验验证 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 价值假设 → QuantUX 实验设计 → VPD 验证结果 |
 | 结构化决策支持 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | QuantUX 数据洞察 → STM 战略分析 → STM 决策建议 |
+
+### AliDujie 技能生态
+
+QuantUX 是 **AliDujie UX 研究技能生态系统** 的定量研究核心，负责用数据验证其他技能产生的定性假设：
+
+| 技能 | 定位 | 协作模式 |
+|------|------|---------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法论核心 | UDM 定性发现 → QuantUX 定量验证 → SWD 数据故事 |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | JTBD 机会分数 → QuantUX A/B 测试验证 → 决策支持 |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户角色 | Persona 假设 → QuantUX 行为验证 → 角色迭代 |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值验证 | VPD 价值假设 → QuantUX 实验设计 → VPD 验证结果 |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | QuantUX 分析结果 → SWD 图表选择 → SWD 叙事构建 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略框架 | QuantUX 数据洞察 → STM 战略分析 → STM 决策建议 |

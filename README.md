@@ -1053,6 +1053,8 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3.26 | 2026-05-07 | 仓库维护：版本升级至 2.3.26，对齐 SKILL.md 版本号，完善 SKILL.md 结尾协作生态表格 |
+| v2.3.25 | 2026-05-07 | 仓库维护：添加 SKILL.md 结尾 AliDujie 技能生态协作表格，增强跨技能一致性
 | v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.21 | 2026-05-06 | 仓库维护：英文版脚注添加 Contributing 链接，增强跨技能协作示例（QuantUX→SWD 数据流工作流），对齐所有版本引用 |
@@ -1132,6 +1134,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency
+| v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version
 | v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
 | v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
@@ -1170,4 +1174,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.26*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.27*
