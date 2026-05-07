@@ -1,5 +1,9 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.28] - 2026-05-07
+
+- Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28
+
 ## [v2.3.26] - 2026-05-07
 
 - Repo maintenance: standardized ecosystem documentation
