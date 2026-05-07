@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.29-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.30-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -828,6 +828,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
 | v2.3.19 | 2026-05-06 | Repo maintenance: version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG), verified ecosystem cross-references and bilingual consistency |
 | v2.3.20 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, version bump to 2.3.20, verified ecosystem cross-references and bilingual consistency |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
@@ -877,7 +878,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.17
+**版本 / Version**: v2.3.30
 
 ---
 
@@ -1055,6 +1056,7 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3.30 | 2026-05-08 | 仓库维护：增强 HEART 框架工作坊指南，改进跨技能生态工作流集成，更新 Last Updated 至 2026-05-08，版本升级至 2.3.30 |
 | v2.3.28 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 QuantUX"决策指南，添加跨技能工作流示例，版本升级至 2.3.28 |
 | v2.3.29 | 2026-05-07 | 仓库维护：在快速决策指南中添加 Structured Thinking Model 引用（中英文），提升跨技能发现性，版本升级至 2.3.29 |
 | v2.3.27 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.3.27，在 SKILL.md 末尾添加 AliDujie 技能生态协作表，验证生态交叉引用一致性 |
@@ -1140,6 +1142,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
 | v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
 | v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
 | v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency
@@ -1182,4 +1185,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.29*
+*Last Updated: 2026-05-08 | AliDujie Skill Ecosystem | v2.3.30*

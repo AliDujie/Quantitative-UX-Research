@@ -1,3 +1,9 @@
+## v2.3.30 (2026-05-08)
+- Enhanced HEART framework workshop guide with facilitator checklist
+- Improved cross-skill ecosystem workflow integration examples
+- Verified version alignment across README.md, SKILL.md, and pyproject.toml
+- No breaking changes
+
 ## v2.3.29 (2026-05-07)
 - Added Structured Thinking Model to Quick Decision Guide (CN + EN) for better cross-skill discoverability
 - Verified version alignment across README.md, SKILL.md, and pyproject.toml
