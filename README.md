@@ -8,11 +8,28 @@
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
-> 👉 [查看完整生态系统](#相关技能)
+
+> 🎯 **一句话介绍**: HEART 指标体系 + A/B 测试 + MaxDiff + 日志分析 — 用数据验证每一个用户研究假设。
 
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
+
+---
+
+## 🌐 技能生态系统 (Skill Ecosystem)
+
+本技能是 AliDujie 用户研究技能生态系统的**定量研究核心**，负责用数据验证定性假设。与其他技能协同使用，效果更佳：
+
+| 技能 | 角色 | 协同场景 |
+|------|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 研究方法 | UDM 定性发现 → QuantUX 定量验证 → 综合报告 |
+| [📊 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | QuantUX 分析结果 → SWD 图表改造 → 叙事构建 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | JTBD 机会评分 → QuantUX 量化验证 → 决策支持 |
+| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | VPD 价值假设 → QuantUX 实验设计 → 验证结果 |
+| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色假设 → QuantUX 行为验证 → 角色精化 |
+
+---
 
 ### ✅ 5 分钟快速开始检查清单
 
