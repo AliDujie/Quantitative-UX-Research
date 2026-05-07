@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.24-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.25-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -397,6 +397,22 @@ sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
 3. **序列粒度** — 根据研究问题选择合适的页面/事件粒度
 4. **样本代表性** — 确保分析样本覆盖不同用户群体
 
+### 💡 专业技巧
+
+- **A/B 测试前先建 HEART** — 在定义"成功"是什么之前不要做实验。用 HEART 框架定义成功指标，防止测试错误的东西
+- **用 MaxDiff 做功能优先级** — 当利益相关者说"所有功能都是 P0"时，MaxDiff 强制做取舍决策，揭示真正的优先级
+- **日志分析揭示问卷遗漏的真相** — 用户说的和做的不一样。日志序列分析发现自我报告隐藏的实行为模式
+- **始终计算效应量，不只 p 值** — 统计显著 ≠ 实际显著。p < 0.05 但效应量很小的结果可能不值得上线
+- **建立指标仪表盘** — 用 HEART 框架创建一个活的 UX 指标仪表盘，每周回顾
+
+### ❌ 常见错误
+
+- **提前查看 A/B 测试结果** — 在样本量达标之前查看结果会膨胀假阳性率。使用样本量计算器，耐心等待
+- **同时测试太多变量** — 多变量测试需要指数级更多流量。从单变量 A/B 测试开始
+- **忽略基线测量** — 没有基线，你就无法判断"改进"是否真的比以前好
+- **过度发问卷** — CSat 问卷有回复疲劳。间隔发放，聚焦具体体验
+- **把 HEART 当清单** — 不是每个产品都需要全部 5 个维度。选择 2-3 个与目标最相关的
+
 ### ❓ 常见问题 (FAQ)
 
 **Q: QuantUX 和 Google Analytics 等分析工具有什么区别？**
@@ -679,6 +695,22 @@ print(log_result)  # Transition matrix, frequent paths, drop-off points
 3. **Triangulate methods** — Combine quantitative (surveys, logs) with qualitative (interviews)
 4. **Report with CEO perspective** — Always include business impact and ROI estimates
 5. **Track trends over time** — Establish baselines and measure improvement longitudinally
+
+### 💡 Pro Tips
+
+- **Start with HEART before A/B testing** — Don't run experiments until you've defined what "success" looks like using the HEART framework. This prevents testing the wrong things.
+- **Use MaxDiff for feature prioritization** — When stakeholders say "everything is P0," MaxDiff forces trade-off decisions and reveals true priorities.
+- **Log analysis reveals what surveys miss** — Users say one thing but do another. Log sequence analysis uncovers real behavior patterns that self-reporting hides.
+- **Always calculate effect size, not just p-value** — Statistical significance ≠ practical significance. A p < 0.05 result with tiny effect size may not be worth shipping.
+- **Build a metrics dashboard** — Use the HEART framework to create a living dashboard that tracks key UX metrics. Review it weekly.
+
+### ❌ Common Mistakes to Avoid
+
+- **Peeking at A/B test results early** — Checking results before the sample size is reached inflates false positive rates. Use the sample size calculator and wait.
+- **Testing too many variables at once** — Multivariate tests require exponentially more traffic. Start with single-variable A/B tests.
+- **Ignoring the baseline** — Without a baseline measurement, you can't tell if your "improvement" is actually better than before.
+- **Over-surveying users** — CSat surveys have response fatigue. Space them out and keep them focused on specific experiences.
+- **Treating HEART as a checklist** — Not every product needs all 5 HEART dimensions. Select the 2-3 most relevant to your goals.
 
 ### ❓ FAQ
 
