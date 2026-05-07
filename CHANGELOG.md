@@ -1,5 +1,9 @@
 # Changelog — Quantitative UX Research
 
+## [v2.3.26] - 2026-05-07
+
+- Repo maintenance: standardized ecosystem documentation
+
 ## [v2.3.25] - 2026-05-07
 
 - Repo maintenance: aligned footer version badge with SKILL.md (v2.3.24→v2.3.25), added end-to-end ecosystem integration workflow example
