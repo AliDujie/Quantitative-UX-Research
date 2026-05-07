@@ -1,3 +1,8 @@
+## v2.3.29 (2026-05-07)
+- Added Structured Thinking Model to Quick Decision Guide (CN + EN) for better cross-skill discoverability
+- Verified version alignment across README.md, SKILL.md, and pyproject.toml
+- No breaking changes
+
 # Changelog — Quantitative UX Research
 
 ## [v2.3.28] - 2026-05-07

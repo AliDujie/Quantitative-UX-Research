@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.28-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.29-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -583,6 +583,7 @@ plan = skill.generate_research_plan(
 | "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
 | "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+| "I need a structured framework for analysis" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL, Five Forces, decision trees |
 
 ### 🚀 Quick Start
 
@@ -896,6 +897,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 | "我需要知道用户是谁" | → **Web Persona** — 创建具体的人物角色 |
 | "我的产品价值够不够？" | → **Value Proposition Design** — 契合度诊断 |
 | "我怎么把研究结果讲清楚？" | → **Storytelling with Data** — 数据叙事和图表改造 |
+| "我需要一个结构化的分析框架" | → **Structured Thinking Model** — PESTEL、五力模型、决策树 |
 | "我需要一个完整的流程" | → **组合使用** — 见下方工作流 |
 
 > 💡 **提示**: 这些技能设计为可组合使用。从 UDM 或 JTBD 开始，用 QuantUX 验证，用 SWD 呈现。
@@ -1054,6 +1056,7 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | v2.3.28 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 QuantUX"决策指南，添加跨技能工作流示例，版本升级至 2.3.28 |
+| v2.3.29 | 2026-05-07 | 仓库维护：在快速决策指南中添加 Structured Thinking Model 引用（中英文），提升跨技能发现性，版本升级至 2.3.29 |
 | v2.3.27 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.3.27，在 SKILL.md 末尾添加 AliDujie 技能生态协作表，验证生态交叉引用一致性 |
 | v2.3.26 | 2026-05-07 | 仓库维护：版本升级至 2.3.26，对齐 SKILL.md 版本号，完善 SKILL.md 结尾协作生态表格 |
 | v2.3.25 | 2026-05-07 | 仓库维护：添加 SKILL.md 结尾 AliDujie 技能生态协作表格，增强跨技能一致性 |
@@ -1138,6 +1141,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 | Version | Date | Changes |
 |---------|------|--------|
 | v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
+| v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
 | v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency
 | v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version
 | v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
@@ -1178,4 +1182,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.28*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.3.29*
