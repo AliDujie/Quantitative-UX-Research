@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.30-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.31-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -549,6 +549,7 @@ plan = skill.generate_research_plan(
 - [User Reviews](#-user-reviews)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
+- [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -879,6 +880,40 @@ python3 -m pytest quantux/tests/test_all.py -v
 ---
 
 **版本 / Version**: v2.3.30
+
+### 🔄 End-to-End Workflow: All 6 Skills
+
+A complete metrics-to-decision workflow using the full AliDujie ecosystem:
+
+```
+Step 1          Step 2          Step 3          Step 4          Step 5          Step 6
+┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐
+│Persona│  ──►  │ JTBD │  ──►  │ UDM  │  ──►  │QuantUX│  ──►  │ VPD  │  ──►  │ SWD  │
+│ 👤   │       │ 🎯   │       │ 📖   │       │ 📊   │       │ 💎   │       │ 📈   │
+│角色定义│       │需求洞察│       │定性研究│       │定量验证│       │价值验证│       │数据汇报│
+└──────┘       └──────┘       └──────┘       └──────┘       └──────┘       └──────┘
+```
+
+**Real-World Scenario: Fitness App Engagement Improvement**
+
+1. **Persona**: Create "Goal-driven Athlete" and "Casual Walker" segments from usage patterns
+2. **JTBD**: Discover core Job is "stay motivated to maintain a healthy routine" (Opp Score: 7.5)
+3. **UDM**: Diary study + contextual observation → find motivation drops after week 2
+4. **QuantUX**: HEART framework + A/B test gamification features (n=8,000) → Engagement +25%, Retention +18%
+5. **VPD**: Test value proposition "Your daily fitness coach" — canvas fit 0.79
+6. **SWD**: Build stakeholder presentation → line charts for trend, declutter before/after comparison → action-oriented narrative
+
+```python
+# QuantUX as the quantitative validation layer in the ecosystem
+from persona import PersonaSkill; persona = PersonaSkill("健身 App")
+from jtbd import JTBDSkill; jtbd = JTBDSkill("健身习惯")
+from udm import UDMSkill; udm = UDMSkill("健身 App")
+from quantux import QuantUXSkill; quantux = QuantUXSkill("健身 App")
+from vpd import VPDSkill; vpd = VPDSkill("健身 App", "目标导向型用户")
+from swd import SWDSkill; swd = SWDSkill("Q1 健身用户参与提升汇报")
+
+# QuantUX validates qualitative findings from UDM/JTBD with statistical rigor
+```
 
 ---
 

@@ -1,4 +1,8 @@
+## v2.3.31 (2026-05-08)
 ## v2.3.30 (2026-05-08)
+
+Repo maintenance: added English "End-to-End Workflow: All 6 Skills" section with fitness app scenario and ecosystem code example, updated English TOC, enhanced cross-skill discoverability.
+
 - Enhanced HEART framework workshop guide with facilitator checklist
 - Improved cross-skill ecosystem workflow integration examples
 - Verified version alignment across README.md, SKILL.md, and pyproject.toml
