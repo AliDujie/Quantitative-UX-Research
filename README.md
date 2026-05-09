@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.35-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.36-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -820,6 +820,34 @@ print(log_result)  # Transition matrix, frequent paths, drop-off points
 | **Experiment Scientists** | A/B test design, statistical significance testing, result interpretation |
 | **AI Agents** | Zero-dependency Python package for automated quantitative research |
 
+### 📁 Project Structure
+
+```
+Quantitative-UX-Research/
+├── SKILL.md              # AI Agent skill definition
+├── README.md             # This file
+├── pyproject.toml        # Python package build config
+├── quantux/              # Python package (pure stdlib)
+│   ├── __init__.py       # QuantUXSkill unified entry
+│   ├── config.py         # Global config and constants
+│   ├── utils.py          # Utility functions
+│   ├── templates.py      # Template definitions
+│   ├── heart.py          # HEART framework & GSM engine
+│   ├── csat.py           # CSat survey design & analysis
+│   ├── logs.py           # Log sequence analysis
+│   ├── maxdiff.py        # MaxDiff prioritization
+│   ├── abtest.py         # A/B test design & analysis
+│   └── research.py       # Research planning & report generation
+├── references/           # Knowledge base (5 methodology documents)
+│   ├── README.md
+│   ├── heart-framework.md    # HEART framework complete guide
+│   ├── csat-methods.md       # CSat survey design & analysis
+│   ├── ab-testing.md         # A/B testing design principles
+│   ├── maxdiff-guide.md      # MaxDiff prioritization guide
+│   └── log-analysis.md       # Log sequence analysis methodology
+└── quantux/tests/        # Test suite
+```
+
 ### 🛠️ Troubleshooting
 
 | Issue | Solution |
@@ -1009,6 +1037,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+| v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.3.35 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 |---------|------|--------|
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
@@ -1274,6 +1303,8 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
+| v2.3.36 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.3.35 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 |------|------|------|
 | v2.3.30 | 2026-05-08 | 仓库维护：增强 HEART 框架工作坊指南，改进跨技能生态工作流集成，更新 Last Updated 至 2026-05-08，版本升级至 2.3.30 |
@@ -1419,4 +1450,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.35*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.36*
