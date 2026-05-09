@@ -39,6 +39,13 @@ Repo maintenance: added English "End-to-End Workflow: All 6 Skills" section with
 
 # Changelog — Quantitative UX Research
 
+## [v2.3.35](https://github.com/AliDujie/Quantitative-UX-Research/compare/v2.3.28...v2.3.35) - 2026-05-09
+
+- Fixed SKILL.md version mismatch, aligned README footer version
+- Verified ecosystem cross-references consistency across all 6 skills
+- Improved changelog table ordering (CN + EN)
+- Routine documentation maintenance
+
 ## [v2.3.28] - 2026-05-07
 
 - Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28

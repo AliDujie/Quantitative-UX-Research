@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.34-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.35-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -1009,6 +1009,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+| v2.3.35 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 |---------|------|--------|
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
 | v2.3.32 | 2026-05-09 | Repo maintenance: fixed footer version mismatch (v2.3.30→v2.3.32), enhanced cross-skill ecosystem workflow clarity, updated ecosystem links to all 5 sibling skills, aligned version across README/SKILL.md/pyproject.toml |
@@ -1273,6 +1274,7 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.35 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 |------|------|------|
 | v2.3.30 | 2026-05-08 | 仓库维护：增强 HEART 框架工作坊指南，改进跨技能生态工作流集成，更新 Last Updated 至 2026-05-08，版本升级至 2.3.30 |
 | v2.3.28 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 QuantUX"决策指南，添加跨技能工作流示例，版本升级至 2.3.28 |
@@ -1417,4 +1419,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.33*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.35*
