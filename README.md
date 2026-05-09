@@ -943,6 +943,57 @@ A: MaxDiff forces choices (best vs worst) for more precise preference data, avoi
 A: It depends on current conversion rate, minimum detectable effect, and statistical power (typically 80%). Use `calculate_sample_size()` to compute automatically instead of looking up tables manually.
 
 
+### 📋 Cheat Sheet / Quick Reference Cards
+
+#### HEART Framework Quick Reference
+
+| Dimension | What It Measures | Common Metrics |
+|-----------|-----------------|----------------|
+| **H**appiness | User satisfaction | CSat, NPS, SUS, app store ratings |
+| **E**ngagement | Usage frequency & depth | DAU/WAU, session duration, features used |
+| **A**doption | New user uptake | Sign-up rate, feature adoption rate, activation rate |
+| **R**etention | Returning users | D1/D7/D30 retention, churn rate, renewal rate |
+| **T**ask Success | Task completion | Completion rate, time-on-task, error rate |
+
+#### A/B Testing Quick Reference
+
+| Scenario | Recommended Test |
+|----------|-----------------|
+| Compare 2 versions | A/B test (binary) |
+| Compare 3+ versions | A/B/n test (multivariate) |
+| Small sample size | Sequential testing or Bayesian methods |
+| Measure magnitude of change | Effect size (Cohen's d) + confidence interval |
+
+#### Sample Size Rule of Thumb
+
+| Baseline Rate | MDE | Approx. Sample/Group |
+|--------------|-----|---------------------|
+| 10% | 2% | ~12,000 |
+| 15% | 2% | ~8,000 |
+| 15% | 3% | ~3,500 |
+| 30% | 5% | ~1,500 |
+| 50% | 5% | ~1,600 |
+
+#### MaxDiff Design Tips
+
+| Parameter | Recommendation |
+|-----------|---------------|
+| Items per screen | 3-5 (optimal: 4) |
+| Number of blocks | Items × 2-3 |
+| Minimum respondents | 100+ |
+| Best for | 8+ items to prioritize |
+
+#### Cross-Skill Quick Reference
+
+| Need | Skill | Key Method |
+|------|-------|------------|
+| Choose research methods | [UDM](https://github.com/AliDujie/universal-design-methods) | `recommend_methods()` |
+| Validate quantitatively | **QuantUX** (this skill) | `calculate_ab_sample_size()` |
+| Understand user "jobs" | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | `analyze()` |
+| Create personas | [Persona](https://github.com/AliDujie/web-persona-skill) | `add_persona()` |
+| Design value prop | [VPD](https://github.com/AliDujie/value-proposition-design) | `analyze_canvas()` |
+| Present findings | [SWD](https://github.com/AliDujie/storytelling-with-data) | `build_story()` |
+
 ### 🏆 Case Studies
 
 #### Case Study 1: HEART Metrics System Setup
@@ -1441,8 +1492,9 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
+| v2.3.39 | 2026-05-10 | Repo maintenance: added English cheat sheet (HEART metrics guide, A/B testing quick reference, MaxDiff design tips), updated Last Updated badge |
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
+| v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
 | v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
 | v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
 | v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency
@@ -1498,4 +1550,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.3.38*
+*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.3.39*
