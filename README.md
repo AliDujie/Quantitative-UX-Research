@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.31-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.32-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--09-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -829,6 +829,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.32 | 2026-05-09 | Repo maintenance: fixed footer version mismatch (v2.3.30→v2.3.32), enhanced cross-skill ecosystem workflow clarity, updated ecosystem links to all 5 sibling skills, aligned version across README/SKILL.md/pyproject.toml |
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
 | v2.3.19 | 2026-05-06 | Repo maintenance: version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG), verified ecosystem cross-references and bilingual consistency |
 | v2.3.20 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, version bump to 2.3.20, verified ecosystem cross-references and bilingual consistency |
@@ -1208,6 +1209,19 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 ---
 
+### 🚀 Next Steps / 下一步
+
+Ready to go deeper? Here's what to try next:
+
+1. **Explore all capabilities** — Check [quantux/surveys.py](quantux/surveys.py) for SUS, NPS, and HEART framework implementations
+2. **Validate qualitative findings** — Pair QuantUX with [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) to confirm hypotheses with statistical rigor
+3. **Segment your samples** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) to define strata for targeted quantitative studies
+4. **Measure value proposition fit** — Combine with [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) for experiment-driven validation
+5. **Tell the data story** — Transform statistical results into executive narratives with [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+6. **Identify opportunity gaps** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) to prioritize what to measure
+
+> 💡 **Pro Tip**: QuantUX is the validation engine of the ecosystem. Try: JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)
+
 ### 👨‍💻 Credits
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023), covering HEART framework, experimental design, statistical analysis, and survey methods.
@@ -1220,4 +1234,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-08 | AliDujie Skill Ecosystem | v2.3.30*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.32*
