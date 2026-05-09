@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.38-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.39-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-10-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -816,6 +816,38 @@ log_result = skill.analyze_logs(
 )
 print(log_result)  # Transition matrix, frequent paths, drop-off points
 ```
+
+### 🔄 End-to-End Ecosystem Workflow
+
+QuantUX is the **validation engine** of the ecosystem. Here's how it connects with the other 5 skills:
+
+```python
+# ===== Complete Validation Cycle (All 6 Skills) =====
+# Step 1: UDM generates qualitative hypotheses → Step 2: JTBD identifies opportunities
+# Step 3: QuantUX validates with statistical rigor → Step 4: VPD designs experiments
+# Step 5: Persona segments the sample → Step 6: SWD presents results
+
+from quantux import QuantUXSkill
+quantux = QuantUXSkill("Feature Validation")
+
+# Validate JTBD-discovered opportunity with quantitative data
+sample_size = quantux.calculate_ab_sample_size(baseline=0.15, mde=0.02)
+print(f"Need {sample_size} users per group for 80% power")
+
+# Build HEART framework for the feature
+heart = quantux.build_heart_framework()
+# Happiness: CSat, NPS | Engagement: DAU, session duration | Adoption: new feature usage
+# Retention: 30-day retention | Task success: completion rate | Error rate: crash rate
+
+# Design MaxDiff for feature prioritization
+maxdiff = quantux.design_maxdiff("Feature Priority",
+    items=["Dark Mode", "Quick Search", "Offline Access", "Export"])
+
+# Generate research report with CEO analysis
+report = quantux.generate_report("Q4 Validation Report", include_ceo_analysis=True)
+```
+
+> 💡 **Pro Tip**: QuantUX is the validation engine of the ecosystem. Try: JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)
 
 ### 👥 Who Is This For?
 
