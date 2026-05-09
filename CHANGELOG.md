@@ -1,3 +1,12 @@
+## v2.3.37 (2026-05-09)
+
+Repo maintenance: enhanced installation options, added "When NOT to use" sections.
+
+- Added pip install option to Quick Start (CN + EN) for easier Python package usage
+- Added "When NOT to Use This Skill" section (CN + EN) with cross-references to all 5 other skills
+- Updated Last Updated timestamp to 2026-05-09
+- No breaking changes
+
 ## v2.3.34 (2026-05-09)
 
 Repo maintenance: added Chinese Quick Decision Guide, End-to-End Workflow, Integration Examples, and Next Steps sections for CN/EN parity.

@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.36-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.37-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -145,8 +145,11 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 #### 步骤 1: 安装技能
 
 ```bash
-# 复制到你的 AI Agent skills 目录
+# 方式 A: 复制到你的 AI Agent skills 目录
 cp -r Quantitative-UX-Research /your/agent/skills/
+
+# 方式 B: 作为 Python 包安装（支持 pip import）
+cd Quantitative-UX-Research && pip install -e .
 ```
 
 > 📖 详细安装指南请查看 [INSTALL.md](INSTALL.md)
@@ -713,7 +716,11 @@ swd.recommend_chart(data_type="continuous", has_time=True)
 #### Step 1: Install
 
 ```bash
+# Option A: Copy to your AI Agent skills directory
 cp -r Quantitative-UX-Research /your/agent/skills/
+
+# Option B: Install as a Python package (enables pip import)
+cd Quantitative-UX-Research && pip install -e .
 ```
 
 > 📖 See [INSTALL.md](INSTALL.md) for detailed installation guide
@@ -872,6 +879,14 @@ Quantitative-UX-Research/
 - **Log analysis reveals what surveys miss** — Users say one thing but do another. Log sequence analysis uncovers real behavior patterns that self-reporting hides.
 - **Always calculate effect size, not just p-value** — Statistical significance ≠ practical significance. A p < 0.05 result with tiny effect size may not be worth shipping.
 - **Build a metrics dashboard** — Use the HEART framework to create a living dashboard that tracks key UX metrics. Review it weekly.
+
+### ⛔ When NOT to Use This Skill
+
+- **Choosing research methods or designing qualitative studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for qualitative research
+- **Data visualization and narrative design** — Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) for chart design and data narratives
+- **Understanding user Jobs-to-be-Done** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) for deep need analysis
+- **Value proposition and canvas analysis** — Use [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) for canvas-based analysis
+- **Creating user personas and segmentation** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) for persona creation
 
 ### ❌ Common Mistakes to Avoid
 
@@ -1450,4 +1465,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.36*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.37*
