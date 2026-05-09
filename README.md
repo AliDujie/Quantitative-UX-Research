@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.33-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.34-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -529,6 +529,128 @@ plan = skill.generate_research_plan(
 - Python >= 3.8
 - **无外部依赖**（纯标准库实现）
 - 兼容 macOS / Linux / Windows
+
+---
+
+
+---
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "需要定量验证假设" | → **Quantitative UX Research (本技能)** — A/B 测试、HEART 指标、样本量计算 |
+| "不知道选什么研究方法" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐与执行 |
+| "想理解用户背后的「工作」" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 用户"工作"挖掘、机会评分 |
+| "需要创建用户画像" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 人物角色创建与细分 |
+| "验证价值主张够不够强" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 价值主张画布、实验验证 |
+| "研究结果怎么讲给高管听" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事与图表呈现 |
+| "需要结构化商业分析框架" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL、五力模型、决策树 |
+
+---
+
+### 🔄 完整端到端工作流：从定性发现到定量验证 (End-to-End Workflow)
+
+> QuantUX 是用数据验证定性假设的关键环节 — 将 UDM/JTBD 的发现转化为可量化的指标。
+
+#### 阶段 1: 定性发现
+1. **Universal Design Methods** → 用户访谈、可用性测试发现痛点
+2. **JTBD Knowledge** → 挖掘用户"工作"和未满足需求
+3. **Web Persona** → 创建角色画像
+
+#### 阶段 2: 定量验证 (本技能)
+4. **Quantitative UX Research (本技能)** → HEART 指标、A/B 测试、MaxDiff、日志分析
+
+#### 阶段 3: 价值验证与呈现
+5. **Value Proposition Design** → 基于数据验证价值假设
+6. **Storytelling with Data** → 将数据结果转化为高管叙事
+
+```python
+# 示例：QuantUX 端到端工作流
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+# 阶段 1: UDM 发现痛点
+udm = UDMSkill("电商平台")
+test = udm.generate_usability_test("结账流程", "summative")
+# 发现：结账流程 SUS 得分仅 45 分
+
+# 阶段 2: QuantUX 验证
+quant = QuantUXSkill("电商平台")
+heart = quant.build_heart_framework()
+sample = quant.calculate_ab_sample_size(baseline=0.15, mde=0.05)
+# A/B 测试需要每组 2,000 用户
+
+# 阶段 3: SWD 汇报
+swd = SWDSkill("A/B 测试结果汇报")
+swd.build_context(audience="产品 VP", cta="批准结账流程优化")
+```
+
+---
+
+### 💻 实用集成示例 (Practical Integration Examples)
+
+#### 集成 1: UDM → QuantUX
+
+```python
+from udm import UDMSkill
+from quantux import QuantUXSkill
+
+# UDM 可用性测试发现
+udm = UDMSkill("产品名")
+test = udm.generate_usability_test("流程测试", "summative")
+sus = udm.calculate_sus([4, 2, 5, 1, 4])
+
+# QuantUX 定量验证
+quant = QuantUXSkill("产品名")
+heart = quant.build_heart_framework()
+# 将 UDM 的 SUS 得分映射到 HEART 的 Satisfaction 指标
+```
+
+#### 集成 2: JTBD → QuantUX
+
+```python
+from jtbd import JTBDSkill
+from quantux import QuantUXSkill
+
+# JTBD 发现机会
+jtbd = JTBDSkill("产品名")
+report = jtbd.analyze(product="产品名",
+    jobs=[{"context": "出差时", "motivation": "快速找到住处"}]
+)
+
+# QuantUX 量化验证
+quant = QuantUXSkill("产品名")
+quant.design_maxdiff("功能优先级", ["快速搜索", "价格对比", "评价可信"])
+# 用 MaxDiff 验证 JTBD 发现的优先级
+```
+
+#### 集成 3: QuantUX → SWD
+
+```python
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+# QuantUX 分析结果
+quant = QuantUXSkill("产品名")
+heart = quant.build_heart_framework()
+
+# SWD 数据叙事
+swd = SWDSkill("季度数据汇报")
+swd.build_context(audience="高管", cta="批准优化预算")
+swd.recommend_chart(data_type="continuous", has_time=True)
+```
+
+---
+
+### 🚀 下一步 (Next Steps)
+
+1. **快速上手** — 复制技能到你的 skills 目录，5 分钟内完成首次调用
+2. **阅读 SKILL.md** — 了解 AI Agent 触发条件和完整 API 文档
+3. **安装 INSTALL.md** — 详细的安装和配置指南
+4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
+5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
 
 ---
 
