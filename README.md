@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.37-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.38-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-10-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -1052,9 +1052,10 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+|---------|------|--------|
+| v2.3.38 | 2026-05-10 | Repo maintenance: fixed English changelog table (added missing separator, removed rogue separator), updated Last Updated badge |
 | v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.3.35 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
-|---------|------|--------|
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
 | v2.3.32 | 2026-05-09 | Repo maintenance: fixed footer version mismatch (v2.3.30→v2.3.32), enhanced cross-skill ecosystem workflow clarity, updated ecosystem links to all 5 sibling skills, aligned version across README/SKILL.md/pyproject.toml |
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
@@ -1465,4 +1466,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.3.37*
+*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.3.38*
