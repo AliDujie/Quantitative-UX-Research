@@ -4,8 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.39-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-10-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.3.40-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -1136,7 +1136,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.3.38 | 2026-05-10 | Repo maintenance: fixed English changelog table (added missing separator, removed rogue separator), updated Last Updated badge |
+| v2.3.40 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (surveys.py→csat.py), fixed rogue separator in CN changelog table, fixed version ordering (v2.3.29 before v2.3.28), updated Last Updated |
 | v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.3.35 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
@@ -1402,13 +1402,12 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
+| v2.3.40 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（surveys.py→csat.py），修复版本历史表格中的错误分隔符，修正版本排序（v2.3.29 在 v2.3.28 之前），更新 Last Updated
 | v2.3.36 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.3.35 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
-|------|------|------|
 | v2.3.30 | 2026-05-08 | 仓库维护：增强 HEART 框架工作坊指南，改进跨技能生态工作流集成，更新 Last Updated 至 2026-05-08，版本升级至 2.3.30 |
-| v2.3.28 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 QuantUX"决策指南，添加跨技能工作流示例，版本升级至 2.3.28 |
 | v2.3.29 | 2026-05-07 | 仓库维护：在快速决策指南中添加 Structured Thinking Model 引用（中英文），提升跨技能发现性，版本升级至 2.3.29 |
+| v2.3.28 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 QuantUX"决策指南，添加跨技能工作流示例，版本升级至 2.3.28 |
 | v2.3.27 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.3.27，在 SKILL.md 末尾添加 AliDujie 技能生态协作表，验证生态交叉引用一致性 |
 | v2.3.26 | 2026-05-07 | 仓库维护：版本升级至 2.3.26，对齐 SKILL.md 版本号，完善 SKILL.md 结尾协作生态表格 |
 | v2.3.25 | 2026-05-07 | 仓库维护：添加 SKILL.md 结尾 AliDujie 技能生态协作表格，增强跨技能一致性 |
@@ -1495,8 +1494,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 | v2.3.39 | 2026-05-10 | Repo maintenance: added English cheat sheet (HEART metrics guide, A/B testing quick reference, MaxDiff design tips), updated Last Updated badge |
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
-| v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
 | v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
+| v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
 | v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency
 | v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version
 | v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
@@ -1529,7 +1528,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 Ready to go deeper? Here's what to try next:
 
-1. **Explore all capabilities** — Check [quantux/surveys.py](quantux/surveys.py) for SUS, NPS, and HEART framework implementations
+1. **Explore all capabilities** — Check [quantux/csat.py](quantux/csat.py) for CSat survey design, [quantux/heart.py](quantux/heart.py) for HEART framework, and [quantux/abtest.py](quantux/abtest.py) for A/B testing
 2. **Validate qualitative findings** — Pair QuantUX with [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) to confirm hypotheses with statistical rigor
 3. **Segment your samples** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) to define strata for targeted quantitative studies
 4. **Measure value proposition fit** — Combine with [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) for experiment-driven validation
@@ -1550,4 +1549,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.3.39*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.40*
