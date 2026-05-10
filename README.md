@@ -711,6 +711,15 @@ swd.recommend_chart(data_type="continuous", has_time=True)
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
 | "I need a structured framework for analysis" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL, Five Forces, decision trees |
 
+### ✅ 5-Minute Quick Start Checklist
+
+- [ ] **Install** — `cp -r Quantitative-UX-Research /your/agent/skills/`
+- [ ] **Import** — `from quantux import QuantUXSkill`
+- [ ] **Initialize** — `skill = QuantUXSkill("your project")`
+- [ ] **HEART framework** — `skill.build_heart_framework()`
+- [ ] **A/B sample size** — `skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)`
+- [ ] **CSat survey** — `skill.design_csat_survey("Satisfaction Survey")`
+
 ### 🚀 Quick Start
 
 #### Step 1: Install
