@@ -1413,6 +1413,7 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.43 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.3.40→v2.3.42），补齐缺失的变更日志条目（v2.3.42），确保 README/徽章/CHANGELOG 三端版本对齐 |
 | v2.3.40 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（surveys.py→csat.py），修复版本历史表格中的错误分隔符，修正版本排序（v2.3.29 在 v2.3.28 之前），更新 Last Updated
 | v2.3.41 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令
 
@@ -1504,6 +1505,9 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.43 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment |
+| v2.3.42 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
+| v2.3.41 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
 | v2.3.39 | 2026-05-10 | Repo maintenance: added English cheat sheet (HEART metrics guide, A/B testing quick reference, MaxDiff design tips), updated Last Updated badge |
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
@@ -1578,4 +1582,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.40*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.43*
