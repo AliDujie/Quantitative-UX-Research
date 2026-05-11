@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.44-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.45-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -1142,8 +1142,10 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.45 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
 | v2.3.44 | 2026-05-11 | Repo maintenance: fixed embedded Changelog version ordering (v2.3.41→v2.3.40), removed blank-line separator, fixed v2.3.27 missing `|` in English Version History |
 | v2.3.43 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment |
+| v2.3.42 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
 | v2.3.41 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
 | v2.3.40 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (surveys.py→csat.py), fixed rogue separator in CN changelog table, fixed version ordering (v2.3.29 before v2.3.28), updated Last Updated |
 | v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
@@ -1504,6 +1506,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.45 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
 | v2.3.44 | 2026-05-11 | Repo maintenance: removed duplicate v2.3.34 changelog entry, removed empty v2.3.31 entry, fixed English Version History table formatting and missing entries |
 | v2.3.43 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment |
 | v2.3.42 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
@@ -1583,4 +1586,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.44*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.45*
