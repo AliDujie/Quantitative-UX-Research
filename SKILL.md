@@ -153,9 +153,9 @@ survey_md = skill.design_csat_survey("2024Q1 满意度", mechanism="email")
 result = skill.analyze_csat("2024Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
 
 # -- 能力 3: 日志序列 (logs.py) --
-skill.logs_analyzer.add_event("user_1", "2024-01-01 10:00", "首页")
-skill.logs_analyzer.add_event("user_1", "2024-01-01 10:02", "搜索")
-skill.logs_analyzer.add_event("user_1", "2024-01-01 10:05", "详情页")
+skill.logs_analyzer.add_event("user_1", "2024-01-01 10:00:00", "首页")
+skill.logs_analyzer.add_event("user_1", "2024-01-01 10:02:00", "搜索")
+skill.logs_analyzer.add_event("user_1", "2024-01-01 10:05:00", "详情页")
 logs_md = skill.analyze_logs()
 
 # -- 能力 4: MaxDiff (maxdiff.py) --
