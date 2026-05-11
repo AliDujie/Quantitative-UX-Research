@@ -669,6 +669,7 @@ swd.recommend_chart(data_type="continuous", has_time=True)
 - [Best Practices](#-best-practices)
 - [FAQ](#-faq)
 - [User Reviews](#-user-reviews)
+- [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
 - [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
@@ -1579,6 +1580,20 @@ Ready to go deeper? Here's what to try next:
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023), covering HEART framework, experimental design, statistical analysis, and survey methods.
 
 **Applicable to:** UX Researchers, Data Analysts, Product Managers, Experiment Scientists
+
+### 🆘 Getting Help
+
+- 📖 Check the [Troubleshooting](#-troubleshooting) section for common issues
+- 📚 Read the methodology guides in [references/](references/)
+- 💬 Open an issue on [GitHub](https://github.com/AliDujie/Quantitative-UX-Research/issues)
+
+### 📖 Extended Reading
+
+| Book | Author | Related Capability |
+|------|--------|--------------------|
+| *Quantitative UX Research* | Jeff Sauro & James R. Lewis | Full methodology — HEART, CSat, A/B testing, MaxDiff |
+| *Measuring the User Experience* (2nd Ed) | Jeff Sauro & James R. Lewis | SUS, NPS, UMUX-Lite benchmarking |
+| *Lean Analytics* | Alistair Croll & Benjamin Yoskovitz | Data-driven product decisions |
 
 ### 🤝 Contributing
 
