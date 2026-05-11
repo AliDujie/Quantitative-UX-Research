@@ -174,8 +174,8 @@ heart = skill.build_heart_framework()
 survey = skill.design_csat_survey("2024Q1 满意度")
 
 # ===== 场景 3: 日志序列分析 =====
-skill.logs_analyzer.add_event("u1", "2024-01-01 10:00", "首页")
-skill.logs_analyzer.add_event("u1", "2024-01-01 10:05", "搜索")
+skill.logs_analyzer.add_event("u1", "2024-01-01 10:00:00", "首页")
+skill.logs_analyzer.add_event("u1", "2024-01-01 10:05:00", "搜索")
 
 # ===== 场景 4: MaxDiff 优先级排序 =====
 design = skill.design_maxdiff("功能优先级", ["快速搜索", "价格对比", "评价可信"])
@@ -260,22 +260,22 @@ skill = QuantUXSkill("旅行预订平台")
 
 # 添加用户行为序列
 sequences = [
-    ("u1", "10:00", "首页"),
-    ("u1", "10:02", "搜索"),
-    ("u1", "10:05", "结果页"),
-    ("u1", "10:08", "详情页"),
-    ("u1", "10:12", "预订"),
-    ("u2", "10:01", "首页"),
-    ("u2", "10:03", "搜索"),
-    ("u2", "10:06", "结果页"),
-    ("u2", "10:07", "退出"),
+    ("u1", "2024-01-01 10:00:00", "首页"),
+    ("u1", "2024-01-01 10:02:00", "搜索"),
+    ("u1", "2024-01-01 10:05:00", "结果页"),
+    ("u1", "2024-01-01 10:08:00", "详情页"),
+    ("u1", "2024-01-01 10:12:00", "预订"),
+    ("u2", "2024-01-01 10:01:00", "首页"),
+    ("u2", "2024-01-01 10:03:00", "搜索"),
+    ("u2", "2024-01-01 10:06:00", "结果页"),
+    ("u2", "2024-01-01 10:07:00", "退出"),
 ]
 
 for uid, time, page in sequences:
     skill.logs_analyzer.add_event(uid, time, page)
 
 # 分析序列频率和转移矩阵
-analysis = skill.logs_analyzer.analyze()
+analysis = skill.analyze_logs()
 ```
 
 #### 示例 3: MaxDiff 功能优先级
@@ -1503,17 +1503,19 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.44 | 2026-05-11 | Repo maintenance: removed duplicate v2.3.34 changelog entry, removed empty v2.3.31 entry, fixed English Version History table formatting and missing entries |
 | v2.3.43 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment |
 | v2.3.42 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
 | v2.3.41 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
+| v2.3.40 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (surveys.py→csat.py), fixed rogue separator in CN changelog table, fixed version ordering (v2.3.29 before v2.3.28), updated Last Updated |
 | v2.3.39 | 2026-05-10 | Repo maintenance: added English cheat sheet (HEART metrics guide, A/B testing quick reference, MaxDiff design tips), updated Last Updated badge |
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
 | v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
 | v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
 | v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency |
-| v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version
-| v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
+| v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version |
+| v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24 |
 | v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
 | v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
