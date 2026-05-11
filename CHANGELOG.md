@@ -1,3 +1,7 @@
+## v2.3.49 (2026-05-12)
+
+Repo maintenance: fixed `__init__.py` version mismatch (2.3.44→2.3.49), verified all Python module exports are importable, confirmed ecosystem cross-references.
+
 ## v2.3.48 (2026-05-12)
 
 Repo maintenance: added "HEART Metric Selection Guide" with product-stage-based metric recommendations in English README, helped researchers pick the right metrics for their context.
