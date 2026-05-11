@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.43-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.44-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -532,9 +532,6 @@ plan = skill.generate_research_plan(
 - Python >= 3.8
 - **无外部依赖**（纯标准库实现）
 - 兼容 macOS / Linux / Windows
-
----
-
 
 ---
 
@@ -1145,16 +1142,17 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.44 | 2026-05-11 | Repo maintenance: fixed embedded Changelog version ordering (v2.3.41→v2.3.40), removed blank-line separator, fixed v2.3.27 missing `|` in English Version History |
+| v2.3.43 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment |
+| v2.3.41 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
 | v2.3.40 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (surveys.py→csat.py), fixed rogue separator in CN changelog table, fixed version ordering (v2.3.29 before v2.3.28), updated Last Updated |
-| v2.3.41 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands
-
 | v2.3.36 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.3.35 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 | v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
 | v2.3.32 | 2026-05-09 | Repo maintenance: fixed footer version mismatch (v2.3.30→v2.3.32), enhanced cross-skill ecosystem workflow clarity, updated ecosystem links to all 5 sibling skills, aligned version across README/SKILL.md/pyproject.toml |
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
-| v2.3.19 | 2026-05-06 | Repo maintenance: version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG), verified ecosystem cross-references and bilingual consistency |
 | v2.3.20 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, version bump to 2.3.20, verified ecosystem cross-references and bilingual consistency |
+| v2.3.19 | 2026-05-06 | Repo maintenance: version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG), verified ecosystem cross-references and bilingual consistency |
 | v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
 | v2.3.4 | 2026-05-03 | Repo maintenance: added ecosystem ASCII diagram and integration patterns to English Related Skills section, enhanced Why Choose section with ecosystem benefits |
 | v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
@@ -1202,7 +1200,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 ---
 
-**版本 / Version**: v2.3.30
+**版本 / Version**: v2.3.44
 
 ### 🔄 End-to-End Workflow: All 6 Skills
 
@@ -1413,10 +1411,10 @@ csat = quantux.design_csat_survey("购买流程满意度", mechanism="in_app")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.3.44 | 2026-05-11 | 仓库维护：修复 CN 变更日志版本排序（v2.3.41→v2.3.40）、缺失的表格闭合符 `|`、多余的空行分隔符；修复页脚陈旧版本引用（v2.3.30→v2.3.43）；清理重复分隔符 |
 | v2.3.43 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.3.40→v2.3.42），补齐缺失的变更日志条目（v2.3.42），确保 README/徽章/CHANGELOG 三端版本对齐 |
-| v2.3.40 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（surveys.py→csat.py），修复版本历史表格中的错误分隔符，修正版本排序（v2.3.29 在 v2.3.28 之前），更新 Last Updated
-| v2.3.41 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令
-
+| v2.3.41 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令 |
+| v2.3.40 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（surveys.py→csat.py），修复版本历史表格中的错误分隔符，修正版本排序（v2.3.29 在 v2.3.28 之前），更新 Last Updated |
 | v2.3.36 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.3.35 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 | v2.3.30 | 2026-05-08 | 仓库维护：增强 HEART 框架工作坊指南，改进跨技能生态工作流集成，更新 Last Updated 至 2026-05-08，版本升级至 2.3.30 |
@@ -1513,7 +1511,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 | v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
 | v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
 | v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
-| v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency
+| v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency |
 | v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version
 | v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
 | v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
@@ -1582,4 +1580,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.43*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.44*

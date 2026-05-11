@@ -1,3 +1,11 @@
+## v2.3.44 (2026-05-11)
+
+Repo maintenance: fixed CN changelog version ordering (v2.3.41→v2.3.40), missing table closing `|`, rogue blank-line separator; fixed stale footer version reference (v2.3.30→v2.3.43); cleaned up duplicate `---` separators; fixed v2.3.27 missing `|` in English Version History; aligned version across README/SKILL.md/pyproject.toml/CHANGELOG.
+
+## v2.3.43 (2026-05-11)
+
+Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment.
+
 ## v2.3.42 (2026-05-11)
 
 Repo maintenance: added English 5-minute Quick Start checklist to improve onboarding, enhanced discoverability for English-speaking users, verified all ecosystem cross-references.
