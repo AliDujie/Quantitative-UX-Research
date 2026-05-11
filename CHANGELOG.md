@@ -1,3 +1,7 @@
+## v2.3.48 (2026-05-12)
+
+Repo maintenance: added "HEART Metric Selection Guide" with product-stage-based metric recommendations in English README, helped researchers pick the right metrics for their context.
+
 ## v2.3.47 (2026-05-12)
 
 Repo maintenance: updated README footer date (2026-05-11→2026-05-12), version bump, verified ecosystem cross-references and version alignment across README/SKILL.md/pyproject.toml.

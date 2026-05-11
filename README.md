@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.47-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.48-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -917,6 +917,21 @@ Quantitative-UX-Research/
 - **Always calculate effect size, not just p-value** — Statistical significance ≠ practical significance. A p < 0.05 result with tiny effect size may not be worth shipping.
 - **Build a metrics dashboard** — Use the HEART framework to create a living dashboard that tracks key UX metrics. Review it weekly.
 
+### 📋 HEART Metric Selection Guide
+
+Not every product needs all 5 HEART dimensions. Use this guide to pick the right metrics:
+
+| Product Stage | Focus Dimensions | Key Metrics | Why |
+|--------------|-----------------|-------------|-----|
+| **Pre-launch / Beta** | Task Success + Happiness | Task completion rate, SUS score | Verify the product works before measuring engagement |
+| **Post-launch (0-3 months)** | Adoption + Engagement | New user activation, DAU/MAU ratio | Track initial uptake and early retention |
+| **Growth (3-12 months)** | Engagement + Retention | Feature adoption, 30-day retention, NPS | Optimize for stickiness and word-of-mouth |
+| **Mature (12+ months)** | Retention + Happiness | Churn rate, CSat, feature usage distribution | Prevent decline and maintain satisfaction |
+| **Redesign / Migration** | Task Success + Happiness | Before/after SUS, error rate, time-on-task | Prove the change improved (or didn't harm) UX |
+| **Feature Addition** | Engagement + Adoption | Feature adoption rate, cannibalization | Check if new features complement or compete |
+
+> 💡 **Rule of thumb**: Pick 2-3 HEART dimensions max per study. Trying to measure everything means you'll measure nothing well.
+
 ### ⛔ When NOT to Use This Skill
 
 - **Choosing research methods or designing qualitative studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for qualitative research
@@ -1599,4 +1614,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.47*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.48*
