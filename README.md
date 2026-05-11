@@ -616,9 +616,7 @@ from quantux import QuantUXSkill
 
 # JTBD 发现机会
 jtbd = JTBDSkill("产品名")
-report = jtbd.analyze(product="产品名",
-    jobs=[{"context": "出差时", "motivation": "快速找到住处"}]
-)
+report = jtbd.analyze(include_ceo_analysis=True)  # JTBD analysis report
 
 # QuantUX 量化验证
 quant = QuantUXSkill("产品名")
