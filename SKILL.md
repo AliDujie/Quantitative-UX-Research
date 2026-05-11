@@ -39,6 +39,15 @@ Persona (角色假设)─►│  · A-B 测试     │──────► CEO 
 
 > 💡 QuantUX 是验证引擎：用 HEART/A-B/MaxDiff 把定性假设转化为可量化的统计证据。
 
+## 🌟 为什么选择 QuantUX？
+
+- **行业标准方法** — 基于 Jeff Sauro & James R. Lewis《Quantitative User Experience Research》，量化 UX 研究的权威参考
+- **7 大执行能力** — HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、研究报告，一站式覆盖定量研究全流程
+- **CEO 决策支持** — 内置业务影响评估、验证时间线、资源估算，把 UX 数据转化为业务语言
+- **零学习成本** — 纯 Python 标准库，无外部依赖，`from quantux import QuantUXSkill` 即可使用
+- **智能诊断** — 自动诊断研究需求，推荐最佳方法组合，避免常见统计陷阱
+- **生态核心** — 与 UDM、JTBD、Persona、VPD、SWD 等 5 个技能无缝协作，实现定性定量三角验证
+
 ## 一、核心理论
 
 **量化用户体验研究 (Quant UXR)**：运用实证研究方法，在规模化场景下为以用户为中心的产品设计提供信息支持。
