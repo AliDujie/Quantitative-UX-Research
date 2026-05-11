@@ -1,4 +1,4 @@
-## v2.3.44 (2026-05-11)
+## v2.3.45 (2026-05-11)
 
 Repo maintenance: fixed CN changelog version ordering (v2.3.41→v2.3.40), missing table closing `|`, rogue blank-line separator; fixed stale footer version reference (v2.3.30→v2.3.43); cleaned up duplicate `---` separators; fixed v2.3.27 missing `|` in English Version History; aligned version across README/SKILL.md/pyproject.toml/CHANGELOG.
 
