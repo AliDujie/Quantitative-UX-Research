@@ -856,13 +856,13 @@ report = quantux.generate_report("Q4 Validation Report", include_ceo_analysis=Tr
 
 ### 👥 Who Is This For?
 
-| Role | How This Skill Helps |
-|------|---------------------|
-| **UX Researchers** | Build HEART metrics, design A/B tests, analyze behavioral logs |
-| **Data Scientists** | Sample size calculation, power analysis, MaxDiff prioritization |
-| **Product Managers** | Research needs diagnosis, method recommendation, CEO-perspective reports |
-| **Experiment Scientists** | A/B test design, statistical significance testing, result interpretation |
-| **AI Agents** | Zero-dependency Python package for automated quantitative research |
+| Role | How This Skill Helps | Next Skill to Try |
+|------|---------------------|-------------------|
+| **UX Researchers** | Build HEART metrics, design A/B tests, analyze behavioral logs | → [UDM](https://github.com/AliDujie/universal-design-methods) for qualitative discovery |
+| **Data Scientists** | Sample size calculation, power analysis, MaxDiff prioritization | → [SWD](https://github.com/AliDujie/storytelling-with-data) for presenting results |
+| **Product Managers** | Research needs diagnosis, method recommendation, CEO-perspective reports | → [VPD](https://github.com/AliDujie/value-proposition-design) for value hypothesis |
+| **Experiment Scientists** | A/B test design, statistical significance testing, result interpretation | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) for opportunity sizing |
+| **AI Agents** | Zero-dependency Python package for automated quantitative research | → Any of the 5 companion skills for full workflow |
 
 ### 📁 Project Structure
 
@@ -1599,4 +1599,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.45*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.3.46*
