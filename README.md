@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.3.52-green.svg)](CHANGELOG.md)
+[![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -39,6 +40,40 @@
 | [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色假设 → QuantUX 行为验证 → 角色精化 |
 
 ---
+
+### 🔗 Ecosystem Quick Start / 生态系统快速上手
+
+QuantUX 是 6 技能工作流的**定量验证引擎**——用数据验证定性假设。
+
+```
+Persona → JTBD → UDM → QuantUX (← 你在这里) → VPD → SWD
+```
+
+**组合调用示例：**
+```python
+# Step 1: UDM 定性发现用户痛点 → QuantUX 定量验证
+from quantux import QuantUXSkill
+quantux = QuantUXSkill("旅行平台")
+
+# 构建 HEART 指标体系
+heart = quantux.build_heart_framework()
+
+# Step 2: 设计 CSat 调查收集定量数据
+csat = quantux.design_csat_survey("Q1 满意度调查")
+
+# Step 3: 计算 A/B 测试样本量
+n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+
+# Step 4: 生成含 CEO 视角的完整报告
+report = quantux.generate_report("用户体验验证报告", include_ceo_analysis=True)
+
+# Step 5: 将结果交给 SWD 做数据叙事
+from swd import SWDSkill
+swd = SWDSkill("研究汇报")
+story = swd.build_story(protagonist="数据团队", imbalance="满意度低于目标", call_to_action="优化方案审批")
+```
+
+> 💡 **提示**: QuantUX 与 UDM 配合最佳——UDM 定性发现 "什么问题"，QuantUX 定量证明 "问题有多严重"。
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -1689,4 +1724,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.51*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.52*
