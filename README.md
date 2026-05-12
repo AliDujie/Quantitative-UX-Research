@@ -750,7 +750,7 @@ swd.recommend_chart(data_type="continuous", has_time=True)
 - [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-6-skills)
+- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-7-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -1665,7 +1665,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 | Analyze A/B test results | A/B Test Analysis | `skill.analyze_ab_test("New Flow", n_a=2500, conv_a=425, n_b=2500, conv_b=500)` |
 | Prioritize features by user preference | MaxDiff Design | `skill.design_maxdiff("Feature Priority", ["Search", "Filter", "Sort", "Compare"])` |
 | Analyze user behavior from logs | Log Analysis | `skill.analyze_logs(log_data, funnels=[("view→add→checkout")])` |
-| Plan a full quantitative study | Research Plan | `skill.generate_research_plan("Checkout Optimization", include_ceo_analysis=True)` |
+| Plan a full quantitative study | Research Report | `skill.generate_report("Checkout Optimization", include_ceo_analysis=True)` |
 
 > 💡 **Most common first step**: `skill.build_heart_framework()` — define your Happiness, Engagement, Adoption, Retention, and Task Success metrics before collecting data.
 
