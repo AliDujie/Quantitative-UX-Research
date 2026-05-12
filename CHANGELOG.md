@@ -1,3 +1,7 @@
+## v2.3.50 (2026-05-12)
+
+Repo maintenance: added "Power Workflow: Complete A/B Testing Pipeline" code example in English README, demonstrating QuantUX → SWD experiment-to-presentation workflow.
+
 ## v2.3.49 (2026-05-12)
 
 Repo maintenance: fixed `__init__.py` version mismatch (2.3.44→2.3.49), verified all Python module exports are importable, confirmed ecosystem cross-references.

@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.49-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.50-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -1601,6 +1601,30 @@ Ready to go deeper? Here's what to try next:
 
 > 💡 **Pro Tip**: QuantUX is the validation engine of the ecosystem. Try: JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)
 
+### ⚡ Power Workflow: Complete A/B Testing Pipeline
+
+```python
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+# 1. QuantUX: Design and analyze A/B test
+quant = QuantUXSkill("SaaS 产品")
+sample = quant.calculate_ab_sample_size(baseline=0.15, mde=0.02)
+# → Required: 3,841 per group (80% power, α=0.05)
+
+# 2. After experiment: analyze results
+result = quant.analyze_ab_test(conversions_a=580, total_a=3841,
+    conversions_b=650, total_b=3841)
+
+# 3. SWD: Present findings to stakeholders
+swd = SWDSkill("实验结果汇报")
+story = swd.build_story(protagonist="产品团队",
+    imbalance="功能 A 与功能 B 效果未知，需要数据决策",
+    resolution="功能 B 提升 12.1% 转化率，统计显著 (p=0.02)")
+
+# → From experiment design to stakeholder-ready narrative
+```
+
 ### 👨‍💻 Credits
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023), covering HEART framework, experimental design, statistical analysis, and survey methods.
@@ -1627,4 +1651,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.49*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.50*
