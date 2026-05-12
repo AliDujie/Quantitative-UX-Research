@@ -8,7 +8,7 @@
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-13-brightgreen.svg)
 
-> 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
+> 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐
@@ -38,12 +38,13 @@
 | [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | JTBD 机会评分 → QuantUX 量化验证 → 决策支持 |
 | [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | VPD 价值假设 → QuantUX 实验设计 → 验证结果 |
 | [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色假设 → QuantUX 行为验证 → 角色精化 |
+| [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略分析 | STM 框架分析 → QuantUX 数据验证 → 商业决策 |
 
 ---
 
 ### 🔗 Ecosystem Quick Start / 生态系统快速上手
 
-QuantUX 是 6 技能工作流的**定量验证引擎**——用数据验证定性假设。
+QuantUX 是 7 技能工作流的**定量验证引擎**——用数据验证定性假设。
 
 ```
 Persona → JTBD → UDM → QuantUX (← 你在这里) → VPD → SWD
@@ -74,6 +75,13 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
 ```
 
 > 💡 **提示**: QuantUX 与 UDM 配合最佳——UDM 定性发现 "什么问题"，QuantUX 定量证明 "问题有多严重"。
+
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from quantux import QuantUXSkill
+> skill = QuantUXSkill("你的产品")
+> print(skill.calculate_ab_sample_size(baseline=0.15, mde=0.02))  # 立即计算 A/B 测试样本量
+> ```
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -742,7 +750,7 @@ swd.recommend_chart(data_type="continuous", has_time=True)
 - [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
+- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-6-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -913,7 +921,7 @@ print(log_result)  # Transition matrix, frequent paths, drop-off points
 QuantUX is the **validation engine** of the ecosystem. Here's how it connects with the other 5 skills:
 
 ```python
-# ===== Complete Validation Cycle (All 6 Skills) =====
+# ===== Complete Validation Cycle (All 7 Skills) =====
 # Step 1: UDM generates qualitative hypotheses → Step 2: JTBD identifies opportunities
 # Step 3: QuantUX validates with statistical rigor → Step 4: VPD designs experiments
 # Step 5: Persona segments the sample → Step 6: SWD presents results
@@ -1304,7 +1312,7 @@ python3 -m pytest quantux/tests/test_all.py -v
 
 **版本 / Version**: v2.3.44
 
-### 🔄 End-to-End Workflow: All 6 Skills
+### 🔄 End-to-End Workflow: All 7 Skills
 
 A complete metrics-to-decision workflow using the full AliDujie ecosystem:
 
@@ -1398,7 +1406,7 @@ Persona (用户细分) → QuantUX (分层 A/B 测试) → JTBD (机会评分)
 
 ### 🚀 完整端到端工作流：从指标到决策 (End-to-End Workflow)
 
-以下是一个真实场景中，6 个技能如何协作完成从研究到决策的完整工作流：
+以下是一个真实场景中，7 个技能如何协作完成从研究到决策的完整工作流：
 
 **场景**: 产品需要验证新功能的用户价值和业务影响
 
@@ -1720,7 +1728,7 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 ### 🌐 Explore the Full AliDujie UX Research Ecosystem
 
-This skill is part of a **6-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
+This skill is part of a **7-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
 
 | Skill | Role | When to Use |
 |-------|------|-------------|
