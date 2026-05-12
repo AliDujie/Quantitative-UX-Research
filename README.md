@@ -4,10 +4,19 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.51-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.52-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
+
+```text
+┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐
+│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │
+│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │
+└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘
+```
+
+**QuantUX is the validation engine** — providing statistical rigor to confirm qualitative hypotheses. Use it when you need to prove "is this real?" with data.
 
 > 🎯 **一句话介绍**: HEART 指标体系 + A/B 测试 + MaxDiff + 日志分析 — 用数据验证每一个用户研究假设。
 
@@ -123,6 +132,9 @@
 - **智能诊断** — 自动诊断研究需求，推荐最佳方法组合
 - **双语支持** — 完整中英文文档，适合国际化团队
 - **零学习成本** — API 设计直观，代码示例丰富，即插即用
+- **统计严谨** — 基于 Jeff Sauro & James R. Lewis 的权威著作，所有方法都有坚实的学术基础
+- **业务驱动** — 每个分析都连接业务影响：样本量→资源规划、p值→决策信心、HEART→产品指标
+- **全生命周期** — 从指标体系构建到实验设计到结果呈现，一站式覆盖定量研究全流程
 
 ### 🎯 Features at a Glance / 功能一览
 
