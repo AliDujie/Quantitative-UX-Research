@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.50-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.51-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 6 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
@@ -102,6 +102,18 @@
 | [references/ab-testing.md](references/ab-testing.md) | A/B 测试设计原则与最佳实践 |
 | [references/maxdiff-guide.md](references/maxdiff-guide.md) | MaxDiff 优先级排序方法指南 |
 | [references/log-analysis.md](references/log-analysis.md) | 日志序列分析方法论 |
+
+### 🌍 实战场景指南
+
+| 你的场景 | 调用方式 | 输出结果 |
+|----------|---------|----------|
+| "A/B 测试需要多少样本？" | `calculate_ab_sample_size(baseline=0.15, mde=0.02)` | 样本量 + 功效分析 |
+| "构建 HEART 指标体系" | `build_heart_framework()` | 目标→信号→指标完整映射 |
+| "设计满意度调查" | `design_csat_survey("结账体验")` | 带评分标准的调查问卷 |
+| "功能优先级排序" | `design_maxdiff("功能优先级", ["A", "B", "C"])` | MaxDiff 实验设计 |
+| "分析行为模式" | `analyze_logs(user_actions=[...], threshold=3)` | 漏斗分析 + 流失点 |
+
+> 💡 **提示**: 先用 `build_heart_framework()` 定义衡量什么，再用具体方法收集和分析数据。
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
 
@@ -773,6 +785,20 @@ print(f"Need {sample} users per group (α=0.05, power=0.80)")
 report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
 print(report)  # HEART baseline + Business impact + ROI + Resource estimation
 ```
+
+### 🌍 Real-World Scenario Guide
+
+> **Need to validate with data?** Here are common scenarios and exactly how to use this skill.
+
+| Scenario | What to Call | Expected Output |
+|----------|-------------|----------------|
+| "How many users do I need for A/B test?" | `calculate_ab_sample_size(baseline=0.15, mde=0.02)` | Required sample size with power analysis |
+| "Build HEART metrics for our product" | `build_heart_framework()` | Goals → Signals → Metrics for each dimension |
+| "Design a satisfaction survey" | `design_csat_survey("Checkout Experience")` | Survey questions with scoring rubric |
+| "Prioritize which features to build" | `design_maxdiff("Feature Priorities", ["A", "B", "C"])` | MaxDiff experimental design |
+| "Analyze behavioral patterns" | `analyze_logs(user_actions=[...], threshold=3)` | Funnel analysis + drop-off points |
+
+**Quick Tip:** Use `build_heart_framework()` first to define what to measure, then use specific methods to collect and analyze data.
 
 ### 💡 10 Core Capabilities
 
@@ -1651,4 +1677,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.50*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.51*
