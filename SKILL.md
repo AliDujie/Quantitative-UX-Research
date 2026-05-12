@@ -374,3 +374,14 @@ QuantUX 是 **AliDujie UX 研究技能生态系统** 的定量研究核心，负
 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值验证 | VPD 价值假设 → QuantUX 实验设计 → VPD 验证结果 |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | QuantUX 分析结果 → SWD 图表选择 → SWD 叙事构建 |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略框架 | QuantUX 数据洞察 → STM 战略分析 → STM 决策建议 |
+
+### 🔗 扩展生态 (Extended Ecosystem)
+
+QuantUX 定量数据可与管理层技能结合，将业务指标转化为战略决策：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | QuantUX 业务影响 → CEO 资源分配与投资决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | HEART 指标趋势 → CPO 产品战略调整 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX 增长数据 → CMO 渠道与获客策略 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX 技术指标 → CTO 技术投资决策 |
