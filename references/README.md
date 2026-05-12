@@ -13,12 +13,13 @@ This directory contains methodology reference documents for the Quantitative UX 
 | `ab-testing.md` | A/B 测试设计原则与最佳实践 |
 | `maxdiff-guide.md` | MaxDiff 优先级排序方法指南 |
 | `log-analysis.md` | 日志序列分析方法论 |
+| `07-cross-skill-validation.md` | QuantUX 跨技能验证模式（UDM/JTBD/VPD/Persona → QuantUX 工作流） |
 
 ## 使用方法 / Usage
 
-这些参考文档供 AI Agent 在执行量化研究任务时查阅，不需要手动维护。
+这些参考文档供 AI Agent 在执行量化研究任务时查阅。`07-cross-skill-validation.md` 提供 QuantUX 如何验证其他技能产出物的完整指南。
 
-These reference documents are consulted by the AI Agent during quantitative research tasks and do not require manual maintenance.
+These reference documents are consulted by the AI Agent during quantitative research tasks. `07-cross-skill-validation.md` provides complete guides on how QuantUX validates outputs from other skills.
 
 ## 🌐 技能生态关联 / Skill Ecosystem Connections
 

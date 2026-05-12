@@ -1,3 +1,6 @@
+## v2.3.54 (2026-05-13)
+
+- Repo maintenance: added cross-skill validation patterns reference doc (07-cross-skill-validation.md), updated references README
 ## v2.3.53 (2026-05-13)
 
 Repo maintenance: verified version alignment across all files, confirmed ecosystem cross-references in README and SKILL.md, updated last-updated date.
@@ -96,41 +99,41 @@ Repo maintenance: added English "End-to-End Workflow: All 6 Skills" section with
 - Improved changelog table ordering (CN + EN)
 - Routine documentation maintenance
 
-## [v2.3.28] - 2026-05-07
+## v2.3.28 (2026-05-07)
 
 - Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28
 
-## [v2.3.26] - 2026-05-07
+## v2.3.26 (2026-05-07)
 
 - Repo maintenance: standardized ecosystem documentation
 
-## [v2.3.25] - 2026-05-07
+## v2.3.25 (2026-05-07)
 
 - Repo maintenance: aligned footer version badge with SKILL.md (v2.3.24→v2.3.25), added end-to-end ecosystem integration workflow example
 
-## [v2.3.24] - 2026-05-07
+## v2.3.24 (2026-05-07)
 
 - Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24
 
-## [v2.3.23] - 2026-05-07
+## v2.3.23 (2026-05-07)
 
 - Repo maintenance: added English Dependencies section, verified ecosystem cross-references
 
-## [v2.3.22] - 2026-05-07
+## v2.3.22 (2026-05-07)
 
 - Repo maintenance: added statistical power Pro Tip (CN+EN), enhanced SWD-QuantUX visualization integration
 
-## [v2.3.21] - 2026-05-06
+## v2.3.21 (2026-05-06)
 
 - Repo maintenance: added Contributing link to English section footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references
 
-## [v2.3.19] - 2026-05-06
+## v2.3.19 (2026-05-06)
 
 ### Fixed
 - Version alignment across all files (README badge, SKILL.md, pyproject.toml, CHANGELOG)
 - Verified ecosystem cross-references and bilingual consistency
 
-## [v2.2.12] - 2026-05-04
+## v2.2.12 (2026-05-04)
 
 ### Added
 - End-to-end workflow section showing 6-skill collaboration

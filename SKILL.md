@@ -1,7 +1,7 @@
 ---
 name: quantitative-ux-research
 description: 量化用户体验研究执行技能。基于 Jeff Sauro & James R. Lewis 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
-version: "2.3.53"
+version: "2.3.54"
 ---
 
 # Quantitative UX Research Skill
@@ -47,6 +47,28 @@ Persona (角色假设)─►│  · A-B 测试     │──────► CEO 
 - **零学习成本** — 纯 Python 标准库，无外部依赖，`from quantux import QuantUXSkill` 即可使用
 - **智能诊断** — 自动诊断研究需求，推荐最佳方法组合，避免常见统计陷阱
 - **生态核心** — 与 UDM、JTBD、Persona、VPD、SWD 等 5 个技能无缝协作，实现定性定量三角验证
+
+## ⚡ 快速上手 (Quick Start)
+
+```python
+from quantux import QuantUXSkill
+
+skill = QuantUXSkill("你的产品名")
+
+# HEART 指标体系
+heart = skill.build_heart_framework()
+
+# A/B 测试样本量计算
+sample = skill.calculate_ab_sample_size(baseline=0.10, mde=0.02)
+
+# MaxDiff 优先级分析
+maxdiff = skill.run_maxdiff(items=["功能A", "功能B", "功能C"], n_respondents=200)
+
+# CSat 调查设计
+csat = skill.design_csat(product="核心功能")
+```
+
+> 💡 **5 分钟上手**: `from quantux import QuantUXSkill` → 纯标准库，零依赖，开箱即用。
 
 ## 一、核心理论
 
