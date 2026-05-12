@@ -1,3 +1,7 @@
+## v2.3.53 (2026-05-13)
+
+Repo maintenance: verified version alignment across all files, confirmed ecosystem cross-references in README and SKILL.md, updated last-updated date.
+
 ## v2.3.50 (2026-05-12)
 
 Repo maintenance: added "Power Workflow: Complete A/B Testing Pipeline" code example in English README, demonstrating QuantUX → SWD experiment-to-presentation workflow.
