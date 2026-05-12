@@ -1718,10 +1718,26 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | *Measuring the User Experience* (2nd Ed) | Jeff Sauro & James R. Lewis | SUS, NPS, UMUX-Lite benchmarking |
 | *Lean Analytics* | Alistair Croll & Benjamin Yoskovitz | Data-driven product decisions |
 
+### 🌐 Explore the Full AliDujie UX Research Ecosystem
+
+This skill is part of a **6-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
+
+| Skill | Role | When to Use |
+|-------|------|-------------|
+| 👤 [Web Persona](https://github.com/AliDujie/web-persona-skill) | Foundation | Define WHO you are designing for |
+| 🎯 [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Needs Insight | Understand WHY users behave the way they do |
+| 🔍 [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Research Methods | Choose and execute research methods |
+| 📊 [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Validation Engine | Prove qualitative hypotheses with data |
+| 💎 [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Value Design | Bridge user needs to testable value propositions |
+| 📈 [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Presentation Layer | Turn findings into executive-ready narratives |
+
+> 💡 **Quick Tip**: QuantUX is the validation engine of the ecosystem. Try: `JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)`
+
+
 ### 🤝 Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.3.53*
+*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.3.53*
