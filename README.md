@@ -1570,7 +1570,9 @@ QuantUX is the **validation engine** of the AliDujie UX Research Skills Ecosyste
 
 ### Workflow 1: Qualitative Discovery → Quantitative Validation → Data Storytelling
 
-```nUDM/JTBD (Qualitative Insight) → QuantUX (Quantitative Validation) → SWD (Data Narrative)n```
+```
+UDM/JTBD (Qualitative Insight) → QuantUX (Quantitative Validation) → SWD (Data Narrative)
+```
 
 **Scenario**: Research conclusion validation
 1. Use UDM or JTBD to collect qualitative user insights, forming hypotheses
@@ -1579,7 +1581,9 @@ QuantUX is the **validation engine** of the AliDujie UX Research Skills Ecosyste
 
 ### Workflow 2: Persona Hypotheses → Behavior Validation → Data-Driven Personas
 
-```nPersona (Persona Hypotheses) → QuantUX (Behavior Validation) → Data-Driven Personasn```
+```
+Persona (Persona Hypotheses) → QuantUX (Behavior Validation) → Data-Driven Personas
+```
 
 **Scenario**: User segment validation
 1. Use Persona to create hypothetical user personas
@@ -1588,7 +1592,9 @@ QuantUX is the **validation engine** of the AliDujie UX Research Skills Ecosyste
 
 ### Workflow 3: VPD Experiments → Statistical Validation → Investment Decision
 
-```nVPD (Value Hypothesis) → QuantUX (Experiment Design) → Statistical Confirmationn```
+```
+VPD (Value Hypothesis) → QuantUX (Experiment Design) → Statistical Confirmation
+```
 
 **Scenario**: Product investment decision
 1. Use VPD to design experiments validating value proposition hypotheses
