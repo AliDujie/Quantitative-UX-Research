@@ -805,6 +805,58 @@ maxdiff = skill.design_maxdiff("结账功能优先级", [
 
 ---
 
+## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
+
+QuantUX 是 **AliDujie UX 研究技能生态系统** 的定量验证引擎。以下是与其他技能配合使用的典型工作流：
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "我需要验证一个假设" | → **Quantitative UX Research** (本技能) — A/B 测试和样本量计算 |
+| "我不知道该研究什么" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐帮你找到方向 |
+| "我想理解用户为什么这样做" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 挖掘用户背后的"工作" |
+| "我需要知道用户是谁" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 创建具体的人物角色 |
+| "我的产品价值够不够？" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 契合度诊断 |
+| "我怎么把研究结果讲清楚？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事和图表改造 |
+
+### 工作流 1: 定性发现 → 定量验证 → 数据叙事
+
+```
+UDM/JTBD (定性洞察) → QuantUX (定量验证) → SWD (数据叙事)
+```
+
+**场景**: 研究结论验证
+1. 用 UDM 或 JTBD 收集定性用户洞察，形成假设
+2. 用 QuantUX 构建 HEART 指标体系，设计 A/B 测试验证假设
+3. 用 SWD 将验证结果转化为引人入胜的数据叙事
+
+### 工作流 2: 角色假设 → 行为验证 → 角色精化
+
+```
+Persona (角色假设) → QuantUX (行为验证) → 数据驱动角色
+```
+
+**场景**: 用户细分验证
+1. 用 Persona 创建假设性用户角色
+2. 用 QuantUX 日志分析和 CSat 调查验证角色行为假设
+3. 基于定量数据精化角色，提高准确度
+
+### 工作流 3: VPD 实验 → 统计验证 → 投资决策
+
+```
+VPD (价值假设) → QuantUX (实验设计) → 统计确认
+```
+
+**场景**: 产品投资决策
+1. 用 VPD 设计实验验证价值主张假设
+2. 用 QuantUX 计算样本量，运行 A/B 测试，分析统计显著性
+3. 将结果交给 SWD 做数据叙事，辅助投资决策
+
+> 💡 **提示**: QuantUX 最适合在定性发现后使用——用数据验证 "问题有多严重" 和 "解决方案是否有效"。
+
+---
+
 ## English
 
 ### 📑 Table of Contents
@@ -1512,6 +1564,39 @@ story = swd.build_story(protagonist="产品团队",
 # → From experiment design to stakeholder-ready narrative
 ```
 
+### 🔗 Skill Ecosystem Workflow
+
+QuantUX is the **validation engine** of the AliDujie UX Research Skills Ecosystem. Typical cross-skill workflows:
+
+### Workflow 1: Qualitative Discovery → Quantitative Validation → Data Storytelling
+
+```nUDM/JTBD (Qualitative Insight) → QuantUX (Quantitative Validation) → SWD (Data Narrative)n```
+
+**Scenario**: Research conclusion validation
+1. Use UDM or JTBD to collect qualitative user insights, forming hypotheses
+2. Use QuantUX to build HEART metrics framework, design A/B tests validating hypotheses
+3. Use SWD to transform validated findings into compelling data narratives
+
+### Workflow 2: Persona Hypotheses → Behavior Validation → Data-Driven Personas
+
+```nPersona (Persona Hypotheses) → QuantUX (Behavior Validation) → Data-Driven Personasn```
+
+**Scenario**: User segment validation
+1. Use Persona to create hypothetical user personas
+2. Use QuantUX log analysis and CSat surveys to validate persona behavior assumptions
+3. Refine personas based on quantitative data for higher accuracy
+
+### Workflow 3: VPD Experiments → Statistical Validation → Investment Decision
+
+```nVPD (Value Hypothesis) → QuantUX (Experiment Design) → Statistical Confirmationn```
+
+**Scenario**: Product investment decision
+1. Use VPD to design experiments validating value proposition hypotheses
+2. Use QuantUX to calculate sample size, run A/B tests, analyze statistical significance
+3. Pass results to SWD for data storytelling to support investment decisions
+
+> 💡 **Tip**: QuantUX works best after qualitative discovery — using data to prove "how severe the problem is" and "whether the solution works."
+
 ### 👨‍💻 Credits
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023), covering HEART framework, experimental design, statistical analysis, and survey methods.
@@ -1555,4 +1640,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.3.55*
+*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.3.56*
