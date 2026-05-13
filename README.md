@@ -123,12 +123,11 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
   - [💡 10 大核心能力](#-10-大核心能力)
   - [🔧 实用示例](#-实用示例)
   - [📁 项目结构](#-项目结构)
-  - [🔗 相关技能](#-相关技能)
+  - [👥 这个技能适合谁？](#-这个技能适合谁who-is-this-for)
   - [🛠️ 故障排查](#-故障排查-troubleshooting)
-  - [🤝 最佳实践](#-最佳实践)
-  - [🌟 用户评价](#-用户评价)
-  - [📖 扩展阅读](#-扩展阅读)
-  - [📦 依赖](#-依赖)
+  - [🏆 案例研究](#-案例研究-case-studies)
+  - [🆘 获取帮助](#-获取帮助-getting-help)
+  - [🔗 相关技能](#-相关技能)
 - [English](#english)
   - [🌟 Why Use This Skill?](#-why-use-this-skill)
   - [🚀 Quick Start](#-quick-start)
@@ -138,10 +137,8 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
 - [🤝 参与贡献](#-参与贡献-contributing)
 - [🆘 获取帮助](#-获取帮助-getting-help)
 - [📜 许可](#-许可-license)
-- [👨‍💻 作者](#-作者-credits)
+- [👨💻 作者](#-作者-credits)
 - [🔗 技能生态工作流](#-技能生态工作流-skill-ecosystem-workflow)
-
----
 
 ## 中文说明
 
@@ -731,6 +728,80 @@ swd.recommend_chart(data_type="continuous", has_time=True)
 3. **安装 INSTALL.md** — 详细的安装和配置指南
 4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
 5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
+
+### 👥 这个技能适合谁？(Who Is This For?)
+
+| 角色 | 这个技能如何帮助 | 下一步尝试 |
+|------|-----------------|-----------|
+| **UX 研究员** | 构建 HEART 指标体系、设计 A/B 测试、分析行为日志 | → [UDM](https://github.com/AliDujie/universal-design-methods) 定性发现 |
+| **数据科学家** | 样本量计算、功效分析、MaxDiff 优先级排序 | → [SWD](https://github.com/AliDujie/storytelling-with-data) 结果呈现 |
+| **产品经理** | 研究需求诊断、方法推荐、CEO 视角报告 | → [VPD](https://github.com/AliDujie/value-proposition-design) 价值验证 |
+| **增长团队** | 实验设计、转化率分析、留存指标监控 | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 需求洞察 |
+
+---
+
+### 🛠️ 疑难解答 (Troubleshooting)
+
+| 问题 | 解决方案 |
+|------|---------|
+| 样本量看起来太大 | 检查你的 MDE（最小可检测效应）——更小的效应需要更大的样本 |
+| HEART 指标不清晰 | 从业务目标开始，然后向下推导到可测量的信号 |
+| MaxDiff 结果不一致 | 确保平衡设计和足够的任务数（建议 12+） |
+| 日志分析噪音太大 | 过滤到相关的会话类型和时间窗口 |
+
+---
+
+### 🏆 案例研究 (Case Studies)
+
+#### 案例 1: HEART 指标体系搭建
+
+**背景**: 某 SaaS 产品需要建立定量 UX 指标来替代主观判断。
+
+```python
+from quantux import QuantUXSkill
+
+skill = QuantUXSkill("SaaS 协作平台")
+
+# 步骤 1: 构建 HEART 框架
+heart = skill.build_heart_framework()
+print(heart)  # 目标 → 信号 → 每个维度的指标
+
+# 步骤 2: 获取研讨会指南用于团队对齐
+workshop = skill.get_workshop_guide()
+
+# 步骤 3: 设计满意度调查
+csat = skill.design_csat_survey("季度满意度调查")
+```
+
+#### 案例 2: A/B 测试设计与分析
+
+**背景**: 某电商需要测试新的结账流程是否能提高转化率。
+
+```python
+from quantux import QuantUXSkill
+
+skill = QuantUXSkill("电商平台")
+
+# 计算 A/B 测试样本量
+n = skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+print(f"每组需要 {n} 个样本")
+
+# 设计 MaxDiff 研究用于功能优先级
+maxdiff = skill.design_maxdiff("结账功能优先级", [
+    "一键支付", "发票自动开具", "多地址配送", "预约配送"
+])
+```
+
+---
+
+### 🆘 获取帮助 (Getting Help)
+
+- 📖 **详细安装指南**: [INSTALL.md](INSTALL.md)
+- 🐛 **报告问题**: [GitHub Issues](https://github.com/AliDujie/Quantitative-UX-Research/issues)
+- 💬 **讨论与反馈**: 在项目仓库发起 Discussion
+- 📝 **贡献指南**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🔄 **版本历史**: [CHANGELOG.md](CHANGELOG.md)
+
 
 ---
 
