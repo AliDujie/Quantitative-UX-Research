@@ -19,12 +19,12 @@ JTBD (机会评分) ──► ┌───────────────�
                     │  QuantUX 本技能  │ 📊 定量验证 — HEART/A-B测试/MaxDiff
 VPD (价值假设) ────►│  · HEART 框架   │──────► SWD (数据故事汇报)
 Persona (角色假设)─►│  · A-B 测试     │──────► CEO 决策(业务影响评估)
-                    │  · 日志分析     │
+                    │  · 日志分析     │──────► STM (商业战略框架)
                     │  · MaxDiff      │
                     └────────────────┘
 ```
 
-**QuantUX 的典型协作**：UDM 定性假设 → QuantUX A/B 验证 → SWD 数据汇报；JTBD 机会评分 → QuantUX MaxDiff 优先级
+**QuantUX 的典型协作**：UDM 定性假设 → QuantUX A/B 验证 → SWD 数据汇报 → STM 战略决策；JTBD 机会评分 → QuantUX MaxDiff 优先级
 
 ## 🧭 快速决策：什么时候使用 QuantUX？
 
@@ -36,6 +36,7 @@ Persona (角色假设)─►│  · A-B 测试     │──────► CEO 
 | 需要创建人物角色、用户细分、设计指导 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
 | 需要价值主张画布、实验验证、优先级排序 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
 | 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 需要结构化商业分析框架 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 QuantUX 是验证引擎：用 HEART/A-B/MaxDiff 把定性假设转化为可量化的统计证据。
 

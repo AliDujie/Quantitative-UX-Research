@@ -11,10 +11,10 @@
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
 ```text
-┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐
-│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │
-│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │
-└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘
+┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
+│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │ →  │ STM │
+│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │    │ 战略分析 │
+└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘    └─────┘
 ```
 
 **QuantUX is the validation engine** — providing statistical rigor to confirm qualitative hypotheses. Use it when you need to prove "is this real?" with data.
