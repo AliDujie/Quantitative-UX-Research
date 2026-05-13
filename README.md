@@ -379,14 +379,16 @@ Quantitative-UX-Research/
 │   ├── maxdiff.py        # MaxDiff 优先级排序
 │   ├── abtest.py         # A/B 测试设计与分析
 │   ├── research.py       # 研究规划与报告生成
-├── references/           # 知识库文档（5 篇方法论文档）
+│   └── tests/            # 测试套件
+├── references/           # 知识库文档（7 篇，含跨技能验证指南）
 │   ├── README.md
 │   ├── heart-framework.md    # HEART 框架完整指南
 │   ├── csat-methods.md       # CSat 调查设计与分析方法论
 │   ├── ab-testing.md         # A/B 测试设计原则与最佳实践
 │   ├── maxdiff-guide.md      # MaxDiff 优先级排序方法指南
-│   └── log-analysis.md       # 日志序列分析方法论
-├── quantux/tests/        # 测试套件
+│   ├── log-analysis.md       # 日志序列分析方法论
+│   └── 07-cross-skill-validation.md  # 跨技能验证最佳实践
+└── quantux/tests/        # 测试套件
 ```
 
 ### 🔗 相关技能
@@ -975,14 +977,17 @@ Quantitative-UX-Research/
 │   ├── logs.py           # Log sequence analysis
 │   ├── maxdiff.py        # MaxDiff prioritization
 │   ├── abtest.py         # A/B test design & analysis
-│   └── research.py       # Research planning & report generation
-├── references/           # Knowledge base (5 methodology documents)
+│   ├── research.py       # Research planning & report generation
+│   ├── templates.py      # Report templates
+│   └── tests/            # Test suite
+├── references/           # Knowledge base (7 methodology documents)
 │   ├── README.md
 │   ├── heart-framework.md    # HEART framework complete guide
 │   ├── csat-methods.md       # CSat survey design & analysis
 │   ├── ab-testing.md         # A/B testing design principles
 │   ├── maxdiff-guide.md      # MaxDiff prioritization guide
-│   └── log-analysis.md       # Log sequence analysis methodology
+│   ├── log-analysis.md       # Log sequence analysis methodology
+│   └── 07-cross-skill-validation.md  # Cross-skill validation best practices
 └── quantux/tests/        # Test suite
 ```
 
