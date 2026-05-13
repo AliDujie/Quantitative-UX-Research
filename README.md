@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.58-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.59-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
@@ -1403,7 +1403,8 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|| 2.3.58 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
+|------|------|------|| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
+| 2.3.58 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
 | v2.3.44 | 2026-05-11 | 仓库维护：修复 CN 变更日志版本排序（v2.3.41→v2.3.40）、缺失的表格闭合符 `|`、多余的空行分隔符；修复页脚陈旧版本引用（v2.3.30→v2.3.43）；清理重复分隔符 |
 | v2.3.43 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.3.40→v2.3.42），补齐缺失的变更日志条目（v2.3.42），确保 README/徽章/CHANGELOG 三端版本对齐 |
@@ -1496,7 +1497,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|| v2.3.58 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
+|---------|------|--------|| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
+| v2.3.58 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
 | v2.3.45 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
 | v2.3.44 | 2026-05-11 | Repo maintenance: removed duplicate v2.3.34 changelog entry, removed empty v2.3.31 entry, fixed English Version History table formatting and missing entries |
@@ -1672,4 +1674,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.58*
+*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.59*
