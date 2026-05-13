@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.3.57 (2026-05-14)
+
+- Repo maintenance: added "Why Teams Choose QuantUX" comparison tables (CN/EN) with specific before/after impact data, enhanced promotional content in "Why Use This Skill?" sections
+
 ## v2.3.54 (2026-05-13)
 
 - Repo maintenance: added cross-skill validation patterns reference doc (07-cross-skill-validation.md), updated references README
