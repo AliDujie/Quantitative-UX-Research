@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.3.61 (2026-05-14)
+
+- Repo maintenance: sync README version badges/footers to pyproject.toml (2.3.59→2.3.60), update changelog
+
 ## v2.3.60 (2026-05-14)
 
 - Repo maintenance: fixed English ecosystem ASCII diagram (replaced Chinese labels with English), fixed broken TOC anchor link (end-to-end-workflow → end-to-end-ecosystem-workflow)
