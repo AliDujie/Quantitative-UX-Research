@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.63-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.64-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
@@ -1519,6 +1519,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.3.64 | 2026-05-14 | Repo maintenance: added cross-skill references to log-analysis.md, maxdiff-guide.md |
+| v2.3.63 | 2026-05-14 | Repo maintenance: added cross-skill references to ab-testing.md, heart-framework.md, csat-methods.md |
 | v2.3.62 | 2026-05-14 | Repo maintenance: fixed changelog table formatting (merged separator + data rows), verified ecosystem cross-reference completeness and bilingual consistency
 | v2.3.61 | 2026-05-14 | Repo maintenance: synced version badges/footers to pyproject.toml (v2.3.61)
 | v2.3.60 | 2026-05-14 | Repo maintenance: fixed English ecosystem ASCII diagram (Chinese→English labels), fixed TOC anchor link
@@ -1699,4 +1701,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.63*
+*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.64*

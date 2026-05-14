@@ -142,3 +142,14 @@ MaxDiff（Maximum Difference Scaling）是一种强制选择排序技术，用�
 ---
 
 *参考: Chapman & Rodden, Quantitative User Experience Research (2023), Chapter 6*
+
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+MaxDiff 与生态系统技能的协同：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 机会评分 → MaxDiff 交叉验证优先级 |
+| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 功能优先级 → MaxDiff 量化排序 |
+| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 细分 → MaxDiff 按角色差异化分析 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | MaxDiff 结果 → SWD 优先级可视化 |

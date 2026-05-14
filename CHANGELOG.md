@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.3.64 (2026-05-14)
+
+- Repo maintenance: add cross-skill reference sections to log-analysis.md and maxdiff-guide.md, expand ecosystem collaboration coverage
+
 ## v2.3.63 (2026-05-14)
 
 - Repo maintenance: add cross-skill reference sections to key reference docs (ab-testing.md, heart-framework.md, csat-methods.md), expand ecosystem collaboration coverage

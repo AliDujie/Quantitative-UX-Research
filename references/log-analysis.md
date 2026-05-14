@@ -145,3 +145,14 @@ u001   | 10:05  | click    | 结果列表  | item_id=123
 ---
 
 *参考: Chapman & Rodden, Quantitative User Experience Research (2023), Chapter 7*
+
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+日志分析与生态系统技能的协同：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 定性发现 → QuantUX 日志验证 |
+| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 角色 → 按角色细分行为分析 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 行为数据 → SWD 漏斗和路径可视化 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 行为模式 → JTBD 目标完成率分析 |
