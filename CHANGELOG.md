@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.3.63 (2026-05-14)
+
+- Repo maintenance: add cross-skill reference sections to key reference docs (ab-testing.md, heart-framework.md, csat-methods.md), expand ecosystem collaboration coverage
+
 ## v2.3.62 (2026-05-14)
 
 - Repo maintenance: version bump; all 6 skill repos audited for badge ordering consistency (Python → License standard)

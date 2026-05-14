@@ -155,6 +155,19 @@ Level 4: Raw Data (原始数据/日志)
 4. **忽略基线** — 没有基线的指标无法判断改善或恶化
 5. **混淆相关和因果** — 指标变化可能有多种原因，需要实验验证
 
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+HEART 框架是定量验证的核心工具，为其他技能的数据驱动决策提供指标支撑：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 定性发现 → HEART 指标定义 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 机会优先级 → HEART 指标权重调整 |
+| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 假设 → HEART 指标跟踪验证 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | HEART 仪表盘数据 → SWD 高管汇报可视化 |
+
+> 💡 **推荐工作流**: `UDM (定性发现) → HEART (指标定义) → 持续监控 → SWD (数据叙事)`
+
 ---
 
 *参考: Chapman & Rodden, Quantitative User Experience Research (2023), Chapter 3-4*

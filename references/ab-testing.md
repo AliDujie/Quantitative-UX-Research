@@ -141,6 +141,20 @@ A/B 测试（随机对照实验）是量化 UX 研究的核心方法，通过随
 4. **Simpson's Paradox** — 细分趋势与总体趋势相反
 5. **Sample Ratio Mismatch** — 实际分配比例与预期不符，数据污染
 
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+A/B 测试是定量验证的关键工具，与生态系统中其他技能紧密配合：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 定性发现用户痛点 → A/B 测试验证改进方案 |
+| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 假设的价值主张 → A/B 测试验证转化率影响 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 识别关键 Jobs → A/B 测试验证功能优先级 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | A/B 测试结果 → SWD 构建向高管汇报的决策故事 |
+| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 不同 Persona 的 A/B 测试分组分析 |
+
+> 💡 **推荐工作流**: `UDM (发现问题) → VPD (设计解决方案) → A/B 测试 (验证效果) → SWD (汇报结果)`
+
 ---
 
 *参考: Chapman & Rodden (2023) Chapter 8; Kohavi, Tang & Xu (2020)*

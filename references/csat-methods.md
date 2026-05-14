@@ -156,6 +156,16 @@ CSat 分数分布 → 趋势分析 → 用户细分 → 开放反馈主题编码
 4. **不关联行为数据** — CSat 分数应与用户行为数据关联分析
 5. **只收集不行动** — 每个 CSat 结果都应有对应的改进行动
 
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+CSat 调查数据是验证定性假设的关键输入，与生态系统紧密配合：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 访谈发现痛点 → CSat 量化验证 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD Jobs 优先级 → CSat 问题设计 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | CSat 趋势数据 → SWD 满意度报告 |
+
 ---
 
 *参考: Chapman & Rodden, Quantitative User Experience Research (2023), Chapter 5*
