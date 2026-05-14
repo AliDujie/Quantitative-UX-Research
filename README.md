@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.64-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.62-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
@@ -130,15 +130,9 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
   - [🔗 相关技能](#-相关技能)
 - [English](#english)
   - [🌟 Why Use This Skill?](#-why-use-this-skill)
-  - [🎯 Features at a Glance](#-features-at-a-glance)
-  - [🧭 Quick Decision Guide](#-quick-decision-guide)
-  - [✅ 5-Minute Quick Start Checklist](#-5-minute-quick-start-checklist)
   - [🚀 Quick Start](#-quick-start)
-  - [🔟 10 Core Capabilities](#-10-core-capabilities)
-  - [💡 Practical Examples](#-practical-examples)
-  - [👥 Who Is This For?](#-who-is-this-for)
-  - [🔗 Related Skills](#-related-skills-1)
-  - [End-to-End Workflow: All 7 Skills](#-end-to-end-ecosystem-workflow)
+  - [🔗 Related Skills](#-related-skills)
+  - [📦 Dependencies](#-dependencies)
 - [Run Tests / 运行测试](#run-tests--运行测试)
 - [🤝 参与贡献](#-参与贡献-contributing)
 - [🆘 获取帮助](#-获取帮助-getting-help)
@@ -828,16 +822,7 @@ maxdiff = skill.design_maxdiff("结账功能优先级", [
 
 QuantUX 是 **AliDujie UX 研究技能生态系统** 的定量验证引擎。以下是与其他技能配合使用的典型工作流：
 
-### 🧭 快速决策指南 (Quick Decision Guide)
-
-| 你的问题 | 推荐技能 |
-|----------|----------|
-| "我需要验证一个假设" | → **Quantitative UX Research** (本技能) — A/B 测试和样本量计算 |
-| "我不知道该研究什么" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐帮你找到方向 |
-| "我想理解用户为什么这样做" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 挖掘用户背后的"工作" |
-| "我需要知道用户是谁" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 创建具体的人物角色 |
-| "我的产品价值够不够？" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 契合度诊断 |
-| "我怎么把研究结果讲清楚？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事和图表改造 |
+> 💡 **快速决策**: 参见上方 [快速决策指南](#-快速决策指南-quick-decision-guide) 选择适合的技能。
 
 ### 工作流 1: 定性发现 → 定量验证 → 数据叙事
 
@@ -875,17 +860,6 @@ VPD (价值假设) → QuantUX (实验设计) → 统计确认
 > 💡 **提示**: QuantUX 最适合在定性发现后使用——用数据验证 "问题有多严重" 和 "解决方案是否有效"。
 
 ---
-
-### 🔗 探索更多技能 (Explore More Skills)
-
-本技能是 **AliDujie UX 研究技能生态系统** 的一部分，与其他 6 个技能协同工作，覆盖从用户研究到数据呈现的完整工作流：
-
-- [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) — 人物角色创建（工作流起点）
-- [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 深度需求洞察
-- [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 研究方法
-- [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 价值主张设计
-- [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事
-- [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — 战略分析框架
 
 ## English
 
@@ -1420,11 +1394,8 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|
-| 2.3.62 | 2026-05-14 | 仓库维护：修复变更日志表格格式（分隔符与数据行合并问题），验证生态交叉引用完整性和双语一致性
-| 2.3.61 | 2026-05-14 | 仓库维护：同步版本徽章/页脚到 pyproject.toml (v2.3.61)
-| 2.3.60 | 2026-05-14 | 仓库维护：修复英文生态系统 ASCII 图（中文→英文标签），修复 TOC 锚点链接
-| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
+| 2.3.62 | 2026-05-14 | 仓库维护：删除技能生态工作流章节中重复的快速决策指南表，提升文档简洁性和可读性 |
+|------|------|------|| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
 | 2.3.58 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
 | v2.3.44 | 2026-05-11 | 仓库维护：修复 CN 变更日志版本排序（v2.3.41→v2.3.40）、缺失的表格闭合符 `|`、多余的空行分隔符；修复页脚陈旧版本引用（v2.3.30→v2.3.43）；清理重复分隔符 |
@@ -1518,13 +1489,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|
-| v2.3.64 | 2026-05-14 | Repo maintenance: added cross-skill references to log-analysis.md, maxdiff-guide.md |
-| v2.3.63 | 2026-05-14 | Repo maintenance: added cross-skill references to ab-testing.md, heart-framework.md, csat-methods.md |
-| v2.3.62 | 2026-05-14 | Repo maintenance: fixed changelog table formatting (merged separator + data rows), verified ecosystem cross-reference completeness and bilingual consistency
-| v2.3.61 | 2026-05-14 | Repo maintenance: synced version badges/footers to pyproject.toml (v2.3.61)
-| v2.3.60 | 2026-05-14 | Repo maintenance: fixed English ecosystem ASCII diagram (Chinese→English labels), fixed TOC anchor link
-| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
+| v2.3.62 | 2026-05-14 | Repo maintenance: removed duplicate Quick Decision Guide table from ecosystem workflow section, improved documentation conciseness and readability |
+|---------|------|--------|| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
 | v2.3.58 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
 | v2.3.45 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
@@ -1701,4 +1667,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.64*
+*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.62*
