@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.62-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.64-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
@@ -24,6 +24,8 @@
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
+
+> 🆕 **What's New in v2.3.64**: Cross-skill references added to log analysis and MaxDiff reference docs. Enhanced collaboration patterns with JTBD, VPD, and SWD skills.
 
 ---
 
@@ -1378,6 +1380,34 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
+#### 💡 Cross-Skill Quick Recipes
+
+```python
+# Recipe: Validate a qualitative finding with quantitative data
+from quantux import QuantUXSkill; from swd import SWDSkill
+
+quantux = QuantUXSkill("SaaS platform")
+
+# UDM found "users struggle with onboarding" — let's quantify it
+heart = quantux.build_heart_framework()
+# → Sets up Happiness, Engagement, Adoption, Retention, Task Success metrics
+
+# Design a CSat survey to measure onboarding satisfaction
+csat = quantux.design_csat_survey("Onboarding Experience Survey")
+
+# Calculate required sample size for A/B test on new onboarding
+n = quantux.calculate_ab_sample_size(baseline=0.40, mde=0.05)
+print(f"Need {n} users per variant")  # → 1,536
+
+# Present findings to leadership
+swd = SWDSkill("Onboarding Improvement Proposal")
+story = swd.build_story(
+    protagonist="Growth team",
+    imbalance="Onboarding completion at 40%, target is 65%",
+    call_to_action="Approve redesigned onboarding flow"
+)
+```
+
 ### 🏷️ GitHub Topics (Recommended)
 
 ```
@@ -1667,4 +1697,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.3.62*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.64*
