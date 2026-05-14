@@ -130,9 +130,15 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
   - [🔗 相关技能](#-相关技能)
 - [English](#english)
   - [🌟 Why Use This Skill?](#-why-use-this-skill)
+  - [🎯 Features at a Glance](#-features-at-a-glance)
+  - [🧭 Quick Decision Guide](#-quick-decision-guide)
+  - [✅ 5-Minute Quick Start Checklist](#-5-minute-quick-start-checklist)
   - [🚀 Quick Start](#-quick-start)
-  - [🔗 Related Skills](#-related-skills)
-  - [📦 Dependencies](#-dependencies)
+  - [🔟 10 Core Capabilities](#-10-core-capabilities)
+  - [💡 Practical Examples](#-practical-examples)
+  - [👥 Who Is This For?](#-who-is-this-for)
+  - [🔗 Related Skills](#-related-skills-1)
+  - [End-to-End Workflow: All 7 Skills](#-end-to-end-ecosystem-workflow)
 - [Run Tests / 运行测试](#run-tests--运行测试)
 - [🤝 参与贡献](#-参与贡献-contributing)
 - [🆘 获取帮助](#-获取帮助-getting-help)
@@ -869,6 +875,17 @@ VPD (价值假设) → QuantUX (实验设计) → 统计确认
 > 💡 **提示**: QuantUX 最适合在定性发现后使用——用数据验证 "问题有多严重" 和 "解决方案是否有效"。
 
 ---
+
+### 🔗 探索更多技能 (Explore More Skills)
+
+本技能是 **AliDujie UX 研究技能生态系统** 的一部分，与其他 6 个技能协同工作，覆盖从用户研究到数据呈现的完整工作流：
+
+- [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) — 人物角色创建（工作流起点）
+- [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 深度需求洞察
+- [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 研究方法
+- [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 价值主张设计
+- [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事
+- [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — 战略分析框架
 
 ## English
 
