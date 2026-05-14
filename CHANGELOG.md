@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.3.60 (2026-05-14)
+
+- Repo maintenance: fixed English ecosystem ASCII diagram (replaced Chinese labels with English), fixed broken TOC anchor link (end-to-end-workflow → end-to-end-ecosystem-workflow)
+
+## v2.3.59 (2026-05-14)
+
+- Repo maintenance: version bump, align SKILL.md + pyproject.toml versions to 2.3.59, update Last Updated to 2026-05-14, add changelog entries
+
+## v2.3.58 (2026-05-14)
+
+- Repo maintenance: version bump to v2.3.58, fix version mismatch (badge was 2.3.57, pyproject was 2.3.56), align all version references, update Last Updated to 2026-05-14, add changelog entries
+
 ## v2.3.57 (2026-05-14)
 
 - Repo maintenance: added "Why Teams Choose QuantUX" comparison tables (CN/EN) with specific before/after impact data, enhanced promotional content in "Why Use This Skill?" sections

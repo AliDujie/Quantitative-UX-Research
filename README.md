@@ -888,7 +888,7 @@ VPD (价值假设) → QuantUX (实验设计) → 统计确认
 - [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-7-skills)
+- [End-to-End Workflow: All 7 Skills](#-end-to-end-ecosystem-workflow)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -1345,21 +1345,21 @@ This skill is the quantitative research layer of the **AliDujie UX Research Skil
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│            AliDujie 技能生态系统 (Skill Ecosystem)                  │
+│            AliDujie Skill Ecosystem                                  │
 ├─────────────────────────────────────────────────────────────────────┤
-│   📊 Quantitative UX Research ←───→ 📖 Universal Design Methods     │
-│         (量化研究)   三角测量              (通用设计)                │
+│   📊 QuantUX (this skill) ←───→ 📖 Universal Design Methods         │
+│    (quant research)  triangulation      (design methods)            │
 │              ↑                          ↓                         │
 │              │                    🎯 JTBD Knowledge                 │
-│              │                      (需求洞察)                      │
+│              │                    (needs insight)                    │
 │   📈 Storytelling with Data ←───→ 💎 Value Proposition Design       │
-│         (数据叙事)   呈现                  (价值设计)                │
+│    (data narrative)  presentation         (value design)            │
 │              ↑                          ↑                         │
 │              │                    👤 Web Persona                    │
-│              └────────────────────  (人物角色)                       │
+│              └────────────────────  (personas)                      │
 │                           ↕                                         │
-│              🧠 Structured-Thinking-Model (结构化思维)               │
-│                  70+ 商业分析框架 · PESTEL · SWOT · 五力模型         │
+│              🧠 Structured-Thinking-Model                           │
+│                  70+ Business Frameworks · PESTEL · SWOT · 5 Forces │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
