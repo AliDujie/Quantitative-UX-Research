@@ -1420,7 +1420,11 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
+|------|------|------|
+| 2.3.62 | 2026-05-14 | 仓库维护：修复变更日志表格格式（分隔符与数据行合并问题），验证生态交叉引用完整性和双语一致性
+| 2.3.61 | 2026-05-14 | 仓库维护：同步版本徽章/页脚到 pyproject.toml (v2.3.61)
+| 2.3.60 | 2026-05-14 | 仓库维护：修复英文生态系统 ASCII 图（中文→英文标签），修复 TOC 锚点链接
+| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
 | 2.3.58 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
 | v2.3.44 | 2026-05-11 | 仓库维护：修复 CN 变更日志版本排序（v2.3.41→v2.3.40）、缺失的表格闭合符 `|`、多余的空行分隔符；修复页脚陈旧版本引用（v2.3.30→v2.3.43）；清理重复分隔符 |
@@ -1514,7 +1518,11 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
+|---------|------|--------|
+| v2.3.62 | 2026-05-14 | Repo maintenance: fixed changelog table formatting (merged separator + data rows), verified ecosystem cross-reference completeness and bilingual consistency
+| v2.3.61 | 2026-05-14 | Repo maintenance: synced version badges/footers to pyproject.toml (v2.3.61)
+| v2.3.60 | 2026-05-14 | Repo maintenance: fixed English ecosystem ASCII diagram (Chinese→English labels), fixed TOC anchor link
+| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
 | v2.3.58 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
 | v2.3.45 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
