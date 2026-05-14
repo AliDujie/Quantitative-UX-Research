@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.3.62 (2026-05-14)
+
+- Repo maintenance: version bump; all 6 skill repos audited for badge ordering consistency (Python → License standard)
+
 ## v2.3.61 (2026-05-14)
 
 - Repo maintenance: sync README version badges/footers to pyproject.toml (2.3.59→2.3.60), update changelog
