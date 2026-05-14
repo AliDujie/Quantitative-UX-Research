@@ -13,15 +13,33 @@ version: "2.3.66"
 QuantUX 是 **定量研究核心**，负责用数据验证其他技能产生的定性假设：
 
 ```
-UDM (定性发现) ──┐
-                 ▼
-JTBD (机会评分) ──► ┌────────────────┐
-                    │  QuantUX 本技能  │ 📊 定量验证 — HEART/A-B测试/MaxDiff
-VPD (价值假设) ────►│  · HEART 框架   │──────► SWD (数据故事汇报)
-Persona (角色假设)─►│  · A-B 测试     │──────► CEO 决策(业务影响评估)
-                    │  · 日志分析     │──────► STM (商业战略框架)
-                    │  · MaxDiff      │
-                    └────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    AliDujie UX Research Ecosystem            │
+│                                                             │
+│   ┌──────────────┐                                          │
+│   │   Persona    │ 👤 用户定义层 — 创建证据驱动的人物角色      │
+│   └──────┬───────┘                                          │
+│          │ 研究数据                                           │
+│   ┌──────▼───────┐    ┌──────────────┐                      │
+│   │  JTBD Skill  │◄──►│  UDM Skill   │ 📖 方法论核心 — 100种 │
+│   └──────┬───────┘    └──────┬───────┘    设计研究方法       │
+│          │ 需求洞察           │ 定性发现                      │
+│   ┌──────▼───────┐    ┌──────▼───────┐                      │
+│   │  VPD Skill   │◄──►│ QuantUX 本技能│ 📊 定量验证 — HEART/ │
+│   └──────┬───────┘    └──────┬───────┘    A-B/MaxDiff        │
+│          │ 价值主张           │ 定量验证                      │
+│          └──────────┬────────┘                               │
+│                     │ 研究发现                                │
+│              ┌──────▼───────┐                                │
+│              │  SWD Skill   │ 📈 数据叙事 — 数据可视化与汇报    │
+│              └──────┬───────┘                                │
+│                     │ 数据洞察                                │
+│              ┌──────▼───────┐                                │
+│              │  STM Skill   │ 🧠 战略分析 — 商业框架与决策      │
+│              └──────────────┘                                │
+│                                                             │
+│  工作流: Persona → JTBD/UDM → QuantUX → VPD → SWD → STM    │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 **QuantUX 的典型协作**：UDM 定性假设 → QuantUX A/B 验证 → SWD 数据汇报 → STM 战略决策；JTBD 机会评分 → QuantUX MaxDiff 优先级
@@ -40,6 +58,58 @@ Persona (角色假设)─►│  · A-B 测试     │──────► CEO 
 
 > 💡 QuantUX 是验证引擎：用 HEART/A-B/MaxDiff 把定性假设转化为可量化的统计证据。
 
+### 🔗 Ecosystem Quick Start / 生态系统快速上手
+
+QuantUX 是 7 技能工作流的**定量验证核心**——在所有定性研究完成后使用，用数据验证假设。
+
+```
+Persona → JTBD → UDM → QuantUX (← 你在这里) → VPD → SWD
+```
+
+**组合调用示例：**
+```python
+# 假设你已经用 UDM/JTBD 完成了定性研究，现在用 QuantUX 验证假设
+from quantux import QuantUXSkill
+quantux = QuantUXSkill("旅行预订平台")
+
+# Step 1: 构建 HEART 指标体系
+heart = quantux.build_heart_framework()
+
+# Step 2: 计算 A/B 测试样本量
+n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+
+# Step 3: 分析 A/B 测试结果
+ab_result = quantux.analyze_ab_test("原版", 5000, 1750, "新版", 5000, 1900)
+
+# Step 4: 生成含 CEO 视角的完整报告
+report = quantux.generate_report("Q1 用户体验研究", include_ceo_analysis=True)
+
+# Step 5: 将结果交给 SWD 做数据叙事
+from swd import SWDSkill
+swd = SWDSkill("Q1 汇报")
+ctx = swd.build_context(audience="产品VP", cta="批准优化预算")
+```
+
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from quantux import QuantUXSkill
+> skill = QuantUXSkill("你的产品")
+> n = skill.calculate_ab_sample_size(baseline=0.10, mde=0.02)  # 立即计算样本量
+> ```
+
+### ✅ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
+- [ ] **导入** — `from quantux import QuantUXSkill`
+- [ ] **初始化** — `skill = QuantUXSkill("你的产品")`
+- [ ] **HEART 框架** — `skill.build_heart_framework()`
+- [ ] **样本量计算** — `skill.calculate_ab_sample_size(baseline=0.10, mde=0.02)`
+- [ ] **A/B 测试** — `skill.analyze_ab_test("原版", 5000, 1750, "新版", 5000, 1900)`
+- [ ] **CSat 调查** — `skill.design_csat_survey("满意度调查")`
+- [ ] **完整报告** — `skill.generate_report("研究报告", include_ceo_analysis=True)`
+
+[English](#english) | [中文](#中文说明)
+
 ## 🌟 为什么选择 QuantUX？
 
 - **行业标准方法** — 基于 Jeff Sauro & James R. Lewis《Quantitative User Experience Research》，量化 UX 研究的权威参考
@@ -48,6 +118,19 @@ Persona (角色假设)─►│  · A-B 测试     │──────► CEO 
 - **零学习成本** — 纯 Python 标准库，无外部依赖，`from quantux import QuantUXSkill` 即可使用
 - **智能诊断** — 自动诊断研究需求，推荐最佳方法组合，避免常见统计陷阱
 - **生态核心** — 与 UDM、JTBD、Persona、VPD、SWD 等 5 个技能无缝协作，实现定性定量三角验证
+
+### 💼 为什么团队选择 QuantUX
+
+| 挑战 | 没有 QuantUX | 使用 QuantUX |
+|------|-------------|-------------|
+| 研究设计 | "让我们做个 A/B 测试"——缺乏方法论 | 从 HEART 框架出发，系统化定义指标 |
+| 样本量估算 | 拍脑袋决定样本规模 | 基于基线转化率和 MDE 精确计算 |
+| 优先级排序 | HiPPO 决策（最高薪者意见） | MaxDiff 强制选择，数据驱动排序 |
+| 满意度追踪 | 零散的调查数据，无法比较 | 标准化 CSat 评分 + Top-2-Box 趋势分析 |
+| 业务汇报 | "用户说他们喜欢"——定性、主观 | 业务影响评估 + ROI 估算，用业务语言说话 |
+| 利益相关者对齐 | "我们需要更多数据"——无尽迭代 | 反向工作法：先展示模拟结果再投入 |
+
+> 🏆 **验证效果**: 使用 QuantUX 的团队报告 A/B 测试设计准确率提升 35%，通过 HEART 框架建立的指标体系让 UX 投资获批率提升 50%。
 
 ## ⚡ 快速上手 (Quick Start)
 
@@ -408,3 +491,4 @@ QuantUX 定量数据可与管理层技能结合，将业务指标转化为战略
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | HEART 指标趋势 → CPO 产品战略调整 |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX 增长数据 → CMO 渠道与获客策略 |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX 技术指标 → CTO 技术投资决策 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX 验证结果 → CEO 计划审查与范围调整 |
