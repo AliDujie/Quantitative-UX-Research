@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quantux"
-version = "2.3.65"
+version = "2.3.66"
 description = "Quantitative User Experience Research Toolkit — HEART framework, CSat surveys, A/B testing, MaxDiff, log analysis (量化用户体验研究工具包 — HEART指标体系、满意度调查、A/B测试、MaxDiff、日志分析)"
 readme = "README.md"
 requires-python = ">=3.8"

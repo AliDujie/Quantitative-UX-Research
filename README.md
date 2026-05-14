@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.65-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.66-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
@@ -25,7 +25,7 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
-> 🆕 **What's New in v2.3.65**: Enhanced validation workflows with ecosystem-wide consistency updates. Cross-skill references improved for HEART, MaxDiff, and log analysis docs.
+> 🆕 **What's New in v2.3.66**: Repository maintenance. Added HEART Metric Selection Guide for product-stage-based metric selection. Enhanced A/B testing section with effect size interpretation guide. Verified ecosystem cross-references and bilingual consistency.
 
 ---
 
@@ -1424,6 +1424,10 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| 2.3.66 | 2026-05-15 | 仓库维护：添加 HEART 指标选择指南（基于产品阶段）；增强 A/B 测试章节的效应量解读指南；验证生态交叉引用完整性和双语一致性 |
+| 2.3.65 | 2026-05-14 | 仓库维护：增强验证工作流的生态一致性更新，改进 HEART、MaxDiff 和日志分析文档的跨技能引用 |
+| 2.3.64 | 2026-05-14 | 仓库维护：版本升级，对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
+| 2.3.63 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐版本，更新 Last Updated |
 | 2.3.62 | 2026-05-14 | 仓库维护：删除技能生态工作流章节中重复的快速决策指南表，提升文档简洁性和可读性 |
 |------|------|------|| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
 | 2.3.58 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
@@ -1519,6 +1523,10 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.3.66 | 2026-05-15 | Repo maintenance: added HEART Metric Selection Guide for product-stage-based metric selection; enhanced A/B testing section with effect size interpretation guide; verified ecosystem cross-references and bilingual consistency |
+| v2.3.65 | 2026-05-14 | Repo maintenance: enhanced validation workflows with ecosystem-wide consistency updates. Cross-skill references improved for HEART, MaxDiff, and log analysis docs. |
+| v2.3.64 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
+| v2.3.63 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned versions, updated Last Updated |
 | v2.3.62 | 2026-05-14 | Repo maintenance: removed duplicate Quick Decision Guide table from ecosystem workflow section, improved documentation conciseness and readability |
 |---------|------|--------|| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
 | v2.3.58 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
@@ -1697,4 +1705,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.64*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.66*
