@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.74-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.75-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
@@ -25,7 +25,7 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
-> 🆕 **What's New in v2.3.74**: Repository maintenance v2.3.74. Synced Python __version__ with SKILL.md. Added HEART metrics dashboard example. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
+> 🆕 **What's New in v2.3.75**: Repository maintenance 2.3.75. v2.3.75: add QuantUX reference guides to README (CN+EN), link unlinked reference files. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
 
 ---
 
@@ -630,6 +630,18 @@ A: 取决于当前转化率、期望检测的最小提升幅度、和统计功�
 - **《Trustworthy Online Controlled Experiments》** - Kohavi, Tang & Xu (A/B 测试经典)
 - **《Practical Statistics for UX》** - Jeff Sauro (UX 统计入门)
 - **《Bayesian Methods for Hackers》** - Cameron Davidson-Pilon (贝叶斯方法)
+
+#### 📂 QuantUX 参考指南
+
+| 指南 | 重点 |
+|------|------|
+| [HEART 框架](references/heart-framework.md) | Google 的 UX 测量框架 |
+| [CSAT 方法](references/csat-methods.md) | 客户满意度测量 |
+| [A/B 测试](references/ab-testing.md) | 受控实验设计 |
+| [MaxDiff 指南](references/maxdiff-guide.md) | 最大差异量表 |
+| [日志分析](references/log-analysis.md) | 行为遥测分析 |
+| [跨技能验证](references/07-cross-skill-validation.md) | QuantUX + UDM/JTBD 验证工作流 |
+| [跨技能协作](references/08-ecosystem-collaboration.md) | QuantUX + 生态系统工作流
 
 ### 📚 关于《Quantitative User Experience Research》
 
@@ -1438,6 +1450,18 @@ report = skill.generate_report("Churn Reduction Study", include_ceo_analysis=Tru
 - **"Practical Statistics for UX"** — Jeff Sauro, statistical methods for UX professionals
 - **"Measuring the User Experience"** — Tom Tullis and Bill Albert, metrics for UX evaluation
 
+#### 📂 QuantUX Reference Guides
+
+| Guide | Focus |
+|-------|-------|
+| [HEART Framework](references/heart-framework.md) | Google's UX measurement framework |
+| [CSAT Methods](references/csat-methods.md) | Customer satisfaction measurement |
+| [A/B Testing](references/ab-testing.md) | Controlled experiment design |
+| [MaxDiff Guide](references/maxdiff-guide.md) | Maximum difference scaling |
+| [Log Analysis](references/log-analysis.md) | Behavioral telemetry analysis |
+| [Cross-Skill Validation](references/07-cross-skill-validation.md) | QuantUX + UDM/JTBD validation workflows |
+| [Ecosystem Collaboration](references/08-ecosystem-collaboration.md) | QuantUX + ecosystem cross-skill workflows |
+
 ### 📚 About This Skill
 
 This skill is based on the methodology from *"Quantitative User Experience Research"* by Jeff Sauro and James R. Lewis, providing rigorous statistical methods for UX research. The HEART framework (Happiness, Engagement, Adoption, Retention, Task Success) was developed at Google.
@@ -1816,4 +1840,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.73*
+*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.3.73*
