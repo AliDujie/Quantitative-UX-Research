@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.69-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.70-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
@@ -25,7 +25,7 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
-> 🆕 **What's New in v2.3.69**: Repository maintenance. Updated version alignment across all files (SKILL.md, pyproject.toml, README badge, footer). Added HEART Metric Selection Guide for product-stage-based metric selection. Enhanced A/B testing section with effect size interpretation guide. Verified all ecosystem cross-references and bilingual consistency.
+> 🆕 **What's New in v2.3.70**: Repository maintenance v2.3.70. Filled changelog gaps for v2.3.68-v2.3.69. Updated What's New callout. Verified all ecosystem cross-references. Refreshed last-updated date. Enhanced README structure with improved navigation cues.
 
 ---
 
@@ -84,6 +84,76 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
 > skill = QuantUXSkill("你的产品")
 > print(skill.calculate_ab_sample_size(baseline=0.15, mde=0.02))  # 立即计算 A/B 测试样本量
 > ```
+
+
+### 🔀 Cross-Skill Recipes (跨技能配方)
+
+| Recipe | Workflow | Use Case |
+|--------|----------|----------|
+| **HEART Baseline** | Persona → QuantUX → SWD | Set UX metrics baseline + report |
+| **A/B Validation** | UDM → QuantUX → VPD | Qualitative hypothesis → test → value analysis |
+| **Churn Analysis** | JTBD → QuantUX → SWD | Job struggles → behavioral data → story |
+| **Survey Design** | UDM → QuantUX → Persona | Survey creation → Statistical analysis → Segmentation |
+| **ROI Case** | QuantUX → VPD → SWD | Metrics → Business impact → Executive pitch |
+
+#### Recipe: HEART Framework + Statistical Validation
+
+```python
+from quantux import QuantUXSkill
+
+q = QuantUXSkill("电商App")
+
+# Step 1: Build HEART framework
+heart = q.build_heart_framework(
+    happiness=["CSat", "NPS"],
+    engagement=["sessions_per_week", "time_in_app"],
+    adoption=["new_feature_usage_rate"],
+    retention=["30_day_retention"],
+    task_success=["checkout_completion_rate", "search_success_rate"]
+)
+
+# Step 2: Design CSat survey
+survey = q.design_survey("季度满意度调查", "csat")
+questions = q.add_questions(survey, ["整体满意度", "推荐意愿", "改进建议"])
+
+# Step 3: Calculate required sample size
+n = q.calculate_sample_size(
+    effect_size=0.5, alpha=0.05, power=0.8, 
+    metric_type="continuous", sigma=15, delta=5
+)
+print(f"需要 {n} 个用户")  # → ~71 users
+
+# Step 4: Analyze A/B test results
+result = q.t_test_two_means(mean1=72, mean2=65, sd1=12, sd2=15, n1=30, n2=30)
+# → p-value, effect size, confidence interval
+```
+
+#### Recipe: Behavioral Log Analysis → Actionable Insights
+
+```python
+# Analyze user event logs for funnel drop-off
+from quantux import QuantUXSkill
+
+q = QuantUXSkill("SaaS产品")
+
+# Step 1: Load and analyze event sequences
+events = [
+    {"user": "u1", "event": "signup", "ts": 1},
+    {"user": "u1", "event": "onboarding", "ts": 2},
+    {"user": "u1", "event": "first_action", "ts": 3},
+    {"user": "u2", "event": "signup", "ts": 1},
+    {"user": "u2", "event": "onboarding", "ts": 2},
+]
+
+funnel = q.analyze_funnel(events, stages=["signup", "onboarding", "first_action"])
+# → Drop-off rates at each stage
+
+# Step 2: Calculate time-on-task metrics
+tots = q.calculate_time_on_task(
+    task_times=[12, 15, 8, 22, 11, 14, 9, 18],
+    target_time=10
+)
+```
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -1746,4 +1816,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.69*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.70*

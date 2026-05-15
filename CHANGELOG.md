@@ -1,6 +1,14 @@
 # Changelog
 
 
+## v2.3.68 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.3.69 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
 ## v2.3.67 (2026-05-15)
 
 - Added ecosystem collaboration reference doc (`08-ecosystem-collaboration.md`) with bidirectional data flow maps and Python API examples
