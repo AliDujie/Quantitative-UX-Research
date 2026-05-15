@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.3.71 (2026-05-15)
+
+- Repository maintenance: aligned `pyproject.toml` version with SKILL.md (v2.3.71)
+- Aligned package `__version__` in `quantux/__init__.py` with SKILL.md (v2.3.71)
+- Added Plan CEO Review cross-reference in extended ecosystem section
+- Verified all ecosystem links and badge consistency
+
+## v2.3.70 (2026-05-15)
+
+- Repository maintenance: aligned `pyproject.toml` version with SKILL.md
+
 ## v2.3.69 (2026-05-15)
 
 - Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
