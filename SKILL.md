@@ -113,7 +113,7 @@ ctx = swd.build_context(audience="产品VP", cta="批准优化预算")
 ## 🌟 为什么选择 QuantUX？
 
 - **行业标准方法** — 基于 Jeff Sauro & James R. Lewis《Quantitative User Experience Research》，量化 UX 研究的权威参考
-- **7 大执行能力** — HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、研究报告，一站式覆盖定量研究全流程
+- **10 大执行能力（含 CEO 视角）** — HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、研究报告，以及 CEO 业务影响评估、验证时间线、资源估算，一站式覆盖定量研究全流程
 - **CEO 决策支持** — 内置业务影响评估、验证时间线、资源估算，把 UX 数据转化为业务语言
 - **零学习成本** — 纯 Python 标准库，无外部依赖，`from quantux import QuantUXSkill` 即可使用
 - **智能诊断** — 自动诊断研究需求，推荐最佳方法组合，避免常见统计陷阱
@@ -172,7 +172,7 @@ csat = skill.design_csat(product="核心功能")
 
 实施路径：Goals -> Signals -> Metrics，团队工作坊定义，选择 3-5 个核心指标。
 
-## 二、7 大执行能力
+## 二、10 大执行能力（含 CEO 决策视角）
 
 1. **HEART 框架构建** -- Goals-Signals-Metrics 工作坊、指标定义与仪表盘
 2. **CSat 调查设计与分析** -- 调查机制选择、评分量表、Top-2-Box、时间趋势

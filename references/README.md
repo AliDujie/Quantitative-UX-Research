@@ -14,6 +14,7 @@ This directory contains methodology reference documents for the Quantitative UX 
 | `maxdiff-guide.md` | MaxDiff 优先级排序方法指南 |
 | `log-analysis.md` | 日志序列分析方法论 |
 | `07-cross-skill-validation.md` | QuantUX 跨技能验证模式（UDM/JTBD/VPD/Persona → QuantUX 工作流） |
+| `08-ecosystem-collaboration.md` | QuantUX 跨技能完整协作指南（双向数据流 + Python 调用示例） |
 
 ## 使用方法 / Usage
 

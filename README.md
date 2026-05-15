@@ -23,7 +23,7 @@
 
 > 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
 
-基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 7 大执行能力，从指标体系构建到研究报告生成，一站式解决量化研究需求。
+基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
 > 🆕 **What's New in v2.3.66**: Repository maintenance. Added HEART Metric Selection Guide for product-stage-based metric selection. Enhanced A/B testing section with effect size interpretation guide. Verified ecosystem cross-references and bilingual consistency.
 
@@ -153,6 +153,7 @@ story = swd.build_story(protagonist="数据团队", imbalance="满意度低于�
 | [references/ab-testing.md](references/ab-testing.md) | A/B 测试设计原则与最佳实践 |
 | [references/maxdiff-guide.md](references/maxdiff-guide.md) | MaxDiff 优先级排序方法指南 |
 | [references/log-analysis.md](references/log-analysis.md) | 日志序列分析方法论 |
+| [references/08-ecosystem-collaboration.md](references/08-ecosystem-collaboration.md) | QuantUX 跨技能完整协作指南（双向数据流 + Python 调用示例） |
 
 ### 🌍 实战场景指南
 
@@ -392,7 +393,7 @@ Quantitative-UX-Research/
 │   ├── abtest.py         # A/B 测试设计与分析
 │   ├── research.py       # 研究规划与报告生成
 │   └── tests/            # 测试套件
-├── references/           # 知识库文档（7 篇，含跨技能验证指南）
+├── references/           # 知识库文档（8 篇，含跨技能协作指南）
 │   ├── README.md
 │   ├── heart-framework.md    # HEART 框架完整指南
 │   ├── csat-methods.md       # CSat 调查设计与分析方法论
@@ -400,6 +401,7 @@ Quantitative-UX-Research/
 │   ├── maxdiff-guide.md      # MaxDiff 优先级排序方法指南
 │   ├── log-analysis.md       # 日志序列分析方法论
 │   └── 07-cross-skill-validation.md  # 跨技能验证最佳实践
+│   └── 08-ecosystem-collaboration.md  # 跨技能完整协作指南
 └── quantux/tests/        # 测试套件
 ```
 
@@ -1122,7 +1124,7 @@ Quantitative-UX-Research/
 │   ├── research.py       # Research planning & report generation
 │   ├── templates.py      # Report templates
 │   └── tests/            # Test suite
-├── references/           # Knowledge base (7 methodology documents)
+├── references/           # Knowledge base (8 methodology documents)
 │   ├── README.md
 │   ├── heart-framework.md    # HEART framework complete guide
 │   ├── csat-methods.md       # CSat survey design & analysis
@@ -1130,6 +1132,7 @@ Quantitative-UX-Research/
 │   ├── maxdiff-guide.md      # MaxDiff prioritization guide
 │   ├── log-analysis.md       # Log sequence analysis methodology
 │   └── 07-cross-skill-validation.md  # Cross-skill validation best practices
+│   └── 08-ecosystem-collaboration.md  # Cross-skill collaboration guide
 └── quantux/tests/        # Test suite
 ```
 
