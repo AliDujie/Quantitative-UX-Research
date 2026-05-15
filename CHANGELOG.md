@@ -1,7 +1,14 @@
 # Changelog
 
 
-## v2.3.64 (2026-05-14)
+## v2.3.67 (2026-05-15)
+
+- Added ecosystem collaboration reference doc (`08-ecosystem-collaboration.md`) with bidirectional data flow maps and Python API examples
+- Fixed capability count inconsistency in Chinese README section (7→10 to match English section)
+- Updated all reference counts (7→8) across Chinese and English sections of README.md
+- Updated SKILL.md capability descriptions to consistently say "10 大执行能力（含 CEO 决策视角）"
+
+## v2.3.66 (2026-05-15)
 
 - Repo maintenance: add cross-skill reference sections to log-analysis.md and maxdiff-guide.md, expand ecosystem collaboration coverage
 

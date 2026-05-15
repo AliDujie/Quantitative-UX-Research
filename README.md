@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.66-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.67-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
@@ -25,7 +25,7 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
-> 🆕 **What's New in v2.3.66**: Repository maintenance. Added HEART Metric Selection Guide for product-stage-based metric selection. Enhanced A/B testing section with effect size interpretation guide. Verified ecosystem cross-references and bilingual consistency.
+> 🆕 **What's New in v2.3.67**: Repository maintenance. Added HEART Metric Selection Guide for product-stage-based metric selection. Enhanced A/B testing section with effect size interpretation guide. Verified ecosystem cross-references and bilingual consistency.
 
 ---
 
@@ -1526,7 +1526,7 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.3.66 | 2026-05-15 | Repo maintenance: added HEART Metric Selection Guide for product-stage-based metric selection; enhanced A/B testing section with effect size interpretation guide; verified ecosystem cross-references and bilingual consistency |
+| v2.3.67 | 2026-05-15 | Repo maintenance: added HEART Metric Selection Guide for product-stage-based metric selection; enhanced A/B testing section with effect size interpretation guide; verified ecosystem cross-references and bilingual consistency |
 | v2.3.65 | 2026-05-14 | Repo maintenance: enhanced validation workflows with ecosystem-wide consistency updates. Cross-skill references improved for HEART, MaxDiff, and log analysis docs. |
 | v2.3.64 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
 | v2.3.63 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned versions, updated Last Updated |
@@ -1708,4 +1708,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.66*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.3.67*
