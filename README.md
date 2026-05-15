@@ -4,9 +4,11 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.76-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.78-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
+
+> 🆕 **What's New in v2.3.78**: Repository maintenance v2.3.77. Added What's New callout to README header. All reference docs linked in CN+EN. Ecosystem cross-references and bilingual consistency verified.
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -118,7 +120,7 @@ questions = q.add_questions(survey, ["整体满意度", "推荐意愿", "改进�
 
 # Step 3: Calculate required sample size
 n = q.calculate_sample_size(
-    effect_size=0.5, alpha=0.05, power=0.8, 
+    effect_size=0.5, alpha=0.05, power=0.8,
     metric_type="continuous", sigma=15, delta=5
 )
 print(f"需要 {n} 个用户")  # → ~71 users
@@ -1540,6 +1542,36 @@ story = swd.build_story(
     imbalance="Onboarding completion at 40%, target is 65%",
     call_to_action="Approve redesigned onboarding flow"
 )
+```
+
+```python
+# Recipe: JTBD-driven quantitative validation
+from jtbd import JTBDSkill; from quantux import QuantUXSkill; from swd import SWDSkill
+
+# JTBD identifies underserved need
+jtbd = JTBDSkill("project management tool")
+score = jtbd.score_opportunity(
+    "see all team dependencies at a glance",
+    struggle=7, alternative=3, market=2, budget=5
+)
+# → High opportunity score: users struggle, alternatives weak, few competitors
+
+# QuantUX validates with behavioral data
+quantux = QuantUXSkill("project management tool")
+funnel = quantux.analyze_funnel(
+    stages=["signup", "create_project", "invite_team", "first_task"],
+    conversions=[1000, 650, 280, 190]
+)
+# → Identifies exact drop-off: invite_team step loses 57%
+
+# SWD tells the story
+swd = SWDSkill("Team Collaboration Opportunity")
+story = swd.build_story(
+    protagonist="Product team",
+    imbalance="57% of users abandon during team invitation",
+    call_to_action="Simplify team onboarding with magic links"
+)
+# → Data-backed JTBD validation report ready for leadership
 ```
 
 ### 🏷️ GitHub Topics (Recommended)
