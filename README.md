@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.67-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.68-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
@@ -1316,6 +1316,43 @@ print(result)
 ```
 
 **Result**: Used MaxDiff instead of voting. Priority decision time reduced from 2 weeks to 3 days.
+
+#### Case Study 3: User Behavior Analysis to Reduce Churn
+
+**Background**: A SaaS analytics platform saw a 15% monthly churn rate and needed to understand where users were dropping off.
+
+```python
+from quantux import QuantUXSkill
+
+skill = QuantUXSkill("SaaS Analytics Platform")
+
+# Step 1: Build HEART framework to define what to measure
+heart = skill.build_heart_framework()
+# → Goals → Signals → Metrics for each HEART dimension
+
+# Step 2: Analyze user behavior logs to find drop-off points
+logs = skill.analyze_logs(
+    user_actions=[
+        "signup", "onboarding_tutorial", "create_dashboard",
+        "add_widget", "share_dashboard", "return_after_7d"
+    ],
+    threshold=3
+)
+print(logs)  # Funnel + transition matrix + drop-off points
+
+# Step 3: Design CSat survey to understand satisfaction
+survey = skill.design_csat_survey("Post-onboarding Satisfaction", mechanism="email")
+
+# Step 4: Calculate sample size for follow-up A/B test on onboarding
+sample = skill.calculate_ab_sample_size(baseline=0.45, mde=0.05)
+print(f"Need {sample} users per group for 5% MDE detection")
+
+# Step 5: Generate comprehensive report with CEO perspective
+report = skill.generate_report("Churn Reduction Study", include_ceo_analysis=True)
+```
+
+**Result**: Log analysis revealed 42% of users never completed onboarding tutorial. HEART metrics showed Task Success was the weakest dimension. Targeted onboarding redesign reduced 7-day churn from 15% to 9%.
+
 ### 🌟 User Reviews
 
 > "The HEART framework implementation helped us align our entire product team on what metrics actually matter. Game changer." — **Head of UX, Travel Platform**
@@ -1526,7 +1563,8 @@ Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportuni
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.3.67 | 2026-05-15 | Repo maintenance: added HEART Metric Selection Guide for product-stage-based metric selection; enhanced A/B testing section with effect size interpretation guide; verified ecosystem cross-references and bilingual consistency |
+| v2.3.67 | 2026-05-15 | Previous maintenance
+| v2.3.68 | 2026-05-15 | Repo maintenance: added 3rd English case study (user behavior log analysis for SaaS churn reduction with HEART + funnel analysis); enhanced cross-skill workflow documentation | Repo maintenance: added HEART Metric Selection Guide for product-stage-based metric selection; enhanced A/B testing section with effect size interpretation guide; verified ecosystem cross-references and bilingual consistency |
 | v2.3.65 | 2026-05-14 | Repo maintenance: enhanced validation workflows with ecosystem-wide consistency updates. Cross-skill references improved for HEART, MaxDiff, and log analysis docs. |
 | v2.3.64 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
 | v2.3.63 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned versions, updated Last Updated |
