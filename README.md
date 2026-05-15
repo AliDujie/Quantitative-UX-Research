@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.75-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.76-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
@@ -25,7 +25,7 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
-> 🆕 **What's New in v2.3.75**: Repository maintenance 2.3.75. v2.3.75: add QuantUX reference guides to README (CN+EN), link unlinked reference files. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
+> 🆕 **What's New in v2.3.76**: Repository maintenance 2.3.75. v2.3.75: add QuantUX reference guides to README (CN+EN), link unlinked reference files. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
 
 ---
 
@@ -1558,6 +1558,7 @@ user-experience metrics python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| 2.3.76 | 2026-05-16 | 仓库维护：版本升级，验证生态交叉引用完整性和双语一致性 |
 | 2.3.66 | 2026-05-15 | 仓库维护：添加 HEART 指标选择指南（基于产品阶段）；增强 A/B 测试章节的效应量解读指南；验证生态交叉引用完整性和双语一致性 |
 | 2.3.65 | 2026-05-14 | 仓库维护：增强验证工作流的生态一致性更新，改进 HEART、MaxDiff 和日志分析文档的跨技能引用 |
 | 2.3.64 | 2026-05-14 | 仓库维护：版本升级，对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
@@ -1840,4 +1841,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.3.73*
+*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.3.76*
