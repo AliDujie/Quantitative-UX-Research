@@ -1,7 +1,7 @@
 ---
 name: quantitative-ux-research
 description: 量化用户体验研究执行技能。基于 Jeff Sauro & James R. Lewis 方法论，提供实验设计、样本量计算、统计分析、调查设计、日志分析、满意度分析、研究报告生成等完整执行能力，以及CEO决策视角的业务影响评估、验证时间线与资源估算。
-version: "2.3.72"
+version: "2.3.73"
 ---
 
 # Quantitative UX Research Skill
@@ -218,6 +218,15 @@ Quantitative-UX-Research/
 ```
 
 ---
+
+### ⛔ 何时不使用 QuantUX
+
+- **选择研究方法或设计访谈** — 使用 [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
+- **理解用户 Jobs-to-be-Done** — 使用 [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
+- **创建人物角色** — 使用 [Web Persona](https://github.com/AliDujie/web-persona-skill)
+- **价值主张画布分析** — 使用 [Value Proposition Design](https://github.com/AliDujie/value-proposition-design)
+- **数据可视化与叙事** — 使用 [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+
 
 ## 五、Python 工具包
 
