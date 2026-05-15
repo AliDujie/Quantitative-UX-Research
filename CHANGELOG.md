@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.74 (2026-05-16)
+
+- Synced Python `__version__` with SKILL.md version
+- Verified all HEART, A/B test, MaxDiff, and statistical code examples
+- Confirmed ecosystem cross-references across all 7 skills
+- Checked bilingual (CN/EN) consistency in README and SKILL.md
+- Refreshed last-updated badges
+
 ## v2.3.72 (2026-05-15)
 
 - Repo maintenance: verified all code examples smoke-test pass

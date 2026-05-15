@@ -4,9 +4,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.73-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.74-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -25,7 +25,7 @@
 
 基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
 
-> 🆕 **What's New in v2.3.73**: Repository maintenance v2.3.73. Verified ecosystem cross-references and bilingual consistency. Checked all code examples for accuracy. Refreshed last-updated date.
+> 🆕 **What's New in v2.3.74**: Repository maintenance v2.3.74. Synced Python __version__ with SKILL.md. Added HEART metrics dashboard example. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
 
 ---
 
