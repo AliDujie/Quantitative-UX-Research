@@ -1,0 +1,4 @@
+# Quantitative UX Research Skill - Dependencies
+# This package uses only Python standard library modules (math, statistics, json, pathlib, typing).
+# No external packages required.
+# Python >= 3.9
