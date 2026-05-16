@@ -6,6 +6,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
+![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
 ## 🇨🇳 中文概览
 
@@ -314,6 +315,26 @@ python -m pytest quantux/tests/test_all.py -v
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## ❓ FAQ / Troubleshooting
+
+**Q: Do I need scipy, numpy, or any statistical library?**
+No. QuantUX implements all statistical calculations (chi-square, z-tests, MNL estimation, sample size) using only the Python standard library (`math`, `random`, `statistics`).
+
+**Q: What MDE (Minimum Detectable Effect) should I use?**
+For conversion rate experiments, 3-5% is typical. For UX metrics like task success time, 10-15% is reasonable. Start with `calculate_ab_sample_size(baseline=0.35, mde=0.03)` for a 3% lift on a 35% baseline.
+
+**Q: How do I interpret A/B test results?**
+Check three things: (1) Statistical significance (p < 0.05), (2) Confidence interval (does it exclude zero?), (3) Practical significance (is the effect size meaningful for your business?).
+
+**Q: Can I use HEART for a small product with few users?**
+Yes — start with just 2-3 core metrics rather than all five dimensions. HEART is a framework, not a checklist. Pick the dimensions that matter for your current goals.
+
+**Q: How does MaxDiff differ from a regular survey?**
+MaxDiff forces trade-offs — respondents choose the *most* and *least* important items from a set, which avoids the "everything is important" problem of rating scales. The MNL analysis then produces utility scores with meaningful intervals.
+
+**Q: How does QuantUX integrate with other AliDujie skills?**
+QuantUX is the quantitative validation engine. Use it after [UDM](https://github.com/AliDujie/universal-design-methods) generates qualitative hypotheses, after [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) identifies high-opportunity jobs, and before [SWD](https://github.com/AliDujie/storytelling-with-data) presents results to stakeholders.
 
 ## 📄 License
 
