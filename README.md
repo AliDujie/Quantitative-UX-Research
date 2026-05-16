@@ -28,6 +28,12 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Business Reporting | "Users say they like it" — qualitative | Business impact + ROI in business language |
 | Stakeholder Alignment | "We need more data" — endless iterations | Reverse working: show simulated results before investing |
 
+## 💡 为什么选择 QuantUX？
+
+> **QuantUX 是整个 AliDujie UX 研究生态的定量验证引擎。** 当 UDM 产出定性发现、JTBD 识别高机会 Job 后，QuantUX 用 HEART 框架、A/B 测试、MaxDiff 等统计方法把假设转化为可量化的证据。10 项执行能力覆盖从指标定义到 CEO 汇报的完整闭环——让 UX 数据说业务语言。
+>
+> *"以前我们说'用户喜欢新设计'——现在我们说'新版转化率提升 15%，95% 置信区间 [8%, 22%]'。QuantUX 让数据自己说话。"*
+
 ## 🏆 Proven Impact
 
 > Teams using QuantUX report **35% improvement in A/B test design accuracy** and **50% higher UX investment approval rates** via HEART framework metrics.
@@ -40,6 +46,13 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Research-to-decision cycle | 6-8 weeks | 3-4 weeks | ~50% faster |
 
 _Results based on aggregated team adoption data across SaaS, mobile, and e-commerce domains._
+
+- **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
+- **10 executable capabilities (incl. CEO perspective)** — HEART, CSat, log analysis, MaxDiff, A/B, research planning, reporting, plus business impact, validation timeline, resource estimation
+- **CEO decision support** — Built-in business impact assessment, validation timeline, resource estimation — translate UX data into business language
+- **Zero learning curve** — Pure Python standard library, no external dependencies, `from quantux import QuantUXSkill` to start
+- **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
+- **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
 
 ## 🌟 Why QuantUX?
 
@@ -285,6 +298,23 @@ python quantux/tests/test_all.py
 python -m pytest quantux/tests/test_all.py -v
 ```
 
+## 🔗 Ecosystem Quick Start
+
+QuantUX sits after qualitative skills in the research pipeline — it validates hypotheses with data:
+
+```python
+# JTBD/UDM qualitative → QuantUX validation → SWD storytelling
+from jtbd import JTBDSkill
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+j = JTBDSkill("Product")       # Discover high-opportunity Jobs
+u = UDMSkill("Product")        # Qualitative interviews
+q = QuantUXSkill("Product")    # A/B test + MaxDiff validation
+s = SWDSkill("Q1 Report")      # Executive data story
+```
+
 ## 📋 When NOT to Use QuantUX
 
 - **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
@@ -315,6 +345,16 @@ python -m pytest quantux/tests/test_all.py -v
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Related Skills in the AliDujie Ecosystem
+
+| Skill | What It Does | GitHub |
+|-------|-------------|--------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 100 design research methods | `UDMSkill` |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | Evidence-driven user persona creation | `PersonaSkill` |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 
 ## ❓ FAQ / Troubleshooting
 
