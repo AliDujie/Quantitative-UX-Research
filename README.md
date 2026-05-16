@@ -288,13 +288,6 @@ python quantux/tests/test_all.py
 python -m pytest quantux/tests/test_all.py -v
 ```
 
-## 📚 Resources
-
-- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
-- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
-- [CHANGELOG.md](CHANGELOG.md) — Version history
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
-
 ## 🔗 Ecosystem Quick Start
 
 QuantUX sits after qualitative skills in the research pipeline — it validates hypotheses with data:
@@ -311,6 +304,13 @@ u = UDMSkill("Product")        # Qualitative interviews
 q = QuantUXSkill("Product")    # A/B test + MaxDiff validation
 s = SWDSkill("Q1 Report")      # Executive data story
 ```
+
+## 📚 Resources
+
+- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
+- [CHANGELOG.md](CHANGELOG.md) — Version history
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
 
 ## 📋 When NOT to Use QuantUX
 
