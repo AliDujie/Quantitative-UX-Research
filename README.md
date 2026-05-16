@@ -47,13 +47,6 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 _Results based on aggregated team adoption data across SaaS, mobile, and e-commerce domains._
 
-- **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
-- **10 executable capabilities (incl. CEO perspective)** — HEART, CSat, log analysis, MaxDiff, A/B, research planning, reporting, plus business impact, validation timeline, resource estimation
-- **CEO decision support** — Built-in business impact assessment, validation timeline, resource estimation — translate UX data into business language
-- **Zero learning curve** — Pure Python standard library, no external dependencies, `from quantux import QuantUXSkill` to start
-- **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
-- **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
-
 ## 🌟 Why QuantUX?
 
 - **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
@@ -178,54 +171,49 @@ Persona → JTBD/UDM → QuantUX → VPD → SWD → STM
 
 ```python
 # Full qualitative → quantitative → storytelling pipeline
-from persona import WebPersonaSkill
-from jtbd_knowledge_skill import JTBDKnowledgeSkill
+from persona import PersonaSkill
+from jtbd import JTBDSkill
 from quantux import QuantUXSkill
 from udm import UDMSkill
 from vpd import VPDSkill
 from swd import SWDSkill
 
 # 1. Persona — define target segments
-persona = WebPersonaSkill("Travel Booking Platform")
-segments = persona.define_segment("Business Travelers")
-# → Segment profile with behaviors, goals, pain points
+persona = PersonaSkill("Travel Booking Platform")
+persona.add_persona(name="Alex", archetype="Business Traveler", priority="primary",
+    goals=["Book hotel in under 30 seconds"], behaviors=["Last-minute bookings"],
+    bio="Alex is a sales consultant who travels weekly")
 
 # 2. JTBD — discover unmet needs
-jtbd = JTBDKnowledgeSkill("Travel Booking")
-jobs = jtbd.map_jobs_to_be_done(segments)
-# → "When I'm rushed, I want to book a hotel in <30s" [importance: 8.5, satisfaction: 5.2]
+jtbd = JTBDSkill("Travel Booking")
+opportunity = jtbd.score_opportunity("Find suitable accommodation quickly",
+    struggle=4, alternative=3, market=4, budget=4)
 
 # 3. UDM — validate with qualitative interviews
 udm = UDMSkill("Travel Booking")
-interview = udm.generate_interview("Business Travelers", "contextual")
-# → Interview guide, thematic codes, hypothesis: "QuickBook reduces time-to-book by 40%"
+interview = udm.generate_interview("Business Users", "contextual", context="Hotel booking experience")
 
 # 4. QuantUX — quantitative validation
 quantux = QuantUXSkill("Travel Booking")
-n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.15)
+n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.03)
 ab_result = quantux.analyze_ab_test("Old", 5000, 1750, "New", 5000, 2100)
 maxdiff = quantux.design_maxdiff("Feature Priority", ["QuickBook", "Price Alerts", "Loyalty Tiers"])
 heart = quantux.build_heart_framework()
-# → Statistical significance ✅, p<0.01, MaxDiff utility: QuickBook = 2.1 (highest)
 
 # 5. VPD — build value proposition
-vpd = VPDSkill("Travel Booking")
-canvas = vpd.fill_canvas(
-    customer_profile="Business Travelers",
-    value_map="QuickBook saves 60s per booking, reduces anxiety",
-    fit=ab_result  # QuantUX validates the fit
-)
-# → Product-market fit score, gain creators, pain relievers
+vpd = VPDSkill("Travel Booking", "Business Travelers")
+canvas = vpd.analyze_canvas(product_name="QuickBook",
+    jobs=[{"description": "Book hotel quickly", "category": "functional", "importance": 5}],
+    pains=[{"description": "Booking takes too long", "severity": "critical"}],
+    gains=[{"description": "One-click rebooking", "desire_level": "required"}])
 
 # 6. SWD — tell the story to stakeholders
 swd = SWDSkill("Q1 UX Report")
-ctx = swd.build_context(audience="Product VP", cta="Approve QuickBook development")
-story = swd.build_story(
-    protagonist="Business Travelers",
+ctx = swd.build_context(audience="Product VP", cta="Approve QuickBook development budget")
+story = swd.build_story(protagonist="Product Committee",
     imbalance="Booking takes 90s; competitors do it in 30s",
-    resolution=f"QuickBook: {ab_result['lift']:.0%} conversion lift, ${ab_result['revenue_impact']:,.0f} quarterly impact"
-)
-# → Executive-ready narrative with QuantUX-backed numbers
+    evidence=["A/B test shows 20% conversion lift, p<0.01"],
+    call_to_action="Approve QuickBook for Q3 launch")
 ```
 
 End-to-end example (standalone):
