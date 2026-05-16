@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.3.80 (2026-05-16)
+
+- Repo maintenance: Added `__version__` to `__all__` export list for proper `from quantux import __version__`
+- Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`
+
 ## v2.3.79 (2026-05-16)
 
 - Repo maintenance: enhanced English Features at a Glance (added Research Planning, Report Generation, Zero Dependencies, Bilingual Support rows)
