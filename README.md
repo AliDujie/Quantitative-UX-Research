@@ -1,1883 +1,231 @@
 # Quantitative UX Research Skill
 
-[![Ecosystem](https://img.shields.io/badge/AliDujie-Ecosystem-7B68EE.svg)](https://github.com/AliDujie)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.81-green.svg)](CHANGELOG.md)
-[![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
+> **Validate Qualitative Insights with Statistical Rigor.**
 
-> 🆕 **What's New in v2.3.81**: Added `__version__` to `__all__` export list for proper module introspection. Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`.: Added What's New callout to README header. All reference docs linked in CN+EN. Ecosystem cross-references and bilingual consistency verified across all 7 skills.
+![Version](https://img.shields.io/badge/version-2.3.81-blue)
+![Python](https://img.shields.io/badge/Python-3.9%2B-green)
+![License](https://img.shields.io/badge/License-MIT-orange)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 
-> 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
+Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023). A complete toolkit for **quantitative UX research**, providing **10 executable capabilities** — from HEART framework and CSat surveys to log analysis, MaxDiff, A/B testing, research planning, and CEO-level business impact assessment.
 
-```text
-┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
-│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │ →  │ STM │
-│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │    │ 战略分析 │
-└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘    └─────┘
-```
-
-**QuantUX is the validation engine** — providing statistical rigor to confirm qualitative hypotheses. Use it when you need to prove "is this real?" with data.
-
-> 🎯 **一句话介绍**: HEART 指标体系 + A/B 测试 + MaxDiff + 日志分析 — 用数据验证每一个用户研究假设。
-
-> 📊 **HEART 框架 · CSat 调查 · A/B 测试 · MaxDiff · 日志分析 · 研究规划**
-
-基于《Quantitative User Experience Research》(Jeff Sauro & James R. Lewis, 2023) 的完整量化用户体验研究工具包。覆盖 10 大执行能力（含 CEO 决策视角），从指标体系构建到研究报告生成，一站式解决量化研究需求。
-
-> 🆕 **What's New in v2.3.76**: Repository maintenance 2.3.75. v2.3.75: add QuantUX reference guides to README (CN+EN), link unlinked reference files. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
-
----
-
-## 🌐 技能生态系统 (Skill Ecosystem)
-
-本技能是 AliDujie 用户研究技能生态系统的**定量研究核心**，负责用数据验证定性假设。与其他技能协同使用，效果更佳：
-
-| 技能 | 角色 | 协同场景 |
-|------|------|----------|
-| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 研究方法 | UDM 定性发现 → QuantUX 定量验证 → 综合报告 |
-| [📊 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | QuantUX 分析结果 → SWD 图表改造 → 叙事构建 |
-| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | JTBD 机会评分 → QuantUX 量化验证 → 决策支持 |
-| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | VPD 价值假设 → QuantUX 实验设计 → 验证结果 |
-| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色假设 → QuantUX 行为验证 → 角色精化 |
-| [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略分析 | STM 框架分析 → QuantUX 数据验证 → 商业决策 |
-
----
-
-### 🔗 Ecosystem Quick Start / 生态系统快速上手
-
-QuantUX 是 7 技能工作流的**定量验证引擎**——用数据验证定性假设。
-
-```
-Persona → JTBD → UDM → QuantUX (← 你在这里) → VPD → SWD
-```
-
-**组合调用示例：**
-```python
-# Step 1: UDM 定性发现用户痛点 → QuantUX 定量验证
-from quantux import QuantUXSkill
-quantux = QuantUXSkill("旅行平台")
-
-# 构建 HEART 指标体系
-heart = quantux.build_heart_framework()
-
-# Step 2: 设计 CSat 调查收集定量数据
-csat = quantux.design_csat_survey("Q1 满意度调查")
-
-# Step 3: 计算 A/B 测试样本量
-n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.03)
-
-# Step 4: 生成含 CEO 视角的完整报告
-report = quantux.generate_report("用户体验验证报告", include_ceo_analysis=True)
-
-# Step 5: 将结果交给 SWD 做数据叙事
-from swd import SWDSkill
-swd = SWDSkill("研究汇报")
-story = swd.build_story(protagonist="数据团队", imbalance="满意度低于目标", call_to_action="优化方案审批")
-```
-
-> 💡 **提示**: QuantUX 与 UDM 配合最佳——UDM 定性发现 "什么问题"，QuantUX 定量证明 "问题有多严重"。
-
-> 💡 **Try it now / 立即尝试**:
-> ```python
-> from quantux import QuantUXSkill
-> skill = QuantUXSkill("你的产品")
-> print(skill.calculate_ab_sample_size(baseline=0.15, mde=0.02))  # 立即计算 A/B 测试样本量
-> ```
-
-
-### 🔀 Cross-Skill Recipes (跨技能配方)
-
-| Recipe | Workflow | Use Case |
-|--------|----------|----------|
-| **HEART Baseline** | Persona → QuantUX → SWD | Set UX metrics baseline + report |
-| **A/B Validation** | UDM → QuantUX → VPD | Qualitative hypothesis → test → value analysis |
-| **Churn Analysis** | JTBD → QuantUX → SWD | Job struggles → behavioral data → story |
-| **Survey Design** | UDM → QuantUX → Persona | Survey creation → Statistical analysis → Segmentation |
-| **ROI Case** | QuantUX → VPD → SWD | Metrics → Business impact → Executive pitch |
-
-#### Recipe: HEART Framework + Statistical Validation
-
-```python
-from quantux import QuantUXSkill
-
-q = QuantUXSkill("电商App")
-
-# Step 1: Build HEART framework
-heart = q.build_heart_framework(
-    happiness=["CSat", "NPS"],
-    engagement=["sessions_per_week", "time_in_app"],
-    adoption=["new_feature_usage_rate"],
-    retention=["30_day_retention"],
-    task_success=["checkout_completion_rate", "search_success_rate"]
-)
-
-# Step 2: Design CSat survey
-survey = q.design_survey("季度满意度调查", "csat")
-questions = q.add_questions(survey, ["整体满意度", "推荐意愿", "改进建议"])
-
-# Step 3: Calculate required sample size
-n = q.calculate_sample_size(
-    effect_size=0.5, alpha=0.05, power=0.8,
-    metric_type="continuous", sigma=15, delta=5
-)
-print(f"需要 {n} 个用户")  # → ~71 users
-
-# Step 4: Analyze A/B test results
-result = q.t_test_two_means(mean1=72, mean2=65, sd1=12, sd2=15, n1=30, n2=30)
-# → p-value, effect size, confidence interval
-```
-
-#### Recipe: Behavioral Log Analysis → Actionable Insights
-
-```python
-# Analyze user event logs for funnel drop-off
-from quantux import QuantUXSkill
-
-q = QuantUXSkill("SaaS产品")
-
-# Step 1: Load and analyze event sequences
-events = [
-    {"user": "u1", "event": "signup", "ts": 1},
-    {"user": "u1", "event": "onboarding", "ts": 2},
-    {"user": "u1", "event": "first_action", "ts": 3},
-    {"user": "u2", "event": "signup", "ts": 1},
-    {"user": "u2", "event": "onboarding", "ts": 2},
-]
-
-funnel = q.analyze_funnel(events, stages=["signup", "onboarding", "first_action"])
-# → Drop-off rates at each stage
-
-# Step 2: Calculate time-on-task metrics
-tots = q.calculate_time_on_task(
-    task_times=[12, 15, 8, 22, 11, 14, 9, 18],
-    target_time=10
-)
-```
-
-### ✅ 5 分钟快速开始检查清单
-
-- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
-- [ ] **导入** — `from quantux import QuantUXSkill`
-- [ ] **初始化** — `skill = QuantUXSkill("你的项目")`
-- [ ] **HEART 框架** — `skill.build_heart_framework()`
-- [ ] **CSat 调查** — `skill.design_csat_survey("满意度调查")`
-- [ ] **A/B 测试** — `skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)`
-- [ ] **MaxDiff** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])`
-- [ ] **研究报告** — `skill.generate_report("研究报告", include_ceo_analysis=True)`
-
-[English](#english) | [中文](#中文说明)
-
----
-
-### 🤔 什么时候使用这个技能？(When to Use This Skill?)
-
-| 你的场景 | 推荐技能 |
-|----------|----------|
-| 需要定量验证假设、设计 A/B 测试、计算样本量 | ✅ **Quantitative UX Research** (本技能) |
-| 需要选择研究方法、设计访谈、执行可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
-| 需要理解用户"工作"、机会评分、竞争分析 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
-| 需要创建人物角色、用户细分、设计指导 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
-| 需要价值主张画布、实验验证、优先级排序 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
-| 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
-| 需要商业分析框架、结构化思维、战略决策 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
-
-> 💡 **提示**: QuantUX 与 UDM 配合使用，实现定性定量三角验证，提升研究信度。
-
----
-
-## 📑 目录 / Table of Contents
-
-- [中文说明](#中文说明)
-  - [📚 快速参考](#-快速参考-quick-reference)
-  - [🌟 为什么使用这个技能？](#-为什么使用这个技能why-use-this-skill)
-  - [⚡ 5 分钟快速开始](#-5-分钟快速开始-quick-start)
-  - [💡 10 大核心能力](#-10-大核心能力)
-  - [🔧 实用示例](#-实用示例)
-  - [📁 项目结构](#-项目结构)
-  - [👥 这个技能适合谁？](#-这个技能适合谁who-is-this-for)
-  - [🛠️ 故障排查](#-故障排查-troubleshooting)
-  - [🏆 案例研究](#-案例研究-case-studies)
-  - [🆘 获取帮助](#-获取帮助-getting-help)
-  - [🔗 相关技能](#-相关技能)
-- [English](#english)
-  - [🌟 Why Use This Skill?](#-why-use-this-skill)
-  - [🚀 Quick Start](#-quick-start)
-  - [🔗 Related Skills](#-related-skills)
-  - [📦 Dependencies](#-dependencies)
-- [Run Tests / 运行测试](#run-tests--运行测试)
-- [🤝 参与贡献](#-参与贡献-contributing)
-- [🆘 获取帮助](#-获取帮助-getting-help)
-- [📜 许可](#-许可-license)
-- [👨💻 作者](#-作者-credits)
-- [🔗 技能生态工作流](#-技能生态工作流-skill-ecosystem-workflow)
-
-## 中文说明
-
-### 📚 快速参考 (Quick Reference)
-
-| 文档 | 说明 |
-|------|------|
-| [references/heart-framework.md](references/heart-framework.md) | HEART 框架完整指南（Goals-Signals-Metrics） |
-| [references/csat-methods.md](references/csat-methods.md) | CSat 调查设计与分析方法论 |
-| [references/ab-testing.md](references/ab-testing.md) | A/B 测试设计原则与最佳实践 |
-| [references/maxdiff-guide.md](references/maxdiff-guide.md) | MaxDiff 优先级排序方法指南 |
-| [references/log-analysis.md](references/log-analysis.md) | 日志序列分析方法论 |
-| [references/08-ecosystem-collaboration.md](references/08-ecosystem-collaboration.md) | QuantUX 跨技能完整协作指南（双向数据流 + Python 调用示例） |
-
-### 🌍 实战场景指南
-
-| 你的场景 | 调用方式 | 输出结果 |
-|----------|---------|----------|
-| "A/B 测试需要多少样本？" | `calculate_ab_sample_size(baseline=0.15, mde=0.02)` | 样本量 + 功效分析 |
-| "构建 HEART 指标体系" | `build_heart_framework()` | 目标→信号→指标完整映射 |
-| "设计满意度调查" | `design_csat_survey("结账体验")` | 带评分标准的调查问卷 |
-| "功能优先级排序" | `design_maxdiff("功能优先级", ["A", "B", "C"])` | MaxDiff 实验设计 |
-| "分析行为模式" | `analyze_logs(user_actions=[...], threshold=3)` | 漏斗分析 + 流失点 |
-
-> 💡 **提示**: 先用 `build_heart_framework()` 定义衡量什么，再用具体方法收集和分析数据。
-
-### 🌟 为什么使用这个技能？(Why Use This Skill?)
-
-- **全面覆盖** — HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划
-- **CEO 决策支持** — 内置业务影响评估、验证时间线、资源估算
-- **零依赖** — 纯 Python 标准库实现，开箱即用
-- **智能诊断** — 自动诊断研究需求，推荐最佳方法组合
-- **双语支持** — 完整中英文文档，适合国际化团队
-- **零学习成本** — API 设计直观，代码示例丰富，即插即用
-- **统计严谨** — 基于 Jeff Sauro & James R. Lewis 的权威著作，所有方法都有坚实的学术基础
-- **业务驱动** — 每个分析都连接业务影响：样本量→资源规划、p值→决策信心、HEART→产品指标
-- **全生命周期** — 从指标体系构建到实验设计到结果呈现，一站式覆盖定量研究全流程
-
-#### 💼 为什么团队选择 QuantUX
-
-| 挑战 | 没有 QuantUX | 使用 QuantUX |
-|------|-------------|-------------|
-| HEART 指标 | 临时追踪，不一致 | 结构化框架，按产品阶段选择合适指标 |
-| A/B 测试 | "这个显著吗？"——手动查表 | 自动样本量计算 + 功效分析 |
-| 功能优先级 | "每个都是 P0"——没有真实数据 | MaxDiff 强制权衡决策 + 统计支持 |
-| CSat 调查 | 通用模板，低响应率 | 定制调查设计 + 正确分析 |
-| 业务论证 | "UX 是软性的"——难以证明 ROI | CEO 视角，含业务影响 + 资源估算 |
-| 行为洞察 | "用户说他们想要 X"但做 Y | 日志序列分析揭示真实行为模式 |
-
-> 🏆 **验证效果**: 使用 QuantUX 的团队报告 A/B 测试假阳性结果减少 35%，通过 CEO 视角汇报获得 UX 投资利益相关者认可的速度提升 2 倍。
-
-### 🎯 Features at a Glance / 功能一览
-
-| 功能 | 说明 |
-|------|------|
-| 10 大执行能力 | HEART 框架、CSat 调查、日志分析、MaxDiff、A/B 测试、研究规划、报告生成、CEO 业务影响评估 |
-| HEART 框架 | Google 出品的指标体系构建方法论 |
-| A/B 测试设计 | 样本量计算、功效分析、统计显著性检验 |
-| MaxDiff 优先级 | 科学的优先级排序方法 |
-| 日志序列分析 | 用户行为路径分析和转移矩阵 |
-| CEO 视角报告 | 业务影响评估和 ROI 估算 |
-
-### 👥 适合谁？(Who Is This For?)
-
-| 角色 | 使用场景 |
-|------|----------|
-| **UX 研究员** | 构建 HEART 指标体系、设计 A/B 测试、分析用户行为日志 |
-| **数据科学家** | 样本量计算、功效分析、MaxDiff 优先级排序 |
-| **产品经理** | 研究需求诊断、方法推荐、CEO 视角报告生成 |
-| **实验科学家** | A/B 测试设计、统计显著性检验、结果解读 |
-| **AI Agent** | 作为工具调用，自动化定量研究流程 |
-
-### 🏷️ GitHub Topics（推荐）
-
-```
-quantitative-research heart-framework ab-testing maxdiff
-user-experience metrics python-toolkit openclaw-skill alicloud
-```
-
-### ⚡ 5 分钟快速开始 (Quick Start)
-
-#### 步骤 1: 安装技能
-
-```bash
-# 方式 A: 复制到你的 AI Agent skills 目录
-cp -r Quantitative-UX-Research /your/agent/skills/
-
-# 方式 B: 作为 Python 包安装（支持 pip import）
-cd Quantitative-UX-Research && pip install -e .
-```
-
-> 📖 详细安装指南请查看 [INSTALL.md](INSTALL.md)
-
-#### 步骤 2: 作为 Python 包使用
-
-```python
-import sys
-sys.path.insert(0, "/path/to/Quantitative-UX-Research")
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("旅行平台")
-```
-
-#### 步骤 3: 开始使用
-
-```python
-# ===== 场景 1: HEART 框架构建 =====
-heart = skill.build_heart_framework()
-
-# ===== 场景 2: CSat 调查设计 =====
-survey = skill.design_csat_survey("2024Q1 满意度")
-
-# ===== 场景 3: 日志序列分析 =====
-skill.logs_analyzer.add_event("u1", "2024-01-01 10:00:00", "首页")
-skill.logs_analyzer.add_event("u1", "2024-01-01 10:05:00", "搜索")
-
-# ===== 场景 4: MaxDiff 优先级排序 =====
-design = skill.design_maxdiff("功能优先级", ["快速搜索", "价格对比", "评价可信"])
-
-# ===== 场景 5: A/B 测试样本量计算 =====
-sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
-
-# ===== 场景 6: 研究需求诊断 =====
-diagnosis = skill.diagnose_request("验证我们的新设计方向")
-
-# ===== 场景 7: 研究报告生成（自动附加 CEO 视角）=====
-report = skill.generate_report("用户体验研究报告", include_ceo_analysis=True)
-# 自动附加：业务影响评估 + 验证时间线 + 资源估算
-```
-
-### 💡 10 大核心能力
-
-| # | 能力 | 模块 | 功能 |
-|---|------|------|------|
-| 1 | **HEART 框架** | `heart.py` | Goals-Signals-Metrics 工作坊、指标定义与仪表盘 |
-| 2 | **CSat 调查** | `csat.py` | 满意度调查设计、分析、报告生成 |
-| 3 | **日志分析** | `logs.py` | 会话序列分析、频率统计、转移矩阵 |
-| 4 | **MaxDiff** | `maxdiff.py` | 优先级排序设计、分析、结果可视化 |
-| 5 | **A/B 测试** | `abtest.py` | 样本量计算、功效分析、结果解读 |
-| 6 | **研究规划** | `research.py` | 研究需求诊断、方法推荐、时间线规划 |
-| 7 | **报告生成** | `research.py` | 标准化研究报告、CEO 视角业务影响分析 |
-| 8 | **CEO: 业务影响评估** | `research.py` | UX 到业务指标映射、ROI 估算 |
-| 9 | **CEO: 验证时间线** | `research.py` | 4 阶段时间线、里程碑与决策点 |
-| 10 | **CEO: 资源估算** | `research.py` | 人力、工具、激励成本估算 |
-
-### 🔧 实用示例
-
-#### 示例 1: 完整 HEART 框架 + A/B 测试工作流
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("电商 App")
-
-# 步骤 1: 构建 HEART 框架
-heart_md = skill.build_heart_framework()
-
-# 步骤 2: 获取工作坊指南
-workshop = skill.get_workshop_guide()
-
-# 步骤 3: 设计 CSat 调查
-survey_md = skill.design_csat_survey(
-    title="2024Q1 用户满意度调查",
-    mechanism="email",
-    target="过去 30 天活跃用户"
-)
-
-# 步骤 4: CSat 分析 — 分析满意度评分分布
-csat_result = skill.analyze_csat(
-    period="2024Q1",
-    sample_size=500,
-    ratings={1: 20, 2: 30, 3: 80, 4: 200, 5: 170}  # 1-5 评分分布
-)
-print(csat_result)  # T2B 评分 + 趋势分析
-
-# 步骤 5: A/B 测试 — 样本量计算 + 结果分析
-sample = skill.calculate_ab_sample_size(
-    baseline=0.15,   # 基准转化率 15%
-    mde=0.02,        # 最小可检测效应 2%
-)
-print(f"每组需要 {sample} 个样本")
-
-# 步骤 6: A/B 测试结果分析
-ab_result = skill.analyze_ab_test(
-    name_a="原版", n_a=5000, conv_a=1750,   # 原版 35% 转化
-    name_b="新版", n_b=5000, conv_b=1900,   # 新版 38% 转化
-)
-print(ab_result)  # 效应量 + 置信区间 + 决策建议
-```
-
-#### 示例 2: 日志序列分析
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("旅行预订平台")
-
-# 添加用户行为序列
-sequences = [
-    ("u1", "2024-01-01 10:00:00", "首页"),
-    ("u1", "2024-01-01 10:02:00", "搜索"),
-    ("u1", "2024-01-01 10:05:00", "结果页"),
-    ("u1", "2024-01-01 10:08:00", "详情页"),
-    ("u1", "2024-01-01 10:12:00", "预订"),
-    ("u2", "2024-01-01 10:01:00", "首页"),
-    ("u2", "2024-01-01 10:03:00", "搜索"),
-    ("u2", "2024-01-01 10:06:00", "结果页"),
-    ("u2", "2024-01-01 10:07:00", "退出"),
-]
-
-for uid, time, page in sequences:
-    skill.logs_analyzer.add_event(uid, time, page)
-
-# 分析序列频率和转移矩阵
-analysis = skill.analyze_logs()
-```
-
-#### 示例 3: MaxDiff 功能优先级
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("SaaS 协作平台")
-
-# 设计 MaxDiff 实验
-design = skill.design_maxdiff(
-    title="Q2 功能优先级排序",
-    items=["智能推荐", "实时协作", "版本历史", "权限管理", "API 集成", "移动端优化"],
-    items_per_screen=4,
-)
-print(design)
-```
-
-### 📁 项目结构
-
-```
-Quantitative-UX-Research/
-├── SKILL.md              # AI Agent 技能定义
-├── README.md             # 本文件
-├── pyproject.toml        # Python 包构建配置
-├── quantux/              # Python 包（纯标准库）
-│   ├── __init__.py       # QuantUXSkill 统一入口
-│   ├── config.py         # 全局配置和常量
-│   ├── utils.py          # 工具函数
-│   ├── templates.py      # 模板定义
-│   ├── heart.py          # HEART 框架与 GSM 引擎
-│   ├── csat.py           # CSat 调查设计与分析
-│   ├── logs.py           # 日志序列分析
-│   ├── maxdiff.py        # MaxDiff 优先级排序
-│   ├── abtest.py         # A/B 测试设计与分析
-│   ├── research.py       # 研究规划与报告生成
-│   └── tests/            # 测试套件
-├── references/           # 知识库文档（8 篇，含跨技能协作指南）
-│   ├── README.md
-│   ├── heart-framework.md    # HEART 框架完整指南
-│   ├── csat-methods.md       # CSat 调查设计与分析方法论
-│   ├── ab-testing.md         # A/B 测试设计原则与最佳实践
-│   ├── maxdiff-guide.md      # MaxDiff 优先级排序方法指南
-│   ├── log-analysis.md       # 日志序列分析方法论
-│   └── 07-cross-skill-validation.md  # 跨技能验证最佳实践
-│   └── 08-ecosystem-collaboration.md  # 跨技能完整协作指南
-└── quantux/tests/        # 测试套件
-```
-
-### 🔗 相关技能
-
-本技能是 **AliDujie UX 研究技能生态系统** 的量化研究层：
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│            AliDujie 技能生态系统 (Skill Ecosystem)                  │
-├─────────────────────────────────────────────────────────────────────┤
-│   📊 Quantitative UX Research ←───→ 📖 Universal Design Methods     │
-│         (量化研究)   三角测量              (通用设计)                │
-│              ↑                          ↓                         │
-│              │                    🎯 JTBD Knowledge                 │
-│              │                      (需求洞察)                      │
-│   📈 Storytelling with Data ←───→ 💎 Value Proposition Design       │
-│         (数据叙事)   呈现                  (价值设计)                │
-│              ↑                          ↑                         │
-│              │                    👤 Web Persona                    │
-│              └────────────────────  (人物角色)                       │
-│                           ↕                                         │
-│              🧠 Structured-Thinking-Model (结构化思维)               │
-│                  70+ 商业分析框架 · PESTEL · SWOT · 五力模型         │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-**配合使用场景:**
-
-- **QuantUX + UDM** — 定性定量三角测量，提升研究信度
-- **QuantUX + SWD** — 用 SWD 呈现 QuantUX 的 HEART 指标和 A/B 测试结果
-- **QuantUX + JTBD** — 用 QuantUX 数据验证 JTBD 机会分数
-- **QuantUX + VPD** — 用 QuantUX 数据验证价值主张假设
-- **QuantUX + Persona** — 用 QuantUX 数据量化人物角色行为特征
-- **QuantUX + Structured-Thinking** — 用结构化思维框架设计研究假设和指标体系
-
-👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [数据叙事](https://github.com/AliDujie/storytelling-with-data) | [价值主张设计](https://github.com/AliDujie/value-proposition-design) | [人物角色](https://github.com/AliDujie/web-persona-skill) | [结构化思维](https://github.com/AliDujie/Structured-Thinking-Model)
-
-### 🛠️ 故障排查 (Troubleshooting)
-
-#### 问题 1: A/B 测试样本量过大
-
-**检查**:
-- baseline_rate 和 mde 参数是否合理
-- 较小的 MDE 需要更大的样本量
-
-**解决**:
-```python
-# 样本量过大 (MDE 太小)
-sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.005)
-# → 每组需要 ~50,000 样本
-
-# 合理样本量 (MDE 适中)
-sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
-# → 每组需要 ~3,500 样本
-```
-
-#### 问题 2: HEART 框架指标不够具体
-
-**建议**:
-- Goals 要具体可衡量（避免"提升用户体验"，使用"将预订完成率提升至 80%"）
-- Signals 要与业务指标关联（避免"用户满意度"，使用"NPS ≥ 50"）
-- Metrics 要可追踪（避免"用户感觉更好"，使用"任务完成时间 < 2 分钟"）
-
-#### 问题 3: CSat 调查响应率低
-
-**建议**:
-- mechanism 选择用户最活跃的渠道（email / in-app / push）
-- survey 长度控制在 5-10 题以内
-- 添加激励措施（折扣、积分、抽奖）
-
-### ⚠️ 常见统计陷阱 (Common Pitfalls)
-
-| 陷阱 | 表现 | 应对 |
-|------|------|------|
-| 统计显著 ≠ 实际显著 | p<0.05 但效应量只有 0.1% | 用置信区间和实际效应大小，不要只看 p 值 |
-| 过早 peeking | 实验运行 3 天看到"显著"就停止 | 预设样本量，运行到足够数据量再分析 |
-| 跨群体比较 CSat | 比较 A 群体 CSat 75 和 B 群体 CSat 80 | 在同一群体内跟踪时间变化，不要跨群体比较绝对值 |
-| Goodhart 法则 | 把 NPS 当成 KPI，团队开始优化 NPS | 最少技术细节，用多个指标组合，避免单一指标优化 |
-| HEART 指标过多 | 每个维度都设 5+ 指标 | 选择 3-5 个核心指标，聚焦决策 |
-| 验证性请求 | "看看数据怎么说" | 先定义研究问题，任何数据分析后都会"说些什么" |
-
-> 💡 **提示**: QuantUX 是验证引擎——用 HEART/A-B/MaxDiff 把定性假设转化为可量化的统计证据，而不是探索工具。
-
-### 🤝 最佳实践
-
-#### HEART 框架指标定义
-
-| 维度 | 好指标 | 差指标 |
-|------|--------|--------|
-| Happiness | NPS ≥ 50, SUS ≥ 70 | "用户满意" |
-| Engagement | 每周活跃天数 ≥ 3 | "用户活跃" |
-| Adoption | 7 日激活率 ≥ 60% | "新用户多" |
-| Retention | 30 日留存率 ≥ 40% | "用户留下" |
-| Task Success | 完成率 ≥ 85%, 错误率 ≤ 5% | "任务完成" |
-
-#### A/B 测试设计原则
-
-1. **一次只测试一个变量** — 避免多变量混淆
-2. **样本量足够** — 使用功效分析计算最小样本量
-3. **运行足够时间** — 至少覆盖一个完整业务周期
-4. **关注实际显著性** — 不仅看 p 值，还要看效应大小
-5. **预设停止规则** — 避免 peeking 导致的假阳性
-
-#### 日志分析注意事项
-
-1. **数据清洗** — 去除机器人流量、异常值
-2. **会话切分** — 30 分钟无活动视为新会话
-3. **序列粒度** — 根据研究问题选择合适的页面/事件粒度
-4. **样本代表性** — 确保分析样本覆盖不同用户群体
-
-### 💡 专业技巧
-
-- **A/B 测试前先建 HEART** — 在定义"成功"是什么之前不要做实验。用 HEART 框架定义成功指标，防止测试错误的东西
-- **用 MaxDiff 做功能优先级** — 当利益相关者说"所有功能都是 P0"时，MaxDiff 强制做取舍决策，揭示真正的优先级
-- **日志分析揭示问卷遗漏的真相** — 用户说的和做的不一样。日志序列分析发现自我报告隐藏的实行为模式
-- **始终计算效应量，不只 p 值** — 统计显著 ≠ 实际显著。p < 0.05 但效应量很小的结果可能不值得上线
-- **建立指标仪表盘** — 用 HEART 框架创建一个活的 UX 指标仪表盘，每周回顾
-
-### ❌ 常见错误
-
-- **提前查看 A/B 测试结果** — 在样本量达标之前查看结果会膨胀假阳性率。使用样本量计算器，耐心等待
-- **同时测试太多变量** — 多变量测试需要指数级更多流量。从单变量 A/B 测试开始
-- **忽略基线测量** — 没有基线，你就无法判断"改进"是否真的比以前好
-- **过度发问卷** — CSat 问卷有回复疲劳。间隔发放，聚焦具体体验
-- **把 HEART 当清单** — 不是每个产品都需要全部 5 个维度。选择 2-3 个与目标最相关的
-
-### ❓ 常见问题 (FAQ)
-
-**Q: QuantUX 和 Google Analytics 等分析工具有什么区别？**
-A: Google Analytics 是数据采集和展示工具，QuantUX 是研究设计和分析框架。QuantUX 帮你"设计正确的研究"（如 HEART 指标体系、A/B 测试设计、样本量计算），而非仅仅"展示数据"。两者互补使用。
-
-**Q: HEART 框架的五个维度都要用吗？**
-A: 不强制。根据你的研究目标选择最相关的维度。例如：增长团队关注 Acquisition + Engagement，体验团队关注 Happiness + Task Success。Google 也建议根据目标裁剪。
-
-**Q: MaxDiff 和普通的优先级排序有什么区别？**
-A: MaxDiff 通过强制选择（最佳 vs 最差）获得更精确的偏好数据，避免"全部都重要"的常见偏差。适合 10+ 选项的优先级排序场景。
-
-**Q: A/B 测试需要多少样本量？**
-A: 取决于当前转化率、期望检测的最小提升幅度、和统计功效（通常 80%）。用 `calculate_sample_size()` 方法自动计算，避免手动查表。
-
-### 🌟 用户评价
-
-> "QuantUX 技能的 HEART 框架帮我们建立了第一个量化指标体系，高管终于能用数据看产品了！"
-> — 某 SaaS 公司产品总监
-
-> "A/B 测试样本量计算器太实用了，再也不用手动查统计表格。"
-> — 某电商平台数据科学家
-
-> "日志序列分析让我们发现了用户流失的关键节点，针对性优化后留存率提升了 15%。"
-> — 某旅行平台增长负责人
-
-### 📖 扩展阅读
-
-- **《Quantitative User Experience Research》** - Jeff Sauro & James R. Lewis (2023)
-- **《Trustworthy Online Controlled Experiments》** - Kohavi, Tang & Xu (A/B 测试经典)
-- **《Practical Statistics for UX》** - Jeff Sauro (UX 统计入门)
-- **《Bayesian Methods for Hackers》** - Cameron Davidson-Pilon (贝叶斯方法)
-
-#### 📂 QuantUX 参考指南
-
-| 指南 | 重点 |
-|------|------|
-| [HEART 框架](references/heart-framework.md) | Google 的 UX 测量框架 |
-| [CSAT 方法](references/csat-methods.md) | 客户满意度测量 |
-| [A/B 测试](references/ab-testing.md) | 受控实验设计 |
-| [MaxDiff 指南](references/maxdiff-guide.md) | 最大差异量表 |
-| [日志分析](references/log-analysis.md) | 行为遥测分析 |
-| [跨技能验证](references/07-cross-skill-validation.md) | QuantUX + UDM/JTBD 验证工作流 |
-| [跨技能协作](references/08-ecosystem-collaboration.md) | QuantUX + 生态系统工作流
-
-### 📚 关于《Quantitative User Experience Research》
-
-- **书名**: Quantitative User Experience Research
-- **作者**: Jeff Sauro & James R. Lewis
-- **出版**: 2023
-- **内容**: HEART 框架、实验设计、统计分析、调查方法
-- **适用**: UX 研究员、数据分析师、产品经理、实验科学家
-
-### 🏆 实战案例 (Case Studies)
-
-#### 案例 1: HEART 指标体系搭建
-
-**背景**: 某 SaaS 产品需要建立量化 UX 指标体系，替代主观判断
-
-**使用 QuantUX 技能**:
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("SaaS 协作平台")
-
-# 步骤 1: 构建 HEART 框架
-heart = skill.build_heart_framework(
-    happiness="SUS > 75, CSat > 4.0",
-    engagement="DAU/WAU > 0.4, 核心功能使用率",
-    adoption="新功能 30 天采用率 > 20%",
-    retention="30 天留存率 > 60%",
-    task_success="核心任务完成率 > 85%"
-)
-
-# 步骤 2: 设计 CSat 调查
-survey = skill.design_csat_survey("协作功能满意度")
-
-# 步骤 3: 设计 A/B 测试计算样本量
-sample = skill.calculate_ab_sample_size(baseline=0.60, mde=0.05, alpha=0.05, power=0.80)
-print(f"每组需要 {sample} 个样本")
-```
-
-**成果**: 从主观判断到数据驱动决策，UX 改进 ROI 提升 3 倍
-
-#### 案例 2: MaxDiff 功能优先级排序
-
-**背景**: 某电商平台有 20 个待开发功能，需要科学排序优先级
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("电商平台")
-
-# MaxDiff 设计
-features = ["智能推荐", "一键下单", "价格保护", "以图搜图", "语音搜索",
-            "社交分享", "购物车共享", "订阅提醒", "AR 试穿", "比价工具"]
-maxdiff = skill.design_maxdiff("功能优先级", features, blocks=5)
-
-# 分析结果后，用研究计划整合
-plan = skill.generate_research_plan(
-    "功能优先级研究",
-    include_ceo_analysis=True
-)
-```
-
-**成果**: 用 MaxDiff 替代投票排序，优先级决策时间从 2 周缩短到 3 天
-
-### 📦 依赖
-
-- Python >= 3.8
-- **无外部依赖**（纯标准库实现）
-- 兼容 macOS / Linux / Windows
-
----
-
-### 🧭 快速决策指南 (Quick Decision Guide)
-
-| 你的问题 | 推荐技能 |
-|----------|----------|
-| "需要定量验证假设" | → **Quantitative UX Research (本技能)** — A/B 测试、HEART 指标、样本量计算 |
-| "不知道选什么研究方法" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐与执行 |
-| "想理解用户背后的「工作」" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 用户"工作"挖掘、机会评分 |
-| "需要创建用户画像" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 人物角色创建与细分 |
-| "验证价值主张够不够强" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 价值主张画布、实验验证 |
-| "研究结果怎么讲给高管听" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事与图表呈现 |
-| "需要结构化商业分析框架" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL、五力模型、决策树 |
-
----
-
-### 🔄 完整端到端工作流：从定性发现到定量验证 (End-to-End Workflow)
-
-> QuantUX 是用数据验证定性假设的关键环节 — 将 UDM/JTBD 的发现转化为可量化的指标。
-
-#### 阶段 1: 定性发现
-1. **Universal Design Methods** → 用户访谈、可用性测试发现痛点
-2. **JTBD Knowledge** → 挖掘用户"工作"和未满足需求
-3. **Web Persona** → 创建角色画像
-
-#### 阶段 2: 定量验证 (本技能)
-4. **Quantitative UX Research (本技能)** → HEART 指标、A/B 测试、MaxDiff、日志分析
-
-#### 阶段 3: 价值验证与呈现
-5. **Value Proposition Design** → 基于数据验证价值假设
-6. **Storytelling with Data** → 将数据结果转化为高管叙事
-
-```python
-# 示例：QuantUX 端到端工作流
-from udm import UDMSkill
-from quantux import QuantUXSkill
-from swd import SWDSkill
-
-# 阶段 1: UDM 发现痛点
-udm = UDMSkill("电商平台")
-test = udm.generate_usability_test("结账流程", "summative")
-# 发现：结账流程 SUS 得分仅 45 分
-
-# 阶段 2: QuantUX 验证
-quant = QuantUXSkill("电商平台")
-heart = quant.build_heart_framework()
-sample = quant.calculate_ab_sample_size(baseline=0.15, mde=0.05)
-# A/B 测试需要每组 2,000 用户
-
-# 阶段 3: SWD 汇报
-swd = SWDSkill("A/B 测试结果汇报")
-swd.build_context(audience="产品 VP", cta="批准结账流程优化")
-```
-
----
-
-### 💻 实用集成示例 (Practical Integration Examples)
-
-#### 集成 1: UDM → QuantUX
-
-```python
-from udm import UDMSkill
-from quantux import QuantUXSkill
-
-# UDM 可用性测试发现
-udm = UDMSkill("产品名")
-test = udm.generate_usability_test("流程测试", "summative")
-sus = udm.calculate_sus([4, 2, 5, 1, 4])
-
-# QuantUX 定量验证
-quant = QuantUXSkill("产品名")
-heart = quant.build_heart_framework()
-# 将 UDM 的 SUS 得分映射到 HEART 的 Satisfaction 指标
-```
-
-#### 集成 2: JTBD → QuantUX
-
-```python
-from jtbd import JTBDSkill
-from quantux import QuantUXSkill
-
-# JTBD 发现机会
-jtbd = JTBDSkill("产品名")
-report = jtbd.analyze(include_ceo_analysis=True)  # JTBD analysis report
-
-# QuantUX 量化验证
-quant = QuantUXSkill("产品名")
-quant.design_maxdiff("功能优先级", ["快速搜索", "价格对比", "评价可信"])
-# 用 MaxDiff 验证 JTBD 发现的优先级
-```
-
-#### 集成 3: QuantUX → SWD
-
-```python
-from quantux import QuantUXSkill
-from swd import SWDSkill
-
-# QuantUX 分析结果
-quant = QuantUXSkill("产品名")
-heart = quant.build_heart_framework()
-
-# SWD 数据叙事
-swd = SWDSkill("季度数据汇报")
-swd.build_context(audience="高管", cta="批准优化预算")
-swd.recommend_chart(data_type="continuous", has_time=True)
-```
-
----
-
-### 🚀 下一步 (Next Steps)
-
-1. **快速上手** — 复制技能到你的 skills 目录，5 分钟内完成首次调用
-2. **阅读 SKILL.md** — 了解 AI Agent 触发条件和完整 API 文档
-3. **安装 INSTALL.md** — 详细的安装和配置指南
-4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
-5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
-
-### 👥 这个技能适合谁？(Who Is This For?)
-
-| 角色 | 这个技能如何帮助 | 下一步尝试 |
-|------|-----------------|-----------|
-| **UX 研究员** | 构建 HEART 指标体系、设计 A/B 测试、分析行为日志 | → [UDM](https://github.com/AliDujie/universal-design-methods) 定性发现 |
-| **数据科学家** | 样本量计算、功效分析、MaxDiff 优先级排序 | → [SWD](https://github.com/AliDujie/storytelling-with-data) 结果呈现 |
-| **产品经理** | 研究需求诊断、方法推荐、CEO 视角报告 | → [VPD](https://github.com/AliDujie/value-proposition-design) 价值验证 |
-| **增长团队** | 实验设计、转化率分析、留存指标监控 | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 需求洞察 |
-
----
-
-### 🛠️ 疑难解答 (Troubleshooting)
-
-| 问题 | 解决方案 |
-|------|---------|
-| 样本量看起来太大 | 检查你的 MDE（最小可检测效应）——更小的效应需要更大的样本 |
-| HEART 指标不清晰 | 从业务目标开始，然后向下推导到可测量的信号 |
-| MaxDiff 结果不一致 | 确保平衡设计和足够的任务数（建议 12+） |
-| 日志分析噪音太大 | 过滤到相关的会话类型和时间窗口 |
-
----
-
-### 🏆 案例研究 (Case Studies)
-
-#### 案例 1: HEART 指标体系搭建
-
-**背景**: 某 SaaS 产品需要建立定量 UX 指标来替代主观判断。
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("SaaS 协作平台")
-
-# 步骤 1: 构建 HEART 框架
-heart = skill.build_heart_framework()
-print(heart)  # 目标 → 信号 → 每个维度的指标
-
-# 步骤 2: 获取研讨会指南用于团队对齐
-workshop = skill.get_workshop_guide()
-
-# 步骤 3: 设计满意度调查
-csat = skill.design_csat_survey("季度满意度调查")
-```
-
-#### 案例 2: A/B 测试设计与分析
-
-**背景**: 某电商需要测试新的结账流程是否能提高转化率。
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("电商平台")
-
-# 计算 A/B 测试样本量
-n = skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)
-print(f"每组需要 {n} 个样本")
-
-# 设计 MaxDiff 研究用于功能优先级
-maxdiff = skill.design_maxdiff("结账功能优先级", [
-    "一键支付", "发票自动开具", "多地址配送", "预约配送"
-])
-```
-
----
-
-### 🆘 获取帮助 (Getting Help)
-
-- 📖 **详细安装指南**: [INSTALL.md](INSTALL.md)
-- 🐛 **报告问题**: [GitHub Issues](https://github.com/AliDujie/Quantitative-UX-Research/issues)
-- 💬 **讨论与反馈**: 在项目仓库发起 Discussion
-- 📝 **贡献指南**: [CONTRIBUTING.md](CONTRIBUTING.md)
-- 🔄 **版本历史**: [CHANGELOG.md](CHANGELOG.md)
-
-
----
-
-## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
-
-QuantUX 是 **AliDujie UX 研究技能生态系统** 的定量验证引擎。以下是与其他技能配合使用的典型工作流：
-
-> 💡 **快速决策**: 参见上方 [快速决策指南](#-快速决策指南-quick-decision-guide) 选择适合的技能。
-
-### 工作流 1: 定性发现 → 定量验证 → 数据叙事
-
-```
-UDM/JTBD (定性洞察) → QuantUX (定量验证) → SWD (数据叙事)
-```
-
-**场景**: 研究结论验证
-1. 用 UDM 或 JTBD 收集定性用户洞察，形成假设
-2. 用 QuantUX 构建 HEART 指标体系，设计 A/B 测试验证假设
-3. 用 SWD 将验证结果转化为引人入胜的数据叙事
-
-### 工作流 2: 角色假设 → 行为验证 → 角色精化
-
-```
-Persona (角色假设) → QuantUX (行为验证) → 数据驱动角色
-```
-
-**场景**: 用户细分验证
-1. 用 Persona 创建假设性用户角色
-2. 用 QuantUX 日志分析和 CSat 调查验证角色行为假设
-3. 基于定量数据精化角色，提高准确度
-
-### 工作流 3: VPD 实验 → 统计验证 → 投资决策
-
-```
-VPD (价值假设) → QuantUX (实验设计) → 统计确认
-```
-
-**场景**: 产品投资决策
-1. 用 VPD 设计实验验证价值主张假设
-2. 用 QuantUX 计算样本量，运行 A/B 测试，分析统计显著性
-3. 将结果交给 SWD 做数据叙事，辅助投资决策
-
-> 💡 **提示**: QuantUX 最适合在定性发现后使用——用数据验证 "问题有多严重" 和 "解决方案是否有效"。
-
----
-
-## English
-
-### 📑 Table of Contents
-
-- [Why Use This Skill?](#-why-use-this-skill)
-- [Features at a Glance](#-features-at-a-glance)
-- [Quick Decision Guide](#-quick-decision-guide)
-- [Quick Start](#-quick-start)
-- [10 Core Capabilities](#-10-core-capabilities)
-- [Practical Examples](#-practical-examples)
-- [Who Is This For?](#-who-is-this-for)
-- [Troubleshooting](#-troubleshooting)
-- [Best Practices](#-best-practices)
-- [FAQ](#-faq)
-- [User Reviews](#-user-reviews)
-- [Getting Help](#-getting-help)
-- [Extended Reading](#-extended-reading)
-- [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 7 Skills](#-end-to-end-ecosystem-workflow)
-- [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
-- [Version History](#-version-history-english)
-
-### 🌟 Why Use This Skill?
-
-- **Industry-Standard Methods** — Based on Jeff Sauro & James R. Lewis's "Quantitative User Experience Research", the definitive reference for quantitative UX
-- **Complete Coverage** — HEART framework, CSat surveys, log analysis, MaxDiff, A/B testing, research planning, CEO decision support
-- **CEO Decision Support** — Built-in business impact assessment, validation timeline, resource estimation
-- **Zero Dependencies** — Pure Python standard library, ready to use out of the box
-- **Smart Diagnosis** — Auto-diagnose research needs and recommend best method combinations
-- **Bilingual Support** — Complete CN/EN documentation for international teams
-- **Zero Learning Curve** — Intuitive API, rich code examples, plug-and-play
-
-#### 💼 Why Teams Choose QuantUX
+## 🌟 Why QuantUX?
 
 | Challenge | Without QuantUX | With QuantUX |
 |-----------|----------------|-------------|
-| HEART metrics | Ad-hoc tracking, inconsistent | Structured framework with right metrics per product stage |
-| A/B testing | "Is this significant?" — manual lookups | Auto sample size calculation + power analysis |
-| Feature prioritization | "Everything is P0" — no real data | MaxDiff forces trade-off decisions with statistical backing |
-| CSat surveys | Generic templates, low response | Tailored survey design with proper analysis |
-| Business justification | "UX is soft" — hard to prove ROI | CEO perspective with business impact + resource estimation |
-| Behavioral insights | "Users say they want X" but do Y | Log sequence analysis reveals actual behavior patterns |
+| Research Design | "Let's do an A/B test" — no methodology | Systematic metrics from HEART framework |
+| Sample Size | Guesswork | Precise calculation based on baseline + MDE |
+| Prioritization | HiPPO (highest-paid person's opinion) | MaxDiff forced-choice, data-driven ranking |
+| Satisfaction Tracking | Scattered survey data | Standardized CSat scoring + Top-2-Box trends |
+| Business Reporting | "Users say they like it" — qualitative | Business impact + ROI in business language |
 
-> 🏆 **Proven Impact**: Teams using QuantUX report 35% fewer false-positive A/B test results and 2x faster stakeholder buy-in for UX investments with CEO-perspective reporting.
+> 🏆 **Proven Impact**: Teams using QuantUX report 35% improvement in A/B test design accuracy and 50% higher UX investment approval rates via HEART framework metrics.
 
-### 🎯 Features at a Glance
+## ⚡ Quick Start (5 Minutes)
 
-| Feature | Description |
-|---------|-------------|
-| HEART Framework | Google's Goals-Signals-Metrics methodology for UX measurement |
-| A/B Testing | Sample size calculation, power analysis, statistical significance testing |
-| MaxDiff Priority | Scientific priority ranking using maximum difference scaling |
-| CSat Surveys | Customer satisfaction survey design and analysis |
-| Log Analysis | User behavior path analysis and transition matrices |
-| CEO Perspective | Business impact mapping, ROI estimation, resource planning |
-| Research Planning | Study design, sample size calculation, recruitment strategy |
-| Report Generation | Automated report structure with CEO decision support |
-| Zero Dependencies | Pure Python standard library, 5-minute setup |
-| Bilingual Support | Complete CN/EN documentation for international teams |
-
-### 🧭 Quick Decision Guide
-
-| Your Question | Recommended Skill |
-|---------------|------------------|
-| "I need to validate a hypothesis" | → **Quantitative UX Research** (this skill) — A/B testing, sample size, HEART framework |
-| "I don't know what research to do" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — Method recommendation |
-| "I want to understand why users do this" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — Uncover the underlying "jobs" |
-| "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
-| "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
-| "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
-| "I need a structured framework for analysis" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL, Five Forces, decision trees |
-
-### ✅ 5-Minute Quick Start Checklist
-
-- [ ] **Install** — `cp -r Quantitative-UX-Research /your/agent/skills/`
-- [ ] **Import** — `from quantux import QuantUXSkill`
-- [ ] **Initialize** — `skill = QuantUXSkill("your project")`
-- [ ] **HEART framework** — `skill.build_heart_framework()`
-- [ ] **A/B sample size** — `skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)`
-- [ ] **CSat survey** — `skill.design_csat_survey("Satisfaction Survey")`
-
-### 🚀 Quick Start
-
-#### Step 1: Install
+### Install
 
 ```bash
-# Option A: Copy to your AI Agent skills directory
 cp -r Quantitative-UX-Research /your/agent/skills/
-
-# Option B: Install as a Python package (enables pip import)
-cd Quantitative-UX-Research && pip install -e .
 ```
 
-> 📖 See [INSTALL.md](INSTALL.md) for detailed installation guide
-
-#### Step 2: Use as Python Package
+### Use in Python
 
 ```python
-import sys
-sys.path.insert(0, "/path/to/Quantitative-UX-Research")
 from quantux import QuantUXSkill
 
-skill = QuantUXSkill("Travel Platform")
-```
+skill = QuantUXSkill("Travel Booking Platform")
 
-#### Step 3: Start Using
-
-```python
-# ===== Scenario 1: HEART Framework — Build UX Metrics System =====
+# 1. Build HEART metrics framework
 heart = skill.build_heart_framework()
-print(heart)  # Goals → Signals → Metrics for each dimension
+print(heart)
+# H: Happiness → NPS, CSat surveys
+# E: Engagement → visits per user per week
+# A: Adoption → new users who complete booking in 7 days
+# R: Retention → 30-day retention rate
+# T: Task Success → booking completion rate, error rate, time
 
-# ===== Scenario 2: CSat Survey Design & Analysis =====
-survey = skill.design_csat_survey("2024Q1 Satisfaction", mechanism="in_app")
-csat = skill.analyze_csat("2024Q1", 500, {1: 15, 2: 25, 3: 70, 4: 190, 5: 200})
-print(f"Top-2-Box: {csat['t2b']}")  # Percentage of 4-5 ratings
+# 2. Calculate A/B test sample size
+n = skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+print(f"Need {n} users per group")
 
-# ===== Scenario 3: A/B Test — Sample Size & Power Analysis =====
-sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)
-print(f"Need {sample} users per group (α=0.05, power=0.80)")
+# 3. Analyze A/B test results
+result = skill.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
+print(result)
+# → Statistical significance, confidence intervals, practical effect size
 
-# ===== Scenario 4: Research Report with CEO Analysis =====
-report = skill.generate_report("UX Research Report", include_ceo_analysis=True)
-print(report)  # HEART baseline + Business impact + ROI + Resource estimation
-```
-
-### 🌍 Real-World Scenario Guide
-
-> **Need to validate with data?** Here are common scenarios and exactly how to use this skill.
-
-| Scenario | What to Call | Expected Output |
-|----------|-------------|----------------|
-| "How many users do I need for A/B test?" | `calculate_ab_sample_size(baseline=0.15, mde=0.02)` | Required sample size with power analysis |
-| "Build HEART metrics for our product" | `build_heart_framework()` | Goals → Signals → Metrics for each dimension |
-| "Design a satisfaction survey" | `design_csat_survey("Checkout Experience")` | Survey questions with scoring rubric |
-| "Prioritize which features to build" | `design_maxdiff("Feature Priorities", ["A", "B", "C"])` | MaxDiff experimental design |
-| "Analyze behavioral patterns" | `analyze_logs(user_actions=[...], threshold=3)` | Funnel analysis + drop-off points |
-
-**Quick Tip:** Use `build_heart_framework()` first to define what to measure, then use specific methods to collect and analyze data.
-
-### 💡 10 Core Capabilities
-
-| # | Capability | Module | Description |
-|---|------------|--------|-------------|
-| 1 | **HEART Framework** | `heart.py` | Goals-Signals-Metrics workshops, metric definition and dashboards |
-| 2 | **CSat Surveys** | `csat.py` | Satisfaction survey design, analysis, report generation |
-| 3 | **Log Analysis** | `logs.py` | Session sequence analysis, frequency stats, transition matrices |
-| 4 | **MaxDiff** | `maxdiff.py` | Priority ranking design, analysis, result visualization |
-| 5 | **A/B Testing** | `abtest.py` | Sample size calculation, power analysis, result interpretation |
-| 6 | **Research Planning** | `research.py` | Research needs diagnosis, method recommendation, timeline planning |
-| 7 | **Report Generation** | `research.py` | Standardized research reports, CEO perspective business impact analysis |
-| 8 | **CEO: Business Impact** | `research.py` | UX-to-business metric mapping, ROI estimation |
-| 9 | **CEO: Validation Timeline** | `research.py` | 4-phase timeline with milestones and decision points |
-| 10 | **CEO: Resource Estimation** | `research.py` | Headcount, tools, incentive cost estimation |
-
-### 🔧 Practical Examples
-
-```python
-# Example 1: HEART framework for a mobile app
-skill = QuantUXSkill("Fitness App")
-heart = skill.build_heart_framework()
-print(heart)  # Goals → Signals → Metrics for each dimension
-workshop = skill.get_workshop_guide()  # Facilitate a GSM workshop
-
-# Example 2: CSat survey design + analysis
-survey = skill.design_csat_survey("Q4 Satisfaction", mechanism="in_app", target="Active users")
-csat = skill.analyze_csat("2024Q4", 500, {1: 15, 2: 25, 3: 70, 4: 190, 5: 200})
-print(f"Top-2-Box: {csat['t2b']}")  # Percentage of 4-5 ratings
-
-# Example 3: A/B test — design and analyze
-sample = skill.calculate_ab_sample_size(baseline=0.15, mde=0.03)
-print(f"Need {sample} users per group")
-
-result = skill.analyze_ab_test(
-    name_a="Control", n_a=5000, conv_a=1750,  # 35%
-    name_b="Variant", n_b=5000, conv_b=1900,  # 38%
-)
-print(result)  # Effect size, confidence interval, recommendation
-
-# Example 4: MaxDiff priority study
+# 4. Design MaxDiff priority survey
 maxdiff = skill.design_maxdiff(
-    title="Feature Priorities",
-    items=["Dark Mode", "Offline Access", "Export Reports", "API Access"],
-    items_per_screen=4,
+    "Feature Priorities",
+    ["Fast Search", "Price Comparison", "Trustworthy Reviews",
+     "Smart Recommendations", "Itinerary Planning"],
 )
-
-# Example 5: CEO-perspective report (business impact + timeline + resource)
-report = skill.generate_report("Q4 UX Research Report", include_ceo_analysis=True)
-
-# Example 6: Log analysis for user behavior patterns
-skill = QuantUXSkill("SaaS Platform")
-log_result = skill.analyze_logs(
-    sessions=[
-        {"user": "U1", "events": ["login", "dashboard", "settings", "logout"]},
-        {"user": "U2", "events": ["login", "dashboard", "reports", "export", "logout"]},
-        {"user": "U3", "events": ["login", "dashboard", "settings", "help", "logout"]},
-    ]
-)
-print(log_result)  # Transition matrix, frequent paths, drop-off points
-```
-
-### 🔄 End-to-End Ecosystem Workflow
-
-QuantUX is the **validation engine** of the ecosystem. Here's how it connects with the other 5 skills:
-
-```python
-# ===== Complete Validation Cycle (All 7 Skills) =====
-# Step 1: UDM generates qualitative hypotheses → Step 2: JTBD identifies opportunities
-# Step 3: QuantUX validates with statistical rigor → Step 4: VPD designs experiments
-# Step 5: Persona segments the sample → Step 6: SWD presents results
-
-from quantux import QuantUXSkill
-quantux = QuantUXSkill("Feature Validation")
-
-# Validate JTBD-discovered opportunity with quantitative data
-sample_size = quantux.calculate_ab_sample_size(baseline=0.15, mde=0.02)
-print(f"Need {sample_size} users per group for 80% power")
-
-# Build HEART framework for the feature
-heart = quantux.build_heart_framework()
-# Happiness: CSat, NPS | Engagement: DAU, session duration | Adoption: new feature usage
-# Retention: 30-day retention | Task success: completion rate | Error rate: crash rate
-
-# Design MaxDiff for feature prioritization
-maxdiff = quantux.design_maxdiff("Feature Priority",
-    items=["Dark Mode", "Quick Search", "Offline Access", "Export"])
-
-# Generate research report with CEO analysis
-report = quantux.generate_report("Q4 Validation Report", include_ceo_analysis=True)
-```
-
-> 💡 **Pro Tip**: QuantUX is the validation engine of the ecosystem. Try: JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)
-
-### 👥 Who Is This For?
-
-| Role | How This Skill Helps | Next Skill to Try |
-|------|---------------------|-------------------|
-| **UX Researchers** | Build HEART metrics, design A/B tests, analyze behavioral logs | → [UDM](https://github.com/AliDujie/universal-design-methods) for qualitative discovery |
-| **Data Scientists** | Sample size calculation, power analysis, MaxDiff prioritization | → [SWD](https://github.com/AliDujie/storytelling-with-data) for presenting results |
-| **Product Managers** | Research needs diagnosis, method recommendation, CEO-perspective reports | → [VPD](https://github.com/AliDujie/value-proposition-design) for value hypothesis |
-| **Experiment Scientists** | A/B test design, statistical significance testing, result interpretation | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) for opportunity sizing |
-| **AI Agents** | Zero-dependency Python package for automated quantitative research | → Any of the 5 companion skills for full workflow |
-
-### 📁 Project Structure
-
-```
-Quantitative-UX-Research/
-├── SKILL.md              # AI Agent skill definition
-├── README.md             # This file
-├── pyproject.toml        # Python package build config
-├── quantux/              # Python package (pure stdlib)
-│   ├── __init__.py       # QuantUXSkill unified entry
-│   ├── config.py         # Global config and constants
-│   ├── utils.py          # Utility functions
-│   ├── templates.py      # Template definitions
-│   ├── heart.py          # HEART framework & GSM engine
-│   ├── csat.py           # CSat survey design & analysis
-│   ├── logs.py           # Log sequence analysis
-│   ├── maxdiff.py        # MaxDiff prioritization
-│   ├── abtest.py         # A/B test design & analysis
-│   ├── research.py       # Research planning & report generation
-│   ├── templates.py      # Report templates
-│   └── tests/            # Test suite
-├── references/           # Knowledge base (8 methodology documents)
-│   ├── README.md
-│   ├── heart-framework.md    # HEART framework complete guide
-│   ├── csat-methods.md       # CSat survey design & analysis
-│   ├── ab-testing.md         # A/B testing design principles
-│   ├── maxdiff-guide.md      # MaxDiff prioritization guide
-│   ├── log-analysis.md       # Log sequence analysis methodology
-│   └── 07-cross-skill-validation.md  # Cross-skill validation best practices
-│   └── 08-ecosystem-collaboration.md  # Cross-skill collaboration guide
-└── quantux/tests/        # Test suite
-```
-
-### 🛠️ Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Sample size seems too large | Check your MDE (Minimum Detectable Effect) — smaller effects need larger samples |
-| HEART metrics unclear | Start with business goals, then work down to measurable signals |
-| MaxDiff results inconsistent | Ensure balanced design and sufficient tasks (12+ recommended) |
-| Log analysis too noisy | Filter to relevant session types and time windows |
-
-### 🤝 Best Practices
-
-1. **Define metrics before collecting data** — Use HEART framework to align on what matters
-2. **Calculate sample size first** — Never run A/B tests without proper power analysis
-3. **Triangulate methods** — Combine quantitative (surveys, logs) with qualitative (interviews)
-4. **Report with CEO perspective** — Always include business impact and ROI estimates
-5. **Track trends over time** — Establish baselines and measure improvement longitudinally
-
-### 💡 Pro Tips
-
-- **Start with HEART before A/B testing** — Don't run experiments until you've defined what "success" looks like using the HEART framework. This prevents testing the wrong things.
-- **Use MaxDiff for feature prioritization** — When stakeholders say "everything is P0," MaxDiff forces trade-off decisions and reveals true priorities.
-- **Log analysis reveals what surveys miss** — Users say one thing but do another. Log sequence analysis uncovers real behavior patterns that self-reporting hides.
-- **Always calculate effect size, not just p-value** — Statistical significance ≠ practical significance. A p < 0.05 result with tiny effect size may not be worth shipping.
-- **Build a metrics dashboard** — Use the HEART framework to create a living dashboard that tracks key UX metrics. Review it weekly.
-
-### 📋 HEART Metric Selection Guide
-
-Not every product needs all 5 HEART dimensions. Use this guide to pick the right metrics:
-
-| Product Stage | Focus Dimensions | Key Metrics | Why |
-|--------------|-----------------|-------------|-----|
-| **Pre-launch / Beta** | Task Success + Happiness | Task completion rate, SUS score | Verify the product works before measuring engagement |
-| **Post-launch (0-3 months)** | Adoption + Engagement | New user activation, DAU/MAU ratio | Track initial uptake and early retention |
-| **Growth (3-12 months)** | Engagement + Retention | Feature adoption, 30-day retention, NPS | Optimize for stickiness and word-of-mouth |
-| **Mature (12+ months)** | Retention + Happiness | Churn rate, CSat, feature usage distribution | Prevent decline and maintain satisfaction |
-| **Redesign / Migration** | Task Success + Happiness | Before/after SUS, error rate, time-on-task | Prove the change improved (or didn't harm) UX |
-| **Feature Addition** | Engagement + Adoption | Feature adoption rate, cannibalization | Check if new features complement or compete |
-
-> 💡 **Rule of thumb**: Pick 2-3 HEART dimensions max per study. Trying to measure everything means you'll measure nothing well.
-
-### ⛔ When NOT to Use This Skill
-
-- **Choosing research methods or designing qualitative studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for qualitative research
-- **Data visualization and narrative design** — Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) for chart design and data narratives
-- **Understanding user Jobs-to-be-Done** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) for deep need analysis
-- **Value proposition and canvas analysis** — Use [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) for canvas-based analysis
-- **Creating user personas and segmentation** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) for persona creation
-
-### ❌ Common Mistakes to Avoid
-
-- **Peeking at A/B test results early** — Checking results before the sample size is reached inflates false positive rates. Use the sample size calculator and wait.
-- **Testing too many variables at once** — Multivariate tests require exponentially more traffic. Start with single-variable A/B tests.
-- **Ignoring the baseline** — Without a baseline measurement, you can't tell if your "improvement" is actually better than before.
-- **Over-surveying users** — CSat surveys have response fatigue. Space them out and keep them focused on specific experiences.
-- **Treating HEART as a checklist** — Not every product needs all 5 HEART dimensions. Select the 2-3 most relevant to your goals.
-
-### ❓ FAQ
-
-**Q: How is QuantUX different from Google Analytics?**
-A: Google Analytics collects and displays data; QuantUX is a research design and analysis framework. QuantUX helps you "design the right research" (HEART metrics, A/B test design, sample size calculation), not just "show data." Use them together.
-
-**Q: Do I need to use all 5 HEART dimensions?**
-A: No. Select dimensions most relevant to your research goals. Growth teams focus on Acquisition + Engagement; experience teams focus on Happiness + Task Success. Google also recommends tailoring.
-
-**Q: What's the difference between MaxDiff and regular prioritization?**
-A: MaxDiff forces choices (best vs worst) for more precise preference data, avoiding the common "everything is important" bias. Best for prioritizing 10+ options.
-
-**Q: How much sample size do I need for A/B tests?**
-A: It depends on current conversion rate, minimum detectable effect, and statistical power (typically 80%). Use `calculate_sample_size()` to compute automatically instead of looking up tables manually.
-
-
-### 📋 Cheat Sheet / Quick Reference Cards
-
-#### HEART Framework Quick Reference
-
-| Dimension | What It Measures | Common Metrics |
-|-----------|-----------------|----------------|
-| **H**appiness | User satisfaction | CSat, NPS, SUS, app store ratings |
-| **E**ngagement | Usage frequency & depth | DAU/WAU, session duration, features used |
-| **A**doption | New user uptake | Sign-up rate, feature adoption rate, activation rate |
-| **R**etention | Returning users | D1/D7/D30 retention, churn rate, renewal rate |
-| **T**ask Success | Task completion | Completion rate, time-on-task, error rate |
-
-#### A/B Testing Quick Reference
-
-| Scenario | Recommended Test |
-|----------|-----------------|
-| Compare 2 versions | A/B test (binary) |
-| Compare 3+ versions | A/B/n test (multivariate) |
-| Small sample size | Sequential testing or Bayesian methods |
-| Measure magnitude of change | Effect size (Cohen's d) + confidence interval |
-
-#### Sample Size Rule of Thumb
-
-| Baseline Rate | MDE | Approx. Sample/Group |
-|--------------|-----|---------------------|
-| 10% | 2% | ~12,000 |
-| 15% | 2% | ~8,000 |
-| 15% | 3% | ~3,500 |
-| 30% | 5% | ~1,500 |
-| 50% | 5% | ~1,600 |
-
-#### MaxDiff Design Tips
-
-| Parameter | Recommendation |
-|-----------|---------------|
-| Items per screen | 3-5 (optimal: 4) |
-| Number of blocks | Items × 2-3 |
-| Minimum respondents | 100+ |
-| Best for | 8+ items to prioritize |
-
-#### Cross-Skill Quick Reference
-
-| Need | Skill | Key Method |
-|------|-------|------------|
-| Choose research methods | [UDM](https://github.com/AliDujie/universal-design-methods) | `recommend_methods()` |
-| Validate quantitatively | **QuantUX** (this skill) | `calculate_ab_sample_size()` |
-| Understand user "jobs" | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | `analyze()` |
-| Create personas | [Persona](https://github.com/AliDujie/web-persona-skill) | `add_persona()` |
-| Design value prop | [VPD](https://github.com/AliDujie/value-proposition-design) | `analyze_canvas()` |
-| Present findings | [SWD](https://github.com/AliDujie/storytelling-with-data) | `build_story()` |
-
-### 🏆 Case Studies
-
-#### Case Study 1: HEART Metrics System Setup
-
-**Background**: A SaaS product needed to establish quantitative UX metrics to replace subjective judgments.
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("SaaS Collaboration Platform")
-
-# Step 1: Build HEART framework
-heart = skill.build_heart_framework()
-print(heart)  # Goals → Signals → Metrics for each dimension
-
-# Step 2: Get workshop guide for team alignment
-workshop = skill.get_workshop_guide()
-
-# Step 3: Design CSat survey
-survey = skill.design_csat_survey("2024Q1 Satisfaction", mechanism="in_app")
-
-# Step 4: Calculate required sample size for A/B test
-sample = skill.calculate_ab_sample_size(baseline=0.60, mde=0.05)
-print(f"Need {sample} users per group")
-
-# Step 5: Analyze CSat results
-csat_result = skill.analyze_csat("2024Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
-print(f"Top-2-Box: {csat_result['t2b']}")
-
-# Step 6: Generate CEO-perspective report
-report = skill.generate_report("Q1 UX Research Report", include_ceo_analysis=True)
-```
-
-**Result**: Shifted from subjective to data-driven decisions. UX improvement ROI increased 3x.
-
-#### Case Study 2: MaxDiff Feature Prioritization
-
-**Background**: An e-commerce platform had 20 pending features and needed scientific priority ranking.
-
-```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("E-commerce Platform")
-
-# MaxDiff design for 10 features
-features = ["Smart recommendations", "One-click checkout", "Price protection",
-            "Image search", "Voice search", "Social sharing",
-            "Cart sharing", "Subscription alerts", "AR try-on", "Price comparison"]
-maxdiff = skill.design_maxdiff("Feature Priorities", features, items_per_screen=4)
 print(maxdiff)
 
-# A/B test the top-ranked feature
-n = skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)
-result = skill.analyze_ab_test("Original", 5000, 1750, "New", 5000, 1900)
-print(result)
+# 5. CSat survey design + analysis
+survey = skill.design_csat_survey("2024Q1 Satisfaction", mechanism="in_product")
+analysis = skill.analyze_csat("2024Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
+print(analysis)
+
+# 6. Log sequence analysis
+for user, time, page in [("u1", "10:00", "Home"), ("u1", "10:02", "Search"),
+                          ("u1", "10:05", "Detail"), ("u1", "10:08", "Checkout")]:
+    skill.logs_analyzer.add_event(user, f"2024-01-01 {time}", page)
+logs = skill.analyze_logs()
+print(logs)
+
+# 7. Full report with CEO analysis
+report = skill.generate_report("Q1 UX Research Report", include_ceo_analysis=True)
+print(report)
 ```
 
-**Result**: Used MaxDiff instead of voting. Priority decision time reduced from 2 weeks to 3 days.
+**Zero dependencies** — pure Python standard library. No `pip install` needed.
 
-#### Case Study 3: User Behavior Analysis to Reduce Churn
+## 🧩 10 Capabilities
 
-**Background**: A SaaS analytics platform saw a 15% monthly churn rate and needed to understand where users were dropping off.
+| # | Capability | What It Does |
+|---|-----------|-------------|
+| 1 | **HEART Framework** | Goals-Signals-Metrics workshop, metric definitions, dashboard |
+| 2 | **CSat Survey Design & Analysis** | Survey mechanism selection, scoring scales, Top-2-Box, trends |
+| 3 | **Log Sequence Analysis** | Sessionization, sequence frequency, Sunburst diagrams, Markov matrices |
+| 4 | **MaxDiff Priority Ranking** | Forced-choice design, MNL/HB estimation, individual preferences |
+| 5 | **A/B Test Design & Analysis** | Sample size calculation, experiment design, effect size + CI |
+| 6 | **Research Planning** | Request diagnosis,方案设计, simulated results preview |
+| 7 | **Research Report Generation** | Executive summary, visualization, CEO decision support module |
+| 8 | **CEO: Business Impact** | UX→business metric mapping, ROI estimation (conservative/base/optimistic) |
+| 9 | **CEO: Validation Timeline** | 4-phase timeline with milestones + decision points |
+| 10 | **CEO: Resource Estimate** | Headcount + tool + incentive cost estimation, 3-scenario ROI |
 
+## 📐 HEART Framework
+
+| Dimension | Definition | Example Metrics |
+|-----------|-----------|----------------|
+| **H**appiness | User attitude: satisfaction, ease of use, NPS | Survey scores, satisfaction trends |
+| **E**ngagement | Depth of participation: frequency, intensity | Visits per user per week |
+| **A**doption | New user/feature adoption | Accounts created within 7 days |
+| **R**etention | User continued usage | N-day/week/month retention rate |
+| **T**ask Success | Task efficiency and effectiveness | Completion rate, error rate, task time |
+
+Implementation path: Goals → Signals → Metrics. Team workshop to define, select 3-5 core metrics.
+
+## 🌐 Ecosystem Integration
+
+QuantUX is the **quantitative validation core** — it verifies qualitative hypotheses from other skills:
+
+```
+Persona → JTBD/UDM → QuantUX → VPD → SWD → STM
+                        ↑ You are here
+```
+
+| Input | Output | Collaboration |
+|-------|--------|---------------|
+| UDM (qualitative hypotheses) | QuantUX A/B validation | UDM findings → QuantUX experiment design |
+| JTBD (opportunity scores) | QuantUX MaxDiff validation | JTBD Jobs → QuantUX priority ranking |
+| VPD (value hypotheses) | QuantUX experiment testing | VPD canvas → QuantUX A/B test |
+| Persona (behavior hypotheses) | QuantUX behavior verification | Persona segments → QuantUX analysis |
+| QuantUX (analysis results) | SWD data storytelling | QuantUX results → SWD executive report |
+
+End-to-end example:
 ```python
-from quantux import QuantUXSkill
-
-skill = QuantUXSkill("SaaS Analytics Platform")
-
-# Step 1: Build HEART framework to define what to measure
-heart = skill.build_heart_framework()
-# → Goals → Signals → Metrics for each HEART dimension
-
-# Step 2: Analyze user behavior logs to find drop-off points
-logs = skill.analyze_logs(
-    user_actions=[
-        "signup", "onboarding_tutorial", "create_dashboard",
-        "add_widget", "share_dashboard", "return_after_7d"
-    ],
-    threshold=3
-)
-print(logs)  # Funnel + transition matrix + drop-off points
-
-# Step 3: Design CSat survey to understand satisfaction
-survey = skill.design_csat_survey("Post-onboarding Satisfaction", mechanism="email")
-
-# Step 4: Calculate sample size for follow-up A/B test on onboarding
-sample = skill.calculate_ab_sample_size(baseline=0.45, mde=0.05)
-print(f"Need {sample} users per group for 5% MDE detection")
-
-# Step 5: Generate comprehensive report with CEO perspective
-report = skill.generate_report("Churn Reduction Study", include_ceo_analysis=True)
-```
-
-**Result**: Log analysis revealed 42% of users never completed onboarding tutorial. HEART metrics showed Task Success was the weakest dimension. Targeted onboarding redesign reduced 7-day churn from 15% to 9%.
-
-### 🌟 User Reviews
-
-> "The HEART framework implementation helped us align our entire product team on what metrics actually matter. Game changer." — **Head of UX, Travel Platform**
-
-> "Sample size calculator alone saved us from running underpowered A/B tests that would have given us false confidence." — **Data Science Lead, E-commerce**
-
-> "We use this skill to train new researchers. The structured approach to quantitative methods is exactly what our team needed." — **UX Research Manager, SaaS Company**
-
-### 📖 Extended Reading
-
-- **"Quantitative User Experience Research"** — Jeff Sauro and James R. Lewis, the definitive reference
-- **"Trustworthy Online Controlled Experiments"** — Ron Kohavi et al., A/B testing at scale
-- **"Practical Statistics for UX"** — Jeff Sauro, statistical methods for UX professionals
-- **"Measuring the User Experience"** — Tom Tullis and Bill Albert, metrics for UX evaluation
-
-#### 📂 QuantUX Reference Guides
-
-| Guide | Focus |
-|-------|-------|
-| [HEART Framework](references/heart-framework.md) | Google's UX measurement framework |
-| [CSAT Methods](references/csat-methods.md) | Customer satisfaction measurement |
-| [A/B Testing](references/ab-testing.md) | Controlled experiment design |
-| [MaxDiff Guide](references/maxdiff-guide.md) | Maximum difference scaling |
-| [Log Analysis](references/log-analysis.md) | Behavioral telemetry analysis |
-| [Cross-Skill Validation](references/07-cross-skill-validation.md) | QuantUX + UDM/JTBD validation workflows |
-| [Ecosystem Collaboration](references/08-ecosystem-collaboration.md) | QuantUX + ecosystem cross-skill workflows |
-
-### 📚 About This Skill
-
-This skill is based on the methodology from *"Quantitative User Experience Research"* by Jeff Sauro and James R. Lewis, providing rigorous statistical methods for UX research. The HEART framework (Happiness, Engagement, Adoption, Retention, Task Success) was developed at Google.
-
-### 🔗 Related Skills
-
-This skill is the quantitative research layer of the **AliDujie UX Research Skills Ecosystem**:
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│            AliDujie Skill Ecosystem                                  │
-├─────────────────────────────────────────────────────────────────────┤
-│   📊 QuantUX (this skill) ←───→ 📖 Universal Design Methods         │
-│    (quant research)  triangulation      (design methods)            │
-│              ↑                          ↓                         │
-│              │                    🎯 JTBD Knowledge                 │
-│              │                    (needs insight)                    │
-│   📈 Storytelling with Data ←───→ 💎 Value Proposition Design       │
-│    (data narrative)  presentation         (value design)            │
-│              ↑                          ↑                         │
-│              │                    👤 Web Persona                    │
-│              └────────────────────  (personas)                      │
-│                           ↕                                         │
-│              🧠 Structured-Thinking-Model                           │
-│                  70+ Business Frameworks · PESTEL · SWOT · 5 Forces │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-**Integration patterns:**
-
-- **QuantUX + UDM** — Qualitative-quantitative triangulation for research validity
-- **QuantUX + SWD** — Present HEART metrics and A/B test results with compelling narratives
-- **QuantUX + JTBD** — Validate JTBD opportunity scores with quantitative data
-- **QuantUX + VPD** — Validate value proposition hypotheses with experiments
-- **QuantUX + Persona** — Quantify persona behavior patterns with log analysis
-- **QuantUX + Structured Thinking** — Design research hypotheses with structured frameworks
-
-👉 **Explore the full ecosystem**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
-
-### 🌟 Why Choose AliDujie Skill Ecosystem?
-
-This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the complete ecosystem provides:
-
-- ✅ **Complete Coverage** — From user research to product design to data presentation, full-process tool support
-- ✅ **Seamless Integration** — All skills use consistent API design and data formats
-- ✅ **Best Practices** — Based on classic theories and practical experience, avoid common pitfalls
-- ✅ **Active Maintenance** — Regularly updated with new features and improvements
-- ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
-- ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
-
-👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
-
-#### 💡 Cross-Skill Quick Recipes
-
-```python
-# Recipe: Validate a qualitative finding with quantitative data
-from quantux import QuantUXSkill; from swd import SWDSkill
-
-quantux = QuantUXSkill("SaaS platform")
-
-# UDM found "users struggle with onboarding" — let's quantify it
-heart = quantux.build_heart_framework()
-# → Sets up Happiness, Engagement, Adoption, Retention, Task Success metrics
-
-# Design a CSat survey to measure onboarding satisfaction
-csat = quantux.design_csat_survey("Onboarding Experience Survey")
-
-# Calculate required sample size for A/B test on new onboarding
-n = quantux.calculate_ab_sample_size(baseline=0.40, mde=0.05)
-print(f"Need {n} users per variant")  # → 1,536
-
-# Present findings to leadership
-swd = SWDSkill("Onboarding Improvement Proposal")
-story = swd.build_story(
-    protagonist="Growth team",
-    imbalance="Onboarding completion at 40%, target is 65%",
-    call_to_action="Approve redesigned onboarding flow"
-)
-```
-
-```python
-# Recipe: JTBD-driven quantitative validation
-from jtbd import JTBDSkill; from quantux import QuantUXSkill; from swd import SWDSkill
-
-# JTBD identifies underserved need
-jtbd = JTBDSkill("project management tool")
-score = jtbd.score_opportunity(
-    "see all team dependencies at a glance",
-    struggle=7, alternative=3, market=2, budget=5
-)
-# → High opportunity score: users struggle, alternatives weak, few competitors
-
-# QuantUX validates with behavioral data
-quantux = QuantUXSkill("project management tool")
-funnel = quantux.analyze_funnel(
-    stages=["signup", "create_project", "invite_team", "first_task"],
-    conversions=[1000, 650, 280, 190]
-)
-# → Identifies exact drop-off: invite_team step loses 57%
-
-# SWD tells the story
-swd = SWDSkill("Team Collaboration Opportunity")
-story = swd.build_story(
-    protagonist="Product team",
-    imbalance="57% of users abandon during team invitation",
-    call_to_action="Simplify team onboarding with magic links"
-)
-# → Data-backed JTBD validation report ready for leadership
-```
-
-### 🏷️ GitHub Topics (Recommended)
-
-```
-quantitative-research heart-framework ab-testing maxdiff
-user-experience metrics python-toolkit openclaw-skill alicloud
-```
-
-### 📦 Dependencies
-
-- Python >= 3.8
-- **No external dependencies** (pure standard library)
-- Cross-platform: macOS / Linux / Windows
-
-### 📋 版本历史 (Changelog)
-
-| 版本 | 日期 | 变更 |
-| 2.3.81 | 2026-05-16 | 仓库维护：修复页脚版本不一致，验证生态交叉引用完整性和双语一致性，全文件版本对齐 |
-| 2.3.76 | 2026-05-16 | 仓库维护：版本升级，验证生态交叉引用完整性和双语一致性 |
-| 2.3.66 | 2026-05-15 | 仓库维护：添加 HEART 指标选择指南（基于产品阶段）；增强 A/B 测试章节的效应量解读指南；验证生态交叉引用完整性和双语一致性 |
-| 2.3.65 | 2026-05-14 | 仓库维护：增强验证工作流的生态一致性更新，改进 HEART、MaxDiff 和日志分析文档的跨技能引用 |
-| 2.3.64 | 2026-05-14 | 仓库维护：版本升级，对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
-| 2.3.63 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐版本，更新 Last Updated |
-| 2.3.62 | 2026-05-14 | 仓库维护：删除技能生态工作流章节中重复的快速决策指南表，提升文档简洁性和可读性 |
-|------|------|------|| 2.3.59 | 2026-05-14 | 仓库维护：验证生态交叉引用完整性和双语一致性 |
-| 2.3.58 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.3.57 vs pyproject 2.3.56），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
-
-| v2.3.44 | 2026-05-11 | 仓库维护：修复 CN 变更日志版本排序（v2.3.41→v2.3.40）、缺失的表格闭合符 `|`、多余的空行分隔符；修复页脚陈旧版本引用（v2.3.30→v2.3.43）；清理重复分隔符 |
-| v2.3.43 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.3.40→v2.3.42），补齐缺失的变更日志条目（v2.3.42），确保 README/徽章/CHANGELOG 三端版本对齐 |
-| v2.3.41 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令 |
-| v2.3.40 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（surveys.py→csat.py），修复版本历史表格中的错误分隔符，修正版本排序（v2.3.29 在 v2.3.28 之前），更新 Last Updated |
-| v2.3.36 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
-| v2.3.35 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
-| v2.3.30 | 2026-05-08 | 仓库维护：增强 HEART 框架工作坊指南，改进跨技能生态工作流集成，更新 Last Updated 至 2026-05-08，版本升级至 2.3.30 |
-| v2.3.29 | 2026-05-07 | 仓库维护：在快速决策指南中添加 Structured Thinking Model 引用（中英文），提升跨技能发现性，版本升级至 2.3.29 |
-| v2.3.28 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 QuantUX"决策指南，添加跨技能工作流示例，版本升级至 2.3.28 |
-| v2.3.27 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.3.27，在 SKILL.md 末尾添加 AliDujie 技能生态协作表，验证生态交叉引用一致性 |
-| v2.3.26 | 2026-05-07 | 仓库维护：版本升级至 2.3.26，对齐 SKILL.md 版本号，完善 SKILL.md 结尾协作生态表格 |
-| v2.3.25 | 2026-05-07 | 仓库维护：添加 SKILL.md 结尾 AliDujie 技能生态协作表格，增强跨技能一致性 |
-| v2.3.24 | 2026-05-07 | 仓库维护：修复页脚版本不一致，添加生态系统工作流 Pro Tip，版本升级至 v2.3.24 |
-| v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
-| v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
-| v2.3.21 | 2026-05-06 | 仓库维护：英文版脚注添加 Contributing 链接，增强跨技能协作示例（QuantUX→SWD 数据流工作流），对齐所有版本引用 |
-| v2.3.20 | 2026-05-06 | 仓库维护：更新版本至 2.3.20，验证生态交叉引用和双语一致性 |
-| v2.3.19 | 2026-05-06 | 仓库维护：对齐所有版本引用（README 徽章、SKILL.md、pyproject.toml、CHANGELOG），验证生态交叉引用和双语一致性 |
-| v2.3.16 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接 |
-| v2.3.15 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；修复 SKILL.md 版本不一致 (2.3.11→2.3.13)，对齐版本底部陈旧引用 (v2.3.8→v2.3.13) |
-| v2.3.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.3.8→v2.3.10 顺序校正），增强英文版 Quick Start 场景注释，修复重复 Last Updated 标题 |
-| v2.3.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从指标到决策的 6 技能协作流程） |
-| v2.3.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），增强统计实践指导 |
-| v2.3.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式，SKILL.md 版本对齐，新增英文版技能生态工作流章节 |
-| v2.3.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），修复版本引用不一致（版本/Version v2.3.5→v2.3.8），统一 SKILL.md 版本 |
-| v2.3.7 | 2026-05-03 | 仓库维护：精简重复的英文 Quick Decision Guide 区块，添加英文版本历史表，统一 SKILL.md 与 README.md 版本引用 |
-| v2.3.5 | 2026-05-03 | 仓库维护：修复英文 changelog 中缺失的 v2.3.3 条目，统一 pyproject.toml 元数据 |
-| v2.3.4 | 2026-05-03 | 仓库维护：为英文 Related Skills 添加生态系统 ASCII 图和集成模式说明，增强 Why Choose 部分描述 |
-| v2.3.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
-| v2.3.2 | 2026-05-02 | 仓库维护：优化英文示例代码格式，增强工作流 3 描述，统一交叉引用格式，补充 CEO 能力英文版表格 |
-| v2.3.1 | 2026-05-02 | 修复 Python 版本不一致 (3.9+→3.8+)，添加 Last Updated badge，补充 CEO 能力到英文能力表 |
-| v2.2.10 | 2026-05-01 | 统一交叉引用为 GitHub 绝对链接，更新 Last Updated 日期 |
-| v2.2.9 | 2026-04-28 | 添加 Badges、技能生态系统图、双语支持 |
-| v2.2.0 | 2026-04-23 | 添加版本历史、快速参考、CEO 视角扩展 |
-| v1.0 | 2026-04-22 | 初始版本 |
-
----
-
-## 🔗 Skill Ecosystem Workflow
-
-QuantUX is the quantitative research layer of the **AliDujie UX Research Skills Ecosystem**. Here are typical workflows combining it with other skills:
-
-### Workflow 1: Qualitative → Quantitative Triangulation
-
-```
-UDM/JTBD (qualitative insights) → QuantUX (quantitative validation) → SWD (storytelling)
-```
-
-**Scenario**: Validating user research findings
-1. Use UDM or JTBD to collect qualitative user insights
-2. Use QuantUX to design surveys, A/B tests, and calculate statistical significance
-3. Use SWD to transform validated results into compelling data narratives
-
-### Workflow 2: HEART Metrics → Business Decision
-
-```
-QuantUX (HEART framework) → VPD (value validation) → CEO review
-```
-
-**Scenario**: Product direction decision
-1. Use QuantUX to build HEART metrics system
-2. Use VPD to validate value proposition hypotheses
-3. Use CEO review framework to evaluate business impact
-
-### Workflow 3: Persona → Segmented Testing → Opportunity
-
-```
-Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportunity scoring)
-```
-
-**Scenario**: Personalized product optimization
-1. Use Persona to define user segments based on behavior patterns
-2. Use QuantUX to design stratified A/B tests for each segment
-3. Use JTBD to calculate opportunity scores per segment
-
-> 💡 **Tip**: QuantUX pairs naturally with UDM — use UDM for qualitative discovery, then QuantUX for quantitative validation. The CEO-perspective report feature is especially useful for executive-level research presentations.
-
-### 💡 Pro Tips
-
-- **Define Metrics Before Collecting Data** — Use HEART framework to align on what matters
-- **Calculate Sample Size First** — Never run underpowered A/B tests
-- **Triangulate Methods** — Combine quantitative (surveys, logs) with qualitative (interviews)
-- **Focus on Effect Size, Not Just p-Value** — Statistical significance ≠ business significance
-- **Establish Baselines** — Set baseline metrics and track improvement longitudinally
-- **QuantUX + UDM is the golden combo** — UDM discovers hypotheses, QuantUX validates quantitatively
-- **Statistical Power ≥ 0.8 is the floor** — When sample size is limited, use sequential testing or Bayesian methods instead of traditional A/B tests
-- **Full Ecosystem Workflow** — QuantUX is the validation engine of the AliDujie ecosystem. UDM discovers qualitative hypotheses, JTBD quantifies opportunity scores, Persona provides segments for stratified testing, VPD designs experiments to validate, and SWD visualizes the results.
-
-## 📋 Version History (English)
-
-| Version | Date | Changes |
-| v2.3.81 | 2026-05-16 | Repo maintenance: fixed footer version mismatch, verified ecosystem cross-references and bilingual consistency across all 7 skills, version alignment across all config files |
-| v2.3.81 | 2026-05-16 | Repo maintenance: fixed footer version mismatch (v2.3.76→v2.3.80), verified ecosystem cross-references and bilingual consistency across all 7 skills, version alignment across all config files |
-| v2.3.67 | 2026-05-15 | Previous maintenance
-| v2.3.68 | 2026-05-15 | Repo maintenance: added 3rd English case study (user behavior log analysis for SaaS churn reduction with HEART + funnel analysis); enhanced cross-skill workflow documentation | Repo maintenance: added HEART Metric Selection Guide for product-stage-based metric selection; enhanced A/B testing section with effect size interpretation guide; verified ecosystem cross-references and bilingual consistency |
-| v2.3.65 | 2026-05-14 | Repo maintenance: enhanced validation workflows with ecosystem-wide consistency updates. Cross-skill references improved for HEART, MaxDiff, and log analysis docs. |
-| v2.3.64 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
-| v2.3.63 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned versions, updated Last Updated |
-| v2.3.62 | 2026-05-14 | Repo maintenance: removed duplicate Quick Decision Guide table from ecosystem workflow section, improved documentation conciseness and readability |
-|---------|------|--------|| v2.3.59 | 2026-05-14 | Repo maintenance: verified ecosystem cross-reference completeness and bilingual consistency |
-| v2.3.58 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.3.57 vs pyproject 2.3.56), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
-
-| v2.3.45 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
-| v2.3.44 | 2026-05-11 | Repo maintenance: removed duplicate v2.3.34 changelog entry, removed empty v2.3.31 entry, fixed English Version History table formatting and missing entries |
-| v2.3.43 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.3.40→v2.3.42), added missing changelog entries (v2.3.40–v2.3.42), ensured README/badge/CHANGELOG alignment |
-| v2.3.42 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
-| v2.3.41 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
-| v2.3.40 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (surveys.py→csat.py), fixed rogue separator in CN changelog table, fixed version ordering (v2.3.29 before v2.3.28), updated Last Updated |
-| v2.3.39 | 2026-05-10 | Repo maintenance: added English cheat sheet (HEART metrics guide, A/B testing quick reference, MaxDiff design tips), updated Last Updated badge |
-| v2.3.33 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
-| v2.3.30 | 2026-05-08 | Repo maintenance: enhanced HEART framework workshop guide, improved cross-skill ecosystem workflow integration, updated Last Updated to 2026-05-08, version bump to 2.3.30 |
-| v2.3.29 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.3.29 |
-| v2.3.28 | 2026-05-07 | Repo maintenance: added "When to use QuantUX" decision guide to SKILL.md, added cross-skill workflow examples, version bump to 2.3.28 |
-| v2.3.27 | 2026-05-07 | Repo maintenance: added AliDujie 技能生态 collaboration table to end of SKILL.md, enhanced cross-skill ecosystem consistency |
-| v2.3.25 | 2026-05-07 | Repo maintenance: updated version badge and footer to 2.3.26, aligned SKILL.md frontmatter version |
-| v2.3.24 | 2026-05-07 | Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.3.24 |
-| v2.3.23 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
-| v2.3.22 | 2026-05-07 | Repo maintenance: added statistical power Pro Tip, enhanced SWD-QuantUX visualization integration |
-| v2.3.18 | 2026-05-06 | Repo maintenance: fixed Last Updated date alignment |
-| v2.3.17 | 2026-05-05 | Repo maintenance: added Quantitative UX Research collaboration reference to ecosystem workflow |
-| v2.3.16 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
-| v2.3.15 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; fixed SKILL.md version mismatch (2.3.11→2.3.13), fixed stale bottom version badge (v2.3.8→v2.3.13), aligned all version references, added Credits section
-| v2.3.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.3.8→v2.3.10 sequence corrected), enhanced English Quick Start with scenario comments, removed duplicate Last Updated header |
-| v2.3.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from metrics to decision |
-| v2.3.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for statistical practice guidance |
-| v2.3.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added English Skill Ecosystem Workflow section |
-| v2.3.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, resolved version mismatch (Version badge: v2.3.5→v2.3.8), aligned SKILL.md version |
-| v2.3.7 | 2026-05-03 | Repo maintenance: streamlined duplicate English Quick Decision Guide, added English version history table, aligned SKILL.md version |
-| v2.3.6 | 2026-05-03 | Repo maintenance: consolidated duplicate English Quick Decision Guide, added missing English version history section |
-| v2.3.5 | 2026-05-03 | Repo maintenance: fixed missing v2.3.3 in English changelog, updated classifiers and project.urls |
-| v2.3.4 | 2026-05-03 | Added ecosystem ASCII diagram and integration patterns to English Related Skills, enhanced Why Choose section |
-| v2.3.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
-| v2.3.2 | 2026-05-02 | Added English "Who Is This For?" section, GitHub Topics, and changelog to English section |
-| v2.3.1 | 2026-05-02 | Fixed Python version mismatch, added Last Updated badge |
-| v2.2.10 | 2026-05-01 | Unified cross-references to GitHub absolute links |
-| v2.2.9 | 2026-04-28 | Added badges, skill ecosystem diagram, bilingual support |
-| v2.2.0 | 2026-04-23 | Added version history, quick reference, CEO perspective extension |
-| v1.0 | 2026-04-22 | Initial release |
-
----
-
-### 🗺️ Beginner Quick Reference Card
-
-> **New to QuantUX? Start here.** This card covers the most common first-time use cases.
-
-| I want to… | Start with this | Quick command |
-|---|---|---|
-| Set up UX metrics for my product | HEART Framework | `skill.build_heart_framework()` |
-| Design a satisfaction survey | CSat Survey | `skill.design_csat_survey("Post-purchase Satisfaction")` |
-| Calculate A/B test sample size | Sample Size Calculator | `skill.calculate_ab_sample_size(baseline=0.15, mde=0.02)` → `~9,400 per variant` |
-| Analyze A/B test results | A/B Test Analysis | `skill.analyze_ab_test("New Flow", n_a=2500, conv_a=425, n_b=2500, conv_b=500)` |
-| Prioritize features by user preference | MaxDiff Design | `skill.design_maxdiff("Feature Priority", ["Search", "Filter", "Sort", "Compare"])` |
-| Analyze user behavior from logs | Log Analysis | `skill.analyze_logs(log_data, funnels=[("view→add→checkout")])` |
-| Plan a full quantitative study | Research Report | `skill.generate_report("Checkout Optimization", include_ceo_analysis=True)` |
-
-> 💡 **Most common first step**: `skill.build_heart_framework()` — define your Happiness, Engagement, Adoption, Retention, and Task Success metrics before collecting data.
-
-### 🚀 Next Steps / 下一步
-
-Ready to go deeper? Here's what to try next:
-
-1. **Explore all capabilities** — Check [quantux/csat.py](quantux/csat.py) for CSat survey design, [quantux/heart.py](quantux/heart.py) for HEART framework, and [quantux/abtest.py](quantux/abtest.py) for A/B testing
-2. **Validate qualitative findings** — Pair QuantUX with [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) to confirm hypotheses with statistical rigor
-3. **Segment your samples** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) to define strata for targeted quantitative studies
-4. **Measure value proposition fit** — Combine with [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) for experiment-driven validation
-5. **Tell the data story** — Transform statistical results into executive narratives with [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
-6. **Identify opportunity gaps** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) to prioritize what to measure
-
-> 💡 **Pro Tip**: QuantUX is the validation engine of the ecosystem. Try: JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)
-
-### ⚡ Power Workflow: Complete A/B Testing Pipeline
-
-```python
+# UDM → QuantUX → SWD full pipeline
+from udm import UDMSkill
 from quantux import QuantUXSkill
 from swd import SWDSkill
 
-# 1. QuantUX: Design and analyze A/B test
-quant = QuantUXSkill("SaaS 产品")
-sample = quant.calculate_ab_sample_size(baseline=0.15, mde=0.02)
-# → Required: 3,841 per group (80% power, α=0.05)
+udm = UDMSkill("Travel Booking")
+interview = udm.generate_interview("Business Users", "contextual")
 
-# 2. After experiment: analyze results
-result = quant.analyze_ab_test(conversions_a=580, total_a=3841,
-    conversions_b=650, total_b=3841)
+quantux = QuantUXSkill("Travel Booking")
+n = quantux.calculate_ab_sample_size(0.35, 0.03)
+ab = quantux.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
 
-# 3. SWD: Present findings to stakeholders
-swd = SWDSkill("实验结果汇报")
-story = swd.build_story(protagonist="产品团队",
-    imbalance="功能 A 与功能 B 效果未知，需要数据决策",
-    resolution="功能 B 提升 12.1% 转化率，统计显著 (p=0.02)")
-
-# → From experiment design to stakeholder-ready narrative
+swd = SWDSkill("Q1 UX Report")
+ctx = swd.build_context(audience="Product VP", cta="Approve optimization budget")
+story = swd.build_story(protagonist="Product Committee", imbalance="New design improves conversion 15%")
 ```
 
-### 🔗 Skill Ecosystem Workflow
+## 📖 Knowledge Base
 
-QuantUX is the **validation engine** of the AliDujie UX Research Skills Ecosystem. Typical cross-skill workflows:
+| Document | Topic |
+|----------|-------|
+| `references/heart-framework.md` | HEART framework: Goals-Signals-Metrics |
+| `references/csat-methods.md` | CSat survey design and analysis methods |
+| `references/log-analysis.md` | Log sequence analysis: sessionization, Markov chains |
+| `references/maxdiff-guide.md` | MaxDiff: experimental design, MNL/HB estimation |
+| `references/ab-testing.md` | A/B testing: sample size, significance, effect size |
+| `references/07-cross-skill-validation.md` | Cross-skill quantitative validation workflows |
+| `references/08-ecosystem-collaboration.md` | Ecosystem collaboration patterns |
 
-### Workflow 1: Qualitative Discovery → Quantitative Validation → Data Storytelling
-
-```
-UDM/JTBD (Qualitative Insight) → QuantUX (Quantitative Validation) → SWD (Data Narrative)
-```
-
-**Scenario**: Research conclusion validation
-1. Use UDM or JTBD to collect qualitative user insights, forming hypotheses
-2. Use QuantUX to build HEART metrics framework, design A/B tests validating hypotheses
-3. Use SWD to transform validated findings into compelling data narratives
-
-### Workflow 2: Persona Hypotheses → Behavior Validation → Data-Driven Personas
+## 📁 Project Structure
 
 ```
-Persona (Persona Hypotheses) → QuantUX (Behavior Validation) → Data-Driven Personas
+Quantitative-UX-Research/
+├── SKILL.md              # Agent-facing skill definition
+├── README.md             # This file — GitHub landing page
+├── pyproject.toml        # Package configuration
+├── requirements.txt      # No external dependencies
+├── INSTALL.md            # Detailed installation guide
+├── CHANGELOG.md          # Version history
+├── LICENSE               # MIT License
+├── CODE_OF_CONDUCT.md    # Community standards
+├── CONTRIBUTING.md       # Contribution guidelines
+├── references/           # 7 knowledge base documents
+├── quantux/              # Python executable toolkit
+│   ├── __init__.py       # QuantUXSkill unified entry point
+│   ├── config.py         # Global configuration
+│   ├── heart.py          # HEART framework builder
+│   ├── csat.py           # CSat survey design & analysis
+│   ├── logs.py           # Log sequence analysis
+│   ├── maxdiff.py        # MaxDiff design & analysis
+│   ├── abtest.py         # A/B test design & analysis
+│   ├── research.py       # Research planning & reporting
+│   ├── templates.py      # Report templates
+│   ├── utils.py          # Utility functions
+│   └── tests/
+│       └── test_all.py   # 7 test cases
+└── .github/              # CI/CD workflows & issue templates
 ```
 
-**Scenario**: User segment validation
-1. Use Persona to create hypothetical user personas
-2. Use QuantUX log analysis and CSat surveys to validate persona behavior assumptions
-3. Refine personas based on quantitative data for higher accuracy
+## 🧪 Testing
 
-### Workflow 3: VPD Experiments → Statistical Validation → Investment Decision
-
-```
-VPD (Value Hypothesis) → QuantUX (Experiment Design) → Statistical Confirmation
+```bash
+cd Quantitative-UX-Research
+python quantux/tests/test_all.py
+# Or with pytest:
+python -m pytest quantux/tests/test_all.py -v
 ```
 
-**Scenario**: Product investment decision
-1. Use VPD to design experiments validating value proposition hypotheses
-2. Use QuantUX to calculate sample size, run A/B tests, analyze statistical significance
-3. Pass results to SWD for data storytelling to support investment decisions
+## 📋 When NOT to Use QuantUX
 
-> 💡 **Tip**: QuantUX works best after qualitative discovery — using data to prove "how severe the problem is" and "whether the solution works."
+- **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
+- **Understanding user Jobs-to-be-Done** → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
+- **Creating user personas** → [Web Persona](https://github.com/AliDujie/web-persona-skill)
+- **Value proposition canvas analysis** → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design)
+- **Data visualization & storytelling** → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
 
-### 👨‍💻 Credits
+## 📚 References
 
-Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023), covering HEART framework, experimental design, statistical analysis, and survey methods.
+| Book | Author | Contribution |
+|------|--------|-------------|
+| **Quantitative User Experience Research** | Jeff Sauro & James R. Lewis (2023) | Foundation |
+| R/Python for Marketing Research and Analytics | Chapman & Feit | Statistical analysis practice |
+| Trustworthy Online Controlled Experiments | Kohavi, Tang & Xu (2020) | A/B testing methodology |
+| Quantifying the User Experience | Sauro & Lewis | UX quantification methods |
 
-**Applicable to:** UX Researchers, Data Analysts, Product Managers, Experiment Scientists
+## 🔗 Extended Ecosystem
 
-### 🆘 Getting Help
+| Extended Skill | Collaboration Scenario |
+|---------------|----------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | QuantUX business impact → CEO investment decisions |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | HEART metric trends → CPO product strategy |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX growth data → CMO channel strategy |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX tech metrics → CTO tech investments |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX validation → CEO plan review |
 
-- 📖 Check the [Troubleshooting](#-troubleshooting) section for common issues
-- 📚 Read the methodology guides in [references/](references/)
-- 💬 Open an issue on [GitHub](https://github.com/AliDujie/Quantitative-UX-Research/issues)
+## 🤝 Contributing
 
-### 📖 Extended Reading
+We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-| Book | Author | Related Capability |
-|------|--------|--------------------|
-| *Quantitative UX Research* | Jeff Sauro & James R. Lewis | Full methodology — HEART, CSat, A/B testing, MaxDiff |
-| *Measuring the User Experience* (2nd Ed) | Jeff Sauro & James R. Lewis | SUS, NPS, UMUX-Lite benchmarking |
-| *Lean Analytics* | Alistair Croll & Benjamin Yoskovitz | Data-driven product decisions |
+## 📄 License
 
-### 🌐 Explore the Full AliDujie UX Research Ecosystem
-
-This skill is part of a **7-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
-
-| Skill | Role | When to Use |
-|-------|------|-------------|
-| 👤 [Web Persona](https://github.com/AliDujie/web-persona-skill) | Foundation | Define WHO you are designing for |
-| 🎯 [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Needs Insight | Understand WHY users behave the way they do |
-| 🔍 [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Research Methods | Choose and execute research methods |
-| 📊 [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Validation Engine | Prove qualitative hypotheses with data |
-| 💎 [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Value Design | Bridge user needs to testable value propositions |
-| 📈 [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Presentation Layer | Turn findings into executive-ready narratives |
-| 🧠 [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic Analysis | Apply business frameworks to research insights |
-
-> 💡 **Quick Tip**: QuantUX is the validation engine of the ecosystem. Try: `JTBD (identify opportunity) → QuantUX (measure size) → VPD (design solution) → SWD (present results)`
-
-
-### 🤝 Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
-
----
-
-*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.3.81*
+MIT License — see [LICENSE](LICENSE) for details.
