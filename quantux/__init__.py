@@ -30,7 +30,7 @@
     report_md = skill.build_report("用户满意度研究")
 """
 
-__version__ = "2.3.79"
+__version__ = "2.3.80"
 
 from .config import AnalysisConfig, HEART_DIMENSIONS, HEART_LABELS, KNOWLEDGE_FILES
 from .utils import load_knowledge, load_all_knowledge, search_knowledge
@@ -397,6 +397,7 @@ class QuantUXSkill:
 
 
 __all__ = [
+    "__version__",
     "QuantUXSkill",
     "AnalysisConfig", "HEART_DIMENSIONS", "HEART_LABELS", "KNOWLEDGE_FILES",
     "load_knowledge", "load_all_knowledge", "search_knowledge",
