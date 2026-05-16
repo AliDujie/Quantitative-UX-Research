@@ -179,7 +179,7 @@ csat = skill.design_csat(product="核心功能")
 3. **日志序列分析** -- 会话化、序列频率、Sunburst 图、Markov 转移矩阵
 4. **MaxDiff 优先级排序** -- 强制选择设计、MNL/HB 估计、个体偏好
 5. **A/B 测试设计与分析** -- 样本量计算、实验设计、效应量与置信区间
-6. **研究规划与利益相关者管理** -- 请求诊断、方案设计、模拟结果预览
+6. **研究规划与利益相关者管理** -- 请求诊断、方案设计、模拟结果预览（Request diagnosis, research planning, simulated results preview）
 7. **研究报告生成** -- 执行摘要、可视化、CEO 决策支持模块
 
 ## 三、触发条件总表

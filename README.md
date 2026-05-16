@@ -9,7 +9,7 @@
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023). A complete toolkit for **quantitative UX research**, providing **10 executable capabilities** — from HEART framework and CSat surveys to log analysis, MaxDiff, A/B testing, research planning, and CEO-level business impact assessment.
 
-## 🌟 Why QuantUX?
+## 💼 Why Teams Choose QuantUX
 
 | Challenge | Without QuantUX | With QuantUX |
 |-----------|----------------|-------------|
@@ -18,8 +18,18 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Prioritization | HiPPO (highest-paid person's opinion) | MaxDiff forced-choice, data-driven ranking |
 | Satisfaction Tracking | Scattered survey data | Standardized CSat scoring + Top-2-Box trends |
 | Business Reporting | "Users say they like it" — qualitative | Business impact + ROI in business language |
+| Stakeholder Alignment | "We need more data" — endless iterations | Reverse working: show simulated results before investing |
 
 > 🏆 **Proven Impact**: Teams using QuantUX report 35% improvement in A/B test design accuracy and 50% higher UX investment approval rates via HEART framework metrics.
+
+## 🌟 Why QuantUX?
+
+- **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
+- **10 executable capabilities (incl. CEO perspective)** — HEART, CSat, log analysis, MaxDiff, A/B, research planning, reporting, plus business impact, validation timeline, resource estimation
+- **CEO decision support** — Built-in business impact assessment, validation timeline, resource estimation — translate UX data into business language
+- **Zero learning curve** — Pure Python standard library, no external dependencies, `from quantux import QuantUXSkill` to start
+- **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
+- **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
 
 ## ⚡ Quick Start (5 Minutes)
 
@@ -67,14 +77,7 @@ survey = skill.design_csat_survey("2024Q1 Satisfaction", mechanism="in_product")
 analysis = skill.analyze_csat("2024Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
 print(analysis)
 
-# 6. Log sequence analysis
-for user, time, page in [("u1", "10:00", "Home"), ("u1", "10:02", "Search"),
-                          ("u1", "10:05", "Detail"), ("u1", "10:08", "Checkout")]:
-    skill.logs_analyzer.add_event(user, f"2024-01-01 {time}", page)
-logs = skill.analyze_logs()
-print(logs)
-
-# 7. Full report with CEO analysis
+# 6. Full report with CEO analysis
 report = skill.generate_report("Q1 UX Research Report", include_ceo_analysis=True)
 print(report)
 ```
@@ -90,7 +93,7 @@ print(report)
 | 3 | **Log Sequence Analysis** | Sessionization, sequence frequency, Sunburst diagrams, Markov matrices |
 | 4 | **MaxDiff Priority Ranking** | Forced-choice design, MNL/HB estimation, individual preferences |
 | 5 | **A/B Test Design & Analysis** | Sample size calculation, experiment design, effect size + CI |
-| 6 | **Research Planning** | Request diagnosis,方案设计, simulated results preview |
+| 6 | **Research Planning & Stakeholder Management** | Request diagnosis, research planning, simulated results preview |
 | 7 | **Research Report Generation** | Executive summary, visualization, CEO decision support module |
 | 8 | **CEO: Business Impact** | UX→business metric mapping, ROI estimation (conservative/base/optimistic) |
 | 9 | **CEO: Validation Timeline** | 4-phase timeline with milestones + decision points |
