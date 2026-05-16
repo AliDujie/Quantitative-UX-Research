@@ -4,11 +4,11 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.3.78-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.3.79-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
-> 🆕 **What's New in v2.3.78**: Repository maintenance v2.3.77. Added What's New callout to README header. All reference docs linked in CN+EN. Ecosystem cross-references and bilingual consistency verified.
+> 🆕 **What's New in v2.3.78**: Added What's New callout to README header. All reference docs linked in CN+EN. Ecosystem cross-references and bilingual consistency verified across all 7 skills.
 
 > 🌐 **AliDujie UX Research Skills Ecosystem** — 本技能是 7 个互补技能之一，覆盖从用户研究到数据呈现的完整工作流
 
@@ -1004,6 +1004,10 @@ VPD (价值假设) → QuantUX (实验设计) → 统计确认
 | CSat Surveys | Customer satisfaction survey design and analysis |
 | Log Analysis | User behavior path analysis and transition matrices |
 | CEO Perspective | Business impact mapping, ROI estimation, resource planning |
+| Research Planning | Study design, sample size calculation, recruitment strategy |
+| Report Generation | Automated report structure with CEO decision support |
+| Zero Dependencies | Pure Python standard library, 5-minute setup |
+| Bilingual Support | Complete CN/EN documentation for international teams |
 
 ### 🧭 Quick Decision Guide
 

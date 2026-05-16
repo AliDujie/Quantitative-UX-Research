@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.79 (2026-05-16)
+
+- Repo maintenance: enhanced English Features at a Glance (added Research Planning, Report Generation, Zero Dependencies, Bilingual Support rows)
+- Improved What's New callout formatting
+- Verified ecosystem cross-references and bilingual consistency
+- Confirmed all QuantUX reference docs linked in CN+EN
+
+
 ## v2.3.74 (2026-05-16)
 
 - Synced Python `__version__` with SKILL.md version
