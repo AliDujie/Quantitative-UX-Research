@@ -64,6 +64,8 @@ _Results based on aggregated team adoption data across SaaS, mobile, and e-comme
 cp -r Quantitative-UX-Research /your/agent/skills/
 ```
 
+For detailed installation steps, configuration options, and agent integration guides, see [INSTALL.md](INSTALL.md).
+
 ### Use in Python
 
 ```python
@@ -285,6 +287,13 @@ python quantux/tests/test_all.py
 # Or with pytest:
 python -m pytest quantux/tests/test_all.py -v
 ```
+
+## 📚 Resources
+
+- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
+- [CHANGELOG.md](CHANGELOG.md) — Version history
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
 
 ## 🔗 Ecosystem Quick Start
 
