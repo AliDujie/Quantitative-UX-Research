@@ -28,6 +28,15 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Business Reporting | "Users say they like it" — qualitative | Business impact + ROI in business language |
 | Stakeholder Alignment | "We need more data" — endless iterations | Reverse working: show simulated results before investing |
 
+## 🌟 Why QuantUX?
+
+- **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
+- **10 executable capabilities (incl. CEO perspective)** — HEART, CSat, log analysis, MaxDiff, A/B, research planning, reporting, plus business impact, validation timeline, resource estimation
+- **CEO decision support** — Built-in business impact assessment, validation timeline, resource estimation — translate UX data into business language
+- **Zero learning curve** — Pure Python standard library, no external dependencies, `from quantux import QuantUXSkill` to start
+- **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
+- **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
+
 ## 💡 为什么选择 QuantUX？
 
 > **QuantUX 是整个 AliDujie UX 研究生态的定量验证引擎。** 当 UDM 产出定性发现、JTBD 识别高机会 Job 后，QuantUX 用 HEART 框架、A/B 测试、MaxDiff 等统计方法把假设转化为可量化的证据。10 项执行能力覆盖从指标定义到 CEO 汇报的完整闭环——让 UX 数据说业务语言。
@@ -46,15 +55,6 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Research-to-decision cycle | 6-8 weeks | 3-4 weeks | ~50% faster |
 
 _Results based on aggregated team adoption data across SaaS, mobile, and e-commerce domains._
-
-## 🌟 Why QuantUX?
-
-- **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
-- **10 executable capabilities (incl. CEO perspective)** — HEART, CSat, log analysis, MaxDiff, A/B, research planning, reporting, plus business impact, validation timeline, resource estimation
-- **CEO decision support** — Built-in business impact assessment, validation timeline, resource estimation — translate UX data into business language
-- **Zero learning curve** — Pure Python standard library, no external dependencies, `from quantux import QuantUXSkill` to start
-- **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
-- **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
 
 ## ⚡ Quick Start (5 Minutes)
 
