@@ -111,6 +111,13 @@ print(report)
 
 **Zero dependencies** — pure Python standard library. No `pip install` needed.
 
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from quantux import QuantUXSkill
+> skill = QuantUXSkill("你的产品")
+> print(skill.calculate_ab_sample_size(baseline=0.35, mde=0.03))
+> ```
+
 ## 📋 Real-World Use Cases
 
 ### 📱 HEART Dashboard for a Mobile Fitness App
