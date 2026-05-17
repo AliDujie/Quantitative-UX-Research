@@ -267,7 +267,16 @@ story = swd.build_story(protagonist="Product Committee", imbalance="New design i
 - [ ] **MaxDiff** — `skill.design_maxdiff("Features", ["Feature A", "Feature B"])`
 - [ ] **Full report** — `skill.generate_report("Q1 Report", include_ceo_analysis=True)`
 
-## 📖 Knowledge Base
+### ⏱️ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
+- [ ] **导入** — `from quantux import QuantUXSkill`
+- [ ] **初始化** — `skill = QuantUXSkill("你的产品")`
+- [ ] **HEART 指标体系** — `skill.build_heart_framework()`
+- [ ] **样本量计算** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)`
+- [ ] **A/B 测试分析** — `skill.analyze_ab_test("旧版", 5000, 1750, "新版", 5000, 1900)`
+- [ ] **MaxDiff 优先级** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])`
+- [ ] **完整报告** — `skill.generate_report("Q1 报告", include_ceo_analysis=True)`
 
 | Document | Topic |
 |----------|-------|
