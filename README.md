@@ -149,6 +149,18 @@ A product team needs a recurring research cadence. Each quarter: (1) run CSat su
 
 ## 📐 HEART Framework
 
+```
+┌─────────────┬──────────────────┬────────────────────────────────┐
+│ Dimension   │ Goal Examples    │ Signal / Metric Examples       │
+├─────────────┼──────────────────┼────────────────────────────────┤
+│ Happiness   │ Users are happy  │ NPS, CSat, ease-of-use score   │
+│ Engagement  │ Users use often  │ Sessions/week, feature usage   │
+│ Adoption    │ New users onboard│ 7-day activation rate          │
+│ Retention   │ Users come back  │ 30-day retention, churn rate   │
+│ Task Success│ Users finish tasks│ Completion rate, error rate   │
+└─────────────┴──────────────────┴────────────────────────────────┘
+```
+
 | Dimension | Definition | Example Metrics |
 |-----------|-----------|----------------|
 | **H**appiness | User attitude: satisfaction, ease of use, NPS | Survey scores, satisfaction trends |
@@ -412,3 +424,9 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
+
+[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
