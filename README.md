@@ -299,6 +299,23 @@ python quantux/tests/test_all.py
 python -m pytest quantux/tests/test_all.py -v
 ```
 
+## 🔗 生态快速开始
+
+QuantUX 位于定性技能之后——用数据验证定性假设：
+
+```python
+# JTBD/UDM（定性）→ QuantUX（验证）→ SWD（呈现）
+from jtbd import JTBDSkill
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+j = JTBDSkill("产品")         # 发现高机会的 Jobs
+u = UDMSkill("产品")         # 定性访谈产生假设
+q = QuantUXSkill("产品")     # A/B 测试 + MaxDiff 验证
+s = SWDSkill("Q1 报告")      # 高管数据故事
+```
+
 ## 🔗 Ecosystem Quick Start
 
 QuantUX sits after qualitative skills in the research pipeline — it validates hypotheses with data:
