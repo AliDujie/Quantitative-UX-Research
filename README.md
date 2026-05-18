@@ -300,6 +300,16 @@ ctx = swd.build_context(audience="Product VP", cta="Approve optimization budget"
 story = swd.build_story(protagonist="Product Committee", imbalance="New design improves conversion 15%")
 ```
 
+### 🔗 Cross-Skill Collaboration / 跨技能协作
+
+| QuantUX 产出 → | 下游技能用它做... | 示例调用 |
+|---------------|-----------------|----------|
+| A/B 测试结果 | [SWD](https://github.com/AliDujie/storytelling-with-data) 数据故事构建 | `swd.build_story(evidence=ab_result)` |
+| HEART 指标 | [SWD](https://github.com/AliDujie/storytelling-with-data) 图表改造 | `swd.makeover(chart_data=heart)` |
+| MaxDiff 排序 | [VPD](https://github.com/AliDujie/value-proposition-design) 优先级计算 | `vpd.calculate_priority(maxdiff_results)` |
+| CSat 趋势分析 | [Persona](https://github.com/AliDujie/web-persona-skill) 角色验证 | `persona.add_metric(metric="CSat", target=4.2)` |
+| 研究报告 | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 机会验证 | `jtbd.score_opportunity()` cross-validated |
+
 ### ⏱️ 5-Minute Quick-Start Checklist
 
 - [ ] **Install** — `cp -r Quantitative-UX-Research /your/agent/skills/`
