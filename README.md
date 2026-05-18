@@ -132,6 +132,50 @@ A B2B SaaS product has 12 candidate features but budget for 3. Use `design_maxdi
 ### 📊 Quarterly UX Health Report
 A product team needs a recurring research cadence. Each quarter: (1) run CSat survey with `design_csat_survey()` + `analyze_csat()` for Top-2-Box trends, (2) refresh HEART metrics, (3) `generate_report()` with full CEO analysis. Stakeholders get a consistent, comparable quarterly pulse.
 
+## 🤖 AI Agent Integration
+
+QuantUX implements all statistical calculations (chi-square, z-tests, MNL estimation, sample size) using **only the Python standard library** — making it ideal for LLM agent workflows where external dependencies are undesirable:
+
+```python
+# Example: QuantUX as agent tools
+from quantux import QuantUXSkill
+
+quantux = QuantUXSkill("My Product")
+
+@tool
+def calculate_sample_size(baseline: float, mde: float, alpha: float = 0.05, power: float = 0.8):
+    """Calculate required sample size for A/B testing."""
+    return quantux.calculate_ab_sample_size(baseline, mde, alpha=alpha, power=power)
+
+@tool
+def analyze_experiment(control_name: str, control_n: int, control_conversions: int,
+                       treatment_name: str, treatment_n: int, treatment_conversions: int):
+    """Analyze A/B test results with significance, CI, and effect size."""
+    return quantux.analyze_ab_test(control_name, control_n, control_conversions,
+                                   treatment_name, treatment_n, treatment_conversions)
+
+@tool
+def design_priority_survey(items: list, survey_name: str = "Feature Priorities"):
+    """Design a MaxDiff survey for forced-choice priority ranking."""
+    return quantux.design_maxdiff(survey_name, items)
+```
+
+### Agent Workflow Pattern
+```
+UDM qualitative findings → QuantUX.ab_sample_size() → Experiment design
+     ↓
+Experiment results → QuantUX.analyze_ab_test() → Statistical significance + CI
+     ↓
+Statistical results → QuantUX.business_impact() → ROI for stakeholders
+     ↓
+ROI report → SWD.build_story() → Executive presentation
+```
+
+### Prompt Engineering Tips
+- **Zero dependencies**: Unlike scipy/numpy-based alternatives, QuantUX runs in any minimal Python environment — perfect for sandboxed agent runtimes
+- **Reverse working**: Use `generate_report()` with simulated results *before* running experiments to align stakeholders on what success looks like
+- **Cross-skill triangulation**: Combine JTBD opportunity scores with QuantUX MaxDiff rankings for dual-method priority validation
+
 ## 🧩 10 Capabilities
 
 | # | Capability | What It Does |
@@ -409,6 +453,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
 ## ❓ FAQ / Troubleshooting
 
