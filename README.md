@@ -460,6 +460,17 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 - **Reverse working**: Use `generate_report()` with simulated results *before* running experiments to align stakeholders on what success looks like
 - **MaxDiff over ratings**: For feature prioritization, MaxDiff forced-choice surveys avoid the "everything is important" trap of rating scales
 - **Zero dependency advantage**: Unlike scipy/numpy alternatives, QuantUX runs in any minimal Python environment — perfect for sandboxed agent runtimes
+- **Effect size > p-value**: A statistically significant result with 0.1% lift isn't business-significant. Always check confidence intervals and practical impact
+
+## 🛡️ Common Pitfalls & How to Avoid Them
+
+| Pitfall | How QuantUX Helps |
+|---------|---------------|
+| "Let's A/B test everything" — unfocused experiments | HEART framework forces 3-5 core metrics max |
+| Underpowered tests (small sample) | `calculate_ab_sample_size()` gives exact numbers before you start |
+| P-hacking (peeking at interim results) | `analyze_ab_test()` reports confidence intervals, not just p-values |
+| Rating scale surveys where everything is "important" | MaxDiff forces real trade-offs |
+| UX data that stakeholders ignore | `generate_business_impact()` translates metrics to business ROI |
 
 ## ❓ FAQ / Troubleshooting
 
