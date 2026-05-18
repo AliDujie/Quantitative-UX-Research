@@ -455,6 +455,12 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
+### 💡 Pro Tips / 专业技巧
+- **HEART first, then A/B**: Define Goals→Signals→Metrics before designing experiments — measuring the wrong thing is worse than not measuring
+- **Reverse working**: Use `generate_report()` with simulated results *before* running experiments to align stakeholders on what success looks like
+- **MaxDiff over ratings**: For feature prioritization, MaxDiff forced-choice surveys avoid the "everything is important" trap of rating scales
+- **Zero dependency advantage**: Unlike scipy/numpy alternatives, QuantUX runs in any minimal Python environment — perfect for sandboxed agent runtimes
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: Do I need scipy, numpy, or any statistical library?**
