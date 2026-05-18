@@ -428,13 +428,6 @@ q = QuantUXSkill("Product")    # A/B test + MaxDiff validation
 s = SWDSkill("Q1 Report")      # Executive data story
 ```
 
-## 📚 Resources
-
-- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
-- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
-- [CHANGELOG.md](CHANGELOG.md) — Version history
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
-
 ## 📋 When NOT to Use QuantUX
 
 - **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
@@ -519,10 +512,13 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 ## 📚 Resources
 
+- [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
+- [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
+- [SECURITY.md](SECURITY.md) — Security policy and responsible use
+- [references/](references/) — Statistical reference guides and template files
 
 ### Related Skills in the AliDujie Ecosystem
 
