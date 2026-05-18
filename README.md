@@ -372,6 +372,19 @@ Quantitative-UX-Research/
 └── .github/              # CI/CD workflows & issue templates
 ```
 
+## ⚡ 30-Second Quick Start / 30秒快速开始
+
+```python
+from quantux import QuantUXSkill
+
+# One-liner: calculate A/B test sample size
+print(QuantUXSkill("Your Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
+
+# Two-liner: analyze A/B test results
+qx = QuantUXSkill("Your Product")
+result = qx.analyze_ab_test("Control", 5000, 1750, "Treatment", 5000, 1900)
+```
+
 ## 🧪 Testing
 
 ```bash
@@ -472,6 +485,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 - **MaxDiff over ratings**: For feature prioritization, MaxDiff forced-choice surveys avoid the "everything is important" trap of rating scales
 - **Zero dependency advantage**: Unlike scipy/numpy alternatives, QuantUX runs in any minimal Python environment — perfect for sandboxed agent runtimes
 - **Effect size > p-value**: A statistically significant result with 0.1% lift isn't business-significant. Always check confidence intervals and practical impact
+- **Chain with ecosystem**: JTBD opportunity → QuantUX validation → [SWD](https://github.com/AliDujie/storytelling-with-data) presentation → [VPD](https://github.com/AliDujie/value-proposition-design) value mapping → [UDM](https://github.com/AliDujie/universal-design-methods) qualitative context → [Persona](https://github.com/AliDujie/web-persona-skill) user segments
 
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
