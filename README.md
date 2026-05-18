@@ -472,6 +472,17 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
+### ⏱️ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
+- [ ] **导入** — `from quantux import QuantUXSkill`
+- [ ] **初始化** — `skill = QuantUXSkill("你的产品")`
+- [ ] **HEART 指标体系** — `skill.build_heart_framework()`
+- [ ] **样本量计算** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)`
+- [ ] **A/B 测试分析** — `skill.analyze_ab_test("旧版", 5000, 1750, "新版", 5000, 1900)`
+- [ ] **MaxDiff 优先级** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])`
+- [ ] **完整报告** — `skill.generate_report("Q1 报告", include_ceo_analysis=True)`
+
 ### 💡 Pro Tips / 专业技巧
 - **HEART first, then A/B**: Define Goals→Signals→Metrics before designing experiments — measuring the wrong thing is worse than not measuring
 - **Reverse working**: Use `generate_report()` with simulated results *before* running experiments to align stakeholders on what success looks like
@@ -511,27 +522,6 @@ MaxDiff forces trade-offs — respondents choose the *most* and *least* importan
 QuantUX is the quantitative validation engine. Use it after [UDM](https://github.com/AliDujie/universal-design-methods) generates qualitative hypotheses, after [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) identifies high-opportunity jobs, and before [SWD](https://github.com/AliDujie/storytelling-with-data) presents results to stakeholders.
 
 ## 📚 Resources
-
-- [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
-- [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
-- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
-- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
-- [CHANGELOG.md](CHANGELOG.md) — Version history
-- [SECURITY.md](SECURITY.md) — Security policy and responsible use
-- [references/](references/) — Statistical reference guides and template files
-
-### Related Skills in the AliDujie Ecosystem
-
-| Skill | What It Does | GitHub |
-|-------|-------------|--------|
-| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 100 design research methods | `UDMSkill` |
-| [Web Persona](https://github.com/AliDujie/web-persona-skill) | Evidence-driven user persona creation | `PersonaSkill` |
-| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
-| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
-| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | CEO strategic decision support | `CEOSkill` |
 
 ## 📄 License
 
