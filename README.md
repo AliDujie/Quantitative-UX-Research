@@ -2,11 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.83-blue)
+![Version](https://img.shields.io/badge/version-2.3.86-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.86
+
+- **Decision Guide**: New "Which Method Should I Use?" table maps research tasks to specific capabilities
+- **A/B Interpretation**: Added practical statistical significance workflow with real-world examples
+- **Cross-Skill Pipeline**: Enhanced QuantUX→SWD handoff example for data-to-story workflows
 
 ## 🇨🇳 中文概览
 

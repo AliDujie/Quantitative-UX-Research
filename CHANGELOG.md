@@ -1,3 +1,20 @@
+## v2.3.86 (2026-05-19)
+- Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
+- Added practical A/B test interpretation workflow example
+- Enhanced cross-skill collaboration with QuantUX→SWD pipeline example
+
+## v2.3.85 (2026-05-19)
+- Added 'Which Method Should I Use?' decision guide and A/B interpretation example
+
+## v2.3.84 (2026-05-19)
+- Added bilingual quick-start checklist and pro tips to USAGE.md
+
+## v2.3.83 (2026-05-19)
+- Synced versions + improved cross-skill collaboration table
+
+## v2.3.82 (2026-05-19)
+- README + SKILL.md maintenance
+
 ## v2.3.81 (2026-05-16)
 - Fixed footer version mismatch (v2.3.76 → v2.3.80) in README.md
 - Verified ecosystem cross-references and bilingual consistency across all 7 skills
