@@ -131,3 +131,23 @@ python quantux/tests/test_all.py
 - [SKILL.md](SKILL.md) — Agent-facing skill definition
 - [INSTALL.md](INSTALL.md) — Installation guide
 - [CHANGELOG.md](CHANGELOG.md) — Version history
+- [SECURITY.md](SECURITY.md) — Security policy and responsible use
+
+## 💡 Pro Tips / 专业技巧
+
+1. **HEART before A/B — Measure the right thing first**
+   Don't jump straight into experiment design. Use `build_heart_framework()` to define Goals→Signals→Metrics across all 5 dimensions, then narrow to 3-5 core metrics. Running an A/B test on the wrong metric is worse than not testing at all.
+   *先搭 HEART 再设计实验——HEART 帮你定义正确的指标，避免「在错误的指标上做实验」。*
+
+2. **Avoid p-hacking — commit your analysis plan upfront**
+   `analyze_ab_test()` reports confidence intervals, not just p-values — use them. Decide your sample size and stopping rule before collecting data. Peeking at interim results inflates false-positive rates. If you must check early, use sequential testing corrections.
+   *避免 p-hacking——提前确定样本量和停止规则，不要中途看结果后「挑」显著的时刻。置信区间比单一 p 值更可靠。*
+
+3. **Sample size planning — power matters more than significance**
+   A test with 80% power needs ~2× the sample of a 50% power test. Use `calculate_ab_sample_size()` with realistic MDE values (3-5% for conversion, 10-15% for UX task metrics). Underpowered tests waste time and produce misleading results.
+   *功效(power)比显著性更重要——80% 功效的样本量约是 50% 的两倍。MDE 设置要现实：转化率实验 3-5%，UX 任务指标 10-15%。*
+
+4. **HEART vs A/B — know when to use each**
+   Use HEART when you need a holistic product health dashboard or when exploring which dimensions need improvement. Use A/B testing when you have a specific change to validate (e.g., a new checkout flow). HEART tells you *what* to measure; A/B tells you *whether* a change worked. They're complementary, not competing.
+   *HEART 用于全局健康诊断，A/B 用于验证具体改动。HEART 告诉你「测什么」，A/B 告诉你「改没改对」——二者互补而非替代。*
+

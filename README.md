@@ -311,27 +311,18 @@ story = swd.build_story(protagonist="Product Committee", imbalance="New design i
 | 研究报告 | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 机会验证 | `jtbd.score_opportunity()` cross-validated |
 | UX 发现 | [UDM](https://github.com/AliDujie/universal-design-methods) 定性语境 | `udm.generate_report()` enriched with quant data |
 
-### ⏱️ 5-Minute Quick-Start Checklist
+### ⏱️ 5-Minute Quick-Start Checklist / 5 分钟快速开始检查清单
 
-- [ ] **Install** — `cp -r Quantitative-UX-Research /your/agent/skills/`
-- [ ] **Import** — `from quantux import QuantUXSkill`
-- [ ] **Initialize** — `skill = QuantUXSkill("Your Product")`
-- [ ] **HEART metrics** — `skill.build_heart_framework()`
-- [ ] **Sample size** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)`
-- [ ] **A/B analysis** — `skill.analyze_ab_test("A", 5000, 1750, "B", 5000, 1900)`
-- [ ] **MaxDiff** — `skill.design_maxdiff("Features", ["Feature A", "Feature B"])`
-- [ ] **Full report** — `skill.generate_report("Q1 Report", include_ceo_analysis=True)`
-
-### ⏱️ 5 分钟快速开始检查清单
-
-- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
-- [ ] **导入** — `from quantux import QuantUXSkill`
-- [ ] **初始化** — `skill = QuantUXSkill("你的产品")`
-- [ ] **HEART 指标体系** — `skill.build_heart_framework()`
-- [ ] **样本量计算** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)`
-- [ ] **A/B 测试分析** — `skill.analyze_ab_test("旧版", 5000, 1750, "新版", 5000, 1900)`
-- [ ] **MaxDiff 优先级** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])`
-- [ ] **完整报告** — `skill.generate_report("Q1 报告", include_ceo_analysis=True)`
+| ✅ Step / 步骤 | English / 英文 | 中文 |
+|---|---|---|
+| [ ] 1 | **Install** — `cp -r Quantitative-UX-Research /your/agent/skills/` | **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/` |
+| [ ] 2 | **Import** — `from quantux import QuantUXSkill` | **导入** — `from quantux import QuantUXSkill` |
+| [ ] 3 | **Initialize** — `skill = QuantUXSkill("Your Product")` | **初始化** — `skill = QuantUXSkill("你的产品")` |
+| [ ] 4 | **HEART metrics** — `skill.build_heart_framework()` | **HEART 指标体系** — `skill.build_heart_framework()` |
+| [ ] 5 | **Sample size** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)` | **样本量计算** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)` |
+| [ ] 6 | **A/B analysis** — `skill.analyze_ab_test("A", 5000, 1750, "B", 5000, 1900)` | **A/B 测试分析** — `skill.analyze_ab_test("A", 5000, 1750, "B", 5000, 1900)` |
+| [ ] 7 | **MaxDiff** — `skill.design_maxdiff("Features", ["Feature A", "Feature B"])` | **MaxDiff 优先级** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])` |
+| [ ] 8 | **Full report** — `skill.generate_report("Q1 Report", include_ceo_analysis=True)` | **完整报告** — `skill.generate_report("Q1 报告", include_ceo_analysis=True)` |
 
 | Document | Topic |
 |----------|-------|
@@ -486,17 +477,6 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
-
-### ⏱️ 5 分钟快速开始检查清单
-
-- [ ] **安装** — `cp -r Quantitative-UX-Research /your/agent/skills/`
-- [ ] **导入** — `from quantux import QuantUXSkill`
-- [ ] **初始化** — `skill = QuantUXSkill("你的产品")`
-- [ ] **HEART 指标体系** — `skill.build_heart_framework()`
-- [ ] **样本量计算** — `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)`
-- [ ] **A/B 测试分析** — `skill.analyze_ab_test("旧版", 5000, 1750, "新版", 5000, 1900)`
-- [ ] **MaxDiff 优先级** — `skill.design_maxdiff("功能优先级", ["功能A", "功能B"])`
-- [ ] **完整报告** — `skill.generate_report("Q1 报告", include_ceo_analysis=True)`
 
 ### 💡 Pro Tips / 专业技巧
 - **HEART first, then A/B**: Define Goals→Signals→Metrics before designing experiments — measuring the wrong thing is worse than not measuring
