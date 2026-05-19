@@ -3,7 +3,7 @@
 > **Validate Qualitative Insights with Statistical Rigor.**
 
 ![Version](https://img.shields.io/badge/version-2.3.86-blue)
-![Python](https://img.shields.io/badge/Python-3.9%2B-green)
+![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
@@ -133,7 +133,7 @@ A fitness startup needs executive-level engagement metrics. Use `build_heart_fra
 An e-commerce team wants to reduce cart abandonment from 65% to 55%. Start with `calculate_ab_sample_size(baseline=0.35, mde=0.10)` to determine required traffic. Run the experiment, then `analyze_ab_test()` for significance, confidence intervals, and practical effect size. Feed results into the CEO business impact module to quantify revenue uplift.
 
 ### 🎯 MaxDiff Feature Prioritization for SaaS
-A B2B SaaS product has 12 candidate features but budget for 3. Use `design_maxdiff()` to generate balanced choice sets, survey 200+ target users, then analyze with `analyze_maxdiff()` for MNL-derived utility scores. Combine with JTBD opportunity scores from the JTBD skill to cross-validate priorities.
+A B2B SaaS product has 12 candidate features but budget for 3. Use `design_maxdiff()` to generate balanced choice sets, survey 200+ target users, then analyze the responses for MNL-derived utility scores. Combine with JTBD opportunity scores from the JTBD skill to cross-validate priorities.
 
 ### 📊 Quarterly UX Health Report
 A product team needs a recurring research cadence. Each quarter: (1) run CSat survey with `design_csat_survey()` + `analyze_csat()` for Top-2-Box trends, (2) refresh HEART metrics, (3) `generate_report()` with full CEO analysis. Stakeholders get a consistent, comparable quarterly pulse.
@@ -552,11 +552,11 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.83)**: Added "Which Method Should I Use?" decision guide, added A/B result interpretation example, improved Pro Tips with ecosystem cross-reference.
+**Latest (v2.3.86)**: Repo maintenance — synced versions across all files, fixed `__version__` in `__init__.py`, aligned Python version badge (3.8+), added Recommended Learning Path, enhanced ecosystem cross-references.
 
-**Previous (v2.3.82)**: Added Version History section, standardized Chinese Extended Ecosystem formatting, improved cross-skill collaboration references.
+**Previous (v2.3.85)**: Added "Which Method Should I Use?" decision guide and A/B interpretation example.
 
-**Previous (v2.3.81)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
+**Previous (v2.3.84)**: Added bilingual quick-start checklist and pro tips to USAGE.md.
 
 ## 📚 Resources
 

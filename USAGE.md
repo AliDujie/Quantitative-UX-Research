@@ -55,13 +55,7 @@ result = qx.analyze_ab_test("Control", 5000, 1750, "Treatment", 5000, 1900)
 
 ```python
 # Design balanced choice sets
-maxdiff = qx.design_maxdiff(
-    "Feature Priorities",
-    ["Fast Search", "Price Alerts", "Loyalty Tiers", "Smart Recommendations"]
-)
-
-# Analyze responses (MNL estimation)
-analysis = qx.analyze_maxdiff(responses)
+analysis = qx.design_maxdiff("Feature Priorities", ["Fast Search", "Price Alerts", "Loyalty Tiers", "Smart Recommendations"])
 ```
 
 ### 4. CSat Survey / CSat 满意度
@@ -94,7 +88,7 @@ resources = qx.generate_resource_estimate(headcount=3, budget=100000)
 |----------|------|------|
 | HEART dashboard setup | Define goals → Choose metrics → Report | `build_heart_framework()` → `generate_report()` |
 | A/B test design | Sample size → Run experiment → Analyze | `calculate_ab_sample_size()` → `analyze_ab_test()` |
-| Feature prioritization | MaxDiff design → Analyze → Report | `design_maxdiff()` → `analyze_maxdiff()` |
+| Feature prioritization | MaxDiff design → Report | `design_maxdiff()` → `generate_report()` |
 | Quarterly UX health | CSat → HEART refresh → CEO report | `analyze_csat()` → `build_heart_framework()` → `generate_report(include_ceo_analysis=True)` |
 
 ## 🔗 Ecosystem Integration / 生态协作

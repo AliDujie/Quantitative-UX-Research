@@ -147,10 +147,10 @@ heart = skill.build_heart_framework()
 sample = skill.calculate_ab_sample_size(baseline=0.10, mde=0.02)
 
 # MaxDiff 优先级分析
-maxdiff = skill.run_maxdiff(items=["功能A", "功能B", "功能C"], n_respondents=200)
+maxdiff = skill.design_maxdiff("功能优先级", ["功能A", "功能B", "功能C"])
 
 # CSat 调查设计
-csat = skill.design_csat(product="核心功能")
+csat = skill.design_csat_survey("核心功能满意度")
 ```
 
 > 💡 **5 分钟上手**: `from quantux import QuantUXSkill` → 纯标准库，零依赖，开箱即用。
@@ -233,7 +233,7 @@ Quantitative-UX-Research/
 
 ### 5.1 安装与依赖
 
-纯 Python 实现，无外部依赖，仅需 Python 3.9+。
+纯 Python 实现，无外部依赖，仅需 Python 3.8+。
 
 ```bash
 import sys; sys.path.insert(0, "/path/to/Quantitative-UX-Research")
