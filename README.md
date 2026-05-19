@@ -309,6 +309,7 @@ story = swd.build_story(protagonist="Product Committee", imbalance="New design i
 | MaxDiff 排序 | [VPD](https://github.com/AliDujie/value-proposition-design) 优先级计算 | `vpd.calculate_priority(maxdiff_results)` |
 | CSat 趋势分析 | [Persona](https://github.com/AliDujie/web-persona-skill) 角色验证 | `persona.add_metric(metric="CSat", target=4.2)` |
 | 研究报告 | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 机会验证 | `jtbd.score_opportunity()` cross-validated |
+| UX 发现 | [UDM](https://github.com/AliDujie/universal-design-methods) 定性语境 | `udm.generate_report()` enriched with quant data |
 
 ### ⏱️ 5-Minute Quick-Start Checklist
 
