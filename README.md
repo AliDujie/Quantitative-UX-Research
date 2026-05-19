@@ -317,6 +317,8 @@ story = swd.build_story(protagonist="Product Committee", imbalance="New design i
 | 研究报告 | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 机会验证 | `jtbd.score_opportunity()` cross-validated |
 | UX 发现 | [UDM](https://github.com/AliDujie/universal-design-methods) 定性语境 | `udm.generate_report()` enriched with quant data |
 
+**Upstream → QuantUX flow**: Persona 角色假设 → QuantUX 行为数据验证 → 角色精化；UDM 定性发现 → QuantUX 统计验证；JTBD 机会分数 → QuantUX MaxDiff 优先级验证；VPD 实验假设 → QuantUX A/B 测试验证
+
 ### ⏱️ 5-Minute Quick-Start Checklist / 5 分钟快速开始检查清单
 
 | ✅ Step / 步骤 | English / 英文 | 中文 |
@@ -565,6 +567,13 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
 - [references/](references/) — Method reference guides (HEART, CSat, MaxDiff, A/B testing, cross-skill validation)
+
+### 📖 Recommended Learning Path
+
+1. **Start with the README** — Quick start + 30-second example
+2. **Read USAGE.md** — Detailed workflows for each capability
+3. **Explore references/** — Deep dive into HEART framework, CSat methods, and statistical analysis
+4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline](#-complete-pipeline-example-all-6-skills-end-to-end))
 
 ## 📄 License
 
