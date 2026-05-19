@@ -109,7 +109,7 @@ ctx = swd.build_context(audience="产品VP", cta="批准优化预算")
 - [ ] **CSat 调查** — `skill.design_csat_survey("满意度调查")`
 - [ ] **完整报告** — `skill.generate_report("研究报告", include_ceo_analysis=True)`
 
-[English](#english) | [中文](#中文说明)
+[English](README.md#quick-start-5-minutes) | [中文](#中文说明)
 
 ## 🌟 为什么选择 QuantUX？
 
