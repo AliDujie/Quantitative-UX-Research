@@ -228,9 +228,9 @@ Persona → JTBD/UDM → QuantUX → VPD → SWD → STM
 |-------|--------|---------------|
 | UDM (qualitative hypotheses) | QuantUX A/B validation | UDM findings → QuantUX experiment design |
 | JTBD (opportunity scores) | QuantUX MaxDiff validation | JTBD Jobs → QuantUX priority ranking |
-| VPD (value hypotheses) | QuantUX experiment testing | VPD canvas → QuantUX A/B test |
-| Persona (behavior hypotheses) | QuantUX behavior verification | Persona segments → QuantUX analysis |
-| QuantUX (analysis results) | SWD data storytelling | QuantUX results → SWD executive report |
+| VPD (value hypotheses) | QuantUX experiment testing | `quantux.analyze_ab_test("Control", n, conv, "Treatment", n, conv)` |
+| Persona (behavior hypotheses) | QuantUX behavior verification | Persona segments → HEART metrics per segment |
+| QuantUX (analysis results) | SWD data storytelling | `swd.build_story(evidence=ab_result)` → SWD executive report |
 
 ### 🔀 Complete Pipeline Example: All 6 Skills End-to-End
 
