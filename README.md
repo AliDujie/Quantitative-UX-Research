@@ -2,7 +2,7 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.81-blue)
+![Version](https://img.shields.io/badge/version-2.3.83-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -420,6 +420,20 @@ q = QuantUXSkill("Product")    # A/B test + MaxDiff validation
 s = SWDSkill("Q1 Report")      # Executive data story
 ```
 
+## 🧭 Which QuantUX Method Should I Use?
+
+| Your Question | Use This Method | Quick Call |
+|---------------|----------------|------------|
+| "What metrics should we track?" | **HEART Framework** | `build_heart_framework()` |
+| "How many users do I need?" | **A/B Sample Size** | `calculate_ab_sample_size(baseline, mde)` |
+| "Is the new version better?" | **A/B Test Analysis** | `analyze_ab_test(control, n, conv, treatment, n, conv)` |
+| "Which feature matters most?" | **MaxDiff** | `design_maxdiff(name, items)` |
+| "Are users satisfied?" | **CSat Survey** | `design_csat_survey()` + `analyze_csat()` |
+| "What paths do users take?" | **Log Sequence** | `analyze_logs(sessions)` |
+| "What should we research next?" | **Research Planning** | `generate_research_plan()` |
+
+> 💡 **Rule of thumb**: Start with HEART to define what matters, then use A/B or MaxDiff to validate. End with CSat to track trends.
+
 ## 📋 When NOT to Use QuantUX
 
 - **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
@@ -484,7 +498,17 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 - **MaxDiff over ratings**: For feature prioritization, MaxDiff forced-choice surveys avoid the "everything is important" trap of rating scales
 - **Zero dependency advantage**: Unlike scipy/numpy alternatives, QuantUX runs in any minimal Python environment — perfect for sandboxed agent runtimes
 - **Effect size > p-value**: A statistically significant result with 0.1% lift isn't business-significant. Always check confidence intervals and practical impact
+- **Quantify qual findings**: After [UDM](https://github.com/AliDujie/universal-design-methods) interviews surface hypotheses, QuantUX turns "users seem confused" into "task success rate: 42% → target 70%"
 - **Chain with ecosystem**: JTBD opportunity → QuantUX validation → [SWD](https://github.com/AliDujie/storytelling-with-data) presentation → [VPD](https://github.com/AliDujie/value-proposition-design) value mapping → [UDM](https://github.com/AliDujie/universal-design-methods) qualitative context → [Persona](https://github.com/AliDujie/web-persona-skill) user segments
+
+### 🔍 Interpreting Your First A/B Result
+```python
+result = skill.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
+# Check these 3 things:
+# 1. p_value < 0.05? → Statistically significant
+# 2. CI excludes 0? → Directionally reliable
+# 3. Effect size meaningful? → Business-significant (not just statistical)
+```
 
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
@@ -520,7 +544,9 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.82)**: Added Version History section, standardized Chinese Extended Ecosystem formatting, improved cross-skill collaboration references.
+**Latest (v2.3.83)**: Added "Which Method Should I Use?" decision guide, added A/B result interpretation example, improved Pro Tips with ecosystem cross-reference.
+
+**Previous (v2.3.82)**: Added Version History section, standardized Chinese Extended Ecosystem formatting, improved cross-skill collaboration references.
 
 **Previous (v2.3.81)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
