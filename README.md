@@ -447,7 +447,21 @@ s = SWDSkill("Q1 Report")      # Executive data story
 | Trustworthy Online Controlled Experiments | Kohavi, Tang & Xu (2020) | A/B testing methodology |
 | Quantifying the User Experience | Sauro & Lewis | UX quantification methods |
 
+### 🔗 扩展生态 (Extended Ecosystem)
+
+QuantUX 定量数据可与管理技能结合，将研究数据转化为战略决策：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | HEART 指标 → CEO 战略决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 定量 UX 趋势 → CPO 产品战略 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 增长数据 → CMO 渠道策略 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 验证报告 → CEO 计划审查 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 技术指标 → CTO 技术投资决策 |
+
 ## 🔗 Extended Ecosystem
+
+QuantUX quantitative data can be combined with management skills to turn research data into strategic decisions:
 
 | Extended Skill | Collaboration Scenario |
 |---------------|----------------------|
@@ -521,6 +535,14 @@ MaxDiff forces trade-offs — respondents choose the *most* and *least* importan
 
 **Q: How does QuantUX integrate with other AliDujie skills?**
 QuantUX is the quantitative validation engine. Use it after [UDM](https://github.com/AliDujie/universal-design-methods) generates qualitative hypotheses, after [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) identifies high-opportunity jobs, and before [SWD](https://github.com/AliDujie/storytelling-with-data) presents results to stakeholders.
+
+## 📊 Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for full release notes.
+
+**Latest (v2.3.82)**: Added Version History section, standardized Chinese Extended Ecosystem formatting, improved cross-skill collaboration references.
+
+**Previous (v2.3.81)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
 ## 📚 Resources
 
