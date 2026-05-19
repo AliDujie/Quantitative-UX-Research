@@ -99,19 +99,42 @@ resources = qx.generate_resource_estimate(headcount=3, budget=100000)
 
 ## 🔗 Ecosystem Integration / 生态协作
 
+QuantUX is the **quantitative validation core** of the AliDujie UX Research Ecosystem:
+
+| Skill | Role | How It Connects with QuantUX |
+|-------|------|----------------------------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Methodology core | UDM qualitative findings → QuantUX hypothesis validation via A/B tests and surveys |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Demand insight | JTBD opportunity scores → QuantUX MaxDiff validates feature priorities |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | User definition | Persona behavioral hypotheses → QuantUX log analysis validates segments |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Product-market fit | VPD experiment hypotheses → QuantUX A/B tests validate product-market fit |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data storytelling | QuantUX analysis results → SWD chart selection → executive narrative |
+
+> 💡 **Recommended chain:** Persona (who) → JTBD (what Jobs) → UDM (qualitative research) → **QuantUX** (quantitative validation) → VPD (value mapping) → SWD (presentation)
+
+### Cross-Skill Workflow Example / 跨技能工作流示例
+
 ```python
-# JTBD/UDM (qualitative) → QuantUX (quantitative) → SWD (presentation)
 from jtbd import JTBDSkill
 from quantux import QuantUXSkill
 from swd import SWDSkill
+from vpd import VPDSkill
 
-jtbd = JTBDSkill("Product")
+# JTBD identifies high-opportunity Jobs
+jtbd = JTBDSkill("Travel Booking")
 score = jtbd.score_opportunity("Quick booking", struggle=4, alternative=3, market=5, budget=4)
 
-quantux = QuantUXSkill("Product")
+# QuantUX validates with A/B test
+quantux = QuantUXSkill("Travel Booking")
 n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.03)
-ab = quantux.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
+ab = quantux.analyze_ab_test("Old Flow", 5000, 1750, "New Flow", 5000, 1900)
 
+# VPD maps validated needs to value proposition
+vpd = VPDSkill("Travel Booking", "Business Travelers")
+vpd.analyze_canvas(product_name="Travel Booking",
+    jobs=[{"description": "Quick booking"}],
+    pains=[{"description": "Too many steps", "severity": "critical"}])
+
+# SWD presents results to leadership
 swd = SWDSkill("Q1 Report")
 story = swd.build_story(protagonist="Product VP",
     imbalance="Booking takes 90s vs 30s industry standard",
