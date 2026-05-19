@@ -502,3 +502,31 @@ QuantUX 定量数据可与管理层技能结合，将业务指标转化为战略
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX 增长数据 → CMO 渠道与获客策略 |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX 技术指标 → CTO 技术投资决策 |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX 验证结果 → CEO 计划审查与范围调整 |
+
+### 💡 Pro Tips / 专业技巧
+- **HEART first, then A/B**: 先用 HEART 定义指标再设计实验——测错的东西比不测更糟
+- **Reverse working**: 用 `generate_report()` 先展示模拟结果，确认有价值再投入资源
+- **MaxDiff > rating scales**: 功能优先级用 MaxDiff 强制选择，避免"都重要"陷阱
+- **零依赖优势**: 不同于 scipy/numpy 方案，QuantUX 在任何最小 Python 环境中都能运行
+- **效应量 > p 值**: 统计显著但提升 0.1% 没有业务意义——始终看置信区间和实际影响
+- **Chain with ecosystem**: JTBD 机会 → QuantUX 验证 → [SWD](https://github.com/AliDujie/storytelling-with-data) 呈现 → [VPD](https://github.com/AliDujie/value-proposition-design) 价值映射 → [UDM](https://github.com/AliDujie/universal-design-methods) 定性语境 → [Persona](https://github.com/AliDujie/web-persona-skill) 用户细分
+
+### ❓ FAQ
+
+**Q: 需要 scipy 或 numpy 吗？**
+不需要。QuantUX 所有统计计算（卡方、z 检验、MNL 估计、样本量）仅使用 Python 标准库。
+
+**Q: MDE 应该设多少？**
+转化率实验通常 3-5%，UX 指标如任务完成时间 10-15% 比较合理。
+
+**Q: 如何解读 A/B 测试结果？**
+检查三点：(1) 统计显著性 (p < 0.05)，(2) 置信区间（是否排除零？），(3) 实际显著性（效应量对业务有意义吗？）
+
+**Q: 用户量少的产品能用 HEART 吗？**
+可以——只选 2-3 个核心指标而非全部五个维度。HEART 是框架，不是清单。
+
+**Q: MaxDiff 和普通问卷有什么区别？**
+MaxDiff 强制做取舍——受访者从一组中选"最重要"和"最不重要"，避免评分量表中"都重要"的问题。
+
+**Q: 如何与 AliDujie 其他技能集成？**
+QuantUX 是定量验证引擎：在 [UDM](https://github.com/AliDujie/universal-design-methods) 生成定性假设后使用，在 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 识别高机会 Jobs 后验证，在 [SWD](https://github.com/AliDujie/storytelling-with-data) 呈现结果之前运行。
