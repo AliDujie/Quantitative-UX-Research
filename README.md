@@ -2,11 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.88-blue)
+![Version](https://img.shields.io/badge/version-2.3.90-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.90
+
+- **Statistical Power Quick-Ref**: Added sample size cheat sheet for common A/B test scenarios
+- **HEART Metric Examples**: Added concrete HEART metric examples for SaaS/mobile/e-commerce domains
+- **Version Sync**: Aligned version across all files
 
 ## 🆕 What's New in v2.3.88
 
@@ -536,6 +542,28 @@ result = skill.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
 # 3. Effect size meaningful? → Business-significant (not just statistical)
 ```
 
+### 📊 Statistical Power Quick-Ref / 统计功效速查
+
+Common A/B test sample sizes (80% power, α = 0.05, two-tailed):
+
+| Baseline Rate | MDE 2% | MDE 3% | MDE 5% | MDE 10% |
+|--------------|--------|--------|--------|---------|
+| 5% | 29,844 | 13,268 | 4,782 | 1,206 |
+| 10% | 25,838 | 11,478 | 4,145 | 1,046 |
+| 20% | 19,608 | 8,730 | 3,141 | 797 |
+| 35% | 12,970 | 5,771 | 2,084 | 530 |
+| 50% | 10,302 | 4,590 | 1,656 | 421 |
+
+> 📌 Calculate instantly: `skill.calculate_ab_sample_size(baseline=0.35, mde=0.03)` → **5,771** per group.
+
+### 💚 HEART Metric Examples by Domain / 各领域 HEART 指标示例
+
+| Domain | Happiness | Engagement | Adoption | Retention | Task Success |
+|--------|-----------|------------|----------|-----------|--------------|
+| **SaaS** | NPS, CSat | DAU/MAU ratio | Feature activation rate | 90-day retention | Task completion rate |
+| **Mobile App** | App Store rating | Sessions/week | 7-day new user activation | 30-day retention | Checkout success rate |
+| **E-Commerce** | Post-purchase survey | Repeat purchase rate | First-time buyer rate | 6-month retention | Cart abandonment rate |
+
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
 | Pitfall | How QuantUX Helps |
@@ -585,7 +613,9 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.89)**: Repo maintenance — converted "When NOT to Use QuantUX" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+**Latest (v2.3.90)**: Repo maintenance — added Statistical Power Quick-Ref table, added HEART Metric Examples for 3 domains, synced versions across all files.
+
+**Previous (v2.3.89)**: Repo maintenance — converted "When NOT to Use QuantUX" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
 **Previous (v2.3.88)**: Repo maintenance — added Chinese Quick-Start Checklist, added full 6-skill chain invocation example in Pro Tips, added ecosystem Pro Tips.
 
