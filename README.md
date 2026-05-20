@@ -458,6 +458,23 @@ s = SWDSkill("Q1 Report")      # Executive data story
 
 > 💡 **Rule of thumb**: Start with HEART to define what matters, then use A/B or MaxDiff to validate. End with CSat to track trends.
 
+## 🧭 When to Use QuantUX / 什么时候使用 QuantUX
+
+Reach for QuantUX when:
+
+- **You need to validate design decisions with numbers** — A/B tests, statistical significance
+- **You want to measure UX quality objectively** — HEART framework, SUS, CSat scores
+- **You need to prioritize features** — MaxDiff analysis, preference ranking
+- **You're presenting to data-driven stakeholders** — statistically defensible claims
+
+| 场景 | 使用 QuantUX | Use QuantUX When |
+|------|-------------|-------------|
+| A/B 测试样本量计算 | ✅ 自动计算所需用户数 | A/B sample size |
+| HEART 指标体系 | ✅ 5 维度度量构建 | HEART framework |
+| MaxDiff 功能优先级 | ✅ 设计 + 分析 | Feature prioritization |
+| CSat/NPS 满意度分析 | ✅ Top-2-Box + 趋势 | Satisfaction analysis |
+| 统计功效评估 | ✅ 样本量参考表 | Statistical power |
+
 ## 📋 When NOT to Use QuantUX / 什么时候不该用 QuantUX
 
 | Your Need | Recommended Skill |
@@ -494,6 +511,7 @@ QuantUX 定量数据可与管理技能结合，将研究数据转化为战略决
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 定量 UX 趋势 → CPO 产品战略 |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 增长数据 → CMO 渠道策略 |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 验证报告 → CEO 计划审查 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 框架 → QuantUX 验证假设 |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 技术指标 → CTO 技术投资决策 |
 
 ## 🔗 Extended Ecosystem
@@ -507,6 +525,7 @@ QuantUX quantitative data can be combined with management skills to turn researc
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX growth data → CMO channel strategy |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX tech metrics → CTO tech investments |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX validation → CEO plan review |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM frames → QuantUX validates hypotheses |
 
 ## 🤝 Contributing
 
@@ -519,6 +538,9 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 100 design research methods | `UDMSkill` |
 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Evidence-driven user persona creation | `PersonaSkill` |
 | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Executive data storytelling + chart selection | `SWDSkill` |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
