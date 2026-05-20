@@ -186,3 +186,25 @@ QuantUX is the quantitative validation engine — use statistical methods to tes
 
 > 💡 **Better together**: QuantUX validates what UDM discovers qualitatively. Run UDM first to form hypotheses, then QuantUX to confirm with data.
 
+
+## ❓ FAQ / Troubleshooting
+
+**Q: What MDE should I use for `calculate_ab_sample_size()`?**
+For conversion rates, 3-5% is typical (e.g., MDE=0.03 on a 35% baseline). For UX task metrics like time-on-task, 10-15% is reasonable. Avoid setting MDE too small — it inflates sample size beyond practical limits.
+*MDE 设置建议：转化率 3-5%，UX 任务指标 10-15%。MDE 过小会导致样本量超出实际可行范围。*
+
+**Q: `analyze_ab_test()` says "not significant" — what now?**
+Check statistical power first. If your sample size was calculated correctly and results are still not significant, the change likely has no real effect. Don't peek at p-values and keep collecting data (p-hacking). Report the confidence interval — it shows the plausible range of effects.
+*如果样本量计算正确但结果仍不显著，说明改动很可能没有实际效果。报告置信区间比单纯说"不显著"更有信息量。*
+
+**Q: Can QuantUX replace Google Optimize / Optimizely?**
+No — QuantUX handles the statistical calculation (sample size, significance, confidence intervals) but doesn't run the actual A/B test. Use it alongside your experimentation platform for correct design and analysis.
+*QuantUX 处理统计计算（样本量、显著性、置信区间），但不执行实际的 A/B 测试。配合你的实验平台使用。*
+
+**Q: HEART framework — which metrics should I pick?**
+Start with 1-2 metrics per dimension (max 10 total). Pick metrics you can actually measure, not aspirational ones. If you can't reliably track "Happiness" yet, start with Engagement and Task Success.
+*每个维度选 1-2 个指标（最多 10 个）。选你能实际测量的指标，不是理想化的指标。*
+
+**Q: How do I chain QuantUX with the rest of the AliDujie ecosystem?**
+Run UDM qualitative research → form hypotheses → QuantUX validates with A/B or MaxDiff → VPD maps value proposition → SWD presents to executives. See the [Complete Pipeline Example](#-ecosystem-integration) for code.
+*UDM 定性研究→形成假设→QuantUX 用 A/B 或 MaxDiff 验证→VPD 映射价值主张→SWD 汇报高管。*
