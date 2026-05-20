@@ -558,6 +558,21 @@ MaxDiff forces trade-offs — respondents choose the *most* and *least* importan
 **Q: How does QuantUX integrate with other AliDujie skills?**
 QuantUX is the quantitative validation engine. Use it after [UDM](https://github.com/AliDujie/universal-design-methods) generates qualitative hypotheses, after [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) identifies high-opportunity jobs, and before [SWD](https://github.com/AliDujie/storytelling-with-data) presents results to stakeholders.
 
+## ✅ Best Practices / 最佳实践
+
+1. **HEART before A/B** — Always `build_heart_framework()` to define what success looks like before running `design_ab_test()`. Without clear HEART metrics, A/B tests optimize for noise.
+2. **Sample size matters** — Use `calculate_ab_sample_size()` before launching experiments. Underpowered tests produce false positives; overpowered tests waste time and users.
+3. **MaxDiff > Likert for priorities** — When ranking features, `design_maxdiff()` forces trade-offs and produces ratio-level data. Likert scales produce "everything is important" results that don't help.
+4. **CSat Top-2-Box as the north star** — Track Top-2-Box (Very Satisfied + Somewhat Satisfied) over time. Individual question scores fluctuate; T2B is the reliable trend indicator.
+5. **Chain with UDM upstream** — Qualitative research (UDM) generates hypotheses about what to measure. QuantUX validates them at scale. The qual→quant handoff is where you get both depth and rigor.
+
+## ⚠️ Limitations / 局限性
+
+- **Quantitative, not qualitative** — QuantUX excels at measuring *what* and *how much*, but cannot explain *why*. Pair with UDM's qualitative methods for complete understanding.
+- **Statistical literacy assumed** — The skill provides p-values, confidence intervals, and effect sizes, but interpreting them correctly requires basic statistical knowledge.
+- **Requires real data** — All analytical capabilities (HEART scoring, A/B testing, MaxDiff, CSat) require actual user data. The skill structures analysis but cannot generate synthetic user behavior.
+- **Bilingual documentation only** — Pro Tips and guides are provided in CN/EN only; localization to other languages requires community contributions.
+
 ## 📊 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
