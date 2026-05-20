@@ -8,6 +8,11 @@
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
+## 🆕 What's New in v2.3.88
+
+- **Chinese Quick-Start Checklist**: Added bilingual 5-minute setup guide for Chinese-speaking teams
+- **Ecosystem Pro Tips**: Added full 6-skill chain invocation example in Pro Tips section
+
 ## 🆕 What's New in v2.3.87
 
 - **Ecosystem Pipeline Enhancement**: Added explicit SWD→VPD→JTBD backward-reference links in cross-skill sections
@@ -591,3 +596,13 @@ MIT License — see [LICENSE](LICENSE) for details.
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
 [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
+
+### ⏱️ 5 分钟快速开始检查清单 / 5-Minute Quick-Start Checklist
+
+- [ ] **安装**: `cp -r Quantitative-UX-Research /your/agent/skills/`
+- [ ] **初始化**: `from quantux import QuantUXSkill; qx = QuantUXSkill("你的产品")`
+- [ ] **HEART**: `qx.build_heart_framework()` — 定义 Happiness/Engagement/Adoption/Retention/Task Success
+- [ ] **A/B 样本量**: `qx.calculate_ab_sample_size(baseline, mde)` — 计算实验所需用户数
+- [ ] **MaxDiff**: `qx.design_maxdiff(name, items)` — 功能优先级排序
+- [ ] **CSat**: `qx.analyze_csat()` — 满意度分析 + Top-2-Box
+- [ ] **生态串联**: Persona → JTBD → UDM → **QuantUX** → VPD → SWD
