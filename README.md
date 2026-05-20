@@ -2,11 +2,16 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.86-blue)
+![Version](https://img.shields.io/badge/version-2.3.87-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.87
+
+- **Ecosystem Pipeline Enhancement**: Added explicit SWD→VPD→JTBD backward-reference links in cross-skill sections
+- **Pro Tips Refresh**: Expanded chain-with-ecosystem section with full 6-skill invocation example
 
 ## 🆕 What's New in v2.3.86
 
@@ -552,7 +557,9 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.86)**: Repo maintenance — synced versions across all files, fixed `__version__` in `__init__.py`, aligned Python version badge (3.8+), added Recommended Learning Path, enhanced ecosystem cross-references.
+**Latest (v2.3.87)**: Repo maintenance — added ecosystem pipeline backward-references, expanded cross-skill Pro Tips, unified version consistency.
+
+**Previous (v2.3.86)**: Repo maintenance — synced versions across all files, fixed `__version__` in `__init__.py`, aligned Python version badge (3.8+), added Recommended Learning Path, enhanced ecosystem cross-references.
 
 **Previous (v2.3.85)**: Added "Which Method Should I Use?" decision guide and A/B interpretation example.
 
