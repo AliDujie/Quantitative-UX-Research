@@ -577,7 +577,7 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.87)**: Repo maintenance — added ecosystem pipeline backward-references, expanded cross-skill Pro Tips, unified version consistency.
+**Latest (v2.3.88)**: Repo maintenance — added Chinese Quick-Start Checklist, added full 6-skill chain invocation example in Pro Tips, added ecosystem Pro Tips.
 
 **Previous (v2.3.86)**: Repo maintenance — synced versions across all files, fixed `__version__` in `__init__.py`, aligned Python version badge (3.8+), added Recommended Learning Path, enhanced ecosystem cross-references.
 
