@@ -168,3 +168,21 @@ python quantux/tests/test_all.py
    Use HEART when you need a holistic product health dashboard or when exploring which dimensions need improvement. Use A/B testing when you have a specific change to validate (e.g., a new checkout flow). HEART tells you *what* to measure; A/B tells you *whether* a change worked. They're complementary, not competing.
    *HEART 用于全局健康诊断，A/B 用于验证具体改动。HEART 告诉你「测什么」，A/B 告诉你「改没改对」——二者互补而非替代。*
 
+5. **Report with CEO analysis for stakeholder buy-in**
+   Always use `include_ceo_analysis=True` when presenting UX metrics to executives. It translates "task success improved 12%" into "revenue impact: $2.3M" — the language that gets budgets approved.
+   *向高管汇报时务必使用 `include_ceo_analysis=True`，把「任务成功率提升 12%」翻译成「收入影响：230 万美元」——这是能拿到预算的语言。*
+
+## ⛔ When NOT to Use QuantUX / 何时不使用
+
+QuantUX is the quantitative validation engine — use statistical methods to test hypotheses. Use other AliDujie skills when:
+
+| Need | Use Instead | Why |
+|------|-------------|-----|
+| Choose research methods, design interviews | [UDM](https://github.com/AliDujie/universal-design-methods) | 100 methods, interview guides, usability tests |
+| Create user personas, segmentation | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Evidence-driven persona creation |
+| Understand user Jobs, opportunity scoring | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | 4-school fusion, Switch interviews |
+| Value proposition canvas, PMF | [VPD](https://github.com/AliDujie/value-proposition-design) | Canvas analysis, Blue Ocean strategy |
+| Data visualization, executive stories | [SWD](https://github.com/AliDujie/storytelling-with-data) | Chart selection, three-act narratives |
+
+> 💡 **Better together**: QuantUX validates what UDM discovers qualitatively. Run UDM first to form hypotheses, then QuantUX to confirm with data.
+
