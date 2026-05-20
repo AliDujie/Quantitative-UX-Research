@@ -452,14 +452,22 @@ s = SWDSkill("Q1 Report")      # Executive data story
 
 > 💡 **Rule of thumb**: Start with HEART to define what matters, then use A/B or MaxDiff to validate. End with CSat to track trends.
 
-## 📋 When NOT to Use QuantUX
+## 📋 When NOT to Use QuantUX / 什么时候不该用 QuantUX
 
-- **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
-- **Understanding user Jobs-to-be-Done** → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
-- **Creating user personas** → [Web Persona](https://github.com/AliDujie/web-persona-skill)
-- **Value proposition canvas analysis** → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design)
-- **Data visualization & storytelling** → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
-- **Structural business framework analysis** → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model)
+| Your Need | Recommended Skill |
+|-----------|------------------|
+| Choosing research methods or designing interviews | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| Understanding user Jobs-to-be-Done | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| Creating user personas / user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| Value proposition canvas analysis | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
+| 选择研究方法、设计访谈 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 理解用户 Jobs、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 创建用户画像 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| 价值主张画布分析 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 数据可视化与故事化呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 商业框架分析 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 ## 📚 References
 
@@ -577,7 +585,9 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.88)**: Repo maintenance — added Chinese Quick-Start Checklist, added full 6-skill chain invocation example in Pro Tips, added ecosystem Pro Tips.
+**Latest (v2.3.89)**: Repo maintenance — converted "When NOT to Use QuantUX" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+
+**Previous (v2.3.88)**: Repo maintenance — added Chinese Quick-Start Checklist, added full 6-skill chain invocation example in Pro Tips, added ecosystem Pro Tips.
 
 **Previous (v2.3.86)**: Repo maintenance — synced versions across all files, fixed `__version__` in `__init__.py`, aligned Python version badge (3.8+), added Recommended Learning Path, enhanced ecosystem cross-references.
 
