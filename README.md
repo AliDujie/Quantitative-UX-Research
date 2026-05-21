@@ -2,11 +2,18 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.92-blue)
+![Version](https://img.shields.io/badge/version-2.3.93-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.93
+
+- **Duplicate Changelog Entry Fixed**: Merged duplicate v2.3.91 sections into one consolidated entry
+- **HEART Try-It-Now Example**: Added instant runnable example after "Why Teams Choose QuantUX" table
+- **Advisor Cross-Reference Enhancement**: Added explicit CTO Advisor + Plan CEO Review cross-refs in Extended Ecosystem
+- **Ecosystem Consistency**: Verified cross-references across all 6 AliDujie skills
 
 ## 🆕 What's New in v2.3.92
 
@@ -18,14 +25,10 @@
 
 ## 🆕 What's New in v2.3.91
 
-- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
-- **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
-- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.3.91
-
 - **Duplicate Entry Fix**: Removed 3 duplicate skill entries from Related Skills table
 - **Cross-Reference Enhancement**: Added full ecosystem ASCII diagram to Ecosystem Integration section
+- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
+- **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
 - **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.3.90
@@ -69,6 +72,13 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Satisfaction Tracking | Scattered survey data | Standardized CSat scoring + Top-2-Box trends |
 | Business Reporting | "Users say they like it" — qualitative | Business impact + ROI in business language |
 | Stakeholder Alignment | "We need more data" — endless iterations | Reverse working: show simulated results before investing |
+
+> 💡 **Try It Now / 立即试用** — HEART framework in 3 lines:
+> ```python
+> from quantux import QuantUXSkill
+> skill = QuantUXSkill()
+> skill.heart_framework(domain="saas")  # Instant HEART metrics for your product
+> ```
 
 ## 🌟 Why QuantUX?
 

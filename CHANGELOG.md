@@ -1,3 +1,9 @@
+## v2.3.93 (2026-05-22)
+- Fixed duplicate v2.3.91 changelog section (merged two entries into one)
+- Added HEART Try-It-Now instant example after "Why Teams Choose QuantUX" table
+- Added explicit CTO Advisor + Plan CEO Review cross-references in Extended Ecosystem section
+- Version bump across README/SKILL.md/pyproject.toml/__init__.py
+
 ## v2.3.92 (2026-05-22)
 - SKILL.md frontmatter: synced version to 2.3.92, added `author` field, moved badge outside YAML boundary
 - Repo maintenance: verified cross-references across all 6 AliDujie skills
