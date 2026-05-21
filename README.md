@@ -10,6 +10,14 @@
 
 ## 🆕 What's New in v2.3.92
 
+- **SKILL.md Frontmatter Fix**: Synced version to 2.3.92, added `author` field, fixed badge placement
+- **SKILL.md Badge Leak Fix**: Moved markdown badge outside YAML frontmatter boundary (invalid YAML)
+- **Ecosystem Consistency**: Verified cross-references across all 6 AliDujie skills
+- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
+- **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
+
+## 🆕 What's New in v2.3.91
+
 - **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
 - **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
 - **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
