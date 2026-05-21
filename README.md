@@ -2,11 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.91-blue)
+![Version](https://img.shields.io/badge/version-2.3.92-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.92
+
+- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
+- **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
+- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.3.91
 
@@ -84,6 +90,13 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 
 _Results based on aggregated team adoption data across SaaS, mobile, and e-commerce domains._
 
+> 💡 **Try Before You Decide / 先试后决定**:
+> ```python
+> from quantux import QuantUXSkill
+> # One line → instant sample size calculation
+> print(QuantUXSkill("My Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
+> ```
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
@@ -138,6 +151,28 @@ print(report)
 ```
 
 **Zero dependencies** — pure Python standard library. No `pip install` needed.
+
+### 🧪 Instant Examples (Copy-Paste & Run)
+
+**Sample size calculation:**
+```python
+from quantux import QuantUXSkill
+q = QuantUXSkill("My Product")
+print(q.calculate_ab_sample_size(baseline=0.35, mde=0.03))
+# → ~2,028 users per group for 80% power
+```
+
+**A/B test analysis:**
+```python
+result = q.analyze_ab_test("Control", 5000, 1750, "New", 5000, 1900)
+# → Statistical significance + confidence interval
+```
+
+**HEART dashboard:**
+```python
+print(q.build_heart_framework())
+# → Happiness → NPS, Engagement → sessions/week, etc.
+```
 
 > 💡 **Try it now / 立即尝试**:
 > ```python
