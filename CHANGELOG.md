@@ -1,3 +1,8 @@
+## v2.3.92 (2026-05-22)
+- SKILL.md frontmatter: synced version to 2.3.92, added `author` field, moved badge outside YAML boundary
+- Repo maintenance: verified cross-references across all 6 AliDujie skills
+- Updated version across README/SKILL.md/pyproject.toml/__init__.py
+
 ## v2.3.91 (2026-05-21)
 - Fixed duplicate skill entries in Related Skills table (3 duplicates removed)
 - Enhanced ecosystem cross-references with ASCII pipeline diagram
