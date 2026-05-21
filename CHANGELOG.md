@@ -1,3 +1,13 @@
+## v2.3.91 (2026-05-21)
+- Fixed duplicate skill entries in Related Skills table (3 duplicates removed)
+- Enhanced ecosystem cross-references with ASCII pipeline diagram
+- Version sync across README/SKILL.md/pyproject.toml/__init__.py
+
+## v2.3.90 (2026-05-20)
+- Added Statistical Power Quick-Ref table
+- Added HEART Metric Examples for 3 domains
+- Version sync across all files
+
 ## v2.3.86 (2026-05-19)
 - Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
 - Added practical A/B test interpretation workflow example
