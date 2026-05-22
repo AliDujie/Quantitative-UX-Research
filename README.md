@@ -2,11 +2,15 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.93-blue)
+![Version](https://img.shields.io/badge/version-2.3.94-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.95
+
+- **Version Sync**: Aligned README badge and SKILL.md frontmatter to 2.3.94 (matching __init__.py and pyproject.toml)
 
 ## 🆕 What's New in v2.3.94
 
