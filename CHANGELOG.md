@@ -1,3 +1,7 @@
+## v2.3.95 (2026-05-22)
+- Repo maintenance: version sync across README badge, SKILL.md, pyproject.toml, __init__.py
+- Ecosystem cross-reference verification across all 6 AliDujie skills
+
 ## v2.3.93 (2026-05-22)
 - Fixed duplicate v2.3.91 changelog section (merged two entries into one)
 - Added HEART Try-It-Now instant example after "Why Teams Choose QuantUX" table
