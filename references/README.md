@@ -13,6 +13,7 @@ This directory contains methodology reference documents for the Quantitative UX 
 | `ab-testing.md` | A/B 测试设计原则与最佳实践 |
 | `maxdiff-guide.md` | MaxDiff 优先级排序方法指南 |
 | `log-analysis.md` | 日志序列分析方法论 |
+| `06-research-planning.md` | 研究规划方法论、请求诊断框架、方案设计模板、模拟结果预览策略 |
 | `07-cross-skill-validation.md` | QuantUX 跨技能验证模式（UDM/JTBD/VPD/Persona → QuantUX 工作流） |
 | `08-ecosystem-collaboration.md` | QuantUX 跨技能完整协作指南（双向数据流 + Python 调用示例） |
 

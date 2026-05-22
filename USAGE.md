@@ -102,8 +102,9 @@ QuantUX is the **quantitative validation core** of the AliDujie UX Research Ecos
 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | User definition | Persona behavioral hypotheses → QuantUX log analysis validates segments |
 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Product-market fit | VPD experiment hypotheses → QuantUX A/B tests validate product-market fit |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data storytelling | QuantUX analysis results → SWD chart selection → executive narrative |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic frameworks | QuantUX data insights → STM strategic analysis → decision recommendations |
 
-> 💡 **Recommended chain:** Persona (who) → JTBD (what Jobs) → UDM (qualitative research) → **QuantUX** (quantitative validation) → VPD (value mapping) → SWD (presentation)
+> 💡 **Recommended chain:** Persona (who) → JTBD (what Jobs) → UDM (qualitative research) → **QuantUX** (quantitative validation) → VPD (value mapping) → SWD (presentation) → STM (strategic decision)
 
 ### Cross-Skill Workflow Example / 跨技能工作流示例
 
@@ -183,6 +184,7 @@ QuantUX is the quantitative validation engine — use statistical methods to tes
 | Understand user Jobs, opportunity scoring | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | 4-school fusion, Switch interviews |
 | Value proposition canvas, PMF | [VPD](https://github.com/AliDujie/value-proposition-design) | Canvas analysis, Blue Ocean strategy |
 | Data visualization, executive stories | [SWD](https://github.com/AliDujie/storytelling-with-data) | Chart selection, three-act narratives |
+| Structured business analysis frameworks | [STM](https://github.com/AliDujie/Structured-Thinking-Model) | McKinsey/BCG frameworks, strategic decision trees |
 
 > 💡 **Better together**: QuantUX validates what UDM discovers qualitatively. Run UDM first to form hypotheses, then QuantUX to confirm with data.
 
