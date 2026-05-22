@@ -2,21 +2,16 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.95-blue)
+![Version](https://img.shields.io/badge/version-2.3.96-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
-## 🆕 What's New in v2.3.95
+## 🆕 What's New in v2.3.96
 
-- **Repo Maintenance**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py
-- **Ecosystem Cross-Reference Verification**: Verified all 6-skill pipeline links across AliDujie skills
-- **Version Bump**: Synced version to 2.3.95
-
-## 🆕 What's New in v2.3.95
-
-- **Version Sync**: Aligned README badge and SKILL.md frontmatter to 2.3.94 (matching __init__.py and pyproject.toml)
+- **Repo Maintenance**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills
+- **Version Bump**: Synced version to 2.3.96
 
 ## 🆕 What's New in v2.3.94
 
