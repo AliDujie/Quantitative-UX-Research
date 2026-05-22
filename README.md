@@ -8,6 +8,13 @@
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
+## 🆕 What's New in v2.3.94
+
+- **Structured Thinking Model Cross-Reference**: Added explicit STM skill link in ecosystem footer and pipeline diagram
+- **Ecosystem Pipeline Enhancement**: Added forward/backward reference arrows showing STM→QuantUX strategic analysis loop
+- **References Directory Enhancement**: Added explicit quantux/ source link to Resources section
+- **Version Bump**: Synced version to 2.3.94 across README/SKILL.md/pyproject.toml/__init__.py
+
 ## 🆕 What's New in v2.3.93
 
 - **Duplicate Changelog Entry Fixed**: Merged duplicate v2.3.91 sections into one consolidated entry
@@ -744,6 +751,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
 - [references/](references/) — Method reference guides (HEART, CSat, MaxDiff, A/B testing, cross-skill validation)
+- [quantux/](quantux/) — Core Python module source code
 
 ### 📖 Recommended Learning Path
 
