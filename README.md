@@ -69,6 +69,10 @@
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023). A complete toolkit for **quantitative UX research**, providing **10 executable capabilities** — from HEART framework and CSat surveys to log analysis, MaxDiff, A/B testing, research planning, and CEO-level business impact assessment.
 
+## 🎯 Why Teams Choose QuantUX
+
+*New here?* QuantUX helps you **validate design decisions with data** — A/B tests, HEART metrics, MaxDiff prioritization, CSat surveys. Based on Jeff Sauro & James R. Lewis (2023).
+
 ## 💼 Why Teams Choose QuantUX
 
 | Challenge | Without QuantUX | With QuantUX |
@@ -84,7 +88,7 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 > ```python
 > from quantux import QuantUXSkill
 > skill = QuantUXSkill()
-> skill.heart_framework(domain="saas")  # Instant HEART metrics for your product
+> skill.build_heart_framework(domain="saas")  # Instant HEART metrics for your product
 > ```
 
 ## 🌟 Why QuantUX?
@@ -263,6 +267,40 @@ ROI report → SWD.build_story() → Executive presentation
 - **Zero dependencies**: Unlike scipy/numpy-based alternatives, QuantUX runs in any minimal Python environment — perfect for sandboxed agent runtimes
 - **Reverse working**: Use `generate_report()` with simulated results *before* running experiments to align stakeholders on what success looks like
 - **Cross-skill triangulation**: Combine JTBD opportunity scores with QuantUX MaxDiff rankings for dual-method priority validation
+
+## 🍽️ Quick Recipes / 快速食谱
+
+### Recipe: "I need to design an A/B test" (10 min)
+```python
+from quantux import QuantUXSkill
+qx = QuantUXSkill("My Product")
+
+# Step 1: Define what to measure with HEART
+heart = qx.build_heart_framework()
+
+# Step 2: Calculate sample size needed
+n = qx.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+print(f"Need {n} users per group for 80% power")
+
+# Step 3: After experiment, analyze results
+result = qx.analyze_ab_test("Control", 5000, 1750, "Treatment", 5000, 1900)
+# → p-value, confidence intervals, effect size
+```
+
+### Recipe: "Which feature should we build first?" (1 hour)
+```python
+qx = QuantUXSkill("SaaS Product")
+
+# MaxDiff forces real trade-offs — no "everything is important"
+maxdiff = qx.design_maxdiff(
+    "Feature Priorities",
+    ["Dark Mode", "API Access", "Bulk Export", "Real-time Collaboration", "Mobile App"]
+)
+# → Utility scores that actually rank features
+```
+
+> 💡 **Pro Tip**: Start with HEART to define *what* to measure. An A/B test on the wrong metric is worse than no test. See [HEART Framework](#-heart-framework) for guidance.
+
 
 ## 🧩 10 Capabilities
 
