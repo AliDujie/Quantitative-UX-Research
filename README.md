@@ -311,6 +311,20 @@ maxdiff = qx.design_maxdiff(
 
 > 💡 **Pro Tip**: Start with HEART to define *what* to measure. An A/B test on the wrong metric is worse than no test. See [HEART Framework](#-heart-framework) for guidance.
 
+### Recipe: "Are our users satisfied this quarter?" (30 min)
+```python
+from quantux import QuantUXSkill
+qx = QuantUXSkill("My Product")
+
+# Design + run CSat survey
+survey = qx.design_csat_survey("Q1 Satisfaction", mechanism="in_product")
+analysis = qx.analyze_csat("Q1", total=500, scores={1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
+# → CSat: 76% Top-2-Box, Trend: improving
+
+# Track trend over quarters
+qx.analyze_csat("Q2", total=520, scores={1: 15, 2: 25, 3: 70, 4: 210, 5: 200})
+# → Top-2-Box: 79%, +3pp QoQ improvement
+```
 
 ## 🧩 10 Capabilities
 
