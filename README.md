@@ -2,18 +2,16 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.100-blue)
+![Version](https://img.shields.io/badge/version-2.3.101-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
-## 🆕 What's New in v2.3.100
+## 🆕 What's New in v2.3.101
 
-- **README Structure Fix**: Removed duplicate "## 🎯 Why Teams Choose QuantUX" header (intro version was redundant with "## 💼 Why Teams Choose QuantUX")
-- **Misplaced Section Fixed**: Moved 5-Minute Quick-Start Checklist from after the License footer to proper location near the Quick Start section
-- **Ecosystem Verification**: Verified all 12 AliDujie skill cross-references, confirmed version consistency across all files
-- **Version Bump**: Synced version to 2.3.100
+- **Repo Maintenance**: Fixed stale Version History "Latest" entry (was v2.3.97 while badge was v2.3.100), verified ecosystem cross-references across all 6 AliDujie skills
+- **Version Bump**: Synced version to 2.3.101
 
 ## 🆕 What's New in v2.3.99
 
@@ -856,7 +854,7 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.97)**: Repo maintenance — refreshed stale Version History "Latest" entry (was pointing to v2.3.91 while README badge was v2.3.96), ensured all 8 historical entries reflect actual git commit history.
+**Latest (v2.3.101)**: Fixed stale Version History entry (said v2.3.97 while badge was v2.3.100), ecosystem cross-reference verification across all 6 AliDujie skills.
 
 **Previous (v2.3.96)**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
