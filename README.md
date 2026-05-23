@@ -2,7 +2,7 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.97-blue)
+![Version](https://img.shields.io/badge/version-2.3.98-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -128,6 +128,32 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Research-to-decision cycle | 6-8 weeks | 3-4 weeks | ~50% faster |
 
 _Results based on aggregated team adoption data across SaaS, mobile, and e-commerce domains._
+
+## 🧭 Quick Decision: When to Use QuantUX?
+
+| Your Need | Recommended Skill |
+|-----------|------------------|
+| Quantitative A/B testing, HEART metrics, MaxDiff, CSat | ✅ **QuantUX (this skill)** |
+| Choose research methods, design interviews, usability testing | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| Understand user "Jobs", opportunity scoring | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| Create user personas, user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| Value proposition canvas, PMF validation | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 QuantUX is the quantitative validation engine: use it when you need statistical evidence to back up design decisions.
+
+## 🧭 快速决策：什么时候使用 QuantUX？
+
+| 你的需求 | 推荐技能 |
+|---------|---------|
+| 定量 A/B 测试、HEART 指标、MaxDiff、满意度调查 | ✅ **QuantUX（本技能）** |
+| 选择研究方法、设计访谈、可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 理解用户"工作"、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 创建人物角色、用户细分 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| 价值主张画布、PMF 验证 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 QuantUX 是定量验证引擎：当你需要统计证据支持设计决策时使用。
 
 > 💡 **Try Before You Decide / 先试后决定**:
 > ```python
