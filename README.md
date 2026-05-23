@@ -234,6 +234,35 @@ A B2B SaaS product has 12 candidate features but budget for 3. Use `design_maxdi
 ### 📊 Quarterly UX Health Report
 A product team needs a recurring research cadence. Each quarter: (1) run CSat survey with `design_csat_survey()` + `analyze_csat()` for Top-2-Box trends, (2) refresh HEART metrics, (3) `generate_report()` with full CEO analysis. Stakeholders get a consistent, comparable quarterly pulse.
 
+### 🧪 Quick Wins for First-Time Users
+
+New to QuantUX? Try these one-liners to immediately see value:
+
+```python
+from quantux import QuantUXSkill
+qx = QuantUXSkill("Your Product")
+
+# Build HEART framework — get 5 metrics in one call
+qx.build_heart_framework()
+
+# A/B test sample size calculation
+qx.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+
+# Analyze A/B results
+qx.analyze_ab_test("Control", 5000, 1750, "Treatment", 5000, 1900)
+
+# MaxDiff feature priority survey
+qx.design_maxdiff("Features", ["Fast Search", "Price Comparison", "Reviews"])
+
+# CSat analysis
+qx.analyze_csat("Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
+```
+
+**💡 Tip:** Chain with ecosystem skills for maximum impact:
+```bash
+# Persona (who) → JTBD (what) → UDM (qual) → QuantUX (quant) → VPD (value) → SWD (present)
+```
+
 ## 🤖 AI Agent Integration
 
 QuantUX implements all statistical calculations (chi-square, z-tests, MNL estimation, sample size) using **only the Python standard library** — making it ideal for LLM agent workflows where external dependencies are undesirable:
