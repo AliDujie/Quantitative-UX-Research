@@ -2,11 +2,18 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.99-blue)
+![Version](https://img.shields.io/badge/version-2.3.100-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.100
+
+- **README Structure Fix**: Removed duplicate "## 🎯 Why Teams Choose QuantUX" header (intro version was redundant with "## 💼 Why Teams Choose QuantUX")
+- **Misplaced Section Fixed**: Moved 5-Minute Quick-Start Checklist from after the License footer to proper location near the Quick Start section
+- **Ecosystem Verification**: Verified all 12 AliDujie skill cross-references, confirmed version consistency across all files
+- **Version Bump**: Synced version to 2.3.100
 
 ## 🆕 What's New in v2.3.99
 
@@ -85,11 +92,9 @@
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023). A complete toolkit for **quantitative UX research**, providing **10 executable capabilities** — from HEART framework and CSat surveys to log analysis, MaxDiff, A/B testing, research planning, and CEO-level business impact assessment.
 
-## 🎯 Why Teams Choose QuantUX
+## 💼 Why Teams Choose QuantUX
 
 *New here?* QuantUX helps you **validate design decisions with data** — A/B tests, HEART metrics, MaxDiff prioritization, CSat surveys. Based on Jeff Sauro & James R. Lewis (2023).
-
-## 💼 Why Teams Choose QuantUX
 
 | Challenge | Without QuantUX | With QuantUX |
 |-----------|----------------|-------------|
@@ -895,12 +900,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
 
-### ⏱️ 5 分钟快速开始检查清单 / 5-Minute Quick-Start Checklist
 
-- [ ] **安装**: `cp -r Quantitative-UX-Research /your/agent/skills/`
-- [ ] **初始化**: `from quantux import QuantUXSkill; qx = QuantUXSkill("你的产品")`
-- [ ] **HEART**: `qx.build_heart_framework()` — 定义 Happiness/Engagement/Adoption/Retention/Task Success
-- [ ] **A/B 样本量**: `qx.calculate_ab_sample_size(baseline, mde)` — 计算实验所需用户数
-- [ ] **MaxDiff**: `qx.design_maxdiff(name, items)` — 功能优先级排序
-- [ ] **CSat**: `qx.analyze_csat()` — 满意度分析 + Top-2-Box
-- [ ] **生态串联**: Persona → JTBD → UDM → **QuantUX** → VPD → SWD

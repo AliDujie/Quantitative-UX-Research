@@ -1,5 +1,9 @@
 ## v2.3.98 (2026-05-23)
 - Quick Decision table (EN/CN): skill selection comparison added
+## v2.3.100 (2026-05-23)
+- README structure fix: removed duplicate "Why Teams Choose QuantUX" header, relocated misplaced quick-start checklist from after License footer
+- Ecosystem cross-reference verification across all 6 skills
+
 - Version sync across README/SKILL.md/pyproject.toml
 
 ## v2.3.95 (2026-05-22)
