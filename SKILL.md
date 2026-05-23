@@ -532,3 +532,9 @@ MaxDiff 强制做取舍——受访者从一组中选"最重要"和"最不重要
 
 **Q: 如何与 AliDujie 其他技能集成？**
 QuantUX 是定量验证引擎：在 [UDM](https://github.com/AliDujie/universal-design-methods) 生成定性假设后使用，在 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 识别高机会 Jobs 后验证，在 [SWD](https://github.com/AliDujie/storytelling-with-data) 呈现结果之前运行。
+
+**Q: 完整工作流是什么样的？**
+[Persona](https://github.com/AliDujie/web-persona-skill) 定义用户 → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现需求 → [UDM](https://github.com/AliDujie/universal-design-methods) 执行研究 → QuantUX 定量验证 → [VPD](https://github.com/AliDujie/value-proposition-design) 价值映射 → [SWD](https://github.com/AliDujie/storytelling-with-data) 数据故事。
+
+**Q: HEART 五个维度都要用吗？**
+不一定——根据目标选 3-5 个核心指标。HEART 是框架，不是清单。
