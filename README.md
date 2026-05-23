@@ -2,11 +2,19 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.101-blue)
+![Version](https://img.shields.io/badge/version-2.3.102-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.102
+
+- **Common Mistakes Guide**: 5 realistic mistakes with before/after fixes, bilingual (EN/CN)
+- **Beginner's First Experiment**: 45-minute end-to-end walkthrough using HEART → sample size → A/B design → analysis → business impact
+- **Who This Skill Is For**: New section targeting UX Researchers, Product Analysts, Growth Engineers, and Founders with specific use cases
+- **Improved Cross-Skill Links**: "When NOT to Use QuantUX" now explains what to do instead for each of the 5 core skills
+- **Version Bump**: Synced to 2.3.102
 
 ## 🆕 What's New in v2.3.101
 
@@ -171,6 +179,18 @@ _Results based on aggregated team adoption data across SaaS, mobile, and e-comme
 > print(QuantUXSkill("My Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
 > ```
 
+## 👥 Who This Skill Is For
+
+| Role | Use Case | Key Methods |
+|------|----------|------------|
+| **UX Researcher** (体验研究员) | 验证设计假设、建立持续度量体系、向高管汇报 | HEART 框架、CSat 趋势分析、MaxDiff 优先级 |
+| **Product Analyst** (产品分析师) | 设计 A/B 实验、分析转化率漏斗、量化功能影响 | 样本量计算、实验分析、置信区间 |
+| **Growth Engineer** (增长工程师) | 优化关键路径、迭代留存策略、自动化实验管道 | 日志序列分析、留存队列、统计功效 |
+| **Founder / PM** (创始人/产品经理) | 确定产品-市场匹配、分配资源、建立数据文化 | 业务影响评估、验证时间线、ROI 估算 |
+
+> 💡 **No stats PhD required** — QuantUX handles the math. You focus on the questions.
+> 💡 **不需要统计学博士** — QuantUX 处理计算，你专注于提出正确的问题。
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
@@ -296,6 +316,181 @@ qx.analyze_csat("Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
 **💡 Tip:** Chain with ecosystem skills for maximum impact:
 ```bash
 # Persona (who) → JTBD (what) → UDM (qual) → QuantUX (quant) → VPD (value) → SWD (present)
+```
+
+---
+
+## ⚠️ Common Mistakes in Quantitative UX Research
+
+> Learn from real-world failures. Every mistake below has a concrete before/after fix.
+> 从真实失败中学习。每个错误都有具体的修复方案。
+
+### Mistake 1: Running A/B Tests Without Sample Size Calculation
+**运行 A/B 测试前不做样本量计算**
+
+❌ **Before:** "We launched the test with 500 users — we'll see what happens."
+> 我们用500个用户启动了测试——看看会发生什么。
+
+✅ **After:** "Baseline conversion is 35%, MDE is 3%. `calculate_ab_sample_size(0.35, 0.03)` → 2,028 users per group. We need 4,056 total before we can trust the result."
+> 基线转化率35%，MDE 3%。计算得出每组需2,028人。总共需要4,056人才能信赖结果。
+
+### Mistake 2: Peeking at Interim Results and Stopping Early
+**查看中期结果并提前停止**
+
+❌ **Before:** "Day 3: p = 0.04! Let's ship the winner!" (Type I error rate inflated to ~30% with daily peeking)
+> 第3天：p = 0.04！发布获胜方案！（每日偷看使I类错误率膨胀到约30%）
+
+✅ **After:** "Pre-committed to 14-day run. No interim peeking. Use sequential testing if you must monitor — or better, calculate the required duration upfront and set a calendar reminder."
+> 预先承诺运行14天。不中途偷看。如果必须监控，使用序贯检验——或者更好的做法，提前计算所需时长并设置日历提醒。
+
+### Mistake 3: Confusing Statistical Significance with Practical Significance
+**混淆统计显著性与实际显著性**
+
+❌ **Before:** "p = 0.01! The new design is significantly better!" (lift = 0.3%, annual revenue impact = ¥2,000)
+> p = 0.01！新设计显著更好！（提升0.3%，年度收入影响仅¥2,000）
+
+✅ **After:** "p = 0.01, but the 95% CI is [0.1%, 0.5%]. The best-case scenario adds ¥10K/year — below our ¥50K implementation cost. Not practically significant."
+> p = 0.01，但95%置信区间为[0.1%, 0.5%]。最乐观情况年度增加¥10K——低于¥50K的实施成本。实际意义不足。
+
+### Mistake 4: Using HEART Without Defining Success Metrics First
+**未定义成功指标就使用 HEART 框架**
+
+❌ **Before:** "Let's track all five HEART dimensions!" → Dashboard full of metrics, zero decisions made.
+> 我们追踪全部五个HEART维度！→ 仪表盘满是指标，却做不出任何决策。
+
+✅ **After:** "Goal: Reduce checkout abandonment by 15%. Signal: Users who see error on payment page. Metric: Task Success rate on payment flow. One goal, one metric, one decision."
+> 目标：降低15%的结账流失。信号：在支付页面看到错误的用户。指标：支付流程的任务成功率。一个目标，一个指标，一个决策。
+
+### Mistake 5: Treating Survey Ratings as Ratio Data
+**将问卷评分当作比率数据处理**
+
+❌ **Before:** "CSat went from 3.8 to 4.2 — that's a 10.5% improvement!" (Likert scales are ordinal, not ratio — you can't say "twice as satisfied")
+> 满意度从3.8升到4.2——提升了10.5%！（Likert量表是序数数据，不是比率数据——不能说"满意度翻倍"）
+
+✅ **After:** "Top-2-Box (ratings 4-5) increased from 58% to 71%, a 13-percentage-point gain. The shift is meaningful and consistent across user segments."
+> Top-2-Box（4-5分）从58%增加到71%，增长了13个百分点。这一变化有意义且在用户群体间一致。
+
+---
+
+## 🧪 Beginner's First Experiment — 45-Minute End-to-End Walkthrough
+
+> **Goal:** Validate whether a redesigned checkout page improves conversion.
+> **目标：** 验证重新设计的结账页面是否提升转化率。
+> **Time:** ~45 minutes | **Prerequisites:** Python 3.8+
+
+### Step 1: Build the HEART Framework (5 min)
+
+```python
+from quantux import QuantUXSkill
+
+qx = QuantUXSkill("E-Commerce Checkout")
+heart = qx.build_heart_framework()
+print(heart)
+```
+
+This produces a Goals→Signals→Metrics table:
+- **Happiness:** Post-purchase CSat ≥ 4.2/5
+- **Engagement:** 2+ items added per session
+- **Adoption:** 60% of new users complete first purchase within 7 days
+- **Retention:** 30-day repeat purchase rate ≥ 25%
+- **Task Success:** Checkout completion rate ≥ 70%, error rate < 5%
+
+### Step 2: Calculate Sample Size (3 min)
+
+```python
+# Baseline: current conversion = 35%, we want to detect 3% improvement
+n = qx.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+print(f"Need {n} users per group")
+# → Need 2028 users per group (4056 total)
+```
+
+> ⚡ If your traffic is 2,000 users/day, you need ~2 days of data collection.
+
+### Step 3: Design the A/B Test (5 min)
+
+Plan the experiment details:
+- **Variant A (Control):** Current checkout page
+- **Variant B (Treatment):** Redesigned single-page checkout
+- **Primary metric:** Checkout completion rate
+- **Secondary metrics:** Time-to-complete, error rate, CSat
+- **Duration:** 2 days (based on traffic)
+- **Traffic split:** 50/50
+
+### Step 4: Analyze the Results (5 min)
+
+After 2 days, you collect the data:
+- Control: 5,000 visitors, 1,750 completed (35.0%)
+- Treatment: 5,000 visitors, 1,900 completed (38.0%)
+
+```python
+result = qx.analyze_ab_test(
+    "Current Checkout", 5000, 1750,
+    "Redesigned Checkout", 5000, 1900
+)
+print(result)
+```
+
+Expected output includes:
+- **Statistical significance:** p ≈ 0.001 (significant at α = 0.05)
+- **95% Confidence Interval:** [0.8%, 4.2%]
+- **Effect size:** 3 percentage point lift
+- **Practical significance:** At ¥100 average order value, this 3% lift = ¥30,000/month additional revenue
+
+### Step 5: Generate Business Impact Report (2 min)
+
+```python
+report = qx.generate_report(
+    "Checkout Redesign Experiment Report",
+    include_ceo_analysis=True
+)
+print(report)
+```
+
+This generates a complete report with:
+- Executive summary with HEART metrics
+- A/B test statistical analysis
+- **CEO Decision Module:**
+  - Revenue impact: ¥30,000/month conservative estimate
+  - ROI: ~348% (based on ¥230K research investment)
+  - Validation timeline: 2 weeks → decision-ready
+  - Resource estimate: 340 hours total
+
+### Step 6: Present Findings (20 min — your time)
+
+Chain with SWD for presentation:
+```python
+# Take the QuantUX results → SWD data storytelling
+from swd import SWDSkill
+swd = SWDSkill("Checkout Optimization Proposal")
+ctx = swd.build_context(audience="Product VP", cta="Approve redesign rollout")
+# Feed the QuantUX report data into SWD visualization
+```
+
+### 📋 Complete Script (Copy-Paste Ready)
+
+```python
+from quantux import QuantUXSkill
+
+qx = QuantUXSkill("E-Commerce Checkout")
+
+# 1. HEART framework
+print(qx.build_heart_framework())
+
+# 2. Sample size
+n = qx.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+print(f"Need {n} per group")
+
+# 3. Analyze results (use your real data)
+result = qx.analyze_ab_test("Control", 5000, 1750, "Treatment", 5000, 1900)
+print(result)
+
+# 4. Business impact
+impact = qx.generate_business_impact()
+print(impact)
+
+# 5. Full report
+report = qx.generate_report("Checkout Redesign Experiment", include_ceo_analysis=True)
+print(report)
 ```
 
 ## 🤖 AI Agent Integration
@@ -699,20 +894,23 @@ Reach for QuantUX when:
 
 ## 📋 When NOT to Use QuantUX / 什么时候不该用 QuantUX
 
-| Your Need | Recommended Skill |
-|-----------|------------------|
-| Choosing research methods or designing interviews | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
-| Understanding user Jobs-to-be-Done | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
-| Creating user personas / user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
-| Value proposition canvas analysis | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
-| Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
-| Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
-| 选择研究方法、设计访谈 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
-| 理解用户 Jobs、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
-| 创建用户画像 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
-| 价值主张画布分析 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
-| 数据可视化与故事化呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
-| 商业框架分析 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
+> QuantUX 擅长**定量验证**，但不擅长生成定性洞察。以下场景应使用其他技能：
+> QuantUX excels at **quantitative validation**, but not at generating qualitative insights. Use these skills instead:
+
+| Your Need | Recommended Skill | What to Do Instead |
+|-----------|------------------|--------------------|
+| Choosing research methods or designing interviews | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Use UDM's 100 methods to select the right qualitative approach first, then return to QuantUX for validation |
+| Understanding user Jobs-to-be-Done | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD identifies *what* users are trying to accomplish; QuantUX validates *how well* they can do it |
+| Creating user personas / user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) | Personas define *who* you're studying; QuantUX measures *what they do* |
+| Value proposition canvas analysis | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD generates hypotheses about value; QuantUX runs A/B tests to prove or disprove them |
+| Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | QuantUX produces the numbers; SWD turns them into executive-ready narratives |
+| Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM provides strategic frameworks; QuantUX fills them with data |
+| 选择研究方法、设计访谈 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 先用 UDM 的100种方法选择合适的定性方法，再回到 QuantUX 进行验证 |
+| 理解用户 Jobs、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 识别用户想完成什么，QuantUX 验证他们完成得有多好 |
+| 创建用户画像 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 定义研究对象，QuantUX 测量他们的行为 |
+| 价值主张画布分析 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 生成价值假设，QuantUX 用 A/B 测试证明或推翻 |
+| 数据可视化与故事化呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | QuantUX 产生数据，SWD 将其转化为高管就绪的叙事 |
+| 商业框架分析 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 提供战略框架，QuantUX 用数据填充它们 |
 
 ## 📚 References
 
@@ -854,7 +1052,7 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.101)**: Fixed stale Version History entry (said v2.3.97 while badge was v2.3.100), ecosystem cross-reference verification across all 6 AliDujie skills.
+**Latest (v2.3.102)**: Added Common Mistakes guide (5 mistakes with before/after fixes), Beginner's First Experiment walkthrough (45-min end-to-end), "Who This Skill Is For" section, improved "When NOT to Use QuantUX" cross-skill links.
 
 **Previous (v2.3.96)**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
