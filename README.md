@@ -6,9 +6,16 @@
 - **Formatting Fix**: Fixed literal `\n` characters in all "What's New" changelog entries that were rendering as text instead of line breaks
 - **Version Bump**: Synced version to 2.3.105
 
+## 🆕 What's New in v2.3.106
+
+- **Statistical Method Selector**: Added compact bilingual (CN/EN) reference table mapping research questions → recommended methods → output types
+- **FAQ Expansion**: Added A/B test data requirements guide and "no Python expertise needed" usage patterns
+- **Pro Tip: Qual→Quant Handoff**: Added explicit pattern showing UDM hypothesis generation → QuantUX scale validation
+- **Version Bump**: Synced version to 2.3.106
+
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.105-blue)
+![Version](https://img.shields.io/badge/version-2.3.106-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -138,6 +145,21 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 - **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
 - **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
 
+## 📊 Quick Reference: Statistical Method Selector / 统计方法速查表
+
+| Research Question 研究问题 | Recommended Method 推荐方法 | Output 输出 |
+|---|---|---|
+| 哪个版本更好？Which version converts better? | A/B Test (z-test / χ²) A/B 测试 | p-value, CI, effect size p值、置信区间、效应量 |
+| 需要多少样本？How many samples needed? | Power Analysis 功效分析 | Minimum sample size 最小样本量 |
+| 用户有多满意？How satisfied are users? | CSat (Top-2-Box, mean) 满意度调查 | CSat score, trend 评分、趋势 |
+| 功能优先级？Feature priority ranking? | MaxDiff (MNL/HB) 最大差异分析 | Utility scores, rank 效用分数、排名 |
+| 用户走什么路径？What paths do users take? | Log Sequence (Markov, Sunburst) 日志序列 | Transition matrix, frequency 转移矩阵、频率 |
+| 整体体验如何？Is overall UX good? | HEART Framework (5 dim.) HEART 框架 | Dashboard metrics 指标仪表盘 |
+| 两组均值有差异？Do group means differ? | t-test / Welch's t-test t 检验 | t-statistic, CI, p-value 统计量、置信区间 |
+| 分类变量有关联？Are categorical vars associated? | Chi-square test 卡方检验 | χ², p-value 卡方统计量、p值 |
+| 随时间有改善？Improvement over time? | Time series trend analysis 时间序列分析 | Trend direction, slope 趋势方向、斜率 |
+| 该先做什么研究？What research first? | Request diagnosis 需求诊断 | Method recommendation 方法推荐、方案 |
+
 ## 💡 为什么选择 QuantUX？
 
 > **QuantUX 是整个 AliDujie UX 研究生态的定量验证引擎。** 当 UDM 产出定性发现、JTBD 识别高机会 Job 后，QuantUX 用 HEART 框架、A/B 测试、MaxDiff 等统计方法把假设转化为可量化的证据。10 项执行能力覆盖从指标定义到 CEO 汇报的完整闭环——让 UX 数据说业务语言。
@@ -213,6 +235,14 @@ cp -r Quantitative-UX-Research /your/agent/skills/
 For detailed installation steps, configuration options, and agent integration guides, see [INSTALL.md](INSTALL.md).
 
 ### Use in Python
+
+> 🔄 **Pro Tip: Qual → Quant Handoff / 定性→定量交接模式**
+> QuantUX is a **validation engine**, not a discovery engine. The best pattern: use [UDM](https://github.com/AliDujie/universal-design-methods) for qualitative research first (interviews, usability tests) → generate hypotheses → validate at scale with QuantUX. **Qualitative tells you *why*, quantitative tells you *how widespread*.**
+>
+> ```python
+> # UDM generates hypotheses → QuantUX validates at scale
+> # UDM: "60% of users complain search is too slow" → QuantUX: validate search optimization A/B test
+> ```
 
 ```python
 from quantux import QuantUXSkill
@@ -1058,6 +1088,20 @@ MaxDiff forces trade-offs — respondents choose the *most* and *least* importan
 **Q: How does QuantUX integrate with other AliDujie skills?**
 QuantUX is the quantitative validation engine. Use it after [UDM](https://github.com/AliDujie/universal-design-methods) generates qualitative hypotheses, after [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) identifies high-opportunity jobs, and before [SWD](https://github.com/AliDujie/storytelling-with-data) presents results to stakeholders.
 
+**Q: How much data do I need for reliable A/B test results? / 需要多少数据才能做可靠的 A/B 测试？**
+It depends on your baseline conversion rate and MDE (Minimum Detectable Effect). Rule of thumb:
+- **High traffic (>10K users/group):** MDE 3-5%, usually 1-2 weeks of data
+- **Medium traffic (1-10K users/group):** MDE 5-10%, needs 2-4 weeks
+- **Low traffic (<1K users/group):** MDE needs 15-20%, or consider Sequential Testing
+Use `calculate_ab_sample_size(baseline, mde)` to calculate before you start. Don't just look at p-values — ensure sample size and experiment duration cover a full user cycle (e.g., weekly/monthly active users need full cycle coverage).
+
+**Q: Can I use QuantUX without Python expertise? / 不会 Python 也能用吗？**
+Yes. All QuantUX methods return formatted Markdown that AI Agents can display directly:
+1. **Let AI Agent call it for you** — Describe your research need, the agent picks the method and runs it
+2. **Copy-paste templates** — Change the product name and parameters in the code examples, paste into any Python environment
+3. **Zero dependencies** — No scipy/numpy needed; any Python 3.8+ environment (including online notebooks) works
+4. **Start with `diagnose_request()`** — Tell the AI Agent your research goal, it auto-recommends the best method combo
+
 ## ✅ Best Practices / 最佳实践
 
 1. **HEART before A/B** — Always `build_heart_framework()` to define what success looks like before running `design_ab_test()`. Without clear HEART metrics, A/B tests optimize for noise.
@@ -1077,7 +1121,7 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.102)**: Added Common Mistakes guide (5 mistakes with before/after fixes), Beginner's First Experiment walkthrough (45-min end-to-end), "Who This Skill Is For" section, improved "When NOT to Use QuantUX" cross-skill links.
+**Latest (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
 **Previous (v2.3.96)**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
