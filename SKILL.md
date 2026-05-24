@@ -505,6 +505,18 @@ QuantUX 定量数据可与管理层技能结合，将业务指标转化为战略
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX 技术指标 → CTO 技术投资决策 |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX 验证结果 → CEO 计划审查与范围调整 |
 
+### 🔗 Extended Ecosystem
+
+QuantUX quantitative data can be combined with management skills to turn business metrics into strategic decisions:
+
+| Extended Skill | Collaboration Scenario |
+|---------------|----------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | QuantUX business impact → CEO resource allocation & investment decisions |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | HEART metric trends → CPO product strategy adjustment |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX growth data → CMO channel & acquisition strategy |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX tech metrics → CTO technology investment decisions |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX validation results → CEO plan review & scope alignment |
+
 ### 💡 Pro Tips / 专业技巧
 - **HEART first, then A/B**: 先用 HEART 定义指标再设计实验——测错的东西比不测更糟
 - **Reverse working**: 用 `generate_report()` 先展示模拟结果，确认有价值再投入资源
@@ -538,3 +550,20 @@ QuantUX 是定量验证引擎：在 [UDM](https://github.com/AliDujie/universal-
 
 **Q: HEART 五个维度都要用吗？**
 不一定——根据目标选 3-5 个核心指标。HEART 是框架，不是清单。
+
+### 📖 Recommended Learning Path / 推荐学习路径
+
+1. **Start with the README** — Quick start + 30-second example
+2. **Read USAGE.md** — Detailed workflows for all 10 capabilities with code examples
+3. **Explore references/** — Deep dive into HEART framework, A/B testing methodology, MaxDiff design, and CSat analysis
+4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Ecosystem Quick Start](#-ecosystem-quick-start--生态系统快速上手))
+5. **Customize via config** — Adjust AnalysisConfig for your context (see [INSTALL.md](INSTALL.md))
+
+### 📚 Resources / 资源
+
+- [README.md](README.md) — Full documentation
+- [USAGE.md](USAGE.md) — Detailed usage guide / 详细使用指南
+- [INSTALL.md](INSTALL.md) — Installation guide
+- [CHANGELOG.md](CHANGELOG.md) — Version history
+- [SECURITY.md](SECURITY.md) — Security policy and responsible use
+- [references/](references/) — Method reference cards (HEART, CSat, MaxDiff, A/B testing, cross-skill validation)

@@ -148,8 +148,10 @@ python quantux/tests/test_all.py
 - [README.md](README.md) — Full documentation
 - [SKILL.md](SKILL.md) — Agent-facing skill definition
 - [INSTALL.md](INSTALL.md) — Installation guide
+- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
+- [references/](references/) — HEART framework, CSat methods, MaxDiff guide, A/B testing, ecosystem collaboration
 
 ## 💡 Pro Tips / 专业技巧
 
