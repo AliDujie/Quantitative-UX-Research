@@ -1,10 +1,14 @@
 # Quantitative UX Research Skill
 
-## 🆕 What's New in v2.3.104nn- **Repo Maintenance**: Ecosystem cross-reference verification across all 6 AliDujie skills, version sync across README/SKILL.md/pyproject.toml/__init__.pyn- **Version Bump**: Synced version to 2.3.104n
+## 🆕 What's New in v2.3.105
+
+- **Cross-Skill Collaboration Table Added**: New upstream/downstream collaboration table with explicit code examples linking UDM → QuantUX → SWD → VPD → Persona, bilingual (EN/CN)
+- **Formatting Fix**: Fixed literal `\n` characters in all "What's New" changelog entries that were rendering as text instead of line breaks
+- **Version Bump**: Synced version to 2.3.105
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.104-blue)
+![Version](https://img.shields.io/badge/version-2.3.105-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -591,6 +595,20 @@ analysis = qx.analyze_csat("Q1", total=500, scores={1: 20, 2: 30, 3: 80, 4: 200,
 qx.analyze_csat("Q2", total=520, scores={1: 15, 2: 25, 3: 70, 4: 210, 5: 200})
 # → Top-2-Box: 79%, +3pp QoQ improvement
 ```
+
+### 🔗 Cross-Skill Collaboration / 跨技能协作
+
+| 上游产出 | 用 QuantUX 做... | 示例 |
+|----------|-----------------|------|
+| [UDM](https://github.com/AliDujie/universal-design-methods) 定性发现 | 定量验证研究假设 | `qx.design_maxdiff("Feature Priorities", [...])` |
+| [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 机会评分 | 计算样本量 + 实验设计 | `n = qx.calculate_ab_sample_size(baseline=0.35, mde=0.03)` |
+| [VPD](https://github.com/AliDujie/value-proposition-design) 画布数据 | A/B 测试价值主张迭代 | `qx.analyze_ab_test("Old", 3000, 900, "New", 3000, 1050)` |
+| [Persona](https://github.com/AliDujie/web-persona-skill) 角色数据 | 分群量化分析 | `qx.generate_research_plan("不同角色满意度对比")` |
+
+| QuantUX 产出 | 用下游技能做... | 示例 |
+|----------|----------------|------|
+| HEART 指标 + A/B 结果 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 数据呈现 | `swd.build_story(protagonist="产品VP", evidence=["转化率提升15%"])` |
+| CSat 趋势 + MaxDiff → | [VPD](https://github.com/AliDujie/value-proposition-design) 验证价值主张 | `vpd.score_fit_score("Problem-Solution")` |
 
 ## 🧩 10 Capabilities
 
