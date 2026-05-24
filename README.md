@@ -1,30 +1,18 @@
 # Quantitative UX Research Skill
 
-## 🆕 What's New in v2.3.105
-
-- **Cross-Skill Collaboration Table Added**: New upstream/downstream collaboration table with explicit code examples linking UDM → QuantUX → SWD → VPD → Persona, bilingual (EN/CN)
-- **Formatting Fix**: Fixed literal `\n` characters in all "What's New" changelog entries that were rendering as text instead of line breaks
-- **Version Bump**: Synced version to 2.3.105
-
-## 🆕 What's New in v2.3.107
-
-- **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
-- **Version Bump**: Synced version to 2.3.107
-
-## 🆕 What's New in v2.3.106
-
-- **Statistical Method Selector**: Added compact bilingual (CN/EN) reference table mapping research questions → recommended methods → output types
-- **FAQ Expansion**: Added A/B test data requirements guide and "no Python expertise needed" usage patterns
-- **Pro Tip: Qual→Quant Handoff**: Added explicit pattern showing UDM hypothesis generation → QuantUX scale validation
-- **Version Bump**: Synced version to 2.3.106
-
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.108-blue)
+![Version](https://img.shields.io/badge/version-2.3.109-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+![Examples](https://img.shields.io/badge/Examples-2%20runnable%20scripts-brightgreen)
+
+## 🆕 What's New in v2.3.109
+
+- **Runnable Examples Added**: Created `examples/` directory with 2 runnable Python scripts — HEART metrics framework setup and A/B test sample size calculation + result analysis
+- **Version Bump**: Synced version to 2.3.109
 
 ## 🆕 What's New in v2.3.108
 
