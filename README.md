@@ -20,11 +20,19 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.107-blue)
+![Version](https://img.shields.io/badge/version-2.3.108-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.108
+
+- **Standalone "🎯 Why Use This Skill?" Section**: Added dedicated value-proposition section with "You Want → This Gives You" comparison table and 3-line instant example (UDM + QuantUX)
+- **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
+- **Version Bump**: Synced version to 2.3.108
+
+
 
 ## 🆕 What's New in v2.3.103
 
@@ -164,6 +172,27 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | 分类变量有关联？Are categorical vars associated? | Chi-square test 卡方检验 | χ², p-value 卡方统计量、p值 |
 | 随时间有改善？Improvement over time? | Time series trend analysis 时间序列分析 | Trend direction, slope 趋势方向、斜率 |
 | 该先做什么研究？What research first? | Request diagnosis 需求诊断 | Method recommendation 方法推荐、方案 |
+
+## 🎯 Why Use This Skill?
+
+**QuantUX answers the question other methods can't**: *"How do we know this design actually works — statistically?"*
+
+Qualitative research tells you *why*. QuantUX tells you *how widespread* — with rigor. Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR methodology, it handles all the statistical heavy-lifting (sample size, confidence intervals, effect sizes) so you don't need a stats PhD.
+
+| You Want | QuantUX Gives You |
+|----------|------------------|
+| To validate a design change | A/B test with exact sample size, p-value, confidence interval |
+| To measure UX quality objectively | HEART framework dashboard across 5 dimensions |
+| To prioritize features | MaxDiff forced-choice ranking (no "everything is important" trap) |
+| To track satisfaction trends | CSat with Top-2-Box scoring, quarter-over-quarter |
+| To speak stakeholder language | Business impact + ROI estimation (CEO perspective) |
+
+**Try it in 3 lines:**
+```python
+from quantux import QuantUXSkill
+skill = QuantUXSkill("Your Product")
+print(skill.calculate_ab_sample_size(baseline=0.35, mde=0.03))
+```
 
 ## 💡 为什么选择 QuantUX？
 

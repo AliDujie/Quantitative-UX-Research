@@ -1,3 +1,9 @@
+## What's New in v2.3.108
+
+- **Standalone "🎯 Why Use This Skill?" Section**: Added dedicated value-proposition section with "You Want → This Gives You" comparison table and 3-line instant example (UDM + QuantUX)
+- **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
+- **Version Bump**: Synced version to 2.3.108 across README/SKILL.md/pyproject.toml/__init__.py
+
 ## v2.3.107 (2026-05-24)
 - Ecosystem-wide link audit: verified all 6 AliDujie skill cross-references, confirmed version consistency across all 8 files, validated bilingual (CN/EN) section parity
 
