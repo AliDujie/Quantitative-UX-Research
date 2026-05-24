@@ -6,6 +6,11 @@
 - **Formatting Fix**: Fixed literal `\n` characters in all "What's New" changelog entries that were rendering as text instead of line breaks
 - **Version Bump**: Synced version to 2.3.105
 
+## 🆕 What's New in v2.3.107
+
+- **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
+- **Version Bump**: Synced version to 2.3.107
+
 ## 🆕 What's New in v2.3.106
 
 - **Statistical Method Selector**: Added compact bilingual (CN/EN) reference table mapping research questions → recommended methods → output types
@@ -15,7 +20,7 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.106-blue)
+![Version](https://img.shields.io/badge/version-2.3.107-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -1121,7 +1126,9 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
+**Latest (v2.3.107)**: Ecosystem-wide link audit and version consistency check across all 6 AliDujie skills.
+
+**Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
 **Previous (v2.3.96)**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 

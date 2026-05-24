@@ -1,3 +1,6 @@
+## v2.3.107 (2026-05-24)
+- Ecosystem-wide link audit: verified all 6 AliDujie skill cross-references, confirmed version consistency across all 8 files, validated bilingual (CN/EN) section parity
+
 ## v2.3.98 (2026-05-23)
 - Quick Decision table (EN/CN): skill selection comparison added
 ## v2.3.100 (2026-05-23)
