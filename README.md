@@ -1,8 +1,10 @@
 # Quantitative UX Research Skill
 
+## 🆕 What's New in v2.3.104nn- **Repo Maintenance**: Ecosystem cross-reference verification across all 6 AliDujie skills, version sync across README/SKILL.md/pyproject.toml/__init__.pyn- **Version Bump**: Synced version to 2.3.104n
+
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.103-blue)
+![Version](https://img.shields.io/badge/version-2.3.104-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
