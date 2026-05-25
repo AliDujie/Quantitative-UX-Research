@@ -2,12 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.109-blue)
+![Version](https://img.shields.io/badge/version-2.3.110-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-2%20runnable%20scripts-brightgreen)
+
+## 🆕 What's New in v2.3.110
+
+- **Duplicate Header Consolidation**: Merged `💼 Why Teams Choose QuantUX` + `🌟 Why QuantUX?` + `🎯 Why Use This Skill?` + `💡 为什么选择 QuantUX？` into a single bilingual section `🎯 Why Teams Choose QuantUX / 为什么选择 QuantUX`, preserving all content (comparison table, bilingual You-Want/Gives-You table, CN rationale, try-it-now example)
+- **Version Bump**: Synced to 2.3.110
 
 ## 🆕 What's New in v2.3.109
 
@@ -118,9 +123,17 @@
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023). A complete toolkit for **quantitative UX research**, providing **10 executable capabilities** — from HEART framework and CSat surveys to log analysis, MaxDiff, A/B testing, research planning, and CEO-level business impact assessment.
 
-## 💼 Why Teams Choose QuantUX
+## 🎯 Why Teams Choose QuantUX / 为什么选择 QuantUX
 
 *New here?* QuantUX helps you **validate design decisions with data** — A/B tests, HEART metrics, MaxDiff prioritization, CSat surveys. Based on Jeff Sauro & James R. Lewis (2023).
+
+**QuantUX answers the question other methods can't**: *"How do we know this design actually works — statistically?"*
+
+Qualitative research tells you *why*. QuantUX tells you *how widespread* — with rigor. Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR methodology, it handles all the statistical heavy-lifting (sample size, confidence intervals, effect sizes) so you don't need a stats PhD.
+
+> **QuantUX 是整个 AliDujie UX 研究生态的定量验证引擎。** 当 UDM 产出定性发现、JTBD 识别高机会 Job 后，QuantUX 用 HEART 框架、A/B 测试、MaxDiff 等统计方法把假设转化为可量化的证据。10 项执行能力覆盖从指标定义到 CEO 汇报的完整闭环——让 UX 数据说业务语言。
+>
+> *"以前我们说'用户喜欢新设计'——现在我们说'新版转化率提升 15%，95% 置信区间 [8%, 22%]'。QuantUX 让数据自己说话。"*
 
 | Challenge | Without QuantUX | With QuantUX |
 |-----------|----------------|-------------|
@@ -131,63 +144,20 @@ Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis 
 | Business Reporting | "Users say they like it" — qualitative | Business impact + ROI in business language |
 | Stakeholder Alignment | "We need more data" — endless iterations | Reverse working: show simulated results before investing |
 
-> 💡 **Try It Now / 立即试用** — HEART framework in 3 lines:
-> ```python
-> from quantux import QuantUXSkill
-> skill = QuantUXSkill()
-> skill.build_heart_framework(domain="saas")  # Instant HEART metrics for your product
-> ```
-
-## 🌟 Why QuantUX?
-
-- **Industry-standard methodology** — Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR reference
-- **10 executable capabilities (incl. CEO perspective)** — HEART, CSat, log analysis, MaxDiff, A/B, research planning, reporting, plus business impact, validation timeline, resource estimation
-- **CEO decision support** — Built-in business impact assessment, validation timeline, resource estimation — translate UX data into business language
-- **Zero learning curve** — Pure Python standard library, no external dependencies, `from quantux import QuantUXSkill` to start
-- **Smart diagnostics** — Auto-diagnose research needs, recommend best method combos, avoid common statistical traps
-- **Ecosystem core** — Seamlessly collaborates with UDM, JTBD, Persona, VPD, SWD (5 skills) for qualitative-quantitative triangulation
-
-## 📊 Quick Reference: Statistical Method Selector / 统计方法速查表
-
-| Research Question 研究问题 | Recommended Method 推荐方法 | Output 输出 |
-|---|---|---|
-| 哪个版本更好？Which version converts better? | A/B Test (z-test / χ²) A/B 测试 | p-value, CI, effect size p值、置信区间、效应量 |
-| 需要多少样本？How many samples needed? | Power Analysis 功效分析 | Minimum sample size 最小样本量 |
-| 用户有多满意？How satisfied are users? | CSat (Top-2-Box, mean) 满意度调查 | CSat score, trend 评分、趋势 |
-| 功能优先级？Feature priority ranking? | MaxDiff (MNL/HB) 最大差异分析 | Utility scores, rank 效用分数、排名 |
-| 用户走什么路径？What paths do users take? | Log Sequence (Markov, Sunburst) 日志序列 | Transition matrix, frequency 转移矩阵、频率 |
-| 整体体验如何？Is overall UX good? | HEART Framework (5 dim.) HEART 框架 | Dashboard metrics 指标仪表盘 |
-| 两组均值有差异？Do group means differ? | t-test / Welch's t-test t 检验 | t-statistic, CI, p-value 统计量、置信区间 |
-| 分类变量有关联？Are categorical vars associated? | Chi-square test 卡方检验 | χ², p-value 卡方统计量、p值 |
-| 随时间有改善？Improvement over time? | Time series trend analysis 时间序列分析 | Trend direction, slope 趋势方向、斜率 |
-| 该先做什么研究？What research first? | Request diagnosis 需求诊断 | Method recommendation 方法推荐、方案 |
-
-## 🎯 Why Use This Skill?
-
-**QuantUX answers the question other methods can't**: *"How do we know this design actually works — statistically?"*
-
-Qualitative research tells you *why*. QuantUX tells you *how widespread* — with rigor. Based on Jeff Sauro & James R. Lewis's authoritative Quant UXR methodology, it handles all the statistical heavy-lifting (sample size, confidence intervals, effect sizes) so you don't need a stats PhD.
-
-| You Want | QuantUX Gives You |
-|----------|------------------|
-| To validate a design change | A/B test with exact sample size, p-value, confidence interval |
-| To measure UX quality objectively | HEART framework dashboard across 5 dimensions |
-| To prioritize features | MaxDiff forced-choice ranking (no "everything is important" trap) |
-| To track satisfaction trends | CSat with Top-2-Box scoring, quarter-over-quarter |
-| To speak stakeholder language | Business impact + ROI estimation (CEO perspective) |
-
-**Try it in 3 lines:**
+> 💡 **Try It Now / 立即试用** — 3 lines:
 ```python
 from quantux import QuantUXSkill
 skill = QuantUXSkill("Your Product")
 print(skill.calculate_ab_sample_size(baseline=0.35, mde=0.03))
 ```
 
-## 💡 为什么选择 QuantUX？
-
-> **QuantUX 是整个 AliDujie UX 研究生态的定量验证引擎。** 当 UDM 产出定性发现、JTBD 识别高机会 Job 后，QuantUX 用 HEART 框架、A/B 测试、MaxDiff 等统计方法把假设转化为可量化的证据。10 项执行能力覆盖从指标定义到 CEO 汇报的完整闭环——让 UX 数据说业务语言。
->
-> *"以前我们说'用户喜欢新设计'——现在我们说'新版转化率提升 15%，95% 置信区间 [8%, 22%]'。QuantUX 让数据自己说话。"*
+| You Want | QuantUX Gives You | 你想要 | QuantUX 给你 |
+|----------|------------------|--------|-------------|
+| Validate a design change | A/B test with exact sample size, p-value, CI | 验证设计改动 | 精确样本量、p值、置信区间 |
+| Measure UX quality objectively | HEART framework dashboard across 5 dimensions | 客观衡量 UX | 5 维度 HEART 仪表盘 |
+| Prioritize features | MaxDiff forced-choice ranking | 功能优先级 | MaxDiff 强制选择排名 |
+| Track satisfaction trends | CSat with Top-2-Box scoring, QoQ | 满意度趋势 | CSat Top-2-Box 评分 |
+| Speak stakeholder language | Business impact + ROI estimation (CEO perspective) | 用业务语言汇报 | 商业影响 + ROI 估算 |
 
 ## 🏆 Proven Impact
 
