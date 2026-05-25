@@ -190,3 +190,7 @@
 ## v2.3.21 (2026-05-13)
 
 - Repo maintenance: added Contributing link to English section footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references
+
+## v2.3.109 (2026-05-25)
+- Confirmed all 6-skill cross-references valid and consistent
+- Validated bilingual (CN/EN) section parity across README/SKILL.md

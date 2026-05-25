@@ -12,6 +12,7 @@
 ## 🆕 What's New in v2.3.109
 
 - **Runnable Examples Added**: Created `examples/` directory with 2 runnable Python scripts — HEART metrics framework setup and A/B test sample size calculation + result analysis
+- **Repo Maintenance**: Confirmed all cross-references valid, validated bilingual (CN/EN) section parity across README/SKILL.md
 - **Version Bump**: Synced version to 2.3.109
 
 ## 🆕 What's New in v2.3.108
