@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## What's New in v2.3.108
 
 - **Standalone "🎯 Why Use This Skill?" Section**: Added dedicated value-proposition section with "You Want → This Gives You" comparison table and 3-line instant example (UDM + QuantUX)
@@ -14,6 +15,14 @@
 - Ecosystem cross-reference verification across all 6 skills
 
 - Version sync across README/SKILL.md/pyproject.toml
+=======
+## v2.3.98 (2026-05-25)
+
+- Ecosystem audit across all 6 AliDujie skill repos
+- Verified cross-reference consistency, version alignment, documentation completeness
+- Added CSat survey quick recipe with ecosystem cross-reference verification
+- Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
+>>>>>>> origin/main
 
 ## v2.3.95 (2026-05-22)
 - Repo maintenance: version sync across README badge, SKILL.md, pyproject.toml, __init__.py
