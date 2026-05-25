@@ -2,11 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.97-blue)
+![Version](https://img.shields.io/badge/version-2.3.98-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.3.98
+
+- **Ecosystem Audit**: Audited all 6 AliDujie skill repos for cross-reference consistency, version alignment, and documentation completeness
+- **CSat Survey Quick Recipe**: Added CSat survey quick recipe with ecosystem cross-reference verification across all 6 AliDujie skills
+- **Version Bump**: Synced version to 2.3.98 across README badge, SKILL.md, pyproject.toml, __init__.py
 
 ## 🆕 What's New in v2.3.97
 
@@ -790,7 +796,9 @@ QuantUX is the quantitative validation engine. Use it after [UDM](https://github
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.97)**: Repo maintenance — refreshed stale Version History "Latest" entry (was pointing to v2.3.91 while README badge was v2.3.96), ensured all 8 historical entries reflect actual git commit history.
+**Latest (v2.3.98)**: Ecosystem audit across all 6 AliDujie skill repos — cross-reference verification, version alignment, documentation completeness check.
+
+**Previous (v2.3.97)**: Repo maintenance — refreshed stale Version History "Latest" entry (was pointing to v2.3.91 while README badge was v2.3.96), ensured all 8 historical entries reflect actual git commit history.
 
 **Previous (v2.3.96)**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
