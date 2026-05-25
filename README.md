@@ -2,12 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.111-blue)
+![Version](https://img.shields.io/badge/version-2.3.112-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
+
+## 🆕 What's New in v2.3.112
+
+- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skill repos, verified examples directory discoverability, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.3.112
 
 ## 🆕 What's New in v2.3.110
 

@@ -1,30 +1,39 @@
-<<<<<<< HEAD
-## What's New in v2.3.108
+## v2.3.112 (2026-05-26)
 
-- **Standalone "🎯 Why Use This Skill?" Section**: Added dedicated value-proposition section with "You Want → This Gives You" comparison table and 3-line instant example (UDM + QuantUX)
-- **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
-- **Version Bump**: Synced version to 2.3.108 across README/SKILL.md/pyproject.toml/__init__.py
+- Repo maintenance: ecosystem cross-reference audit across all 6 AliDujie skill repos, confirmed examples directory discoverability, bilingual section parity
+- Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
 
-## v2.3.107 (2026-05-24)
-- Ecosystem-wide link audit: verified all 6 AliDujie skill cross-references, confirmed version consistency across all 8 files, validated bilingual (CN/EN) section parity
-
-## v2.3.98 (2026-05-23)
-- Quick Decision table (EN/CN): skill selection comparison added
-## v2.3.100 (2026-05-23)
-- README structure fix: removed duplicate "Why Teams Choose QuantUX" header, relocated misplaced quick-start checklist from after License footer
-- Ecosystem cross-reference verification across all 6 skills
-
-- Version sync across README/SKILL.md/pyproject.toml
-=======
-## v2.3.98 (2026-05-25)
+## v2.3.111 (2026-05-25)
 
 - Ecosystem audit across all 6 AliDujie skill repos
 - Verified cross-reference consistency, version alignment, documentation completeness
-- Added CSat survey quick recipe with ecosystem cross-reference verification
 - Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
->>>>>>> origin/main
 
-## v2.3.95 (2026-05-22)
+## v2.3.110 (2026-05-25)
+- Duplicate header consolidation: merged multiple Why-QuantUX headers into single bilingual section
+- Version bump to 2.3.110
+
+## v2.3.109 (2026-05-25)
+- Confirmed all 6-skill cross-references valid and consistent
+- Validated bilingual (CN/EN) section parity across README/SKILL.md
+- Runnable examples added: created examples/ directory with 3 scripts (HEART, A/B testing, MaxDiff)
+
+## v2.3.108 (2026-05-25)
+- Added standalone "🎯 Why Use This Skill?" section with You Want → This Gives You comparison table
+- Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references
+- Version sync to 2.3.108
+
+## v2.3.107 (2026-05-24)
+- Ecosystem-wide link audit: verified all 6 AliDujie skill cross-references, confirmed version consistency across all 8 files
+
+## v2.3.100 (2026-05-23)
+- README structure fix: removed duplicate "Why Teams Choose QuantUX" header, relocated misplaced quick-start checklist
+- Ecosystem cross-reference verification across all 6 skills
+
+## v2.3.98 (2026-05-23)
+- Quick Decision table (EN/CN): skill selection comparison added
+
+## v2.3.97 (2026-05-25)
 - Repo maintenance: version sync across README badge, SKILL.md, pyproject.toml, __init__.py
 - Ecosystem cross-reference verification across all 6 AliDujie skills
 
