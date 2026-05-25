@@ -31,10 +31,8 @@ def main():
     print("\n📊 Step 2: Analyze Results")
     # Simulated: Control vs New variant
     result = qx.analyze_ab_test(
-        control_name="Current Checkout",
-        control_n=5000, control_conversions=1500,
-        variant_name="New One-Click Checkout",
-        variant_n=5000, variant_conversions=1750
+        name_a="Current Checkout", n_a=5000, conv_a=1500,
+        name_b="New One-Click Checkout", n_b=5000, conv_b=1750
     )
     print(result)
 
