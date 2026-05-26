@@ -1,79 +1,46 @@
-<<<<<<< HEAD
-## What's New in v2.3.108
+## v2.3.112 (2026-05-26)
+
+- Ecosystem cross-reference audit: verified all 6-skill pipeline links and cross-skill data handoff examples across AliDujie skills ecosystem
+- Version bump: synced to 2.3.112 across README/SKILL.md/pyproject.toml/__init__.py
+
+## v2.3.111 (2026-05-26)
+
+- Repo maintenance: added MaxDiff example script, added examples/ reference to Resources section
+- Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
+
+## v2.3.110 (2026-05-25)
+
+- Duplicate header consolidation: merged multiple "Why Teams Choose QuantUX" headers into single bilingual section
+- Version bump across all files
+
+## v2.3.109 (2026-05-25)
+
+- Confirmed all 6-skill cross-references valid and consistent
+- Validated bilingual (CN/EN) section parity across README/SKILL.md
+
+## v2.3.108 (2026-05-25)
 
 - **Standalone "🎯 Why Use This Skill?" Section**: Added dedicated value-proposition section with "You Want → This Gives You" comparison table and 3-line instant example (UDM + QuantUX)
 - **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
 - **Version Bump**: Synced version to 2.3.108 across README/SKILL.md/pyproject.toml/__init__.py
 
 ## v2.3.107 (2026-05-24)
+
 - Ecosystem-wide link audit: verified all 6 AliDujie skill cross-references, confirmed version consistency across all 8 files, validated bilingual (CN/EN) section parity
 
-## v2.3.98 (2026-05-23)
-- Quick Decision table (EN/CN): skill selection comparison added
 ## v2.3.100 (2026-05-23)
+
 - README structure fix: removed duplicate "Why Teams Choose QuantUX" header, relocated misplaced quick-start checklist from after License footer
 - Ecosystem cross-reference verification across all 6 skills
-
 - Version sync across README/SKILL.md/pyproject.toml
-=======
+
 ## v2.3.98 (2026-05-25)
 
 - Ecosystem audit across all 6 AliDujie skill repos
 - Verified cross-reference consistency, version alignment, documentation completeness
 - Added CSat survey quick recipe with ecosystem cross-reference verification
 - Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
->>>>>>> origin/main
 
-## v2.3.95 (2026-05-22)
-- Repo maintenance: version sync across README badge, SKILL.md, pyproject.toml, __init__.py
-- Ecosystem cross-reference verification across all 6 AliDujie skills
-
-## v2.3.93 (2026-05-22)
-- Fixed duplicate v2.3.91 changelog section (merged two entries into one)
-- Added HEART Try-It-Now instant example after "Why Teams Choose QuantUX" table
-- Added explicit CTO Advisor + Plan CEO Review cross-references in Extended Ecosystem section
-- Version bump across README/SKILL.md/pyproject.toml/__init__.py
-
-## v2.3.92 (2026-05-22)
-- SKILL.md frontmatter: synced version to 2.3.92, added `author` field, moved badge outside YAML boundary
-- Repo maintenance: verified cross-references across all 6 AliDujie skills
-- Updated version across README/SKILL.md/pyproject.toml/__init__.py
-
-## v2.3.91 (2026-05-21)
-- Fixed duplicate skill entries in Related Skills table (3 duplicates removed)
-- Enhanced ecosystem cross-references with ASCII pipeline diagram
-- Version sync across README/SKILL.md/pyproject.toml/__init__.py
-
-## v2.3.90 (2026-05-20)
-- Added Statistical Power Quick-Ref table
-- Added HEART Metric Examples for 3 domains
-- Version sync across all files
-
-## v2.3.86 (2026-05-19)
-- Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
-- Added practical A/B test interpretation workflow example
-- Enhanced cross-skill collaboration with QuantUX→SWD pipeline example
-
-## v2.3.85 (2026-05-19)
-- Added 'Which Method Should I Use?' decision guide and A/B interpretation example
-
-## v2.3.84 (2026-05-19)
-- Added bilingual quick-start checklist and pro tips to USAGE.md
-
-## v2.3.83 (2026-05-19)
-- Synced versions + improved cross-skill collaboration table
-
-## v2.3.82 (2026-05-19)
-- README + SKILL.md maintenance
-
-## v2.3.81 (2026-05-16)
-- Fixed footer version mismatch (v2.3.76 → v2.3.80) in README.md
-- Verified ecosystem cross-references and bilingual consistency across all 7 skills
-- Version alignment: pyproject.toml, __init__.py, SKILL.md, README.md badge
-
-# Changelog
-
-## v2.3.80 (2026-05-16)
 
 - Repo maintenance: Added `__version__` to `__all__` export list for proper `from quantux import __version__`
 - Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`
