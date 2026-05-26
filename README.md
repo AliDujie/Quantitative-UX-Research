@@ -7,6 +7,23 @@
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 📑 Table of Contents
+
+- [What's New](#-whats-new-in-v23113)
+- [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
+- [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
+- [Quick Start](#-quick-start-5-minutes)
+- [Ecosystem Quick Start](#-ecosystem-quick-start)
+- [Core Capabilities](#-10-capabilities)
+- [Real-World Use Cases](#-real-world-use-cases)
+- [Common Mistakes](#-common-mistakes-in-quantitative-ux-research)
+- [AI Agent Integration](#-ai-agent-integration)
+- [FAQ / Troubleshooting](#-faq--troubleshooting)
+- [Resources](#-resources)
+
+---
+
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 
 ## 🆕 What's New in v2.3.113
