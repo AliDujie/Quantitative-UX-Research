@@ -1119,7 +1119,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.107)**: Ecosystem-wide link audit and version consistency check across all 6 AliDujie skills.
+**Latest (v2.3.111)**: Added MaxDiff example script (examples/03_maxdiff.py), fixed stale What's New header (v2.3.110 → v2.3.111), version sync across all files.
 
 **Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
