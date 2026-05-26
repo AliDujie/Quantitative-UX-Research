@@ -2,12 +2,17 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.112-blue)
+![Version](https://img.shields.io/badge/version-2.3.113-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
+
+## 🆕 What's New in v2.3.113
+
+- **Repo Maintenance**: Corrected Version History "Latest" entry (v2.3.107 → v2.3.112), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed examples directory discoverability
+- **Version Bump**: Synced to 2.3.113
 
 ## 🆕 What's New in v2.3.112
 
@@ -1119,7 +1124,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.107)**: Ecosystem-wide link audit and version consistency check across all 6 AliDujie skills.
+**Latest (v2.3.112)**: Ecosystem cross-reference audit across all 6 AliDujie skill repos, verified examples directory discoverability, confirmed bilingual section parity, version sync across all files.
 
 **Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
