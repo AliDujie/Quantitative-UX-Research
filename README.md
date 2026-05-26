@@ -9,6 +9,11 @@
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 
+## 🆕 What's New in v2.3.111
+
+- **MaxDiff Example Script**: Added `examples/03_maxdiff.py` — runnable example demonstrating Best-Worst Scaling analysis for feature prioritization
+- **Version Bump**: Synced to 2.3.111
+
 ## 🆕 What's New in v2.3.110
 
 - **Duplicate Header Consolidation**: Merged `💼 Why Teams Choose QuantUX` + `🌟 Why QuantUX?` + `🎯 Why Use This Skill?` + `💡 为什么选择 QuantUX？` into a single bilingual section `🎯 Why Teams Choose QuantUX / 为什么选择 QuantUX`, preserving all content (comparison table, bilingual You-Want/Gives-You table, CN rationale, try-it-now example)
