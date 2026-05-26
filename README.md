@@ -9,6 +9,21 @@
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 
+## 📑 Table of Contents
+
+- [What's New](#-whats-new-in-v23112)
+- [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
+- [Quick Decision Guide](#-quick-decision-when-to-use-quantux)
+- [Quick Start](#-quick-start-5-minutes)
+- [Core Capabilities](#️-core-capabilities--核心能力)
+- [Real-World Use Cases](#-real-world-use-cases)
+- [Ecosystem Integration](#-ecosystem-integration)
+- [AI Agent Integration](#-ai-agent-integration)
+- [When NOT to Use QuantUX](#-when-not-to-use-quantux--什么时候不该用-quantux)
+- [Resources](#-resources)
+
+---
+
 ## 🆕 What's New in v2.3.112
 
 - **Ecosystem Cross-Reference Audit**: Verified all 6-skill pipeline links and cross-skill data handoff examples across AliDujie skills ecosystem
