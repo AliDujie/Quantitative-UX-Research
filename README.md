@@ -26,6 +26,11 @@
 
 ---
 
+## 🆕 What's New in v2.3.115
+
+- **Repo Maintenance**: Fixed stale Version History "Latest" entry (v2.3.112 → v2.3.114), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.3.115
+
 ## 🆕 What's New in v2.3.114
 
 - **Repo Maintenance**: Fixed misplaced Examples badge (was at line 28 after TOC, moved to badge group at top alongside other badges), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
@@ -1146,7 +1151,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.112)**: Ecosystem cross-reference audit across all 6 AliDujie skill repos, verified examples directory discoverability, confirmed bilingual section parity, version sync across all files.
+**Latest (v2.3.114)**: Fixed stale Version History latest entry (v2.3.112 → v2.3.114), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity.
 
 **Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
