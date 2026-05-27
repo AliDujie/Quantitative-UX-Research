@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23114)
+- [What's New](#-whats-new-in-v23115)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -1151,7 +1151,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.114)**: Fixed stale Version History latest entry (v2.3.112 → v2.3.114), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity.
+**Latest (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
