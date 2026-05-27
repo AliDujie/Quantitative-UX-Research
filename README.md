@@ -2,17 +2,19 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.113-blue)
+![Version](https://img.shields.io/badge/version-2.3.114-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
+![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23113)
+- [What's New](#-whats-new-in-v23114)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
+- [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Start](#-quick-start-5-minutes)
 - [Ecosystem Quick Start](#-ecosystem-quick-start)
 - [Core Capabilities](#-10-capabilities)
@@ -24,7 +26,10 @@
 
 ---
 
-![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
+## 🆕 What's New in v2.3.114
+
+- **Repo Maintenance**: Fixed misplaced Examples badge (was at line 28 after TOC, moved to badge group at top alongside other badges), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.3.114
 
 ## 🆕 What's New in v2.3.113
 
