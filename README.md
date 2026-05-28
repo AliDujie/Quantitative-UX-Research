@@ -2,7 +2,7 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.115-blue)
+![Version](https://img.shields.io/badge/version-2.3.116-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23115)
+- [What's New](#-whats-new-in-v23116)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -25,6 +25,14 @@
 - [Resources](#-resources)
 
 ---
+
+## 🆕 What's New in v2.3.116
+
+- **Statistical Power Quick-Reference**: Added expanded sample size table covering baseline rates 5%–50% across MDE 2%–10% for 80% power, α = 0.05, two-tailed A/B tests
+- **Beginner's First Experiment Walkthrough**: 5-step end-to-end guide from HEART framework setup through report generation, with copy-paste ready Python code
+- **HEART Metrics by Domain Reference**: Concrete HEART metric examples for SaaS, Mobile App, and E-Commerce domains with ready-to-use metric definitions
+- **Ecosystem Cross-Reference Audit**: Verified consistency across all 6 AliDujie skill cross-references in README.md and SKILL.md
+- **Version Bump**: Synced to 2.3.116
 
 ## 🆕 What's New in v2.3.115
 
@@ -1151,7 +1159,9 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.116)**: Added Statistical Power Quick-Reference table, Beginner's First Experiment walkthrough (5 steps from HEART to report), HEART Metrics by Domain reference (SaaS/Mobile/E-Commerce), ecosystem cross-reference audit, version bump to 2.3.116.
+
+**Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
