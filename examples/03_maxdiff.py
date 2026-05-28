@@ -4,6 +4,9 @@
 Scenario: A SaaS product has 12 candidate features but budget for only 3.
 Use MaxDiff to determine which features users value most.
 """
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from quantux import QuantUXSkill
 
 qx = QuantUXSkill("SaaS Analytics Platform")
@@ -25,9 +28,9 @@ features = [
 ]
 
 survey = qx.design_maxdiff(
-    feature_set_name="Analytics Features",
-    features=features,
-    num_sets=12  # Each respondent sees 12 choice sets
+    title="Analytics Features Prioritization",
+    items=features,
+    items_per_screen=4
 )
 print(survey)
 
