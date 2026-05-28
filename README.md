@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23118)
+- [What's New](#-whats-new-in-v23119)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -28,6 +28,11 @@
 - [When NOT to Use QuantUX](#-when-not-to-use-quantux--什么时候不该用-quantux)
 
 ---
+
+## 🆕 What's New in v2.3.119
+
+- **Version History Fix**: Corrected stale Version History "Latest" entry (was pointing to v2.3.116 while badge shows 2.3.118), ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.3.119
 
 ## 🆕 What's New in v2.3.118
 
@@ -1166,7 +1171,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.116)**: Added Statistical Power Quick-Reference table, Beginner's First Experiment walkthrough (5 steps from HEART to report), HEART Metrics by Domain reference (SaaS/Mobile/E-Commerce), ecosystem cross-reference audit, version bump to 2.3.116.
+**Latest (v2.3.119)**: Version History "Latest" entry corrected (was stale v2.3.116 while badge showed 2.3.118), ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
