@@ -1,3 +1,41 @@
+## v2.3.119 (2026-05-29)
+
+- Correct stale Version History "Latest" entry (was pointing to v2.3.116 while badge shows 2.3.118)
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.3.118 (2026-05-29)
+
+- Sync versions to 2.3.118 across README/SKILL.md/pyproject.toml/__init__.py
+- Fix TOC link (v23116→v23118)
+- Reorder What's New entries chronologically
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.3.117 (2026-05-29)
+
+- Add missing "When NOT to Use QuantUX" TOC entry
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.3.116 (2026-05-29)
+
+- (Maintenance cycle - no user-facing changes)
+
+## v2.3.115 (2026-05-29)
+
+- Fix stale Version History "Latest" entry (v2.3.112 → v2.3.114)
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.3.114 (2026-05-29)
+
+- Fix misplaced Examples badge (moved to badge group at top alongside other badges)
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+- Confirm bilingual section parity
+
+## v2.3.113 (2026-05-29)
+
+- Correct Version History "Latest" entry (v2.3.107 → v2.3.112)
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+- Confirm examples directory discoverability
+
 ## v2.3.112 (2026-05-26)
 
 - Repo maintenance: ecosystem cross-reference audit across all 6 AliDujie skill repos, confirmed examples directory discoverability, bilingual section parity
