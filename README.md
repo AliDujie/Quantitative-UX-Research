@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.117-blue)
+![Version](https://img.shields.io/badge/version-2.3.118-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23116)
+- [What's New](#-whats-new-in-v23118)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -29,18 +29,17 @@
 
 ---
 
-## 🆕 What's New in v2.3.116
+## 🆕 What's New in v2.3.118
 
-- **Statistical Power Quick-Reference**: Added expanded sample size table covering baseline rates 5%–50% across MDE 2%–10% for 80% power, α = 0.05, two-tailed A/B tests
-- **Beginner's First Experiment Walkthrough**: 5-step end-to-end guide from HEART framework setup through report generation, with copy-paste ready Python code
-- **HEART Metrics by Domain Reference**: Concrete HEART metric examples for SaaS, Mobile App, and E-Commerce domains with ready-to-use metric definitions
-- **Ecosystem Cross-Reference Audit**: Verified consistency across all 6 AliDujie skill cross-references in README.md and SKILL.md
-- **Version Bump**: Synced to 2.3.116
+- **Repo Maintenance**: Version sync across SKILL.md/pyproject.toml/__init__.py (all → 2.3.118), README badge set to 2.3.118, ecosystem cross-reference audit across all 6 AliDujie skills, reordered What's New entries (v2.3.116 before v2.3.117 for proper chronology)
+- **Version Bump**: Synced to 2.3.118
 
 ## 🆕 What's New in v2.3.117
 
 - **TOC Audit**: Added missing "When NOT to Use QuantUX" TOC entry, ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.117
+
+## 🆕 What's New in v2.3.116
 
 ## 🆕 What's New in v2.3.115
 
