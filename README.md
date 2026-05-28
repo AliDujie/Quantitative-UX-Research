@@ -2,7 +2,7 @@
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
-![Version](https://img.shields.io/badge/version-2.3.116-blue)
+![Version](https://img.shields.io/badge/version-2.3.117-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -23,6 +23,7 @@
 - [AI Agent Integration](#-ai-agent-integration)
 - [FAQ / Troubleshooting](#-faq--troubleshooting)
 - [Resources](#-resources)
+- [When NOT to Use QuantUX](#-when-not-to-use-quantux--什么时候不该用-quantux)
 
 ---
 
@@ -33,6 +34,11 @@
 - **HEART Metrics by Domain Reference**: Concrete HEART metric examples for SaaS, Mobile App, and E-Commerce domains with ready-to-use metric definitions
 - **Ecosystem Cross-Reference Audit**: Verified consistency across all 6 AliDujie skill cross-references in README.md and SKILL.md
 - **Version Bump**: Synced to 2.3.116
+
+## 🆕 What's New in v2.3.117
+
+- **TOC Audit**: Added missing "When NOT to Use QuantUX" TOC entry, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.3.117
 
 ## 🆕 What's New in v2.3.115
 
