@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.119-blue)
+![Version](https://img.shields.io/badge/version-2.3.120-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23119)
+- [What's New](#-whats-new-in-v23120)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -29,10 +29,10 @@
 
 ---
 
-## 🆕 What's New in v2.3.119
+## 🆕 What's New in v2.3.120
 
-- **Version History Fix**: Corrected stale Version History "Latest" entry (was pointing to v2.3.116 while badge shows 2.3.118), ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.3.119
+- **Repo Maintenance**: Merged duplicate v2.3.119 entries, filled empty v2.3.116 section, updated Version History "Latest" entry to v2.3.120, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.3.120
 
 ## 🆕 What's New in v2.3.119
 
@@ -52,7 +52,8 @@
 
 ## 🆕 What's New in v2.3.116
 
-## 🆕 What's New in v2.3.115
+- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.3.116## 🆕 What's New in v2.3.115
 
 - **Repo Maintenance**: Fixed stale Version History "Latest" entry (v2.3.112 → v2.3.114), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
 - **Version Bump**: Synced to 2.3.115
