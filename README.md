@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.121-blue)
+![Version](https://img.shields.io/badge/version-2.3.122-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23121)
+- [What's New](#-whats-new-in-v23122)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -28,6 +28,11 @@
 - [When NOT to Use QuantUX](#-when-not-to-use-quantux--什么时候不该用-quantux)
 
 ---
+
+## 🆕 What's New in v2.3.122
+
+- **Repo Maintenance**: Version bump 2.3.121→2.3.122, CHANGELOG duplicate entries consolidation, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.3.122
 
 ## 🆕 What's New in v2.3.121
 
@@ -1185,7 +1190,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.121)**: Version History "Latest" entry corrected (was stale v2.3.119 while badge showed 2.3.120), merged duplicate entries, filled empty v2.3.116 section, fixed missing newline before v2.3.115 heading, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
