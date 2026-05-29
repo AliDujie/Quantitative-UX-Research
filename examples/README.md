@@ -8,6 +8,8 @@ These examples demonstrate Quantitative UX Research capabilities with real-world
 ```bash
 cd examples/
 python 01_heart_metrics.py
+python 02_ab_testing.py
+python 03_maxdiff.py
 ```
 
 All examples use **zero dependencies** — pure Python standard library only.
@@ -33,6 +35,16 @@ A/B 测试样本量计算和结果分析，带有统计严谨性。
 
 ```bash
 python 02_ab_testing.py
+```
+
+### 03_maxdiff.py
+MaxDiff (Maximum Difference) survey design for feature prioritization with budget constraints.
+MaxDiff（最大差异）调查设计，用于预算约束下的功能优先级排序。
+
+**Use when / 适用场景**: You need to prioritize features, benefits, or pain points from a large set.
+
+```bash
+python 03_maxdiff.py
 ```
 
 ## Tips / 提示
