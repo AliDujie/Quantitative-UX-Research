@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.118-blue)
+![Version](https://img.shields.io/badge/version-2.3.119-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -33,6 +33,12 @@
 
 - **Version History Fix**: Corrected stale Version History "Latest" entry (was pointing to v2.3.116 while badge shows 2.3.118), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.119
+
+## 🆕 What's New in v2.3.119
+
+- **Version Bump**: Bumped to 2.3.119 — aligned README badge, SKILL.md, pyproject.toml, __init__.py
+- **Repo Maintenance**: Documented missing 03_maxdiff.py in examples/README.md, ecosystem cross-reference audit across all 6 AliDujie skills
+
 
 ## 🆕 What's New in v2.3.118
 
