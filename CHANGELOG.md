@@ -1,5 +1,11 @@
 ## v2.3.119 (2026-05-29)
 
+- Document missing 03_maxdiff.py in examples/README.md
+- Version sync across README/SKILL.md/pyproject.toml/__init__.py
+
+
+## v2.3.119 (2026-05-29)
+
 - Correct stale Version History "Latest" entry (was pointing to v2.3.116 while badge shows 2.3.118)
 - Ecosystem cross-reference audit across all 6 AliDujie skills
 
