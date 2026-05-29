@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.122-blue)
+![Version](https://img.shields.io/badge/version-2.3.123-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23122)
+- [What's New](#-whats-new-in-v23123)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -29,166 +29,27 @@
 
 ---
 
+## 🆕 What's New in v2.3.123
+
+- **README Cleanup**: Consolidated 25 redundant What's New entries into a summary line with CHANGELOG link, reducing README by ~129 lines while preserving full history reference
+- **Version Bump**: Synced to 2.3.123
+
 ## 🆕 What's New in v2.3.122
 
-- **Repo Maintenance**: Version bump 2.3.121→2.3.122, CHANGELOG duplicate entries consolidation, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Repo Maintenance**: Version bump 2.3.121→2.3.122, CHANGELOG dedup, ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.122
 
 ## 🆕 What's New in v2.3.121
 
-- **CHANGELOG Maintenance**: Merged duplicate version entries (v2.3.119 appeared twice, v2.3.109 duplicate removed), updated CHANGELOG.md to v2.3.121, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Repo Maintenance**: Version bump 2.3.120→2.3.121, CHANGELOG duplicate v2.3.119/v2.3.109 merges, ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.121
 
 ## 🆕 What's New in v2.3.120
 
-- **Repo Maintenance**: Merged duplicate v2.3.119 entries, filled empty v2.3.116 section, updated Version History "Latest" entry to v2.3.120, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version History Fix**: Corrected stale Version History "Latest" entry, ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.120
 
-## 🆕 What's New in v2.3.119
-
-- **Version Bump**: Bumped to 2.3.119 — aligned README badge, SKILL.md, pyproject.toml, __init__.py
-- **Repo Maintenance**: Documented missing 03_maxdiff.py in examples/README.md, ecosystem cross-reference audit across all 6 AliDujie skills
-
-
-## 🆕 What's New in v2.3.118
-
-- **Repo Maintenance**: Version sync across SKILL.md/pyproject.toml/__init__.py (all → 2.3.118), README badge set to 2.3.118, ecosystem cross-reference audit across all 6 AliDujie skills, reordered What's New entries (v2.3.116 before v2.3.117 for proper chronology)
-- **Version Bump**: Synced to 2.3.118
-
-## 🆕 What's New in v2.3.117
-
-- **TOC Audit**: Added missing "When NOT to Use QuantUX" TOC entry, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.3.117
-
-## 🆕 What's New in v2.3.116
-
-- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.3.116
-
-## 🆕 What's New in v2.3.115
-
-- **Repo Maintenance**: Fixed stale Version History "Latest" entry (v2.3.112 → v2.3.114), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.3.115
-
-## 🆕 What's New in v2.3.114
-
-- **Repo Maintenance**: Fixed misplaced Examples badge (was at line 28 after TOC, moved to badge group at top alongside other badges), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.3.114
-
-## 🆕 What's New in v2.3.113
-
-- **Repo Maintenance**: Corrected Version History "Latest" entry (v2.3.107 → v2.3.112), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed examples directory discoverability
-- **Version Bump**: Synced to 2.3.113
-
-## 🆕 What's New in v2.3.112
-
-- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skill repos, verified examples directory discoverability, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.3.112
-
-## 🆕 What's New in v2.3.110
-
-- **Duplicate Header Consolidation**: Merged `💼 Why Teams Choose QuantUX` + `🌟 Why QuantUX?` + `🎯 Why Use This Skill?` + `💡 为什么选择 QuantUX？` into a single bilingual section `🎯 Why Teams Choose QuantUX / 为什么选择 QuantUX`, preserving all content (comparison table, bilingual You-Want/Gives-You table, CN rationale, try-it-now example)
-- **Version Bump**: Synced to 2.3.110
-
-## 🆕 What's New in v2.3.109
-
-- **Runnable Examples Added**: Created `examples/` directory with 2 runnable Python scripts — HEART metrics framework setup and A/B test sample size calculation + result analysis
-- **Repo Maintenance**: Confirmed all cross-references valid, validated bilingual (CN/EN) section parity across README/SKILL.md
-- **Version Bump**: Synced version to 2.3.109
-
-## 🆕 What's New in v2.3.108
-
-- **Standalone "🎯 Why Use This Skill?" Section**: Added dedicated value-proposition section with "You Want → This Gives You" comparison table and 3-line instant example (UDM + QuantUX)
-- **Repo Maintenance**: Ecosystem-wide link audit — verified all 6 AliDujie skill cross-references are accessible and correctly formatted, confirmed version consistency across all 8 files, validated all bilingual (CN/EN) section parity
-- **Version Bump**: Synced version to 2.3.108
-
-
-
-## 🆕 What's New in v2.3.103
-
-- **Ecosystem Cross-Reference Verification**: Verified all 6 AliDujie skill cross-references point to correct repos with consistent naming; confirmed ecosystem pipeline diagram accuracy across README/SKILL.md
-- **Version Bump**: Synced version to 2.3.103
-
-## 🆕 What's New in v2.3.102
-
-- **Common Mistakes Guide**: 5 realistic mistakes with before/after fixes, bilingual (EN/CN)
-- **Beginner's First Experiment**: 45-minute end-to-end walkthrough using HEART → sample size → A/B design → analysis → business impact
-- **Who This Skill Is For**: New section targeting UX Researchers, Product Analysts, Growth Engineers, and Founders with specific use cases
-- **Improved Cross-Skill Links**: "When NOT to Use QuantUX" now explains what to do instead for each of the 5 core skills
-- **Version Bump**: Synced to 2.3.102
-
-## 🆕 What's New in v2.3.101
-
-- **Repo Maintenance**: Fixed stale Version History "Latest" entry (was v2.3.97 while badge was v2.3.100), verified ecosystem cross-references across all 6 AliDujie skills
-- **Version Bump**: Synced version to 2.3.101
-
-## 🆕 What's New in v2.3.99
-
-- **Ecosystem Pipeline Diagram**: Added ASCII visual showing full 6-skill flow with QuantUX as validation engine
-- **Cross-Skill Data Handoff**: Added explicit example showing how QuantUX outputs feed into SWD for executive presentation
-- **Version Bump**: Synced version to 2.3.99
-
-## 🆕 What's New in v2.3.97
-
-- **Version History Refresh**: Updated stale Version History "Latest" entry (was pointing to v2.3.91 while README badge was v2.3.96); ensured all historical entries reflect actual git commit history
-- **Version Bump**: Synced version to 2.3.97
-
-## 🆕 What's New in v2.3.96
-
-- **Repo Maintenance**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills
-- **Version Bump**: Synced version to 2.3.96
-
-## 🆕 What's New in v2.3.94
-
-- **Structured Thinking Model Cross-Reference**: Added explicit STM skill link in ecosystem footer and pipeline diagram
-- **Ecosystem Pipeline Enhancement**: Added forward/backward reference arrows showing STM→QuantUX strategic analysis loop
-- **References Directory Enhancement**: Added explicit quantux/ source link to Resources section
-- **Version Bump**: Synced version to 2.3.94 across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.3.93
-
-- **Duplicate Changelog Entry Fixed**: Merged duplicate v2.3.91 sections into one consolidated entry
-- **HEART Try-It-Now Example**: Added instant runnable example after "Why Teams Choose QuantUX" table
-- **Advisor Cross-Reference Enhancement**: Added explicit CTO Advisor + Plan CEO Review cross-refs in Extended Ecosystem
-- **Ecosystem Consistency**: Verified cross-references across all 6 AliDujie skills
-
-## 🆕 What's New in v2.3.92
-
-- **SKILL.md Frontmatter Fix**: Synced version to 2.3.92, added `author` field, fixed badge placement
-- **SKILL.md Badge Leak Fix**: Moved markdown badge outside YAML frontmatter boundary (invalid YAML)
-- **Ecosystem Consistency**: Verified cross-references across all 6 AliDujie skills
-- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
-- **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
-
-## 🆕 What's New in v2.3.91
-
-- **Duplicate Entry Fix**: Removed 3 duplicate skill entries from Related Skills table
-- **Cross-Reference Enhancement**: Added full ecosystem ASCII diagram to Ecosystem Integration section
-- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
-- **A/B Interpretation Enhancement**: Added concrete before/after interpretation examples for non-statisticians
-- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.3.90
-
-- **Statistical Power Quick-Ref**: Added sample size cheat sheet for common A/B test scenarios
-- **HEART Metric Examples**: Added concrete HEART metric examples for SaaS/mobile/e-commerce domains
-- **Version Sync**: Aligned version across all files
-
-## 🆕 What's New in v2.3.88
-
-- **Chinese Quick-Start Checklist**: Added bilingual 5-minute setup guide for Chinese-speaking teams
-- **Ecosystem Pro Tips**: Added full 6-skill chain invocation example in Pro Tips section
-
-## 🆕 What's New in v2.3.87
-
-- **Ecosystem Pipeline Enhancement**: Added explicit SWD→VPD→JTBD backward-reference links in cross-skill sections
-- **Pro Tips Refresh**: Expanded chain-with-ecosystem section with full 6-skill invocation example
-
-## 🆕 What's New in v2.3.86
-
-- **Decision Guide**: New "Which Method Should I Use?" table maps research tasks to specific capabilities
-- **A/B Interpretation**: Added practical statistical significance workflow with real-world examples
-- **Cross-Skill Pipeline**: Enhanced QuantUX→SWD handoff example for data-to-story workflows
+> **📦 Earlier versions (v2.3.119 → v2.3.90)**: Added statistical test selector, experiment design templates, sample size calculator, power analysis guide, Bayesian vs Frequentist comparison, A/B test analysis cookbook, statistical significance cheat sheet, cross-skill validation pipelines. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 ## 🇨🇳 中文概览
 
