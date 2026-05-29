@@ -53,7 +53,9 @@
 ## 🆕 What's New in v2.3.116
 
 - **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.3.116## 🆕 What's New in v2.3.115
+- **Version Bump**: Synced to 2.3.116
+
+## 🆕 What's New in v2.3.115
 
 - **Repo Maintenance**: Fixed stale Version History "Latest" entry (v2.3.112 → v2.3.114), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
 - **Version Bump**: Synced to 2.3.115
@@ -1178,7 +1180,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.119)**: Version History "Latest" entry corrected (was stale v2.3.116 while badge showed 2.3.118), ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.120)**: Version History "Latest" entry corrected (was stale v2.3.119 while badge showed 2.3.120), merged duplicate entries, filled empty v2.3.116 section, fixed missing newline before v2.3.115 heading, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
