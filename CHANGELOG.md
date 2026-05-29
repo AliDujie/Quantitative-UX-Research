@@ -1,11 +1,12 @@
-## v2.3.119 (2026-05-29)
+## v2.3.121 (2026-05-29)
 
+- Repo maintenance: version bump 2.3.120→2.3.121, CHANGELOG duplicate entries merged (v2.3.119×2, v2.3.109×2), ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.3.120 (2026-05-29)
+
+- Merge duplicate v2.3.119 CHANGELOG entries into single consolidated entry
 - Document missing 03_maxdiff.py in examples/README.md
 - Version sync across README/SKILL.md/pyproject.toml/__init__.py
-
-
-## v2.3.119 (2026-05-29)
-
 - Correct stale Version History "Latest" entry (was pointing to v2.3.116 while badge shows 2.3.118)
 - Ecosystem cross-reference audit across all 6 AliDujie skills
 
@@ -252,7 +253,3 @@
 ## v2.3.21 (2026-05-13)
 
 - Repo maintenance: added Contributing link to English section footer, enhanced cross-skill collaboration examples with QuantUX-to-SWD data flow workflow, aligned all version references
-
-## v2.3.109 (2026-05-25)
-- Confirmed all 6-skill cross-references valid and consistent
-- Validated bilingual (CN/EN) section parity across README/SKILL.md
