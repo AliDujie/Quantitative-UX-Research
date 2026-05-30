@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23123)
+- [What's New](#-whats-new-in-v23125)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -31,28 +31,10 @@
 
 ## 🆕 What's New in v2.3.125
 
-- **Repo Maintenance**: Added additional Quick Start one-liners, enhanced Try Before You Decide section, ecosystem cross-reference audit across all 6 AliDujie skills
+- **CHANGELOG Sync**: Backfilled v2.3.122→v2.3.125 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.125
 
-## 🆕 What's New in v2.3.123
-
-- **README Cleanup**: Consolidated 25 redundant What's New entries into a summary line with CHANGELOG link, reducing README by ~129 lines while preserving full history reference
-- **Version Bump**: Synced to 2.3.123
-
-## 🆕 What's New in v2.3.122
-
-- **Repo Maintenance**: Version bump 2.3.121→2.3.122, CHANGELOG dedup, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.3.122
-
-## 🆕 What's New in v2.3.121
-
-- **Repo Maintenance**: Version bump 2.3.120→2.3.121, CHANGELOG duplicate v2.3.119/v2.3.109 merges, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.3.121
-
-## 🆕 What's New in v2.3.120
-
-- **Version History Fix**: Corrected stale Version History "Latest" entry, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.3.120
+> **📦 Recent versions (v2.3.123 → v2.3.120)**: CHANGELOG sync, README cleanup, Version History fixes, CHANGELOG dedup. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 > **📦 Earlier versions (v2.3.119 → v2.3.90)**: Added statistical test selector, experiment design templates, sample size calculator, power analysis guide, Bayesian vs Frequentist comparison, A/B test analysis cookbook, statistical significance cheat sheet, cross-skill validation pipelines. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
@@ -1061,7 +1043,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.125)**: Added additional Quick Start one-liners, enhanced Try Before You Decide section, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.125)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
 
