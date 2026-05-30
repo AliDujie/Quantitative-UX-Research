@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23125)
+- [What's New](#-whats-new-in-v23126)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -728,7 +728,7 @@ ctx = swd.build_context(audience="Product VP", cta="Approve optimization budget"
 story = swd.build_story(protagonist="Product Committee", imbalance="New design improves conversion 15%")
 ```
 
-### 🔗 Cross-Skill Collaboration / 跨技能协作
+### 🔗 Downstream Integration / 下游集成
 
 | QuantUX 产出 → | 下游技能用它做... | 示例调用 |
 |---------------|-----------------|----------|
