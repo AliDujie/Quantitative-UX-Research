@@ -146,6 +146,14 @@ _Results based on aggregated team adoption data across SaaS, mobile, and e-comme
 > 💡 **No stats PhD required** — QuantUX handles the math. You focus on the questions.
 > 💡 **不需要统计学博士** — QuantUX 处理计算，你专注于提出正确的问题。
 
+### 👥 这个技能适合谁
+
+- **体验研究员** — 需要用定量方法验证设计假设，建立 HEART 度量体系
+- **产品/数据分析师** — 需要设计统计上可靠的 A/B 测试，计算样本量和置信区间
+- **增长工程师** — 需要量化用户行为、优化留存、自动化实验管道
+- **创业者/产品经理** — 需要用数据驱动的商业影响分析说服利益相关者
+- **AI Agent 开发者** — 需要零依赖的统计计算工具，适用于沙箱环境
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
