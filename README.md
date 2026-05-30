@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.124-blue)
+![Version](https://img.shields.io/badge/version-2.3.125-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -28,6 +28,11 @@
 - [When NOT to Use QuantUX](#-when-not-to-use-quantux--什么时候不该用-quantux)
 
 ---
+
+## 🆕 What's New in v2.3.125
+
+- **Repo Maintenance**: Added additional Quick Start one-liners, enhanced Try Before You Decide section, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.3.125
 
 ## 🆕 What's New in v2.3.123
 
@@ -87,6 +92,11 @@ from quantux import QuantUXSkill
 skill = QuantUXSkill("Your Product")
 print(skill.calculate_ab_sample_size(baseline=0.35, mde=0.03))
 ```
+
+> 💡 **Try it now / 立即尝试** — One-liner:
+> ```python
+> from quantux import QuantUXSkill; print(QuantUXSkill("Your Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
+> ```
 
 | You Want | QuantUX Gives You | 你想要 | QuantUX 给你 |
 |----------|------------------|--------|-------------|
@@ -1051,7 +1061,9 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.125)**: Added additional Quick Start one-liners, enhanced Try Before You Decide section, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
