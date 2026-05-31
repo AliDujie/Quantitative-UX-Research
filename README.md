@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23126)
+- [What's New](#-whats-new-in-v23127)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -33,7 +33,7 @@
 
 ---
 
-## 🆕 What's New in v2.3.126
+## 🆕 What's New in v2.3.127
 
 - **CHANGELOG Sync**: Backfilled v2.3.122→v2.3.126 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.3.125
@@ -1076,6 +1076,19 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 **Previous (v2.3.85)**: Added "Which Method Should I Use?" decision guide and A/B interpretation example.
 
 **Previous (v2.3.84)**: Added bilingual quick-start checklist and pro tips to USAGE.md.
+
+## 🌐 Ecosystem FAQ / 生态常见问题
+
+**Q: QuantUX vs UDM — when do I switch from qual to quant?**
+A: Use UDM for exploratory research (discovering problems, generating hypotheses). Switch to QuantUX when you need to validate those findings statistically — sample sizes, significance tests, A/B test design.
+
+**Q: What if I don't have enough data for A/B testing?**
+A: QuantUX includes sample size calculation (C10) to tell you upfront how much data you need. If N is too small, start with UDM's qualitative methods and use QuantUX's HEART framework for lightweight tracking.
+
+**Q: Can QuantUX validate Persona segments?**
+A: Yes. After Persona creates behavioral segments (T5 clustering), QuantUX can validate those segments through A/B testing (C4) and HEART metric tracking (C1) to confirm the segments behave differently.
+
+---
 
 ## 📚 Resources
 
