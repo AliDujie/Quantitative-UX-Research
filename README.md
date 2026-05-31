@@ -35,7 +35,7 @@
 
 ## 🆕 What's New in v2.3.128
 
-- **Repo maintenance**: ecosystem cross-reference audit across all 6 AliDujie skills
+- **Repo maintenance 2026-06-01**: Footer self-reference fix (added bold **QuantUX**), TOC anchor verification, Version History sync, ecosystem cross-reference audit across all 6 AliDujie skills
 
 
 > **📦 Recent versions (v2.3.123 → v2.3.120)**: CHANGELOG sync, README cleanup, Version History fixes, CHANGELOG dedup. Full changelog in [CHANGELOG.md](CHANGELOG.md).
@@ -1055,7 +1055,9 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.126)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.128)**: TOC anchor version verification, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v2.3.126)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
 
@@ -1117,6 +1119,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
-[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
+[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · **QuantUX** · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
 
 
