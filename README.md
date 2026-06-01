@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.131-blue)
+![Version](https://img.shields.io/badge/version-2.3.132-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23130)
+- [What's New](#-whats-new-in-v23131)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -33,9 +33,9 @@
 
 ---
 
-## 🆕 What's New in v2.3.131
+## 🆕 What's New in v2.3.132
 
-- **Repo maintenance 2026-06-01**: Consolidated 2 What's New sections, added Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
+- **Repo maintenance 2026-06-01**: Fixed stale What's New TOC anchor (v23130 → v23132), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 > **📦 Earlier versions (v2.3.128 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
