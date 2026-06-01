@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.130-blue)
+![Version](https://img.shields.io/badge/version-2.3.131-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -33,18 +33,12 @@
 
 ---
 
-## 🆕 What's New in v2.3.130
+## 🆕 What's New in v2.3.131
 
-- **Repo maintenance 2026-06-01**: Added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
+- **Repo maintenance 2026-06-01**: Consolidated 2 What's New sections, added Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
-## 🆕 What's New in v2.3.128
+> **📦 Earlier versions (v2.3.128 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
-- **Repo maintenance 2026-06-01**: Footer self-reference fix (added bold **QuantUX**), TOC anchor verification, Version History sync, ecosystem cross-reference audit across all 6 AliDujie skills
-
-
-> **📦 Recent versions (v2.3.123 → v2.3.120)**: CHANGELOG sync, README cleanup, Version History fixes, CHANGELOG dedup. Full changelog in [CHANGELOG.md](CHANGELOG.md).
-
-> **📦 Earlier versions (v2.3.119 → v2.3.90)**: Added statistical test selector, experiment design templates, sample size calculator, power analysis guide, Bayesian vs Frequentist comparison, A/B test analysis cookbook, statistical significance cheat sheet, cross-skill validation pipelines. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 ## 🇨🇳 中文概览
 
@@ -1121,7 +1115,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
-**Previous (v2.3.106)**: Added Statistical Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
+**Previous (v2.3.106)**: Consolidated 2 What's New sections, added Method Selector table (bilingual CN/EN), expanded FAQ with A/B test data requirements and no-Python-expertise usage patterns, added qual→quant handoff Pro Tip in Quick Start section.
 
 **Previous (v2.3.96)**: Fixed duplicate changelog entry (v2.3.95 appeared twice), synced versions across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 

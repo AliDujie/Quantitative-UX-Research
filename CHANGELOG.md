@@ -1,4 +1,4 @@
-## v2.3.130 (2026-06-01)
+## v2.3.131 (2026-06-01)
 
 - Repo maintenance: Added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section, version bump
 
