@@ -30,7 +30,7 @@
     report_md = skill.build_report("用户满意度研究")
 """
 
-__version__ = "2.3.132"
+__version__ = "2.3.127"
 
 from .config import AnalysisConfig, HEART_DIMENSIONS, HEART_LABELS, KNOWLEDGE_FILES
 from .utils import load_knowledge, load_all_knowledge, search_knowledge

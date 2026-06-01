@@ -1,15 +1,9 @@
-## v2.3.131 (2026-06-01)
-
-- Repo maintenance: Added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section, version bump
-
-## v2.3.128 (2026-06-01)
-
-- Repo maintenance: ecosystem cross-reference audit across all 6 AliDujie skills, enhanced README with improved A/B test recipes and cross-skill collaboration examples
-
 ## v2.3.127 (2026-05-31)
 
-- CHANGELOG Sync: Backfilled v2.3.122→v2.3.126 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
-- Version Bump: Synced to 2.3.125
+- README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
+- Version sync across README badge, SKILL.md, pyproject.toml, and __init__.py
+
+## v2.3.125 (2026-05-30)
 
 - Repo maintenance: README content enrichment, consolidated What's New entries, added practical usage examples and "Why Use This Skill?" sections to ecosystem docs, cross-reference audit across all 6 AliDujie skills
 
