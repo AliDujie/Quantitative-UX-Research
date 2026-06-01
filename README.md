@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.129-blue)
+![Version](https://img.shields.io/badge/version-2.3.130-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23128)
+- [What's New](#-whats-new-in-v23130)
 - [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#-who-this-skill-is-for)
@@ -32,6 +32,10 @@
 - [Recommended Learning Path](#-recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.3.130
+
+- **Repo maintenance 2026-06-01**: Added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
 ## 🆕 What's New in v2.3.128
 
@@ -78,6 +82,10 @@ from quantux import QuantUXSkill
 skill = QuantUXSkill("Your Product")
 print(skill.calculate_ab_sample_size(baseline=0.35, mde=0.03))
 ```
+
+### 🔬 Why Quantitative UX Research Matters
+
+Gut feelings are fast but **data is reliable**. QuantUX gives you the statistical rigor to answer "did this actually work?" with confidence. Built-in HEART scoring, A/B test calculators, MaxDiff analysis, and Cohen's d effect sizes mean you never have to guess whether a 5% improvement is real or noise. Whether you're a solo researcher or managing a UX team, QuantUX turns statistical complexity into one-line Python calls.
 
 > 💡 **Try it now / 立即尝试** — One-liner:
 > ```python
@@ -137,6 +145,25 @@ _Results based on aggregated team adoption data across SaaS, mobile, and e-comme
 > # One line → instant sample size calculation
 > print(QuantUXSkill("My Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
 > ```
+
+### 📐 Statistical Significance Quick-Ref
+
+| Test | When to Use | Python Call |
+|------|------------|-------------|
+| t-test | Compare two means | `scipy.stats.ttest_ind(a, b)` |
+| Chi-square | Compare proportions | `scipy.stats.chi2_contingency(table)` |
+| ANOVA | Compare 3+ means | `scipy.stats.f_oneway(a, b, c)` |
+| Mann-Whitney U | Non-parametric 2-group | `scipy.stats.mannwhitneyu(a, b)` |
+| Cohen's d | Effect size | `d = (mean_a - mean_b) / pooled_std` |
+
+| p-value | Interpretation |
+|---------|---------------|
+| < 0.001 | Highly significant (***) |
+| < 0.01 | Very significant (**) |
+| < 0.05 | Significant (*) |
+| ≥ 0.05 | Not significant (ns) |
+
+> 💡 QuantUXSkill has built-in wrappers: `skill.ab_test_significance()` handles the stats for you.
 
 ## 👥 Who This Skill Is For
 
@@ -728,6 +755,33 @@ ctx = swd.build_context(audience="Product VP", cta="Approve optimization budget"
 story = swd.build_story(protagonist="Product Committee", imbalance="New design improves conversion 15%")
 ```
 
+### 🔗 QuantUX + Other Skills: Collaboration Examples
+
+**QuantUX + UDM: From method selection to validation**
+```python
+from udm import UDMSkill
+from quantux import QuantUXSkill
+
+u = UDMSkill("MyApp")
+# UDM recommends methods for your research goal
+methods = u.recommend_methods("Test if new onboarding improves retention")
+# QuantUX executes the quantitative part
+q = QuantUXSkill("MyApp")
+result = q.run_ab_test("onboarding", {"control": 1500, "treatment": 1720})
+print(f"Lift: {result['lift']:.1f}% (p={result['p_value']:.4f})")
+```
+
+**QuantUX + SWD: Present statistical results**
+```python
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+q = QuantUXSkill("MyApp")
+heart = q.heart_score({"engagement": 72, "adoption": 45, "retention": 68, "task_success": 89, "satisfaction": 4.2})
+s = SWDSkill("UX Report")
+story = s.build_story("UX Health Check", context=f"HEART score: {heart['overall']:.0f}/100")
+```
+
 ### 🔗 Downstream Integration / 下游集成
 
 | QuantUX 产出 → | 下游技能用它做... | 示例调用 |
@@ -1055,7 +1109,9 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.129)**: Repo maintenance — added QuantUX Research Sprint Template, Statistical Quick-Ref tables (A/B significance, HEART scores, Cohen's d), and ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.130)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
+
+**Previous (v2.3.129)**: Repo maintenance — added QuantUX Research Sprint Template, Statistical Quick-Ref tables (A/B significance, HEART scores, Cohen's d), and ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.126)**: Repo maintenance — TOC anchor version verification, ecosystem cross-reference audit across all 6 AliDujie skills.
 

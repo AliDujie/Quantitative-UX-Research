@@ -1,3 +1,7 @@
+## v2.3.130 (2026-06-01)
+
+- Repo maintenance: Added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section, version bump
+
 ## v2.3.128 (2026-06-01)
 
 - Repo maintenance: ecosystem cross-reference audit across all 6 AliDujie skills, enhanced README with improved A/B test recipes and cross-skill collaboration examples
