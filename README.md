@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.128-blue)
+![Version](https://img.shields.io/badge/version-2.3.129-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -1055,9 +1055,11 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.128)**: TOC anchor version verification, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.3.129)**: Repo maintenance — added QuantUX Research Sprint Template, Statistical Quick-Ref tables (A/B significance, HEART scores, Cohen's d), and ecosystem cross-reference audit across all 6 AliDujie skills.
 
-**Previous (v2.3.126)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Previous (v2.3.126)**: Repo maintenance — TOC anchor version verification, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v2.3.124)**: Repo maintenance — footer self-reference fix, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
 
