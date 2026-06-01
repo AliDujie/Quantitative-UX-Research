@@ -13,23 +13,23 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v23128)
-- [Why Teams Choose QuantUX](#-why-teams-choose-quantux--为什么选择-quantux)
-- [Quick Decision: When to Use QuantUX?](#-quick-decision-when-to-use-quantux)
-- [Who This Skill Is For](#-who-this-skill-is-for)
-- [Quick Start](#-quick-start-5-minutes)
-- [Ecosystem Quick Start](#-ecosystem-quick-start)
-- [Core Capabilities](#-10-capabilities)
-- [Real-World Use Cases](#-real-world-use-cases)
-- [Common Mistakes](#-common-mistakes-in-quantitative-ux-research)
-- [AI Agent Integration](#-ai-agent-integration)
-- [Quick Recipes](#-quick-recipes--快速食谱)
-- [FAQ / Troubleshooting](#-faq--troubleshooting)
-- [Resources](#-resources)
-- [When NOT to Use QuantUX](#-when-not-to-use-quantux--什么时候不该用-quantux)
-- [Best Practices](#-best-practices--最佳实践)
-- [Limitations](#-limitations--局限性)
-- [Recommended Learning Path](#-recommended-learning-path)
+- [What's New](#whats-new-in-v23128)
+- [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
+- [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
+- [Who This Skill Is For](#who-this-skill-is-for)
+- [Quick Start](#quick-start-5-minutes)
+- [Ecosystem Quick Start](#ecosystem-quick-start)
+- [Core Capabilities](#10-capabilities)
+- [Real-World Use Cases](#real-world-use-cases)
+- [Common Mistakes](#common-mistakes-in-quantitative-ux-research)
+- [AI Agent Integration](#ai-agent-integration)
+- [Quick Recipes](#quick-recipes)
+- [FAQ / Troubleshooting](#faq-troubleshooting)
+- [Resources](#resources)
+- [When NOT to Use QuantUX](#when-not-to-use-quantux-quantux)
+- [Best Practices](#best-practices)
+- [Limitations](#limitations)
+- [Recommended Learning Path](#recommended-learning-path)
 
 ---
 
@@ -569,7 +569,7 @@ maxdiff = qx.design_maxdiff(
 # → Utility scores that actually rank features
 ```
 
-> 💡 **Pro Tip**: Start with HEART to define *what* to measure. An A/B test on the wrong metric is worse than no test. See [HEART Framework](#-heart-framework) for guidance.
+> 💡 **Pro Tip**: Start with HEART to define *what* to measure. An A/B test on the wrong metric is worse than no test. See [HEART Framework](#heart-framework) for guidance.
 
 ### Recipe: "Are our users satisfied this quarter?" (30 min)
 ```python
@@ -1168,7 +1168,7 @@ A: Yes. After Persona creates behavioral segments (T5 clustering), QuantUX can v
 1. **Start with the README** — Quick start + 30-second example
 2. **Read USAGE.md** — Detailed workflows for each capability
 3. **Explore references/** — Deep dive into HEART framework, CSat methods, and statistical analysis
-4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline](#-complete-pipeline-example-all-6-skills-end-to-end))
+4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline](#complete-pipeline-example-all-6-skills-end-to-end))
 
 ## 📄 License
 
