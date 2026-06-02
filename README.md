@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.130-blue)
+![Version](https://img.shields.io/badge/version-2.3.131-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23130)
+- [What's New](#whats-new-in-v23131)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -32,6 +32,10 @@
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.3.131
+
+- **Repo Maintenance 2026-06-03**: Beginner's First Experiment walkthrough audit (verified complete and accurate), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.3.130→2.3.131.
 
 ## 🆕 What's New in v2.3.130
 
