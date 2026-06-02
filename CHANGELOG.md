@@ -1,4 +1,8 @@
 ## v2.3.127 (2026-05-31)
+## [2.3.129] - 2026-06-02
+
+- Repo maintenance: Version bump to 2.3.129, ecosystem cross-reference audit across all 6 AliDujie skills.
+
 
 - README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
 - Version sync across README badge, SKILL.md, pyproject.toml, and __init__.py

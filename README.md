@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.128-blue)
+![Version](https://img.shields.io/badge/version-2.3.129-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -33,7 +33,11 @@
 
 ---
 
-## 🆕 What's New in v2.3.128
+## 🆕 What's New in v2.3.129
+
+## 🆕 What's New in v23129
+
+- **Repo Maintenance 2026-06-02**: Version bump to 2.3.129, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 - **Repo Maintenance 2026-05-31**: README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
 - **Version Bump**: Synced to 2.3.127
@@ -42,7 +46,7 @@
 
 - **Repo maintenance 2026-06-01**: Fixed stale What's New TOC anchor (v23130 → v23132), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
-> **📦 Earlier versions (v2.3.128 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
+> **📦 Earlier versions (v2.3.129 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 
 ## 🇨🇳 中文概览
@@ -1108,7 +1112,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.128)**: Repo maintenance 2026-06-02 — TOC anchor verification (v23131 → v23127), Version History consistency audit (corrected stale v2.3.130 → v2.3.128), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v2.3.129)**: Repo maintenance 2026-06-02 — TOC anchor verification (v23131 → v23127), Version History consistency audit (corrected stale v2.3.130 → v2.3.129), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v2.3.130)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
