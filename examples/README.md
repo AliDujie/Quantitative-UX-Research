@@ -53,3 +53,15 @@ python 03_maxdiff.py
 - No `pip install` required — QuantUX is zero-dependency
 - Combine with UDM examples for qual → quant triangulation workflows
 - See [USAGE.md](../USAGE.md) for detailed API documentation
+
+## 🔗 Ecosystem Integration / 生态集成
+
+QuantUX is the "validate" layer of the AliDujie UX Research Ecosystem. Chain it with other skills:
+
+- **UDM → QuantUX**: [UDM](https://github.com/AliDujie/universal-design-methods) qualitative findings → QuantUX A/B validation
+- **Persona → QuantUX**: [Persona](https://github.com/AliDujie/web-persona-skill) segments → QuantUX per-segment metrics
+- **JTBD → QuantUX**: [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) opportunity scores → QuantUX feature prioritization experiments
+- **VPD → QuantUX**: [VPD](https://github.com/AliDujie/value-proposition-design) experiment design → QuantUX statistical analysis
+- **QuantUX → SWD**: QuantUX experiment data → [SWD](https://github.com/AliDujie/storytelling-with-data) executive narratives
+
+See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 6-skill end-to-end workflow.
