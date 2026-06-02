@@ -42,7 +42,7 @@
 
 - **Repo maintenance 2026-06-01**: Fixed stale What's New TOC anchor (v23130 → v23132), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
-> **📦 Earlier versions (v2.3.129 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
+> **📦 Earlier versions (v2.3.125 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 
 ## 🇨🇳 中文概览
