@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23128)
+- [What's New](#whats-new-in-v23129)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -35,11 +35,7 @@
 
 ## 🆕 What's New in v2.3.129
 
-## 🆕 What's New in v23129
-
 - **Repo Maintenance 2026-06-02**: Version bump to 2.3.129, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-- **Repo Maintenance 2026-05-31**: README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
 - **Version Bump**: Synced to 2.3.127
 
 ## 🆕 What's New in v2.3.126
@@ -1114,9 +1110,9 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Latest (v2.3.129)**: Repo maintenance 2026-06-02 — TOC anchor verification (v23131 → v23127), Version History consistency audit (corrected stale v2.3.130 → v2.3.129), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
-**Previous (v2.3.130)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
+**Previous (v2.3.127)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
-**Previous (v2.3.129)**: Repo maintenance — added QuantUX Research Sprint Template, Statistical Quick-Ref tables (A/B significance, HEART scores, Cohen's d), and ecosystem cross-reference audit across all 6 AliDujie skills.
+**Previous (v2.3.128)**: Repo maintenance — added QuantUX Research Sprint Template, Statistical Quick-Ref tables (A/B significance, HEART scores, Cohen's d), and ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.3.126)**: Repo maintenance — TOC anchor version verification, ecosystem cross-reference audit across all 6 AliDujie skills.
 
