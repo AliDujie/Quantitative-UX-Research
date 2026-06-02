@@ -36,7 +36,6 @@
 ## 🆕 What's New in v2.3.129
 
 - **Repo Maintenance 2026-06-02**: Version bump to 2.3.129, ecosystem cross-reference audit across all 6 AliDujie skills.
-- **Version Bump**: Synced to 2.3.127
 
 ## 🆕 What's New in v2.3.126
 
@@ -1108,7 +1107,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.129)**: Repo maintenance 2026-06-02 — TOC anchor verification (v23131 → v23127), Version History consistency audit (corrected stale v2.3.130 → v2.3.129), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v2.3.129)**: Repo maintenance 2026-06-02 — TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v2.3.127)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
