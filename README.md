@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23132)
+- [What's New](#whats-new-in-v23133)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -156,11 +156,6 @@ _Results based on aggregated team adoption data across SaaS, mobile, and e-comme
 > # One line → instant sample size calculation
 > print(QuantUXSkill("My Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
 > # → Need ~2,028 users per group for 80% power
-> ```
-> ```python
-> from quantux import QuantUXSkill
-> # One line → instant sample size calculation
-> print(QuantUXSkill("My Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
 > ```
 
 ### 📐 Statistical Significance Quick-Ref
@@ -1126,7 +1121,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.131)**: Repo maintenance 2026-06-02 — TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v2.3.133)**: Repo maintenance 2026-06-03 — Fixed duplicate code block in Try Before You Decide section, updated TOC anchor (v2.3.132 → v2.3.133), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v2.3.127)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
