@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.132-blue)
+![Version](https://img.shields.io/badge/version-2.3.133-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -32,6 +32,10 @@
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.3.133
+
+- **Repo Maintenance 2026-06-03**: Added bilingual section header for "Why QuantUX Matters", added Try Before You Decide block after 快速决策 table, version bump 2.3.132→2.3.133.
 
 ## 🆕 What's New in v2.3.132
 
@@ -89,9 +93,10 @@ skill = QuantUXSkill("Your Product")
 print(skill.calculate_ab_sample_size(baseline=0.35, mde=0.03))
 ```
 
-### 🔬 Why Quantitative UX Research Matters
+### 🔬 Why Quantitative UX Research Matters / 为什么 QuantUX 重要
 
 Gut feelings are fast but **data is reliable**. QuantUX gives you the statistical rigor to answer "did this actually work?" with confidence. Built-in HEART scoring, A/B test calculators, MaxDiff analysis, and Cohen's d effect sizes mean you never have to guess whether a 5% improvement is real or noise. Whether you're a solo researcher or managing a UX team, QuantUX turns statistical complexity into one-line Python calls.
+直觉很快，但**数据才可靠**。QuantUX 提供统计严谨性，让你自信地回答"这真的有效吗？"——内置 HEART 评分、A/B 测试计算器、MaxDiff 分析和效应量，再也不需要猜 5% 的提升是不是噪声。
 
 > 💡 **Try it now / 立即尝试** — One-liner:
 > ```python
@@ -146,6 +151,12 @@ _Results based on aggregated team adoption data across SaaS, mobile, and e-comme
 > 💡 QuantUX 是定量验证引擎：当你需要统计证据支持设计决策时使用。
 
 > 💡 **Try Before You Decide / 先试后决定**:
+> ```python
+> from quantux import QuantUXSkill
+> # One line → instant sample size calculation
+> print(QuantUXSkill("My Product").calculate_ab_sample_size(baseline=0.35, mde=0.03))
+> # → Need ~2,028 users per group for 80% power
+> ```
 > ```python
 > from quantux import QuantUXSkill
 > # One line → instant sample size calculation
