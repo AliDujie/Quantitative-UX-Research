@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23131)
+- [What's New](#whats-new-in-v23132)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -32,6 +32,10 @@
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.3.132
+
+- **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 2.3.132), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 ## 🆕 What's New in v2.3.131
 
