@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.134-blue)
+![Version](https://img.shields.io/badge/version-2.3.135-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -1125,7 +1125,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.133)**: Repo maintenance 2026-06-03 — Fixed duplicate code block in Try Before You Decide section, updated TOC anchor (v2.3.132 → v2.3.133), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v2.3.134)**: Repo maintenance 2026-06-03 — Fixed duplicate code block in Try Before You Decide section, updated TOC anchor (v2.3.132 → v2.3.133), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v2.3.127)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
 
