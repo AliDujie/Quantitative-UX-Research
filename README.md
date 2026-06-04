@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.136-blue)
+![Version](https://img.shields.io/badge/version-2.3.137-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23134)
+- [What's New](#whats-new-in-v23137)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -33,9 +33,13 @@
 
 ---
 
+## 🆕 What's New in v23137
+
+- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 2.3.136→2.3.137.
+
 ## 🆕 What's New in v2.3.136
 
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed TOC anchors intact, version bump 2.3.135→2.3.136.
+- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v23134 → v23136), version bump 2.3.135→2.3.136.
 
 ## 🆕 What's New in v2.3.134
 
@@ -1129,7 +1133,9 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.136)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (v2.3.137)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+
+**Previous (v2.3.136)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
 **Previous (v2.3.134)**: Repo maintenance 2026-06-03 — Fixed duplicate code block in Try Before You Decide section, updated TOC anchor (v2.3.132 → v2.3.133), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
