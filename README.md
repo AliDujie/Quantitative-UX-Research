@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.137-blue)
+![Version](https://img.shields.io/badge/version-2.3.138-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23137)
+- [What's New](#whats-new-in-v23138)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -34,9 +34,9 @@
 
 ---
 
-## 🆕 What's New in v23137
+## 🆕 What's New in v23138
 
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 2.3.136→2.3.137.
+- Added missing Beginner's First QuantUX Experiment tutorial (60-min A/B test walkthrough with 7 steps: HEART metrics → sample size → A/B analysis → MaxDiff → CSat → executive report). Added 5 new Quick Recipes. Version bump 2.3.137→2.3.138.
 
 ## 🆕 What's New in v2.3.136
 
@@ -1192,6 +1192,161 @@ A: Yes. After Persona creates behavioral segments (T5 clustering), QuantUX can v
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
 - [references/](references/) — Method reference guides (HEART, CSat, MaxDiff, A/B testing, cross-skill validation)
 - [quantux/](quantux/) — Core Python module source code
+
+## 🧪 Beginner's First QuantUX Experiment — 60-Minute A/B Test / 新手入门教程
+
+> **Goal:** Go from research question to statistically validated conclusion.
+> **目标：** 从研究问题到统计验证结论。
+> **Time:** ~60 minutes | **Prerequisites:** Python 3.8+
+
+### Step 1: Initialize (1 min)
+
+```python
+from quantux import QuantUXSkill
+qx = QuantUXSkill("FreshMart 生鲜电商")
+```
+
+### Step 2: Define HEART Metrics (5 min)
+
+Before testing, define what success looks like across 5 dimensions:
+
+```python
+heart = qx.build_heart_framework()
+print(heart)
+# → Goals, Signals, Metrics for Happiness, Engagement, Adoption, Retention, Task Success
+```
+
+### Step 3: Calculate Sample Size (3 min)
+
+Know upfront how much data you need — don't guess:
+
+```python
+n = qx.calculate_ab_sample_size(baseline=0.35, mde=0.03)
+print(f"Need {n} users per group for 80% power, α=0.05")
+# → Need ~5,771 users per group
+```
+
+### Step 4: Run A/B Test Analysis (10 min)
+
+Analyze your experiment results with full statistical rigor:
+
+```python
+result = qx.analyze_ab_test(
+    "Old Checkout", 5000, 1750,   # control: 5000 users, 1750 conversions
+    "New Checkout", 5000, 1900    # treatment: 5000 users, 1900 conversions
+)
+print(f"Lift: {result['lift']:.1f}%")
+print(f"p-value: {result['p_value']:.4f}")
+print(f"95% CI: [{result['ci_lower']:.1f}%, {result['ci_upper']:.1f}%]")
+# → Lift: 8.6%, p=0.0312, 95% CI: [0.7%, 16.5%]
+```
+
+### Step 5: Prioritize Features with MaxDiff (15 min)
+
+When users say "everything is important", force real trade-offs:
+
+```python
+maxdiff = qx.design_maxdiff("Checkout Features", [
+    "One-click reorder", "Guest checkout", "Save cart", "Express shipping", "Price comparison"
+])
+print(maxdiff)
+# → Forced-choice survey design with balanced blocks
+```
+
+### Step 6: Track CSat Trends (10 min)
+
+Measure user satisfaction with Top-2-Box scoring:
+
+```python
+csat = qx.analyze_csat("Q1", total=500, scores={1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
+print(f"CSat Top-2-Box: {csat['top2box']:.0f}%")
+# → CSat Top-2-Box: 74%
+```
+
+### Step 7: Generate Executive Report (10 min)
+
+Package everything into a stakeholder-ready report:
+
+```python
+report = qx.generate_report("Q1 Checkout Optimization", include_ceo_analysis=True)
+print(report)
+# → Executive summary + business impact + ROI estimation
+```
+
+### ✅ Tutorial Checklist
+
+- [ ] Initialized QuantUX with your product name
+- [ ] Defined HEART framework metrics
+- [ ] Calculated sample size for A/B test
+- [ ] Analyzed A/B test with p-value and confidence interval
+- [ ] Designed MaxDiff survey for feature prioritization
+- [ ] Calculated CSat Top-2-Box score
+- [ ] Generated executive report with CEO decision support
+
+### 🔀 What's Next?
+
+Chain with other AliDujie skills for end-to-end research:
+
+```python
+# UDM generates hypotheses → QuantUX validates → SWD presents
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+udm = UDMSkill("FreshMart")
+methods = udm.recommend_methods("为什么用户放弃购物车")
+
+qx = QuantUXSkill("FreshMart")
+ab = qx.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
+
+swd = SWDSkill("Q1 Report")
+story = swd.build_story(context="A/B test validates checkout redesign", evidence=[f"Lift: {ab['lift']:.1f}%"])
+```
+
+## 🍽️ Quick Recipes / 快速食谱
+
+### Recipe: "How many users do I need for my A/B test?" (1 min)
+```python
+from quantux import QuantUXSkill
+qx = QuantUXSkill("My Product")
+print(qx.calculate_ab_sample_size(baseline=0.35, mde=0.03))
+# → Need ~5,771 users per group
+```
+
+### Recipe: "Is my experiment result statistically significant?" (2 min)
+```python
+result = qx.analyze_ab_test("Control", 3000, 900, "Treatment", 3000, 1050)
+print(f"Significant: {result['p_value'] < 0.05}")
+# → True
+```
+
+### Recipe: "Which feature should we build first?" (10 min)
+```python
+maxdiff = qx.design_maxdiff("Q2 Features", ["Dark Mode", "Export CSV", "API Access", "Team Sharing"])
+# Send survey → analyze responses → get utility scores → rank
+```
+
+### Recipe: "Track user satisfaction this quarter" (5 min)
+```python
+csat = qx.analyze_csat("Q1", total=200, scores={1: 5, 2: 10, 3: 30, 4: 80, 5: 75})
+print(f"Top-2-Box: {csat['top2box']:.0f}%")
+```
+
+### Recipe: "Present UX results to the board" (15 min)
+```python
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+qx = QuantUXSkill("Checkout Redesign")
+ab = qx.analyze_ab_test("Old", 5000, 1750, "New", 5000, 1900)
+
+swd = SWDSkill("Board Report")
+story = swd.build_story(
+    context="Checkout A/B test",
+    evidence=[f"New flow converts {ab['lift']:.1f}% better, p={ab['p_value']:.3f}"],
+    call_to_action="Roll out new checkout to all users"
+)
+```
 
 ### 📖 Recommended Learning Path
 

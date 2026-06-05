@@ -1,3 +1,10 @@
+## [2.3.138] - 2026-06-05 (PM)
+
+- Added missing Beginner's First QuantUX Experiment tutorial (60-min A/B test walkthrough with 7 steps: HEART metrics → sample size → A/B analysis → MaxDiff → CSat → executive report).
+- Added 5 new Quick Recipes: sample size calculation, significance check, MaxDiff survey, CSat tracking, board presentation with SWD integration.
+- Enhanced cross-skill pipeline documentation with new UDM→QuantUX→SWD workflow.
+- Version bump 2.3.137→2.3.138.
+
 ## [2.3.137] - 2026-06-04 (PM)
 
 - Repo maintenance: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed TOC anchors intact, version bump 2.3.136→2.3.137.
