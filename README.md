@@ -34,11 +34,11 @@
 
 ---
 
-## 🆕 What's New in v23139
+## 🆕 What's New in v2.3.139
 
 - **Repo Maintenance 2026-06-05 (Evening)**: Added PR template and CODEOWNERS, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.3.138→2.3.139.
 
-## 🆕 What's New in v23138
+## 🆕 What's New in v2.3.138
 
 - Added missing Beginner's First QuantUX Experiment tutorial (60-min A/B test walkthrough with 7 steps: HEART metrics → sample size → A/B analysis → MaxDiff → CSat → executive report). Added 5 new Quick Recipes. Version bump 2.3.137→2.3.138.
 
