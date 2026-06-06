@@ -1,3 +1,6 @@
+## v2.3.140 — 2026-06-07
+- Repo maintenance: cross-repo audit, version consistency verified, version bump 2.3.139→2.3.140
+
 ## [2.3.139] - 2026-06-05 (Evening)
 
 - Added PR template and CODEOWNERS for better contribution workflow
