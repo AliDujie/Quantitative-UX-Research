@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.140-blue)
+![Version](https://img.shields.io/badge/version-2.3.141-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23140)
+- [What's New](#whats-new-in-v23141)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -31,6 +31,11 @@
 - [Best Practices](#best-practices)
 - [Limitations](#limitations)
 - [Recommended Learning Path](#recommended-learning-path)
+- [Beginner's First Experiment](#beginners-first-experiment--45-minute-end-to-end-walkthrough)
+
+## 🆕 What's New in v2.3.141
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.3.139→2.3.141 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Experiment TOC entry. Version bump 2.3.140→2.3.141.
 
 ---
 
@@ -353,6 +358,10 @@ qx.analyze_csat("Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
 # Persona (who) → JTBD (what) → UDM (qual) → QuantUX (quant) → VPD (value) → SWD (present)
 ```
 
+## 🆕 What's New in v2.3.141
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.3.139→2.3.141 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Experiment TOC entry. Version bump 2.3.140→2.3.141.
+
 ---
 
 ## ⚠️ Common Mistakes in Quantitative UX Research
@@ -404,6 +413,10 @@ qx.analyze_csat("Q1", 500, {1: 20, 2: 30, 3: 80, 4: 200, 5: 170})
 
 ✅ **After:** "Top-2-Box (ratings 4-5) increased from 58% to 71%, a 13-percentage-point gain. The shift is meaningful and consistent across user segments."
 > Top-2-Box（4-5分）从58%增加到71%，增长了13个百分点。这一变化有意义且在用户群体间一致。
+
+## 🆕 What's New in v2.3.141
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.3.139→2.3.141 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Experiment TOC entry. Version bump 2.3.140→2.3.141.
 
 ---
 
@@ -1187,6 +1200,10 @@ A: QuantUX includes sample size calculation (C10) to tell you upfront how much d
 **Q: Can QuantUX validate Persona segments?**
 A: Yes. After Persona creates behavioral segments (T5 clustering), QuantUX can validate those segments through A/B testing (C4) and HEART metric tracking (C1) to confirm the segments behave differently.
 
+## 🆕 What's New in v2.3.141
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.3.139→2.3.141 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Experiment TOC entry. Version bump 2.3.140→2.3.141.
+
 ---
 
 ## 📚 Resources
@@ -1366,6 +1383,10 @@ story = swd.build_story(
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+## 🆕 What's New in v2.3.141
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.3.139→2.3.141 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Experiment TOC entry. Version bump 2.3.140→2.3.141.
 
 ---
 
