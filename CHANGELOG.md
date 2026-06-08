@@ -191,6 +191,11 @@
 
 # Changelog
 
+## [2.3.142] - 2026-06-09
+
+- **Repo Maintenance**: version sync + ecosystem audit
+
+
 ## v2.3.80 (2026-05-16)
 
 - Repo maintenance: Added `__version__` to `__all__` export list for proper `from quantux import __version__`
