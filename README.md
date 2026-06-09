@@ -34,48 +34,11 @@
 
 ---
 
-## 🆕 What's New in v23140
+## 🆕 What's New in v2.3.142
 
-- **Repo Maintenance 2026-06-07**: Comprehensive cross-repo audit of all 6 AliDujie skills, verified version consistency and ecosystem cross-references, version bump 2.3.139→2.3.140.
+- **Repo Maintenance 2026-06-10**: Consolidated 10 What's New entries into 1, synced CHANGELOG to v2.3.142, ecosystem cross-reference audit across all 6 AliDujie skills
 
-## 🆕 What's New in v23139
-
-- **Repo Maintenance 2026-06-05 (Evening)**: Added PR template and CODEOWNERS, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.3.138→2.3.139.
-
-## 🆕 What's New in v23138
-
-- Added missing Beginner's First QuantUX Experiment tutorial (60-min A/B test walkthrough with 7 steps: HEART metrics → sample size → A/B analysis → MaxDiff → CSat → executive report). Added 5 new Quick Recipes. Version bump 2.3.137→2.3.138.
-
-## 🆕 What's New in v2.3.136
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v23134 → v23136), version bump 2.3.135→2.3.136.
-
-## 🆕 What's New in v2.3.134
-
-- **Repo Maintenance 2026-06-04**: Audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills, version bump 2.3.133→2.3.134.
-
-## 🆕 What's New in v2.3.133
-
-- **Repo Maintenance 2026-06-03**: Added bilingual section header for "Why QuantUX Matters", added Try Before You Decide block after 快速决策 table, version bump 2.3.132→2.3.133.
-
-## 🆕 What's New in v2.3.132
-
-- **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 2.3.132), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v2.3.131
-
-- **Repo Maintenance 2026-06-03**: Beginner's First Experiment walkthrough audit (verified complete and accurate), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.3.130→2.3.131.
-
-## 🆕 What's New in v2.3.130
-
-- **Repo Maintenance 2026-06-02**: Version bump to 2.3.129, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v2.3.126
-
-- **Repo maintenance 2026-06-01**: Fixed stale What's New TOC anchor (v23130 → v23132), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
-
-> **📦 Earlier versions (v2.3.125 → v2.3.90)**: Statistical Significance Quick-Ref Card, cross-skill collaboration examples, "Why QuantUX Matters" promo, TOC anchor verification, Version History sync, statistical test selector, experiment design templates, sample size calculator, power analysis guide, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
-
+> **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
 
 ## 🇨🇳 中文概览
 

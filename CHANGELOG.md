@@ -1,3 +1,7 @@
+## [2.3.142] - 2026-06-10
+
+- Repo maintenance: consolidated What's New entries, CHANGELOG version sync, ecosystem cross-reference audit
+
 ## v2.3.140 — 2026-06-07
 - Repo maintenance: cross-repo audit, version consistency verified, version bump 2.3.139→2.3.140
 
