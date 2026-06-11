@@ -191,6 +191,44 @@ QuantUX is the quantitative validation engine — use statistical methods to tes
 > 💡 **Better together**: QuantUX validates what UDM discovers qualitatively. Run UDM first to form hypotheses, then QuantUX to confirm with data.
 
 
+## 💡 Best Practices / 最佳实践
+
+1. **HEART before A/B — Measure the right thing first**
+   Don't jump straight into experiment design. Use `build_heart_framework()` to define Goals→Signals→Metrics across all 5 dimensions, then narrow to 3-5 core metrics. Running an A/B test on the wrong metric is worse than not testing at all.
+   *先搭 HEART 再设计实验——HEART 帮你定义正确的指标，避免「在错误的指标上做实验」。*
+
+2. **Avoid p-hacking — commit your analysis plan upfront**
+   `analyze_ab_test()` reports confidence intervals, not just p-values — use them. Decide your sample size and stopping rule before collecting data. Peeking at interim results inflates false-positive rates.
+   *避免 p-hacking——提前确定样本量和停止规则，不要中途看结果后「挑」显著的时刻。置信区间比单一 p 值更可靠。*
+
+3. **Sample size planning — power matters more than significance**
+   A test with 80% power needs ~2× the sample of a 50% power test. Use `calculate_ab_sample_size()` with realistic MDE values (3-5% for conversion, 10-15% for UX task metrics).
+   *功效(power)比显著性更重要——80% 功效的样本量约是 50% 的两倍。MDE 设置要现实。*
+
+4. **MaxDiff over rating surveys for feature priorities**
+   MaxDiff forces real trade-offs — respondents choose *most* and *least* important items, avoiding the "everything is important" trap of Likert scales. Use `design_maxdiff()` instead of asking "rate importance 1-5."
+   *用 MaxDiff 替代评分问卷做功能优先级——强制选择避免「什么都重要」的陷阱。*
+
+5. **Report with CEO analysis for stakeholder buy-in**
+   Always use `include_ceo_analysis=True` when presenting UX metrics to executives. It translates "task success improved 12%" into "revenue impact: $2.3M" — the language that gets budgets approved.
+   *向高管汇报时务必使用 `include_ceo_analysis=True`——把指标翻译成收入影响。*
+
+6. **Qual → Quant handoff: UDM generates hypotheses, QuantUX validates**
+   Don't start with A/B tests on guesses. Run UDM contextual interviews first to surface real pain points, then design QuantUX experiments to validate those specific hypotheses at scale.
+   *定性→定量交接：先用 UDM 访谈发现真实痛点，再用 QuantUX 实验大规模验证。*
+
+## 🔗 Extended Ecosystem / 扩展生态
+
+QuantUX quantitative data can be combined with management skills to turn research metrics into strategic decisions:
+
+| Extended Skill | Collaboration Scenario |
+|---------------|------------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | HEART metrics → CEO investment decisions / HEART 指标 → CEO 投资决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | QuantUX UX trends → CPO product strategy / 定量 UX 趋势 → CPO 产品战略 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Growth data → CMO channel strategy / 增长数据 → CMO 渠道策略 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Tech metrics → CTO technology investments / 技术指标 → CTO 技术投资 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Validation reports → CEO plan review / 验证报告 → CEO 计划审查 |
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: What MDE should I use for `calculate_ab_sample_size()`?**
