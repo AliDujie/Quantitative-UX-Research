@@ -34,8 +34,9 @@
 
 ---
 
-## 🆕 What's New in v2.3.142
+## 🆕 What's New in v2.3.144
 
+- **Repo Maintenance 2026-06-12**: Version sync audit (SKILL.md 2.3.143→2.3.144), CHANGELOG entries for 2.3.143-2.3.144, ecosystem cross-reference validation across all 6 AliDujie skills
 - **Repo Maintenance 2026-06-10**: Consolidated 10 What's New entries into 1, synced CHANGELOG to v2.3.142, ecosystem cross-reference audit across all 6 AliDujie skills
 
 > **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
@@ -1107,7 +1108,7 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.142)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (v2.3.144)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
 
 **Previous (v2.3.136)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
