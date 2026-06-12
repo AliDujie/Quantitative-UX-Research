@@ -1310,6 +1310,89 @@ story = swd.build_story(
 )
 ```
 
+### Recipe: "I found qualitative insights, now how do I validate them?" (30 min)
+
+> **Qual → Quant Handoff: UDM 定性发现 → QuantUX 定量验证**
+>
+> **EN:** After UDM (Universal Design Methods) interviews or usability tests surface patterns — "60% of users complain search is too slow" — use QuantUX to validate whether this finding holds at scale, design a statistically rigorous experiment, and produce business-ready evidence.
+>
+> **CN:** 当 UDM 访谈或可用性测试产出定性模式（如"60%的用户反馈搜索太慢"）后，用 QuantUX 验证该发现是否在更大样本中成立，设计统计严谨的实验，并生成可交付给业务决策方的证据。
+
+```python
+# ──────────────────────────────────────────
+# Step 1: UDM surfaces a qualitative insight
+# 第一步：UDM 发现定性洞察
+# ──────────────────────────────────────────
+from udm import UDMSkill
+from quantux import QuantUXSkill
+
+udm = UDMSkill("FreshMart 生鲜电商")
+# UDM 定性研究产出："用户在搜索环节流失严重"
+interview = udm.generate_interview("Shoppers", "contextual", context="Search & browse experience")
+# → Qualitative hypothesis: "Simplifying search will reduce drop-off"
+
+# ──────────────────────────────────────────
+# Step 2: Translate qual insight → HEART metrics
+# 第二步：将定性洞察转化为 HEART 指标
+# ──────────────────────────────────────────
+qx = QuantUXSkill("FreshMart 生鲜电商")
+heart = qx.build_heart_framework()
+# → Task Success: search completion rate, time-to-result, error rate
+# → Happiness: post-search CSat
+
+# ──────────────────────────────────────────
+# Step 3: Calculate sample size for validation
+# 第三步：计算验证所需样本量
+# ──────────────────────────────────────────
+# Baseline: current search completion = 45%
+# We want to detect a 5 percentage-point improvement
+n = qx.calculate_ab_sample_size(baseline=0.45, mde=0.05)
+print(f"Need {n} users per group")
+# → ~6,165 users per group for 80% power
+
+# ──────────────────────────────────────────
+# Step 4: Run experiment & analyze
+# 第四步：运行实验并分析结果
+# ──────────────────────────────────────────
+# After A/B test: Old search vs New simplified search
+result = qx.analyze_ab_test(
+    "Old Search", 6200, 2790,     # 45.0% completion
+    "New Search", 6200, 3100      # 50.0% completion
+)
+print(f"Lift: {result['lift']:.1f}%, p={result['p_value']:.4f}")
+# → Lift: 11.1%, p < 0.001 → statistically AND practically significant
+
+# ──────────────────────────────────────────
+# Step 5: Generate report with business impact
+# 第五步：生成含商业影响的报告
+# ──────────────────────────────────────────
+report = qx.generate_report(
+    "Search Optimization: Qual→Quant Validation Report",
+    include_ceo_analysis=True
+)
+# → CEO Decision Module: revenue impact, ROI, timeline
+```
+
+**💡 Key pattern / 关键模式：**
+| Stage | Skill | Output |
+|-------|-------|--------|
+| Discover | UDM (qualitative) | Themes, quotes, hypotheses |
+| Quantify | QuantUX (validation) | Sample size, p-values, CI, ROI |
+| Present | SWD (storytelling) | Executive-ready narrative |
+
+```python
+# Complete chain: Qual discovery → Quant validation → Data storytelling
+from swd import SWDSkill
+swd = SWDSkill("Search Optimization Proposal")
+ctx = swd.build_context(audience="Product VP", cta="Approve search redesign")
+story = swd.build_story(
+    protagonist="Shopping Users",
+    imbalance="45% search completion rate → competitors at 65%",
+    evidence=["UDM: 6/10 users frustrated with search", f"A/B: {result['lift']:.0f}% lift, p={result['p_value']:.4f}"],
+    call_to_action="Ship new search to 100% of users"
+)
+```
+
 ### 📖 Recommended Learning Path
 
 1. **Start with the README** — Quick start + 30-second example
