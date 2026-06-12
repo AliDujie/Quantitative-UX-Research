@@ -1,3 +1,8 @@
+## [2.3.145] - 2026-06-13
+
+- Enhanced "What's Next" pipeline code example to include all 6 skills (Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end)
+- Ecosystem cross-reference validation across all 6 AliDujie skills
+
 ## [2.3.144] - 2026-06-12
 
 - Repo maintenance 2026-06-12: Version sync audit (README/pyproject 2.3.144, SKILL.md 2.3.143 → 2.3.144), cross-reference validation across all 6 AliDujie skills
