@@ -538,7 +538,7 @@ ROI report → SWD.build_story() → Executive presentation
 - **Reverse working**: Use `generate_report()` with simulated results *before* running experiments to align stakeholders on what success looks like
 - **Cross-skill triangulation**: Combine JTBD opportunity scores with QuantUX MaxDiff rankings for dual-method priority validation
 
-## 🍽️ Quick Recipes / 快速食谱
+### 🍽️ Quick Recipes / 快速食谱
 
 ### Recipe: "I need to design an A/B test" (10 min)
 ```python
