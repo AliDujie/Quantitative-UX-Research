@@ -14,7 +14,7 @@
 ## 📑 Table of Contents
 
 - [What's New](#whats-new-in-v23144)
-- [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
+- [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Start](#quick-start-5-minutes)
@@ -24,12 +24,12 @@
 - [Common Mistakes](#common-mistakes-in-quantitative-ux-research)
 - [AI Agent Integration](#ai-agent-integration)
 - [Ecosystem Integration](#ecosystem-integration)
-- [Quick Recipes](#quick-recipes)
+- [Quick Recipes](#quick-recipes-快速食谱)
 - [FAQ / Troubleshooting](#faq-troubleshooting)
 - [Resources](#resources)
-- [When NOT to Use QuantUX](#when-not-to-use-quantux-quantux)
-- [Best Practices](#best-practices)
-- [Limitations](#limitations)
+- [When NOT to Use QuantUX](#when-not-to-use-quantux-什么时候不该用-quantux)
+- [Best Practices](#best-practices-最佳实践)
+- [Limitations](#limitations-局限性)
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
