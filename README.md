@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23142)
+- [What's New](#whats-new-in-v23144)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -963,31 +963,19 @@ Reach for QuantUX when:
 | Trustworthy Online Controlled Experiments | Kohavi, Tang & Xu (2020) | A/B testing methodology |
 | Quantifying the User Experience | Sauro & Lewis | UX quantification methods |
 
-### 🔗 扩展生态 (Extended Ecosystem)
+## 🔗 Extended Ecosystem / 扩展生态
 
+QuantUX quantitative data can be combined with management skills to turn research data into strategic decisions.
 QuantUX 定量数据可与管理技能结合，将研究数据转化为战略决策：
 
-| 扩展技能 | 协作场景 |
-|---------|----------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | HEART 指标 → CEO 战略决策 |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 定量 UX 趋势 → CPO 产品战略 |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 增长数据 → CMO 渠道策略 |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 验证报告 → CEO 计划审查 |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 框架 → QuantUX 验证假设 |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 技术指标 → CTO 技术投资决策 |
-
-## 🔗 Extended Ecosystem
-
-QuantUX quantitative data can be combined with management skills to turn research data into strategic decisions:
-
-| Extended Skill | Collaboration Scenario |
-|---------------|----------------------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | QuantUX business impact → CEO investment decisions |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | HEART metric trends → CPO product strategy |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX growth data → CMO channel strategy |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX tech metrics → CTO tech investments |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX validation → CEO plan review |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM frames → QuantUX validates hypotheses |
+| Extended Skill 扩展技能 | Collaboration Scenario 协作场景 |
+|----------------------|--------------------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | QuantUX business impact → CEO investment decisions / HEART 指标 → CEO 战略决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | HEART metric trends → CPO product strategy / 定量 UX 趋势 → CPO 产品战略 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | QuantUX growth data → CMO channel strategy / 增长数据 → CMO 渠道策略 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | QuantUX tech metrics → CTO tech investments / 技术指标 → CTO 技术投资决策 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | QuantUX validation → CEO plan review / 验证报告 → CEO 计划审查 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM frames → QuantUX validates hypotheses / STM 框架 → QuantUX 验证假设 |
 
 ## 🤝 Contributing
 
