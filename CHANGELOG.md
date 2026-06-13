@@ -1,3 +1,10 @@
+## [2.3.147] - 2026-06-13
+
+- Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics
+- Consolidated What's New entries for clarity
+- Version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147)
+- Ecosystem cross-reference validation across all 6 AliDujie skills
+
 ## [2.3.146] - 2026-06-13
 
 - TOC anchor fix (#whats-new-in-v23144 → v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.3.145 → 2.3.146)

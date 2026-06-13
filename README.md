@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.146-blue)
+![Version](https://img.shields.io/badge/version-2.3.147-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23146)
+- [What's New](#whats-new-in-v23147)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -34,7 +34,9 @@
 
 ---
 
-## 🆕 What's New in v2.3.146
+## 🆕 What's New in v2.3.147
+
+- **Repo Maintenance 2026-06-13 PM**: Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram, improved bilingual impact metrics presentation, consolidated What's New entries
 
 - **Repo Maintenance 2026-06-13 AM**: TOC anchor fix (v23144→v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md), ecosystem cross-reference validation
 
