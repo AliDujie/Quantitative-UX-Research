@@ -1105,21 +1105,11 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.3.144)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (v2.3.147)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147), ecosystem cross-reference validation across all 6 AliDujie skills.
 
-**Previous (v2.3.136)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
+**Previous (v2.3.146)**: TOC anchor fix (#whats-new-in-v23144 → v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.3.145 → 2.3.146), ecosystem cross-reference validation.
 
-**Previous (v2.3.134)**: Repo maintenance 2026-06-03 — Fixed duplicate code block in Try Before You Decide section, updated TOC anchor (v2.3.132 → v2.3.133), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
-
-**Previous (v2.3.127)**: Repo maintenance - added Statistical Significance Quick-Ref Card, expanded cross-skill collaboration examples with code snippets, added "Why QuantUX Matters" promotional section. Version bump.
-
-**Previous (v2.3.128)**: Repo maintenance — added QuantUX Research Sprint Template, Statistical Quick-Ref tables (A/B significance, HEART scores, Cohen's d), and ecosystem cross-reference audit across all 6 AliDujie skills.
-
-**Previous (v2.3.126)**: Repo maintenance — TOC anchor version verification, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-**Previous (v2.3.124)**: Repo maintenance — footer self-reference fix, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-**Previous (v2.3.122)**: CHANGELOG duplicate version entry consolidation, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Previous (v2.3.145)**: Enhanced "What's Next" pipeline code example to include all 6 skills (Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end), ecosystem cross-reference validation.
 
 **Previous (v2.3.115)**: Fixed stale What's New TOC link (v2.3.114 → v2.3.115), updated Version History latest entry (v2.3.114 → v2.3.115), ecosystem cross-reference audit across all 6 AliDujie skills.
 
