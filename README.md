@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.148-blue)
+![Version](https://img.shields.io/badge/version-2.3.149-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23147)
+- [What's New](#whats-new-in-v23149)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -34,7 +34,9 @@
 
 ---
 
-## 🆕 What's New in v2.3.148
+## 🆕 What's New in v2.3.149
+
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, enhanced Python version badge parity check, consolidated maintenance entries
 
 - **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (2.3.147 → 2.3.148), README readability improvements
 
@@ -1109,6 +1111,8 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Latest (v2.3.147)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147), ecosystem cross-reference validation across all 6 AliDujie skills.
 
+**Latest (v2.3.148)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, added "Built with ❤️ as part of the AliDujie UX Research Ecosystem" footer tagline for ecosystem parity, consolidated maintenance entries.
+
 **Previous (v2.3.146)**: TOC anchor fix (#whats-new-in-v23144 → v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.3.145 → 2.3.146), ecosystem cross-reference validation.
 
 **Previous (v2.3.145)**: Enhanced "What's Next" pipeline code example to include all 6 skills (Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end), ecosystem cross-reference validation.
@@ -1427,6 +1431,8 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
-[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [VPD](https://github.com/AliDujie/value-proposition-design) · [Persona](https://github.com/AliDujie/web-persona-skill) · **QuantUX** · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
+**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
+
+[Persona](https://github.com/AliDujie/web-persona-skill) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [UDM](https://github.com/AliDujie/universal-design-methods) · **QuantUX** · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
 
 
