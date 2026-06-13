@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.145-blue)
+![Version](https://img.shields.io/badge/version-2.3.146-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23144)
+- [What's New](#whats-new-in-v23146)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -34,7 +34,10 @@
 
 ---
 
-## 🆕 What's New in v2.3.145
+## 🆕 What's New in v2.3.146
+
+- **Repo Maintenance 2026-06-13 AM**: TOC anchor fix (v23144→v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md), ecosystem cross-reference validation
+
 
 - **Repo Maintenance 2026-06-13**: Enhanced "What's Next" pipeline code example to include all 6 skills (was missing Persona, JTBD, VPD), ecosystem cross-reference validation
 - **Repo Maintenance 2026-06-12 PM**: Bilingual "What's Next / 下一步" cross-skill navigation tables added, Quick Start section enhanced with CN translations, ecosystem cross-reference validation

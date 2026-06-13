@@ -1,3 +1,8 @@
+## [2.3.146] - 2026-06-13
+
+- TOC anchor fix (#whats-new-in-v23144 → v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.3.145 → 2.3.146)
+- Ecosystem cross-reference validation across all 6 AliDujie skills
+
 ## [2.3.145] - 2026-06-13
 
 - Enhanced "What's Next" pipeline code example to include all 6 skills (Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end)
