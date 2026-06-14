@@ -50,6 +50,7 @@ This skill integrates with the broader AliDujie UX Research ecosystem:
 - [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — JTBD 机会评分可用 QuantUX 量化验证
 - [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — VPD 价值假设可用 QuantUX 实验设计验证
 - [Web Persona](https://github.com/AliDujie/web-persona-skill) — Persona 角色假设可用 QuantUX 行为数据验证
+- [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — QuantUX 数据可输入战略分析框架
 
 ## License / 许可
 
