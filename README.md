@@ -6,7 +6,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.152-blue)
+![Version](https://img.shields.io/badge/version-2.3.153-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -15,7 +15,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23152)
+- [What's New](#whats-new-in-v23153)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -35,6 +35,10 @@
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v23153
+
+- **Repo Maintenance 2026-06-15 AM**: Version bump 2.3.152 → 2.3.153, consolidated daily maintenance entries, ecosystem documentation consistency audit.
 
 ## 🆕 What's New in v2.3.152
 
@@ -1120,6 +1124,8 @@ Yes. All QuantUX methods return formatted Markdown that AI Agents can display di
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Latest (v2.3.147)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147), ecosystem cross-reference validation across all 6 AliDujie skills.
+
+**Latest (v2.3.153)**: Repo maintenance 2026-06-15 AM — Version bump 2.3.152 → 2.3.153, consolidated daily maintenance entries, ecosystem documentation consistency audit.
 
 **Latest (v2.3.152)**: Repo maintenance 2026-06-14 PM — Version bump 2.3.151 → 2.3.152, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
 
