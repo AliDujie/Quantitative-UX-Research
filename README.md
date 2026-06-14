@@ -36,9 +36,9 @@
 
 ## 🆕 What's New in v2.3.149
 
-- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, enhanced Python version badge parity check, consolidated maintenance entries
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, enhanced Python version badge parity check
 
-- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (2.3.147 → 2.3.148), README readability improvements
+- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, version sync across all artifacts (2.3.147 → 2.3.148), README readability improvements
 
 - **Repo Maintenance 2026-06-13 PM**: Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram, improved bilingual impact metrics presentation, consolidated What's New entries
 
@@ -1111,7 +1111,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Latest (v2.3.147)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147), ecosystem cross-reference validation across all 6 AliDujie skills.
 
-**Latest (v2.3.148)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, added "Built with ❤️ as part of the AliDujie UX Research Ecosystem" footer tagline for ecosystem parity, consolidated maintenance entries.
+**Latest (v2.3.149)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, version sync across all artifacts.
 
 **Previous (v2.3.146)**: TOC anchor fix (#whats-new-in-v23144 → v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.3.145 → 2.3.146), ecosystem cross-reference validation.
 
@@ -1428,8 +1428,6 @@ story = swd.build_story(
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
-
-**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
