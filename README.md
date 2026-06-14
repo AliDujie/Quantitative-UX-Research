@@ -1,10 +1,12 @@
+- **Repo Maintenance 2026-06-14 PM**: Version bump 2.3.150 → 2.3.151, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
+
 # Quantitative UX Research Skill
 
 > **Validate Qualitative Insights with Statistical Rigor.**
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.150-blue)
+![Version](https://img.shields.io/badge/version-2.3.151-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -34,7 +36,7 @@
 
 ---
 
-## 🆕 What's New in v2.3.150
+## 🆕 What's New in v2.3.151
 
 - **Repo Maintenance 2026-06-14**: Version sync across all artifacts (2.3.149 → 2.3.150), added Structured Thinking Model (STM) cross-reference to examples/README.md ecosystem section, enhanced ecosystem documentation consistency
 
@@ -1113,7 +1115,9 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Latest (v2.3.147)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147), ecosystem cross-reference validation across all 6 AliDujie skills.
 
-**Latest (v2.3.149)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, version sync across all artifacts.
+**Latest (v2.3.151)**: Repo maintenance 2026-06-14 PM — Version bump 2.3.150 → 2.3.151, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+
+**Previous (v2.3.150)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, enhanced Python version badge parity check.: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, version sync across all artifacts.
 
 **Previous (v2.3.146)**: TOC anchor fix (#whats-new-in-v23144 → v23146), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.3.145 → 2.3.146), ecosystem cross-reference validation.
 
