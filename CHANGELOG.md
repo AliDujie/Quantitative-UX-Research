@@ -1,5 +1,6 @@
 ## v2.3.152 (2026-06-14)
 
+- Ecosystem documentation consistency audit across all 6 AliDujie skill repos.
 - Fixed stale TOC anchor (#whats-new-in-v23150 → v23152), version sync across all artifacts (2.3.151 → 2.3.152), ecosystem cross-reference validation.
 
 ## v2.3.150 (2026-06-14)
