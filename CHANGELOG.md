@@ -1,3 +1,7 @@
+## v2.3.152 (2026-06-14)
+
+- Fixed stale TOC anchor (#whats-new-in-v23150 → v23152), version sync across all artifacts (2.3.151 → 2.3.152), ecosystem cross-reference validation.
+
 ## v2.3.150 (2026-06-14)
 
 - Version sync across all artifacts (2.3.149 → 2.3.150)

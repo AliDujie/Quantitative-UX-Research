@@ -1,4 +1,4 @@
-- **Repo Maintenance 2026-06-14 PM**: Version bump 2.3.150 → 2.3.151, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
+- **Repo Maintenance 2026-06-14 PM**: Version bump 2.3.151 → 2.3.152, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
 
 # Quantitative UX Research Skill
 
@@ -6,7 +6,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.151-blue)
+![Version](https://img.shields.io/badge/version-2.3.152-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -15,7 +15,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23150)
+- [What's New](#whats-new-in-v23152)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -35,6 +35,10 @@
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.3.152
+
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale TOC anchor (#whats-new-in-v23150 → v23152), version sync across all artifacts (2.3.151 → 2.3.152), ecosystem cross-reference validation.
 
 ## 🆕 What's New in v2.3.151
 
@@ -1115,7 +1119,9 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 **Latest (v2.3.147)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose QuantUX" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.3.146 → 2.3.147), ecosystem cross-reference validation across all 6 AliDujie skills.
 
-**Latest (v2.3.151)**: Repo maintenance 2026-06-14 PM — Version bump 2.3.150 → 2.3.151, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+**Latest (v2.3.152)**: Repo maintenance 2026-06-14 PM — Version bump 2.3.151 → 2.3.152, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+
+**Previous (v2.3.151)**: Repo maintenance 2026-06-14 PM — Version sync across all artifacts (2.3.150 → 2.3.151), ecosystem cross-reference validation.
 
 **Previous (v2.3.150)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, enhanced Python version badge parity check.: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, version sync across all artifacts.
 
