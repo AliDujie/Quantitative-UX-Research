@@ -1,3 +1,11 @@
+## v2.3.154 (2026-06-15)
+
+- Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
+
+## v2.3.153 (2026-06-15)
+
+- Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
+
 ## v2.3.152 (2026-06-14)
 
 - Ecosystem documentation consistency audit across all 6 AliDujie skill repos.
