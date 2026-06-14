@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.149-blue)
+![Version](https://img.shields.io/badge/version-2.3.150-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23149)
+- [What's New](#whats-new-in-v23150)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -34,7 +34,9 @@
 
 ---
 
-## 🆕 What's New in v2.3.149
+## 🆕 What's New in v2.3.150
+
+- **Repo Maintenance 2026-06-14**: Version sync across all artifacts (2.3.149 → 2.3.150), added Structured Thinking Model (STM) cross-reference to examples/README.md ecosystem section, enhanced ecosystem documentation consistency
 
 - **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v23148 → v23149), added "Built with ❤️" footer tagline for ecosystem parity, enhanced Python version badge parity check
 

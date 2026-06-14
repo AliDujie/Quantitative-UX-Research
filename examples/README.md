@@ -63,5 +63,6 @@ QuantUX is the "validate" layer of the AliDujie UX Research Ecosystem. Chain it 
 - **JTBD → QuantUX**: [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) opportunity scores → QuantUX feature prioritization experiments
 - **VPD → QuantUX**: [VPD](https://github.com/AliDujie/value-proposition-design) experiment design → QuantUX statistical analysis
 - **QuantUX → SWD**: QuantUX experiment data → [SWD](https://github.com/AliDujie/storytelling-with-data) executive narratives
+- **QuantUX → STM**: QuantUX metrics → [STM](https://github.com/AliDujie/Structured-Thinking-Model) strategic frameworks
 
-See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 6-skill end-to-end workflow.
+See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 7-skill end-to-end workflow.
