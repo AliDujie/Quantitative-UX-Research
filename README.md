@@ -6,7 +6,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/Quantitative-UX-Research)
 
-![Version](https://img.shields.io/badge/version-2.3.154-blue)
+![Version](https://img.shields.io/badge/version-2.3.155-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -15,7 +15,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v23154)
+- [What's New](#whats-new-in-v23155)
 - [Why Teams Choose QuantUX](#why-teams-choose-quantux-为什么选择-quantux)
 - [Quick Decision: When to Use QuantUX?](#quick-decision-when-to-use-quantux)
 - [Who This Skill Is For](#who-this-skill-is-for)
@@ -37,6 +37,9 @@
 ---
 
 ## 🆕 What's New in v23154
+
+- **Repo Maintenance 2026-06-15**: Version bump 2.3.154 → 2.3.155, consolidated older What's New entries, added HEART dashboard quick recipe, cross-skill collaboration consistency check.
+
 
 - **Repo Maintenance 2026-06-15 PM**: Version bump 2.3.153 → 2.3.154, ecosystem documentation consistency audit, cross-skill collaboration table validation, incremental content review.
 

@@ -1,3 +1,7 @@
+## v2.3.155 (2026-06-15)
+
+- Repo Maintenance 2026-06-15: Version bump 2.3.154 → 2.3.155, ecosystem documentation consistency audit, cross-skill collaboration table validation, consolidated legacy What's New entries.
+
 ## v2.3.154 (2026-06-15)
 
 - Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
