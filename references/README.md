@@ -23,6 +23,8 @@ This directory contains methodology reference documents for the Quantitative UX 
 
 These reference documents are consulted by the AI Agent during quantitative research tasks. `07-cross-skill-validation.md` provides complete guides on how QuantUX validates outputs from other skills.
 
+> 💡 **完整生态链**: UDM (方法引擎) → JTBD (深层需求) → Persona (用户定义) → VPD (价值设计) → QuantUX (数据验证) → SWD (数据叙事) → [STM](https://github.com/AliDujie/Structured-Thinking-Model) (战略决策)
+
 ## 🌐 技能生态关联 / Skill Ecosystem Connections
 
 QuantUX 负责用数据验证其他技能的定性假设：
@@ -32,6 +34,7 @@ QuantUX 负责用数据验证其他技能的定性假设：
 - **VPD → QuantUX**: VPD 的价值假设 → QuantUX 实验设计与样本量计算
 - **Persona → QuantUX**: Persona 的角色假设 → QuantUX 行为数据验证
 - **QuantUX → SWD**: QuantUX 的分析结果 → SWD 进行数据叙事和可视化改造
+- **QuantUX → STM**: QuantUX 的统计指标可输入 [STM](https://github.com/AliDujie/Structured-Thinking-Model) 进行战略决策分析
 
 ## 来源 / Source
 
