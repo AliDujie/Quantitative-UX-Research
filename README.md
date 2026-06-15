@@ -81,6 +81,14 @@
 
 Based on *Quantitative User Experience Research* by Jeff Sauro & James R. Lewis (2023). A complete toolkit for **quantitative UX research**, providing **10 executable capabilities** — from HEART framework and CSat surveys to log analysis, MaxDiff, A/B testing, research planning, and CEO-level business impact assessment.
 
+**Try it in 3 lines / 三行代码开始使用:**
+
+```python
+from quantux import QuantUXSkill
+skill = QuantUXSkill("Your Product")
+result = skill.analyze_ab_test(variant_a=[1,0,1,1,0], variant_b=[1,1,1,1,0])  # A/B test analysis
+```
+
 ## 🎯 Why Teams Choose QuantUX / 为什么选择 QuantUX
 
 *New here?* QuantUX helps you **validate design decisions with data** — A/B tests, HEART metrics, MaxDiff prioritization, CSat surveys. Based on Jeff Sauro & James R. Lewis (2023).

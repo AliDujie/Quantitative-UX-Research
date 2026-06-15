@@ -17,6 +17,21 @@ All examples use **zero dependencies** — pure Python standard library only.
 
 ## Available Examples / 可用示例
 
+### Expected Output Preview / 输出预览
+
+```
+>>> A/B Test Analysis
+>>> Variant A: n=100, conversions=45, rate=45.0%
+>>> Variant B: n=100, conversions=60, rate=60.0%
+>>>
+>>> Statistical Significance:
+>>>   p-value:  0.0321    (significant at α=0.05)
+>>>   Lift:     33.3%
+>>>   95% CI:   [1.2%, 71.5%]
+>>>
+>>> Recommendation: Ship Variant B — statistically significant improvement detected.
+```
+
 ### 01_heart_metrics.py
 HEART framework setup: define Goals → Signals → Metrics across 5 dimensions.
 HEART 框架搭建：在 5 个维度上定义目标 → 信号 → 指标。
